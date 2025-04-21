@@ -286,6 +286,55 @@
 .map-body {
     width: calc(100% - 23px);
 }
+/* Search Content Start */
+.search-popup {
+    bottom: 0;
+    left: 15%;
+    width: 425px;
+    max-width: 100%;
+}
+.search-popup .accordion-button {
+    background: linear-gradient(180deg, #FFF -57.5%, #0B3E58 100%);
+}
+.search-popup .accordion-button::after{
+    display: none;
+}
+.search-heading {
+    width: 60%;
+}
+.search-popup .accordion-body {
+    background: linear-gradient(to bottom, #F5F5F5, #999999);
+}
+.search-input {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -38%);
+}
+.search-popup .nav-link{
+    color: #0B3E58;
+    border-radius: 20px;
+    border: 1px solid #0B3E58;
+}
+.search-popup .nav-link.active,.search-popup .nav-link:hover {
+    color: #fff;
+    background-color: #0B3E58;  
+    border: 1px solid #0B3E58; 
+}
+.search-input input{
+    border: 1px solid #0B3E58;
+    border-radius: 20px;
+}
+.search-input input::placeholder{
+    color: #999999;
+}
+.search-popup .accordion-button:focus {
+    box-shadow: none;
+}
+.search-popup .tab-pane {
+    border: 1px solid #0B3E58;
+    border-radius: 5px;
+}
+/* Search Content End */
 
 /* main content css End */
 

@@ -198,7 +198,7 @@
         </div>
     </div>
     <!-- Header middle End -->
-     
+
     <!-- Header Bottom Start -->
     <div class="bottom-header-body py-8 d-flex justify-content-center">
         <div class='d-inline-flex align-items-center justify-content-center gap-24'>
@@ -341,28 +341,57 @@
     </div>
     <!-- Header Bottom End -->
 
-    <!-- <main> -->
+    <!-- main Start -->
     <div class="main-content position-relative">
         <div class='footer-line px-10 position-absolute h-100 start-0 border border-2'></div>
-
         <div class='map-body h-100 ms-auto'>
             <iframe class='w-100 h-100'
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238133.18800900166!2d72.65747318239129!3d21.159120355102836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1745177875945!5m2!1sen!2sin"
                 style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-
+        <div class="accordion search-popup position-absolute z-1" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button py-2 px-15 justify-content-end" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="search-heading d-flex align-items-center justify-content-between">
+                            <h6 class="search-heading-title fs-15 fw-semibold text-white mb-0">Search</h6>
+                            <div class="search-heading-icon">
+                                <span><img src="assets/image/search/Icon feather-move.svg" alt="Move icon"></span>
+                                <span class="mx-14"><img src="assets/image/search/Line 46.svg" alt="Line icon"></span>
+                                <span><img src="assets/image/search/Rectangle 1542.svg" alt="Rectangle icon"></span>
+                            </div>
+                        </div> 
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body pt-9 px-15 pb-0">
+                        <ul class="nav nav-tabs justify-content-between mb-25 border-0 position-relative" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link fs-15 fw-bold active py-0 px-19" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Well</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link fs-15 fw-bold py-0 px-19" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">SWD</button>
+                            </li>
+                            <div class="search-input position-absolute">
+                                <input type="text" class="form-control bg-white text-center fs-20 fw-bold" placeholder="Search">
+                            </div>
+                          </ul>
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active bg-white" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">Well</div>
+                            <div class="tab-pane fade bg-white" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">SWD</div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- </main> -->
+    <!-- main End -->
     <div class='bottom-0 footer-line position-absolute py-16 w-100 border border-2'></div>
 
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+    <!-- JavaScript Files -->
+    <script src="./assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
 
