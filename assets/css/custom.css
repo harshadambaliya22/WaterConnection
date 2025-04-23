@@ -447,3 +447,85 @@
     border-color: #CB0E20;
 }
 /* Contact Serachbar End */
+
+
+/* Modal button css start  */
+/* 01  */
+.dashboard-btn-list{
+    border-color: #0B3E58 !important;
+    border-radius: 60px;
+}
+.btn-listgroup{
+    color: #0B3E58;
+    border-color: #0B3E58 !important;
+    background: linear-gradient(180deg, #EEEEEE 50%, #BBBBBB 100%);
+    border-radius: 20px;
+    box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.64);
+    transition: all 0.3s;
+}
+.btn-listgroup:hover{
+    color: #0B3E58;
+    background: linear-gradient(180deg, #BBBBBB -57.5%, #EEEEEE 100%);
+    transition: all 0.3s;
+}
+.form-check-input {
+    border: 1px solid #adb5bd;
+}
+/* modal css start */
+.createaccound-modal01 .modal-header{
+    background: linear-gradient(217deg, #0B3E58 3.27%, #DFE0E1 156.88%);
+  }
+
+  .btn-track{
+    bottom: -20px;
+  }
+
+  .btn-modalnext{
+    background: linear-gradient(217deg, #2280B7 3.27%, #0B3E58 156.88%);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.70);
+    transition: all 0.3s;
+  }
+
+  .btn-modalback{
+    background: linear-gradient(90deg, #FFF 0%, #CCC 100%);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.70);
+    border-color: #0A6294 !important;
+    transition: all 0.3s;
+  }
+
+  .btn-modal-footer:hover{
+    opacity: 0.8;
+    transition: all 0.3s;
+  }
+
+  .form-check-account{
+    border: 1px solid #0000008a;
+    box-shadow: 2px 3px 11px 0 #00000070;
+  }
+
+  .account-comany-form .form-control {
+    color: #0B3E58;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    border: 1px solid #0B3E58;
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+  }
+  
+  .account-comany-form .form-control:focus{
+    box-shadow: 0 0 0 0.25rem rgba(11, 62, 88, 0.25);
+  }
+
+  .typeaccount-img{width: 20px; height: 20px;}
+
+  .accountpasswd-show{cursor: pointer;}
+
+  @media (min-width: 576px){
+    .modal-dialog {
+      max-width: var(--bs-modal-width);
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+/* Modal button css End  */
