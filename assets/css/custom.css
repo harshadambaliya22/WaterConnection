@@ -47,6 +47,58 @@
 
 /* Header End */
 
+/* home Header Top Start */
+.homnavtopline{
+    background: linear-gradient(180deg, #9FCBE3 0%, #0B3E58 100%);
+}
+
+.home-bottom-header{
+    background: linear-gradient(180deg, #999 0%, #FFF 31.8%, #FFF 50.2%, #FFF 67.8%, #999 100%);
+}
+
+.home-bottom-header-logoitems{
+    width: 400px;
+}
+
+.home-bottom-header-logo {
+    background: radial-gradient(50% 50% at 28.5% 106.1%, #DFE0E1 0%, #DFE0E1 25%, #717171 50%, #717171 100%);
+    height: 200px;
+}
+
+.home-bottom-header-logo {
+    background: radial-gradient(50% 50% at 28.5% 106.1%, #DFE0E1 0%, #DFE0E1 25%, #717171 50%, #717171 100%);
+    height: 200px;
+    border: 1px solid #fff;
+    border-top: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.home-bottom-header-logo a{
+    width: 230px;
+}
+
+.home-bottom-header-container ul li > a:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 36px;
+    background-color: #707070;
+}
+
+.home-bottom-header-container ul li:nth-child(3) > a:before,
+.home-bottom-header-container ul li:last-child > a:before {
+    background-color: transparent;
+}
+
+.main-content.main-content-home{
+    height: calc(100vh - 116px);
+}
+/* home Header Top End */
+
 /* Header middle Start */
 .header-m-logo {
     border: 1px solid #000000;
