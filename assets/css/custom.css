@@ -573,11 +573,80 @@
 
   .accountpasswd-show{cursor: pointer;}
 
-  @media (min-width: 576px){
-    .modal-dialog {
-      max-width: var(--bs-modal-width);
-      margin-right: auto;
-      margin-left: auto;
-    }
+  .notesmodalbody{
+    border-color: #0B3E58 !important;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.70);
+    height: 300px;
   }
+
+  textarea.form-control {
+    border: 1px solid #0B3E58;
+    text-align: center;
+    color: #0B3E58;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.notesmodal-adddispatch > p{
+    color: #2280B7;
+}
+
+.btn.btn-adddispatch {
+    min-width: 160px;
+    border-radius: 16px;
+    box-shadow: 0 4px 4px 0 #2222224a;
+    border-color: #0B3E58 !important;
+}
+
+.company-list {
+    width: 250px;
+    font-family: sans-serif;
+  }
+  
+  .company-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    color: #083e59; /* dark blue */
+    cursor: pointer;
+  }
+  
+  .company-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .comanylist-note .company-item{
+    color: #717171;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+@media (min-width: 992px) {
+    .modal-lg,
+    .modal-xl {
+        --bs-modal-width: 800px;
+    }
+}
+@media (min-width: 1200px) {
+    .modal-xl {
+        --bs-modal-width: 1140px;
+    }
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: var(--bs-modal-width);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .modal-sm {
+    --bs-modal-width: 300px;
+  }
+}
 /* Modal button css End  */
