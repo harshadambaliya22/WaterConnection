@@ -576,7 +576,7 @@
   .notesmodalbody{
     border-color: #0B3E58 !important;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.70);
-    height: 300px;
+    height: 330px;
   }
 
   textarea.form-control {
@@ -592,8 +592,9 @@
     color: #2280B7;
 }
 
-.btn.btn-adddispatch {
+.account-comany-form.notesmodalbody .form-control {
     min-width: 160px;
+    width: auto;
     border-radius: 16px;
     box-shadow: 0 4px 4px 0 #2222224a;
     border-color: #0B3E58 !important;
