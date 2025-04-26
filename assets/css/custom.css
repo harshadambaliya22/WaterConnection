@@ -628,6 +628,20 @@
     line-height: normal;
   }
 
+  .accountmodal-payment-title{
+    color: #717171;
+  }
+
+  .accountmodal-payment-mode li label{border: 1px solid #999;}
+
+  .paypal-title {
+    color: #2E5281;
+  }
+  
+  .paypal-title > span:last-child{
+    color: #3B9FD8;
+  }
+
 @media (min-width: 992px) {
     .modal-lg,
     .modal-xl {
