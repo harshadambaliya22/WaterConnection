@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>WaterConnection</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Css Files Links -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header class="header position-relative">
+        <div class="header-content d-flex align-items-center">
+            <div class="header-hamburger ms-20 ms-sm-0">
+                <span class="header-hamburger-icon mb-4 d-block"></span>
+                <span class="header-hamburger-icon mb-4 d-block"></span>
+                <span class="header-hamburger-icon d-block"></span>
+            </div>
+            <ul class="menu-list align-items-center d-flex list-inline">
+                <li class="menu-item py-10 px-12 p-lg-10 position-relative">
+                    <a href="javascript:void(0);" class="fw-medium fs-15 menu-link text-decoration-none">Log</a>
+                    <ul class="megamenu-list position-absolute list-inline bg-white pt-8 z-1 start-0">
+                        <li class="megamenu-item">
+                            <a href="#"
+                                class="megamenu-link fw-semibold fs-13 text-black text-decoration-none px-6 py-4 d-inline-block">Switch
+                                account</a>
+                        </li>
+                        <li class="megamenu-item">
+                            <a href="#"
+                                class="megamenu-link fw-semibold fs-13 text-black text-decoration-none px-6 py-4 d-inline-block">Log-out</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item py-10 px-12 p-lg-10 position-relative">
+                    <a href="#" class="fw-medium fs-15 menu-link text-decoration-none">Edit</a>
+                    <ul class="megamenu-list position-absolute list-inline bg-white pt-8 z-1 start-0">
+                        <li class="megamenu-item">
+                            <a href="#"
+                                class="megamenu-link fw-semibold fs-13 text-black text-decoration-none px-6 py-4 d-inline-block">Requirements</a>
+                        </li>
+                        <li class="megamenu-item">
+                            <a href="#"
+                                class="megamenu-link fw-semibold fs-13 text-black text-decoration-none px-6 py-4 d-inline-block">MSA</a>
+                        </li>
+                        <li class="megamenu-item">
+                            <a href="#"
+                                class="megamenu-link fw-semibold fs-13 text-black text-decoration-none px-6 py-4 d-inline-block">Equipment</a>
+                        </li>
+                        <li class="megamenu-item">
+                            <a href="#"
+                                class="megamenu-link fw-semibold fs-13 text-black text-decoration-none px-6 py-4 d-inline-block">Employees</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item py-10 px-12 p-lg-10 position-relative">
+                    <a href="#" class="fw-medium fs-15 menu-link text-decoration-none">Requests</a>
+                    <ul class="megamenu-list position-absolute list-inline bg-white pt-8 z-1 start-0">
+                        <li class="megamenu-item">
+                            <a href="#"
+                                class="megamenu-link fw-semibold fs-13 text-black text-decoration-none px-6 py-4 d-inline-block">Driver</a>
+                        </li>
+                        <li class="megamenu-item">
+                            <a href="#"
+                                class="megamenu-link fw-semibold fs-13 text-black text-decoration-none px-6 py-4 d-inline-block">Links</a>
+                        </li>
+                        <li class="megamenu-item">
+                            <a href="#"
+                                class="megamenu-link fw-semibold fs-13 text-black text-decoration-none px-6 py-4 d-inline-block">Company</a>
+                        </li>
+                        <li class="megamenu-item">
+                            <a href="#"
+                                class="megamenu-link fw-semibold fs-13 text-black text-decoration-none px-6 py-4 d-inline-block">Other</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item py-10 px-12 p-lg-10 position-relative">
+                    <a href="#" class="fw-medium fs-15 menu-link text-decoration-none">Settings</a>
+                    <ul class="megamenu-list position-absolute list-inline bg-white pt-8 z-1 start-0">
+                        <li class="megamenu-item">
+                            <a href="#"
+                                class="megamenu-link fw-semibold fs-13 text-black text-decoration-none px-6 py-4 d-inline-block">Notifications</a>
+                        </li>
+                        <li class="megamenu-item">
+                            <a href="#"
+                                class="megamenu-link fw-semibold fs-13 text-black text-decoration-none px-6 py-4 d-inline-block">Map</a>
+                        </li>
+                        <li class="megamenu-item">
+                            <a href="#"
+                                class="megamenu-link fw-semibold fs-13 text-black text-decoration-none px-6 py-4 d-inline-block">Company</a>
+                        </li>
+                        <li class="megamenu-item">
+                            <a href="#"
+                                class="megamenu-link fw-semibold fs-13 text-black text-decoration-none px-6 py-4 d-inline-block">Other</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item py-10 px-12 p-lg-10 position-relative">
+                    <a href="#" class="fw-medium fs-15 menu-link text-decoration-none">Help</a>
+                    <ul class="megamenu-list position-absolute list-inline bg-white pt-8 z-1 start-0">
+                        <li class="megamenu-item">
+                            <a href="#"
+                                class="megamenu-link fw-semibold fs-13 text-black text-decoration-none px-6 py-4 d-inline-block">Mobile</a>
+                        </li>
+                        <li class="megamenu-item">
+                            <a href="#"
+                                class="megamenu-link fw-semibold fs-13 text-black text-decoration-none px-6 py-4 d-inline-block">Map</a>
+                        </li>
+                        <li class="megamenu-item">
+                            <a href="#"
+                                class="megamenu-link fw-semibold fs-13 text-black text-decoration-none px-6 py-4 d-inline-block">Company</a>
+                        </li>
+                        <li class="megamenu-item">
+                            <a href="#"
+                                class="megamenu-link fw-semibold fs-13 text-black text-decoration-none px-6 py-4 d-inline-block">Other</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h2 class="header-title fs-32 fs-xl-25 fw-bold mb-0 text-center position-absolute">JCV38 Corp</h2>
+            <h4 class="header-currect-job text-primary fs-16 fs-sm-14 fw-medium bg-white py-4 px-15 px-sm-10 mb-0 d-none me-10 me-sm-6">Current job</h4>
+            <h4 class="header-duty text-primary fs-16 fs-sm-14 fw-medium bg-white py-4 px-15 px-sm-10 mb-0 d-none">Duty</h4>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Header middle Start -->
+    <div class="header-middle position-relative">
+        <div class="header-m-logo position-absolute bg-white border-radius-circle overflow-hidden d-none">
+            <img src="assets/image/main-logo.svg" alt="Main Logo">
+        </div>
+        <div class="header-m-content d-flex align-items-center justify-content-between">
+            <div class="header-m-personal d-flex">
+                <div class="header-m-duty d-flex align-items-center me-40 pt-19 pb-10">
+                    <h5 class="header-duty-title fs-18 fw-bold text-center me-15 mb-0">Also <span
+                            class="d-block mt-3">On-Duty:</span></h5>
+                    <div class="header-duty-time">
+                        <h5 class="d-flex align-items-center fs-18 fw-bold">John<span class="fs-10">4hr 23min</span><img
+                                src="assets/image/mobile-Icon .svg" alt="Mobile icon"></h5>
+                        <h5 class="d-flex align-items-center fs-18 fw-bold mb-0">Greg<span class="fs-10">2hr 47
+                                min</span><img src="assets/image/laptop-icon.svg" alt="Mobile icon"></h5>
+                    </div>
+                </div>
+                <div class="header-m-available px-22 pt-18 pb-10">
+                    <div class="header-available d-flex align-items-center justify-content-between mb-8">
+                        <h5 class="fs-16 fw-bold mb-0 me-25">Trucks Available</h5>
+                        <div class="form-check form-switch position-relative mb-0">
+                            <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+                            <label
+                                class="form-check-label switch-btn switch-red d-inline-block border-radius-circle position-absolute"
+                                for="switchCheckDefault"></label>
+                        </div>
+                    </div>
+                    <div class="header-available d-flex align-items-center justify-content-between">
+                        <h5 class="fs-16 fw-bold mb-0 me-25">Work Available</h5>
+                        <div class="form-check form-switch position-relative mb-0">
+                            <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked"
+                                checked>
+                            <label
+                                class="form-check-label switch-btn d-inline-block border-radius-circle position-absolute"
+                                for="switchCheckChecked"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-m-contact d-flex align-items-center ps-11 pe-14 pt-14 pb-10">
+                    <h5 class="fs-16 fw-bold mb-0 me-23 text-center lh-sm">Trucks <br> Trough Contacts</h5>
+                    <span class="fs-36 fw-bold d-flex align-items-center justify-content-center bg-white ">6</span>
+                </div>
+            </div>
+            <div class="header-m-activity">
+                <ul class="header-activity-list d-flex align-items-center list-inline">
+                    <li class="header-activity-item text-center pt-14 px-10 pb-10">
+                        <img src="assets/image/clipboard-icon.svg" alt="Bulletin">
+                        <span class="fs-15 fw-bold d-block mt-8">Bulletin</span>
+                    </li>
+                    <li class="header-activity-item text-center pt-14 px-10 pb-10">
+                        <img src="assets/image/Invite icon.svg" alt="Invites">
+                        <span class="fs-15 fw-bold d-block mt-8">Invites</span>
+                    </li>
+                    <li class="header-activity-item text-center pt-14 px-10 pb-10">
+                        <img src="assets/image/calendar-icon.svg" alt="Calendar">
+                        <span class="fs-15 fw-bold d-block mt-8">Calendar</span>
+                    </li>
+                    <li class="header-activity-item text-center pt-14 px-10 pb-10">
+                        <img src="assets/image/stopwatch-icon.svg" alt="History">
+                        <span class="fs-15 fw-bold d-block mt-8">History</span>
+                    </li>
+                    <li class="header-activity-item text-center pt-14 px-10 pb-10">
+                        <img src="assets/image/message-icon.svg" alt="Chats">
+                        <span class="fs-15 fw-bold d-block mt-8">Chats</span>
+                    </li>
+                    <li class="header-activity-item contact-activity-btn text-center pt-14 px-10 pb-10">
+                        <img src="assets/image/people-icon.svg" alt="Contacts">
+                        <span class="fs-15 fw-bold d-block mt-8">Contacts</span>
+                    </li>
+                    <li class="header-activity-btn">
+                        <button class="btn fs-20 fw-bold">Create job</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Header middle End -->
+
+    <!-- Header Bottom Start -->
+    <div class="bottom-header-body py-8 d-flex justify-content-center">
+        <div class='bottom-header-content d-inline-flex align-items-center justify-content-center gap-24'>
+            <span class='bottom-header-title text-white fs-25 fw-bold text-center lh-sm'>Current <br>Jobs</span>
+            <div class='d-flex flex-column align-items-center justify-content-center gap-10'>
+                <div
+                    class="bottom-header-top bg-white d-flex align-items-center justify-content-center gap-16 py-6 px-40">
+                    <button class="btn btn-header-action border border-2 py-4 px-8 active" type="button">
+                        <div class="d-flex gap-6 align-items-center justify-content-between">
+                            <div class="header-action-duration position-relative">
+                                <div
+                                    class="header-action-duration-time d-flex align-items-start justify-content-between gap-10 mb-4 ps-20">
+                                    <span class="header-action-notification d-inline-flex position-relative mb-4"><img
+                                            src="./assets/image/header/notification-icon.svg"
+                                            class="w-100 h-100 object-fit-contain" decoding="async"> <span
+                                            class="lh-1 py-3 px-5 fs-8 bg-danger text-white border-radius-circle d-inline-block position-absolute">2</span>
+                                    </span>
+                                    <div
+                                        class="header-action-duration-data d-flex justify-content-center align-items-center gap-6">
+                                        <p class="m-0">Duration</p> <span class="d-inline-block">2<sup>D</sup>
+                                            14<sup>Hr</sup> 48<sup>Min</sup></span>
+                                    </div>
+                                    <!-- <div class="header-action-alert position-absolute start-0"><img src="./assets/image/header/Alert.svg" class="w-100 h-100 object-fit-contain" decoding="async"></div> -->
+                                </div>
+                                <div class="header-action-duration-title text-start">
+                                    <p class="m-0">Fairbanks CTB N. Production</p>
+                                </div>
+                            </div>
+                            <div class="header-action-icon d-flex justify-content-center align-items-center"><img
+                                    src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain"
+                                    decoding="async"></div>
+                            <div
+                                class="header-action-number d-flex align-items-center justify-content-between gap-2 flex-column">
+                                <span class="d-inline-block">1</span> <span class="d-inline-block">4</span>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="btn btn-header-action border border-2 py-4 px-8" type="button">
+                        <div class="d-flex gap-6 align-items-center justify-content-between">
+                            <div class="header-action-duration position-relative">
+                                <div
+                                    class="header-action-duration-time d-flex align-items-start justify-content-between gap-10 mb-4 ps-20">
+                                    <span class="header-action-notification d-inline-flex position-relative mb-4">
+                                        <!-- <img src="./assets/image/header/notification-icon.svg" class="w-100 h-100 object-fit-contain" decoding="async"> <span class="lh-1 py-3 px-5 fs-8 bg-danger text-white border-radius-circle d-inline-block position-absolute">2</span>  -->
+                                    </span>
+                                    <div
+                                        class="header-action-duration-data d-flex justify-content-center align-items-center gap-6">
+                                        <p class="m-0">Duration</p> <span class="d-inline-block">2<sup>D</sup>
+                                            14<sup>Hr</sup> 48<sup>Min</sup></span>
+                                    </div>
+                                    <!-- <div class="header-action-alert position-absolute start-0"><img src="./assets/image/header/Alert.svg" class="w-100 h-100 object-fit-contain" decoding="async"></div> -->
+                                </div>
+                                <div class="header-action-duration-title text-start">
+                                    <p class="m-0">N. Production</p>
+                                </div>
+                            </div>
+                            <div class="header-action-icon d-flex justify-content-center align-items-center"><img
+                                    src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain"
+                                    decoding="async"></div>
+                            <div
+                                class="header-action-number d-flex align-items-center justify-content-between gap-2 flex-column">
+                                <span class="d-inline-block">2</span> <span class="d-inline-block">4</span>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="btn btn-header-action border border-2 py-4 px-8" type="button">
+                        <div class="d-flex gap-6 align-items-center justify-content-between">
+                            <div class="header-action-duration position-relative">
+                                <div
+                                    class="header-action-duration-time d-flex align-items-start justify-content-between gap-10 mb-4 ps-20">
+                                    <span class="header-action-notification d-inline-flex position-relative mb-4"><img
+                                            src="./assets/image/header/notification-icon.svg"
+                                            class="w-100 h-100 object-fit-contain" decoding="async"> <span
+                                            class="lh-1 py-3 px-5 fs-8 bg-danger text-white border-radius-circle d-inline-block position-absolute">2</span>
+                                    </span>
+                                    <div
+                                        class="header-action-duration-data d-flex justify-content-center align-items-center gap-6">
+                                        <p class="m-0">Duration</p> <span class="d-inline-block">2<sup>D</sup>
+                                            14<sup>Hr</sup> 48<sup>Min</sup></span>
+                                    </div>
+                                    <div class="header-action-alert position-absolute start-0"><img
+                                            src="./assets/image/header/Alert.svg" class="w-100 h-100 object-fit-contain"
+                                            decoding="async"></div>
+                                </div>
+                                <div class="header-action-duration-title text-start">
+                                    <p class="m-0">Raymond CTB</p>
+                                </div>
+                            </div>
+                            <div class="header-action-icon d-flex justify-content-center align-items-center"><img
+                                    src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain"
+                                    decoding="async"></div>
+                            <div
+                                class="header-action-number d-flex align-items-center justify-content-between gap-2 flex-column">
+                                <span class="d-inline-block">3</span> <span class="d-inline-block">4</span>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="btn btn-header-action border border-2 py-4 px-8" type="button">
+                        <div class="d-flex gap-6 align-items-center justify-content-between">
+                            <div class="header-action-duration position-relative">
+                                <div
+                                    class="header-action-duration-time d-flex align-items-start justify-content-between gap-10 mb-4 ps-20">
+                                    <span class="header-action-notification d-inline-flex position-relative mb-4"><img
+                                            src="./assets/image/header/notification-icon.svg"
+                                            class="w-100 h-100 object-fit-contain" decoding="async"> <span
+                                            class="lh-1 py-3 px-5 fs-8 bg-danger text-white border-radius-circle d-inline-block position-absolute">2</span>
+                                    </span>
+                                    <div
+                                        class="header-action-duration-data d-flex justify-content-center align-items-center gap-6">
+                                        <p class="m-0">Duration</p> <span class="d-inline-block">2<sup>D</sup>
+                                            14<sup>Hr</sup> 48<sup>Min</sup></span>
+                                    </div>
+                                    <div class="header-action-alert position-absolute start-0"><img
+                                            src="./assets/image/header/Alert.svg" class="w-100 h-100 object-fit-contain"
+                                            decoding="async"></div>
+                                </div>
+                                <div class="header-action-duration-title text-start">
+                                    <p class="m-0">Raymond CTB</p>
+                                </div>
+                            </div>
+                            <div class="header-action-icon d-flex justify-content-center align-items-center"><img
+                                    src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain"
+                                    decoding="async"></div>
+                            <div
+                                class="header-action-number d-flex align-items-center justify-content-between gap-2 flex-column">
+                                <span class="d-inline-block">2</span> <span class="d-inline-block">4</span>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <!-- <div class="bottom-header-bottom bg-white w-100 py-8 d-flex align-items-center justify-content-center position-relative"></div> -->
+            </div>
+            <div class='d-inline-flex flex-column gap-10'>
+                <button class="btn btn-white fw-bold fs-20 fs-xxl-16 px-18 border border-2" type="button">Dread
+                    Pirate</button>
+                <button class="btn btn-white fw-bold fs-20 fs-xxl-16 px-18 border border-2" type="button">Davie
+                    Jones</button>
+            </div>
+        </div>
+    </div>
+    <!-- Header Bottom End -->
+
+    <!-- main Start -->
+    <div class="main-content position-relative">
+        <div class='footer-line px-10 position-absolute h-100 start-0 border border-2'></div>
+        <div class='map-body h-100 ms-auto'>
+            <iframe class='w-100 h-100'
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238133.18800900166!2d72.65747318239129!3d21.159120355102836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1745177875945!5m2!1sen!2sin"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="accordion search-popup position-absolute z-1" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button py-2 px-15 justify-content-end" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        <div class="search-heading d-flex align-items-center justify-content-between">
+                            <h6 class="search-heading-title fs-15 fw-semibold text-white mb-0">Search</h6>
+                            <div class="search-heading-icon">
+                                <span><img src="assets/image/search/Icon feather-move.svg" alt="Move icon"></span>
+                                <span class="mx-14"><img src="assets/image/search/Line 46.svg" alt="Line icon"></span>
+                                <span><img src="assets/image/search/Rectangle 1542.svg" alt="Rectangle icon"></span>
+                            </div>
+                        </div>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body pt-9 px-15 pb-0">
+                        <div class="search-input search-input-mobile position-relative mb-15">
+                            <input type="text" class="form-control bg-white text-center fs-20 fs-sm-14 fs-lg-16 fw-bold"
+                                placeholder="Search">
+                        </div>
+                        <ul class="nav nav-tabs justify-content-between mb-25 border-0 position-relative" id="myTab"
+                            role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fs-15 fw-bold active py-0 px-19" id="home-tab"
+                                    data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab"
+                                    aria-controls="home-tab-pane" aria-selected="true">Well</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fs-15 fw-bold py-0 px-19" id="profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                    aria-controls="profile-tab-pane" aria-selected="false">SWD</button>
+                            </li>
+                            <div class="search-input position-absolute">
+                                <input type="text" class="form-control bg-white text-center fs-20 fs-sm-14 fs-lg-16 fw-bold"
+                                    placeholder="Search">
+                            </div>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active bg-white" id="home-tab-pane" role="tabpanel"
+                                aria-labelledby="home-tab" tabindex="0">
+                                <div class="search-map">
+                                    <iframe class='w-100 h-100'
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238133.18800900166!2d72.65747318239129!3d21.159120355102836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1745177875945!5m2!1sen!2sin"
+                                        style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                                <div class="search-body-border position-relative">
+                                    <span class="bg-white position-absolute d-inline-block"></span>
+                                </div>
+                                <div class="search-item-list">
+                                    <div
+                                        class="search-item d-flex align-items-center justify-content-between ps-13 pe-20 py-9">
+                                        <h5 class="search-item-title text-primary fs-20 fs-lg-16 fw-bold mb-0 text-center">
+                                            <u>Meddie15-22 #1H</u> <span
+                                                class="d-block text-black fs-13 fw-bold">Wolla-Pipeline</span>
+                                        </h5>
+                                        <p class="search-item-public text-black fs-8 fw-bold text-center mb-0">Kraken
+                                        </p>
+                                        <button
+                                            class="btn search-item-btn text-white fs-15 fw-semibold py-2 px-13 border-0">Select</button>
+                                    </div>
+                                    <div
+                                        class="search-item d-flex align-items-center justify-content-between ps-13 pe-20 py-9">
+                                        <h5 class="search-item-title text-primary fs-20 fs-lg-16 fw-bold mb-0 text-center">
+                                            <u>Rose Henley 16-21 #1H</u> <span
+                                                class="d-block text-black fs-13 fw-bold">Woll-Pipeline</span>
+                                        </h5>
+                                        <p class="search-item-public text-black fs-8 fw-bold text-center mb-0">Kraken
+                                        </p>
+                                        <button
+                                            class="btn search-item-btn text-white fs-15 fw-semibold py-2 px-13 border-0">Select</button>
+                                    </div>
+                                    <div
+                                        class="search-item d-flex align-items-center justify-content-between ps-13 pe-20 py-9">
+                                        <h5 class="search-item-title text-primary fs-20 fs-lg-16 fw-bold mb-0 text-center">
+                                            <u>Meddie15-22 #1H</u> <span
+                                                class="d-block text-black fs-13 fw-bold">Wolla-Pipeline</span>
+                                        </h5>
+                                        <p class="search-item-public text-black fs-8 fw-bold text-center mb-0">Kraken
+                                        </p>
+                                        <button
+                                            class="btn search-item-btn text-white fs-15 fw-semibold py-2 px-13 border-0">Select</button>
+                                    </div>
+                                    <div
+                                        class="search-item d-flex align-items-center justify-content-between ps-13 pe-20 py-9">
+                                        <h5 class="search-item-title text-primary fs-20 fs-lg-16 fw-bold mb-0 text-center">
+                                            <u>Rose Henley 16-21 #1H</u> <span
+                                                class="d-block text-black fs-13 fw-bold">Woll-Pipeline</span>
+                                        </h5>
+                                        <p class="search-item-public text-black fs-8 fw-bold text-center mb-0">Kraken
+                                        </p>
+                                        <button
+                                            class="btn search-item-btn text-white fs-15 fw-semibold py-2 px-13 border-0">Select</button>
+                                    </div>
+                                    <div
+                                        class="search-item d-flex align-items-center justify-content-between ps-13 pe-20 py-9">
+                                        <h5 class="search-item-title text-primary fs-20 fs-lg-16 fw-bold mb-0 text-center">
+                                            <u>Meddie15-22 #1H</u> <span
+                                                class="d-block text-black fs-13 fw-bold">Wolla-Pipeline</span>
+                                        </h5>
+                                        <p class="search-item-public text-black fs-8 fw-bold text-center mb-0">Kraken
+                                        </p>
+                                        <button
+                                            class="btn search-item-btn text-white fs-15 fw-semibold py-2 px-13 border-0">Select</button>
+                                    </div>
+                                    <div
+                                        class="search-item d-flex align-items-center justify-content-between ps-13 pe-20 py-9">
+                                        <h5 class="search-item-title text-primary fs-20 fs-lg-16 fw-bold mb-0 text-center">
+                                            <u>Rose Henley 16-21 #1H</u> <span
+                                                class="d-block text-black fs-13 fw-bold">Woll-Pipeline</span>
+                                        </h5>
+                                        <p class="search-item-public text-black fs-8 fw-bold text-center mb-0">Kraken
+                                        </p>
+                                        <button
+                                            class="btn search-item-btn text-white fs-15 fw-semibold py-2 px-13 border-0">Select</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade bg-white" id="profile-tab-pane" role="tabpanel"
+                                aria-labelledby="profile-tab" tabindex="0">
+                                <div class="search-map">
+                                    <iframe class='w-100 h-100'
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238133.18800900166!2d72.65747318239129!3d21.159120355102836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1745177875945!5m2!1sen!2sin"
+                                        style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                                <div class="search-body-border position-relative">
+                                    <span class="bg-white position-absolute d-inline-block"></span>
+                                </div>
+                                <div class="search-item-list">
+                                    <div
+                                        class="search-item d-flex align-items-center justify-content-between ps-13 pe-20 py-9">
+                                        <span class="d-inline-block search-item-selected"></span>
+                                        <h5 class="search-item-title text-primary fs-20 fw-bold mb-0 text-center">
+                                            <u>Nelson</u> <span
+                                                class="d-block text-black fs-13 fw-bold">Production-Flowback</span>
+                                        </h5>
+                                        <p class="search-item-public fs-10 fw-bold text-danger text-center mb-0">Public
+                                            <span class="text-black fs-8 fw-bold d-block">Henry Hill</span>
+                                        </p>
+                                        <button
+                                            class="btn search-item-btn text-white fs-15 fw-semibold py-2 px-13 border-0">Select</button>
+                                    </div>
+                                    <div
+                                        class="search-item d-flex align-items-center justify-content-between ps-13 pe-20 py-9">
+                                        <span class="d-inline-block search-item-selected"></span>
+                                        <h5 class="search-item-title text-primary fs-20 fw-bold mb-0 text-center">
+                                            <u>Nelson</u> <span class="d-block text-black fs-13 fw-bold">Dread
+                                                Pirate</span>
+                                        </h5>
+                                        <p class="search-item-public fs-10 fw-bold text-danger text-center mb-0">Private
+                                            <span class="text-black fs-8 fw-bold d-block">Kraken</span>
+                                        </p>
+                                        <button
+                                            class="btn search-item-btn text-white fs-15 fw-semibold py-2 px-13 border-0">Select</button>
+                                    </div>
+                                    <div
+                                        class="search-item d-flex align-items-center justify-content-between ps-13 pe-20 py-9">
+                                        <span class="d-inline-block search-item-selected"></span>
+                                        <h5 class="search-item-title text-primary fs-20 fw-bold mb-0 text-center">
+                                            <u>Nelson</u> <span
+                                                class="d-block text-black fs-13 fw-bold">Production-Flowback</span>
+                                        </h5>
+                                        <p class="search-item-public fs-10 fw-bold text-danger text-center mb-0">Public
+                                            <span class="text-black fs-8 fw-bold d-block">Henry Hill</span>
+                                        </p>
+                                        <button
+                                            class="btn search-item-btn text-white fs-15 fw-semibold py-2 px-13 border-0">Select</button>
+                                    </div>
+                                    <div
+                                        class="search-item d-flex align-items-center justify-content-between ps-13 pe-20 py-9">
+                                        <span class="d-inline-block search-item-selected"></span>
+                                        <h5 class="search-item-title text-primary fs-20 fw-bold mb-0 text-center">
+                                            <u>Nelson</u> <span class="d-block text-black fs-13 fw-bold">Dread
+                                                Pirate</span>
+                                        </h5>
+                                        <p class="search-item-public fs-10 fw-bold text-danger text-center mb-0">Private
+                                            <span class="text-black fs-8 fw-bold d-block">Kraken</span>
+                                        </p>
+                                        <button
+                                            class="btn search-item-btn text-white fs-15 fw-semibold py-2 px-13 border-0">Select</button>
+                                    </div>
+                                    <div
+                                        class="search-item d-flex align-items-center justify-content-between ps-13 pe-20 py-9">
+                                        <span class="d-inline-block search-item-selected"></span>
+                                        <h5 class="search-item-title text-primary fs-20 fw-bold mb-0 text-center">
+                                            <u>Nelson</u> <span
+                                                class="d-block text-black fs-13 fw-bold">Production-Flowback</span>
+                                        </h5>
+                                        <p class="search-item-public fs-10 fw-bold text-danger text-center mb-0">Public
+                                            <span class="text-black fs-8 fw-bold d-block">Henry Hill</span>
+                                        </p>
+                                        <button
+                                            class="btn search-item-btn text-white fs-15 fw-semibold py-2 px-13 border-0">Select</button>
+                                    </div>
+                                    <div
+                                        class="search-item d-flex align-items-center justify-content-between ps-13 pe-20 py-9">
+                                        <span class="d-inline-block search-item-selected"></span>
+                                        <h5 class="search-item-title text-primary fs-20 fw-bold mb-0 text-center">
+                                            <u>Nelson</u> <span class="d-block text-black fs-13 fw-bold">Dread
+                                                Pirate</span>
+                                        </h5>
+                                        <p class="search-item-public fs-10 fw-bold text-danger text-center mb-0">Private
+                                            <span class="text-black fs-8 fw-bold d-block">Kraken</span>
+                                        </p>
+                                        <button
+                                            class="btn search-item-btn text-white fs-15 fw-semibold py-2 px-13 border-0">Select</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main End -->
+
+    <!-- Contact Sidebar start -->
+    <div class="contact-sidebar pt-40 px-30 px-lg-20 pb-20 position-absolute z-1 bg-white">
+        <span class="contact-sidebar-close position-absolute"><img src="assets/image/contact-sidebar/Close.svg"
+                alt="Close icon"></span>
+        <div class="contact-search mb-27 position-relative">
+            <input type="text" class="form-control py-5 px-25 fs-17 fw-bold" placeholder="Search">
+            <span class="contact-search-icon position-absolute"><img src="assets/image/contact-sidebar/search-icon.svg"
+                    alt="Search icon"></span>
+        </div>
+        <div class="contact-item-list">
+            <div class="contact-item mb-10">
+                <div class="contact-item-header mb-10 d-flex align-items-center justify-content-between ps-32 pe-15">
+                    <h5 class="contact-item-title fs-20 fs-lg-18 fw-bold text-primary mb-0">Company Drivers</h5>
+                    <span class="contact-add-icon"><img src="assets/image/contact-sidebar/add-icon.svg"
+                            alt="Add icon"></span>
+                </div>
+                <div class="contact-item-box">
+                    <div class="contact-box-item d-flex align-items-center position-relative pb-12 mb-15">
+                        <span class="d-inline-block search-item-selected me-17 mt-0"></span>
+                        <h5 class="fs-20 fs-lg-16 fw-bold text-primary mb-0">John Vicol</h5>
+                        <span
+                            class="d-flex align-items-center justify-content-center text-white contact-chat ms-auto"><i
+                                class="fa-regular fa-comment-dots"></i></span>
+                        <hr class="position-absolute contact-box-line m-0">
+                    </div>
+                    <div class="contact-box-item d-flex align-items-center position-relative pb-12 mb-15">
+                        <span class="d-inline-block search-item-selected contact-red me-17 mt-0"></span>
+                        <h5 class="fs-20 fs-lg-16 fw-bold text-primary mb-0">Zack Sands</h5>
+                        <span
+                            class="d-flex align-items-center justify-content-center text-white contact-chat ms-auto"><i
+                                class="fa-regular fa-comment-dots"></i></span>
+                        <hr class="position-absolute contact-box-line m-0">
+                    </div>
+                    <div class="contact-box-item d-flex align-items-center position-relative pb-12">
+                        <span class="d-inline-block search-item-selected me-17 mt-0"></span>
+                        <h5 class="fs-20 fs-lg-16 fw-bold text-primary mb-0">Crude Dawg</h5>
+                        <span
+                            class="d-flex align-items-center justify-content-center text-white contact-chat ms-auto"><i
+                                class="fa-regular fa-comment-dots"></i></span>
+                        <hr class="position-absolute contact-box-line m-0">
+                    </div>
+                </div>
+            </div>
+            <div class="contact-item mb-10">
+                <div class="contact-item-header mb-10 d-flex align-items-center justify-content-between ps-32 pe-15">
+                    <h5 class="contact-item-title fs-20 fs-lg-18 fw-bold text-primary mb-0">Trucking Companies</h5>
+                    <span class="contact-add-icon"><img src="assets/image/contact-sidebar/add-icon.svg"
+                            alt="Add icon"></span>
+                </div>
+                <div class="contact-item-box contact-trucking-item">
+                    <div
+                        class="contact-box-item d-flex align-items-center justify-content-between position-relative pb-12 mb-15">
+                        <h5 class="fs-20 fs-lg-16 fw-bold text-primary mb-0">ZTS Trucking</h5>
+                        <div class="d-flex align-items-center">
+                            <div class="contact-truck-icon position-relative">
+                                <img src="assets/image/header/truck.svg" alt="Truck icon">
+                                <span class="fs-13 fw-bold position-absolute">0</span>
+                            </div>
+                            <span
+                                class="d-flex align-items-center justify-content-center text-white contact-chat ms-40"><i
+                                    class="fa-regular fa-comment-dots"></i></span>
+                        </div>
+                        <hr class="position-absolute contact-box-line m-0">
+                    </div>
+                    <div
+                        class="contact-box-item d-flex align-items-center justify-content-between position-relative pb-12 mb-15">
+                        <h5 class="fs-20 fs-lg-16 fw-bold text-primary mb-0">JCV38 Corp</h5>
+                        <div class="d-flex align-items-center">
+                            <div class="contact-truck-icon position-relative">
+                                <img src="assets/image/header/truck.svg" alt="Truck icon">
+                                <span class="fs-13 fw-bold position-absolute">4</span>
+                            </div>
+                            <span
+                                class="d-flex align-items-center justify-content-center text-white contact-chat ms-40"><i
+                                    class="fa-regular fa-comment-dots"></i></span>
+                        </div>
+                        <hr class="position-absolute contact-box-line m-0">
+                    </div>
+                    <div
+                        class="contact-box-item d-flex align-items-center justify-content-between position-relative pb-12">
+                        <h5 class="fs-20 fs-lg-16 fw-bold text-primary mb-0">LTS LLC</h5>
+                        <div class="d-flex align-items-center">
+                            <div class="contact-truck-icon position-relative">
+                                <img src="assets/image/header/truck.svg" alt="Truck icon">
+                                <span class="fs-13 fw-bold position-absolute">4</span>
+                            </div>
+                            <span
+                                class="d-flex align-items-center justify-content-center text-white contact-chat ms-40"><i
+                                    class="fa-regular fa-comment-dots"></i></span>
+                        </div>
+                        <hr class="position-absolute contact-box-line m-0">
+                    </div>
+                </div>
+            </div>
+            <div class="contact-item mb-10">
+                <div class="contact-item-header mb-10 d-flex align-items-center justify-content-between ps-32 pe-15">
+                    <h5 class="contact-item-title fs-20 fs-lg-18 fw-bold text-primary mb-0">Disposals <span
+                            class="fs-12">(Following)</span></h5>
+                    <span class="contact-add-icon"><img src="assets/image/contact-sidebar/add-icon.svg"
+                            alt="Add icon"></span>
+                </div>
+                <div class="contact-item-box">
+                    <div
+                        class="contact-box-item d-flex align-items-center justify-content-between position-relative pb-12 mb-15">
+                        <img src="assets/image/contact-sidebar/Alert.svg" alt="Alert icon">
+                        <h5 class="fs-20 fs-lg-16 fw-bold text-primary mb-0">Dread Pirate</h5>
+                        <span class="d-flex align-items-center justify-content-center text-white contact-chat"><i
+                                class="fa-regular fa-comment-dots"></i></span>
+                        <hr class="position-absolute contact-box-line m-0">
+                    </div>
+                    <div
+                        class="contact-box-item d-flex align-items-center justify-content-between position-relative pb-12 mb-15">
+                        <img src="assets/image/contact-sidebar/Alert.svg" alt="Alert icon">
+                        <h5 class="fs-20 fs-lg-16 fw-bold text-primary mb-0">Nelson</h5>
+                        <span class="d-flex align-items-center justify-content-center text-white contact-chat"><i
+                                class="fa-regular fa-comment-dots"></i></span>
+                        <hr class="position-absolute contact-box-line m-0">
+                    </div>
+                    <div
+                        class="contact-box-item d-flex align-items-center justify-content-between position-relative pb-12">
+                        <img src="assets/image/contact-sidebar/Alert.svg" alt="Alert icon">
+                        <h5 class="fs-20 fs-lg-16 fw-bold text-primary mb-0">Black Sails</h5>
+                        <span class="d-flex align-items-center justify-content-center text-white contact-chat"><i
+                                class="fa-regular fa-comment-dots"></i></span>
+                        <hr class="position-absolute contact-box-line m-0">
+                    </div>
+                </div>
+            </div>
+            <div class="contact-item mb-10">
+                <div class="contact-item-header mb-10 d-flex align-items-center justify-content-between ps-32 pe-15">
+                    <h5 class="contact-item-title fs-20 fs-lg-18 fw-bold text-primary mb-0">Other</h5>
+                    <span class="contact-add-icon"><img src="assets/image/contact-sidebar/add-icon.svg"
+                            alt="Add icon"></span>
+                </div>
+                <div class="contact-item-box">
+                    <div
+                        class="contact-box-item d-flex align-items-center justify-content-between position-relative pb-12 mb-15">
+                        <span class="contact-other-icon bg-white d-flex align-items-center justify-content-center"><i
+                                class="fa-solid fa-user-nurse"></i></span>
+                        <h5 class="fs-20 fs-lg-16 fw-bold text-primary mb-0">Cody Mills</h5>
+                        <span class="d-flex align-items-center justify-content-center text-white contact-chat"><i
+                                class="fa-regular fa-comment-dots"></i></span>
+                        <hr class="position-absolute contact-box-line m-0">
+                    </div>
+                    <div
+                        class="contact-box-item d-flex align-items-center justify-content-between position-relative pb-12 mb-15">
+                        <span class="contact-other-icon bg-white d-flex align-items-center justify-content-center"><img
+                                src="assets/image/header/truck.svg" alt="truck icon" class="w-50"></span>
+                        <h5 class="fs-20 fs-lg-16 fw-bold text-primary mb-0">Contact Name</h5>
+                        <span class="d-flex align-items-center justify-content-center text-white contact-chat"><i
+                                class="fa-regular fa-comment-dots"></i></span>
+                        <hr class="position-absolute contact-box-line m-0">
+                    </div>
+                    <div
+                        class="contact-box-item d-flex align-items-center justify-content-between position-relative pb-12">
+                        <span
+                            class="contact-other-icon bg-white d-flex align-items-center justify-content-center"></span>
+                        <h5 class="fs-20 fs-lg-16 fw-bold text-primary mb-0">Vance Jones</h5>
+                        <span class="d-flex align-items-center justify-content-center text-white contact-chat"><i
+                                class="fa-regular fa-comment-dots"></i></span>
+                        <hr class="position-absolute contact-box-line m-0">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Sidebar End -->
+    <div class='bottom-0 footer-line position-absolute py-16 w-100 border border-2'></div>
+
+    <!-- JavaScript Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
