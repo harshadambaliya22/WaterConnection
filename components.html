@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Css Files Links -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- Font Awesome CDN (Free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer"/>
+
+    <style>
+        /* Fairbanks CTB css start  */
+        .btn-jobtitle{
+            background: linear-gradient(180deg, #2280b7d1 -57.5%, #11405ce0 100%);
+            border-color: var(--bs-white) !important;
+            letter-spacing: 0.5px;
+            border-radius: 8px;
+            box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.64);
+        }
+        /* Fairbanks CTB css End  */
+
+        /* 01  */
+        .dashboard-btn-list{
+            border-color: #0B3E58 !important;
+            border-radius: 60px;
+        }
+        .btn-listgroup{
+            color: #0B3E58;
+            border-color: #0B3E58 !important;
+            background: linear-gradient(180deg, #EEEEEE 50%, #BBBBBB 100%);
+            border-radius: 20px;
+            box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.64);
+            transition: all 0.3s;
+        }
+        .btn-listgroup:hover{
+            color: #0B3E58;
+            background: linear-gradient(180deg, #BBBBBB -57.5%, #EEEEEE 100%);
+            transition: all 0.3s;
+        }
+        
+        .form-check-input {
+            border: 1px solid #adb5bd;
+        }
+        /* 02 */
+        .ctbpopup-body{
+            max-width: 420px;
+            width: 100%;
+            height: 100%;
+            max-height: 500px;
+        }
+        .ctbpopup-body ul.nav{
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.32);
+        }
+
+        .ctbpopup-body .accordion-item{
+            background: linear-gradient(180deg, #0B3E58 6.1%, #FFF 57.09%, #0B3E58 60%, #0B3E58 100%);
+        }
+
+        .ctbpop-accordian-body{
+            border-color: #0B3E58 !important;
+        }
+
+        .ctbpopup-body .nav-item .nav-link{
+          border-color: #0B3E58 !important;
+          color: #0B3E58;
+          line-height: normal;
+          border-radius: 40px;
+          transition: all 0.3s;
+        }
+        
+        .ctbpopup-body .nav-item .nav-link.active,
+        .ctbpopup-body .nav-item .nav-link:hover{
+          border-color: transparent !important;
+          color: #fff;
+          background-color: rgb(11, 62, 88);
+          transition: all 0.3s;
+        }
+
+        .ctbpopup-body .nav-item .nav-link:hover{
+          background-color: rgb(11 62 88 / 80%);
+        }
+
+        .ctbpopup-statislist-title{
+          width: 120px;
+          text-wrap: nowrap; 
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+
+        .popnotedata{
+          max-height: 150px;
+          border-color: #707070 !important;
+        }
+
+        .popnotedata::-webkit-scrollbar{
+          width: 0;
+          height: 0;
+        }
+
+        .ctbpopup-statislist{
+          width: calc(100% - 36px);
+        }
+
+        .ctbpopup-statis-img01 {
+          width: 30px;
+          height: 30px;
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.32);
+        }
+
+        .ctbpopup-statis-img02 {
+          width: 16px;
+          height: 16px;
+        }
+
+        .ctblist-ul {
+            height: calc(100vh - 426px);
+            overflow-y: auto;
+        }
+
+        /* fairbanks jobmodal start*/
+        .fairbanks-jobmodal-title{
+          background: linear-gradient(180deg, #FFF -57.5%, #0B3E58 100%);
+        }
+        .postjobbulletinbtn-title{
+          color: #0A5B8A;
+        }
+        /* fairbanks jobmodal End*/
+    </style>
+
+</head>
+<body class="d-flex flex-column align-items-center justify-content-center gap-40 py-30">
+  
+    <!-- /* Fairbanks CTB start  */ -->
+    <button type="button" class="btn btn-jobtitle border border-2 text-white fs-16 fw-bold py-8 px-30 lh-1">Fairbanks CTB</button>   
+    <!-- /* Fairbanks CTB End  */ -->
+
+    <!-- 01 -->
+    <div class="dashboard-btn-list border border-2 py-30 px-14 d-flex flex-column gap-20">
+        <!-- bulletin modal start  -->
+        <button type="button" class="btn btn-listgroup border border-2 fw-bold fs-16 lh-1 py-10 px-18" data-bs-toggle="modal" data-bs-target="#jobbulletinbtnmodal">Bulletin</button>
+        <div class="modal fairbanks-jobmodal fade" id="jobbulletinbtnmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="jobbulletinbtnmodalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header justify-content-center position-relative">
+                <h1 class="modal-title fs-35 fw-semibold fst-italic text-black lh-1 mb-0"><u>Job Bulletin</u></h1>
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-0 mt-8 me-8" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="fairbanks-jobmodal-title mb-16 py-8">
+                <p class="m-0 text-white fs-24 fw-bolder text-center lh-1">Fairbanks CTB</p>
+              </div>
+              <div class="modal-body px-30">
+                <form class="account-comany-form" action="">
+                  <div class="jobmodal-textarea position-relative">
+                    <textarea type="text" id="textInput" class="form-control text-start" rows="5" placeholder="Type Bulletin Here"></textarea>
+                    <p id="message" class="message m-0 mt-4 text-end position-absolute bottom-0 end-0 me-8">0/50</p>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer gap-50 border-0 justify-content-center py-18">
+                <!-- <button type="button" class="btn btn-modal-footer btn-modalback m-0 lh-1 py-10 px-24 fw-bold text-primary border" data-bs-target="#createaccountmodal01" data-bs-toggle="modal">Back</button> -->
+                <button type="button" class="btn btn-modal-footer btn-modalnext m-0 fs-18 border-radius-4 lh-1 py-10 px-24 fw-bold text-white" data-bs-target="#postjobbulletinbtnmodal" data-bs-toggle="modal">Post</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fairbanks-jobmodal fade" id="postjobbulletinbtnmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="postjobbulletinbtnmodalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header justify-content-center position-relative border-0">
+                <h1 class="modal-title fs-35 fw-semibold fst-italic text-black lh-1 mb-0"><u>Bulletin Posted</u></h1>
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-0 mt-8 me-8" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                <img src='./assets/image/check-sucess.svg' class='position-relative'></img>
+                <p class="m-0 text-center postjobbulletinbtn-title fs-40 fw-bolder">Fairbanks CTB</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          const textInput = document.getElementById('textInput');
+          const message = document.getElementById('message');
+      
+          textInput.addEventListener('input', () => {
+            const words = textInput.value.trim().split(/\s+/).filter(word => word.length > 0);
+            const wordCount = words.length;
+      
+            if (wordCount < 50) {
+              message.textContent = `${wordCount}/50`;
+              message.classList.add("text-danger");
+              message.classList.remove("text-success");
+            } else {
+              message.textContent = `${wordCount}/50.`;
+              message.classList.add("text-success");
+              message.classList.remove("text-danger");
+            }
+          });
+        </script>
+        <!-- bulletin modal End  -->
+        <button type="button" class="btn btn-listgroup border border-2 fw-bold fs-16 lh-1 py-10 px-18">Drivers</button>
+        <button type="button" class="btn btn-listgroup border border-2 fw-bold fs-16 lh-1 py-10 px-18">Manage</button>
+        <button type="button" class="btn btn-listgroup border border-2 fw-bold fs-16 lh-1 py-10 px-18">Contacts</button>
+    </div>
+
+    <!-- 02 -->
+
+    <div class="ctbpopup-body">
+        <div class="accordion" id="ctbpopupaccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button align-items-center justify-content-center text-primary fs-18 lh-1 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    FAIRBANKS CTB
+                    <span class="d-inline-block position-absolute"></span>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#ctbpopupaccordion">
+                <div class="accordion-body p-8 pt-14">
+                    <div class="ctbpop-accordian-body bg-white border pb-24 pt-14">
+                        <ul class="nav nav-tabs justify-content-center gap-12 border-0 py-6 px-10 mx-24" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link border py-5 px-10 fs-10 fw-bold active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview-tab-pane" type="button" role="tab" aria-controls="overview-tab-pane" aria-selected="true">Overview</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link border py-5 px-10 fs-10 fw-bold" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages-tab-pane" type="button" role="tab" aria-controls="messages-tab-pane" aria-selected="false">Messages</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link border py-5 px-10 fs-10 fw-bold" id="activity-tab" data-bs-toggle="tab" data-bs-target="#activity-tab-pane" type="button" role="tab" aria-controls="activity-tab-pane" aria-selected="false">Activity</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link border py-5 px-10 fs-10 fw-bold" id="statis-tab" data-bs-toggle="tab" data-bs-target="#statis-tab-pane" type="button" role="tab" aria-controls="statis-tab-pane" aria-selected="false">Statis</button>
+                            </li>
+                          </ul>
+                        <div class="tab-content mt-8" id="myTabContent">
+
+                          <div class="tab-pane px-24 fade show active" id="overview-tab-pane" role="tabpanel" aria-labelledby="overview-tab" tabindex="0">
+                            <p class="fs-16 fw-bold text-black text-center">Overview</p>
+                            <form class="account-comany-form" action="">
+                              <div class="row">
+                                <div class="mb-10 col-md-12 col-6">
+                                  <label for="location" class="form-label m-0 text-primary fw-bold fs-12">Location:</label>
+                                  <!-- <input type="text" class="form-control text-start fs-12 py-4 px-8" id="location"> -->
+                                   <span class="d-block text-danger fs-12 fw-bold">(Pin Drop)</span>
+                                </div>
+                                <div class="mb-10 col-md-12 col-6">
+                                  <label for="duration" class="form-label m-0 text-primary fw-bold fs-12">Duration:</label>
+                                  <input type="text" class="form-control text-start fs-12 py-4 px-8" id="duration">
+                                </div>
+                                <div class="mb-10 col-md-12 col-6">
+                                  <label for="jobtype" class="form-label m-0 text-primary fw-bold fs-12">Job type:</label>
+                                  <input type="text" class="form-control text-start fs-12 py-4 px-8" id="jobtype">
+                                </div>
+                                <div class="mb-10 col-md-12 col-6">
+                                  <label for="bblrate" class="form-label m-0 text-primary fw-bold fs-12">Bbl rate:</label>
+                                  <input type="text" class="form-control text-start fs-12 py-4 px-8" id="bblrate">
+                                </div>
+                                <div class="mb-10 col-md-12 col-6">
+                                  <label for="start" class="form-label m-0 text-primary fw-bold fs-12">Start:</label>
+                                  <input type="text" class="form-control text-start fs-12 py-4 px-8" id="start">
+                                </div>
+                                <div class="mb-10 col-md-12 col-6">
+                                  <label for="hrrate" class="form-label m-0 text-primary fw-bold fs-12">Hr rate:</label>
+                                  <input type="text" class="form-control text-start fs-12 py-4 px-8" id="hrrate">
+                                </div>
+                                <div class="mb-10 col-md-12 col-6">
+                                  <label for="oilcompany" class="form-label m-0 text-primary fw-bold fs-12">Oil Company:</label>
+                                  <input type="text" class="form-control text-start fs-12 py-4 px-8" id="oilcompany">
+                                </div>
+                                <div class="mb-10 col-md-12 col-6">
+                                  <label for="truckingcompany" class="form-label m-0 text-primary fw-bold fs-12">Trucking Company:</label>
+                                  <input type="text" class="form-control text-start fs-12 py-4 px-8" id="truckingcompany">
+                                </div>
+                                <div class="mb-10 col-md-12 col-6">
+                                  <label for="jobsupervisor" class="form-label m-0 text-primary fw-bold fs-12">Job Supervisor:</label>
+                                  <input type="text" class="form-control text-start fs-12 py-4 px-8" id="jobsupervisor">
+                                </div>
+                              </div>
+                            </form>
+                            <div class="ctbpopupnot-body">
+                              <p class="fs-16 fw-bold text-black text-center mb-6">Note</p>
+                              <div class="popnotedata border fs-10 fw-normal overflow-y-auto p-8 border-radius-1">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, enim doloribus? Ut sint nobis qui harum ipsum nesciunt nostrum eius illum deleniti laboriosam labore cum placeat tenetur ex omnis nulla dolores dolorum, consectetur suscipit? Optio nisi distinctio, facere enim, cum inventore veritatis illum eius porro eos, iste quibusdam commodi! Quos fugiat dignissimos rerum. Consequatur magnam eos animi labore voluptatum deleniti, eius soluta alias mollitia consectetur ipsum ullam, voluptatibus laboriosam fugit, facilis distinctio beatae ut temporibus rem nihil. Exercitationem corporis neque earum fuga incidunt dolores? Cupiditate ex maiores aliquam corporis est commodi voluptatum perferendis velit at, distinctio quidem fugit laboriosam molestiae?
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="tab-pane px-24 fade" id="messages-tab-pane" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">
+                            <p class="fs-16 fw-bold text-black text-center">Messages</p>
+                          </div>
+
+                          <div class="tab-pane fade" id="activity-tab-pane" role="tabpanel" aria-labelledby="activity-tab" tabindex="0">
+                            <p class="fs-16 fw-bold text-black text-center">Recent Activity</p>
+                            <ul class="list-inline overflow-y-auto ctblist-ul">
+                              <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                </span>
+                                <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
+                                  <div class="d-inline-flex flex-column">
+                                    <p class="m-0 fs-10 fw-bold text-info">Greg smith</p>
+                                    <p class="m-0 fs-10 fw-bold text-black">Washburne 21-13 5AH</p>
+                                  </div>
+                                  <div class="d-inline-flex flex-column">
+                                    <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Loaded</span> </p>
+                                    <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">Departing</span> </p>
+                                  </div>
+                                  <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
+                                </div>
+                              </li>
+                              <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                </span>
+                                <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
+                                  <div class="d-inline-flex flex-column">
+                                    <p class="m-0 fs-10 fw-bold text-info">Zack Sands</p>
+                                    <p class="m-0 fs-10 fw-bold text-black">Dread Pirate SWD</p>
+                                  </div>
+                                  <div class="d-inline-flex flex-column">
+                                    <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Empty</span> </p>
+                                    <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">Departing</span> </p>
+                                  </div>
+                                  <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
+                                </div>
+                              </li>
+                              <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                </span>
+                                <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
+                                  <div class="d-inline-flex flex-column">
+                                    <p class="m-0 fs-10 fw-bold text-info">John Vicol</p>
+                                    <p class="m-0 fs-10 fw-bold text-black">Yard</p>
+                                  </div>
+                                  <div class="d-inline-flex flex-column">
+                                    <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Empty</span> </p>
+                                    <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">On-Duty</span> </p>
+                                  </div>
+                                  <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
+                                </div>
+                              </li>
+                              <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                </span>
+                                <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
+                                  <div class="d-inline-flex flex-column">
+                                    <p class="m-0 fs-10 fw-bold text-info">Greg smith</p>
+                                    <p class="m-0 fs-10 fw-bold text-black">Washburne 21-13 5AH</p>
+                                  </div>
+                                  <div class="d-inline-flex flex-column">
+                                    <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Loaded</span> </p>
+                                    <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">Departing</span> </p>
+                                  </div>
+                                  <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
+                                </div>
+                              </li>
+                              <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                </span>
+                                <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
+                                  <div class="d-inline-flex flex-column">
+                                    <p class="m-0 fs-10 fw-bold text-info">Zack Sands</p>
+                                    <p class="m-0 fs-10 fw-bold text-black">Dread Pirate SWD</p>
+                                  </div>
+                                  <div class="d-inline-flex flex-column">
+                                    <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Empty</span> </p>
+                                    <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">Departing</span> </p>
+                                  </div>
+                                  <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
+                                </div>
+                              </li>
+                              <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                </span>
+                                <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
+                                  <div class="d-inline-flex flex-column">
+                                    <p class="m-0 fs-10 fw-bold text-info">John Vicol</p>
+                                    <p class="m-0 fs-10 fw-bold text-black">Yard</p>
+                                  </div>
+                                  <div class="d-inline-flex flex-column">
+                                    <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Empty</span> </p>
+                                    <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">On-Duty</span> </p>
+                                  </div>
+                                  <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
+                                </div>
+                              </li>
+                              <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                </span>
+                                <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
+                                  <div class="d-inline-flex flex-column">
+                                    <p class="m-0 fs-10 fw-bold text-info">Greg smith</p>
+                                    <p class="m-0 fs-10 fw-bold text-black">Washburne 21-13 5AH</p>
+                                  </div>
+                                  <div class="d-inline-flex flex-column">
+                                    <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Loaded</span> </p>
+                                    <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">Departing</span> </p>
+                                  </div>
+                                  <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
+                                </div>
+                              </li>
+                              <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                </span>
+                                <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
+                                  <div class="d-inline-flex flex-column">
+                                    <p class="m-0 fs-10 fw-bold text-info">Zack Sands</p>
+                                    <p class="m-0 fs-10 fw-bold text-black">Dread Pirate SWD</p>
+                                  </div>
+                                  <div class="d-inline-flex flex-column">
+                                    <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Empty</span> </p>
+                                    <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">Departing</span> </p>
+                                  </div>
+                                  <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
+                                </div>
+                              </li>
+                              <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                </span>
+                                <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
+                                  <div class="d-inline-flex flex-column">
+                                    <p class="m-0 fs-10 fw-bold text-info">John Vicol</p>
+                                    <p class="m-0 fs-10 fw-bold text-black">Yard</p>
+                                  </div>
+                                  <div class="d-inline-flex flex-column">
+                                    <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Empty</span> </p>
+                                    <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">On-Duty</span> </p>
+                                  </div>
+                                  <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
+                                </div>
+                              </li>
+                              <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                </span>
+                                <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
+                                  <div class="d-inline-flex flex-column">
+                                    <p class="m-0 fs-10 fw-bold text-info">Greg smith</p>
+                                    <p class="m-0 fs-10 fw-bold text-black">Washburne 21-13 5AH</p>
+                                  </div>
+                                  <div class="d-inline-flex flex-column">
+                                    <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Loaded</span> </p>
+                                    <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">Departing</span> </p>
+                                  </div>
+                                  <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
+                                </div>
+                              </li>
+                              <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                </span>
+                                <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
+                                  <div class="d-inline-flex flex-column">
+                                    <p class="m-0 fs-10 fw-bold text-info">Zack Sands</p>
+                                    <p class="m-0 fs-10 fw-bold text-black">Dread Pirate SWD</p>
+                                  </div>
+                                  <div class="d-inline-flex flex-column">
+                                    <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Empty</span> </p>
+                                    <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">Departing</span> </p>
+                                  </div>
+                                  <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
+                                </div>
+                              </li>
+                              <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                </span>
+                                <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
+                                  <div class="d-inline-flex flex-column">
+                                    <p class="m-0 fs-10 fw-bold text-info">John Vicol</p>
+                                    <p class="m-0 fs-10 fw-bold text-black">Yard</p>
+                                  </div>
+                                  <div class="d-inline-flex flex-column">
+                                    <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Empty</span> </p>
+                                    <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">On-Duty</span> </p>
+                                  </div>
+                                  <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="tab-pane fade" id="statis-tab-pane" role="tabpanel" aria-labelledby="statis-tab" tabindex="0">
+                            <p class="fs-16 fw-bold text-black text-center">Statis</p>
+                            <ul class="list-inline overflow-y-auto ctblist-ul">
+                              <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                </span>
+                                <div class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
+                                  <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">Rose 16-21 4H</p>
+                                  <div class="d-flex align-items-center gap-12">
+                                    <p class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">Levels:</p>
+                                    <p class="ctbpopup-levels m-0 fs-12 fw-bold text-success">12.6</p>
+                                  </div>
+                                  <!-- <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain"> -->
+                                </div>
+                              </li>
+                              <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                </span>
+                                <div class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
+                                  <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">Maddie LE</p>
+                                  <div class="d-flex align-items-center gap-12">
+                                    <p class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">Levels:</p>
+                                    <p class="ctbpopup-levels m-0 fs-12 fw-bold text-danger">12.6</p>
+                                  </div>
+                                  <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain">
+                                </div>
+                              </li>
+                              <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                </span>
+                                <div class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
+                                  <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">Rose 16-21 4H</p>
+                                  <div class="d-flex align-items-center gap-12">
+                                    <p class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">Levels:</p>
+                                    <p class="ctbpopup-levels m-0 fs-12 fw-bold text-success">12.6</p>
+                                  </div>
+                                  <!-- <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain"> -->
+                                </div>
+                              </li>
+                              <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                </span>
+                                <div class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
+                                  <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">Maddie LE</p>
+                                  <div class="d-flex align-items-center gap-12">
+                                    <p class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">Levels:</p>
+                                    <p class="ctbpopup-levels m-0 fs-12 fw-bold text-danger">12.6</p>
+                                  </div>
+                                  <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain">
+                                </div>
+                              </li>
+                              <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                </span>
+                                <div class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
+                                  <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">Rose 16-21 4H</p>
+                                  <div class="d-flex align-items-center gap-12">
+                                    <p class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">Levels:</p>
+                                    <p class="ctbpopup-levels m-0 fs-12 fw-bold text-success">12.6</p>
+                                  </div>
+                                  <!-- <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain"> -->
+                                </div>
+                              </li>
+                              <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                </span>
+                                <div class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
+                                  <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">Maddie LE</p>
+                                  <div class="d-flex align-items-center gap-12">
+                                    <p class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">Levels:</p>
+                                    <p class="ctbpopup-levels m-0 fs-12 fw-bold text-danger">12.6</p>
+                                  </div>
+                                  <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain">
+                                </div>
+                              </li>
+                              <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                </span>
+                                <div class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
+                                  <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">Rose 16-21 4H</p>
+                                  <div class="d-flex align-items-center gap-12">
+                                    <p class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">Levels:</p>
+                                    <p class="ctbpopup-levels m-0 fs-12 fw-bold text-success">12.6</p>
+                                  </div>
+                                  <!-- <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain"> -->
+                                </div>
+                              </li>
+                              <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                </span>
+                                <div class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
+                                  <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">Rose 16-21 4H</p>
+                                  <div class="d-flex align-items-center gap-12">
+                                    <p class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">Levels:</p>
+                                    <p class="ctbpopup-levels m-0 fs-12 fw-bold text-success">12.6</p>
+                                  </div>
+                                  <!-- <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain"> -->
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./assets/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="./assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <script>
+      function togglePassword(inputId, iconId) {
+        const input = document.getElementById(inputId);
+        const icon = document.getElementById(iconId);
+    
+        if (input.type === 'password') {
+          input.type = 'text';
+          icon.classList.remove('fa-eye');
+          icon.classList.add('fa-eye-slash');
+        } else {
+          input.type = 'password';
+          icon.classList.remove('fa-eye-slash');
+          icon.classList.add('fa-eye');
+        }
+      }
+    </script>
+    
+
+</body>
+</html>
