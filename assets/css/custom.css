@@ -785,9 +785,15 @@ textarea.form-control {
 /* Chat Sidebar Start */
 .chat-sidebar {
     top: 247px;
-    left: 0;
+    left: -100%;
     width: 445px;
     height: calc(100vh - 281px);
+    transition: all 0.3s ease-in-out;
+}
+
+.chat-sidebar-open {
+    left: 0;
+    transition: all 0.3s ease-in-out;
 }
 
 .chat-searchbar {
@@ -807,7 +813,7 @@ textarea.form-control {
 
 .chat-contect-body {
     overflow-y: auto;
-    height: calc(100% - 164px);
+    height: calc(100dvh - 432px);
     background: linear-gradient(to bottom, #F5F5F5, #999999);
 }
 
@@ -848,6 +854,126 @@ textarea.form-control {
     color: #0A5B8A;
   }
   /* fairbanks jobmodal End*/
+
+/* History Sidebar Start */
+.history-sidebar {
+    top: 247px;
+    left: 0;
+    width: 360px;
+    /* height: calc(100vh - 281px); */
+    transition: all 0.3s ease-in-out;
+}
+
+.history-sidebar-open {
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.history-header {
+    background-color: #9FCBE3;
+    border: 1px solid #0B3E58;
+}
+
+.histort-months {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 19px 30px;
+    border: 2px solid #0B3E58;
+}
+
+.histort-months span {
+    background: linear-gradient(180deg, #EEEEEE -57.5%, #BBBBBB 100%);
+    border: none;
+    border-radius: 15px;
+    color: #0B3E58;
+    line-height: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #0B3E58;
+    cursor: pointer;
+    box-shadow: 4px 5px 10px #6e6e6e;
+}
+
+.histort-months span.active {
+    background: linear-gradient(180deg, #FFF -43.5%, #0B3E58 100%);
+    color: #fff;
+}
+
+.history-custom-spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #0e4a5a;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow {
+    font-size: 18px;
+    cursor: pointer;
+    user-select: none;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.arrow.up {
+    top: -18px;
+}
+
+.arrow.down {
+    bottom: -18px;
+}
+
+.year {
+    outline: none;
+    appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.history-month-header {
+    background: linear-gradient(180deg, #FFF -57.5%, #0B3E58 100%);
+    border: 1px solid #0B3E58;
+    border-bottom: 0;
+    box-shadow: -5px 3px 15px #0b3e58c7;
+}
+
+.history-month-job span {
+    width: 19px;
+    height: 19px;
+    font-family: "Segoe Script";
+}
+
+.history-month-close {
+    cursor: pointer;
+}
+
+.history-month-date p {
+    color: #2280B7;
+}
+.history-month-date h6 {
+    position: relative;
+    bottom: -6px;
+}
+.history-month-date h5 {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 57% 6%, #9FCBE3, #0F6FA1);
+}
+
+.history-month-date {
+    border-bottom: 1px solid #707070;
+    box-shadow: 0 0 10px #70707033;
+}
+
+/* History Sidebar End */
 
 /* Responsive css start */
 

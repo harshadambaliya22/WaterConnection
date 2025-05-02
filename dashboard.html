@@ -195,7 +195,7 @@
                         <img src="assets/image/stopwatch-icon.svg" alt="History">
                         <span class="fs-15 fw-bold d-block mt-8">History</span>
                     </li>
-                    <li class="header-activity-item text-center pt-14 px-10 pb-10">
+                    <li class="header-activity-item chat-activity-btn text-center pt-14 px-10 pb-10">
                         <img src="assets/image/message-icon.svg" alt="Chats">
                         <span class="fs-15 fw-bold d-block mt-8">Chats</span>
                     </li>
@@ -954,10 +954,85 @@
         </div>
     </div>
     <!-- Chat Sidebar End -->
+    <!-- History Sidebar Start -->
+    <div class="history-sidebar bg-white position-absolute z-1">
+        <span class="contact-sidebar-close position-absolute z-1"><img src="assets/image/contact-sidebar/Close.svg"
+                alt="Close icon"></span>
+        <div class="history-header pb-7 pt-11 px-15 position-relative">
+            <!-- <select id="yearSelector" class="selectpicker" data-live-search="true">
+            </select> -->
+            <div class="history-custom-spinner position-absolute">
+                <div class="arrow up position-absolute" onclick="changeYear(1)">▲</div>
+                <input id="yearInput" type="number" class="year fw-bold fs-15 text-center border-0 bg-transparent text-primary" min="1980" max="" oninput="validateYear(this)" />
+                <div class="arrow down position-absolute" onclick="changeYear(-1)">▼</div>
+            </div>
+            <h2 class="chat-main-title text-primary fs-35 fw-bold mb-0 text-center fst-italic">
+                <u>History</u>
+            </h2>
+        </div>
+        <div class="histort-months pt-9 pb-14 px-40 d-grid">
+                <span class="fs-15 fw-bold px-8 active text-center d-inline-block">Jan</span>
+                <span class="fs-15 fw-bold px-8 text-center d-inline-block">Feb</span>
+                <span class="fs-15 fw-bold px-8 text-center d-inline-block">Mar</span>
+                <span class="fs-15 fw-bold px-8 text-center d-inline-block">Apr</span>
+                <span class="fs-15 fw-bold px-8 text-center d-inline-block">May</span>
+                <span class="fs-15 fw-bold px-8 text-center d-inline-block">Jun</span>
+                <span class="fs-15 fw-bold px-8 text-center d-inline-block">Jul</span>
+                <span class="fs-15 fw-bold px-8 text-center d-inline-block">Aug</span>
+                <span class="fs-15 fw-bold px-8 text-center d-inline-block">Sep</span>
+                <span class="fs-15 fw-bold px-8 text-center d-inline-block">Oct</span>
+                <span class="fs-15 fw-bold px-8 text-center d-inline-block">Nov</span>
+                <span class="fs-15 fw-bold px-8 text-center d-inline-block">Dec</span>
+        </div>
+        <div class="history-month-content">
+            <div class="history-month-header py-8 px-28 d-flex align-items-center justify-content-between">
+                <div class="history-month-job d-flex align-items-center">
+                    <u class="fs-10 fw-bold me-11 text-white">Jobs</u>
+                    <span class="bg-white d-inline-block text-primary fs-15 fw-bold text-center">2</span>
+                </div>
+                <h5 class="fs-20 fw-bold text-white mb-0">January</h5>
+                <span class="history-month-close"><img src="assets/image/history-sidebar/close.svg" alt="Close icon"></span>
+            </div>
+            <div class="history-month-details py-9 px-12">
+                <div class="history-month-date bg-white d-flex py-6 pe-25 ps-7 mb-11">
+                    <p class="fs-12 mb-0 me-20">01-03-23</p>
+                    <h6 class="fs-15 fw-bold text-black mb-0">Fairbanks CTB</h6>
+                    <h5 class="fs-21 fw-bold text-white mb-0 ms-auto d-flex align-baseline justify-content-center">S</h5>
+                </div>
+                <div class="history-month-date bg-white d-flex py-6 pe-25 ps-7">
+                    <p class="fs-12 mb-0 me-20">01-01-23</p>
+                    <h6 class="fs-15 fw-bold text-black mb-0">North wells</h6>
+                    <h5 class="fs-21 fw-bold text-white mb-0 ms-auto d-flex align-baseline justify-content-center">p</h5>
+                </div>
+            </div>
+            <div class="history-month-header py-8 px-28 d-flex align-items-center justify-content-between">
+                <div class="history-month-job d-flex align-items-center">
+                    <u class="fs-18 fw-semibold text-white fst-italic">Fairbanks CTB</u>
+                </div>
+                <h5 class="fs-15 fw-semibold text-white mb-0">01-03-23</h5>
+                <span class="history-date-close"><img src="assets/image/history-sidebar/close.svg" alt="Close icon"></span>
+            </div>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Overview</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Totals</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Notes</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">Overview</div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">Totals</div>
+                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">Notes</div>
+              </div>
+        </div>
 
+    </div>
+    <!-- History Sidebar End -->
     <div class='bottom-0 footer-line position-absolute py-16 w-100 border border-2'></div>
-
-
     <!-- bulletin modal End  -->
     <div class="modal fairbanks-jobmodal fade" id="jobbulletinbtnmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="jobbulletinbtnmodalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -1174,11 +1249,13 @@
     </div>
     <!-- Driver Btn modal End  -->
 
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta3/css/bootstrap-select.min.css">
     <!-- JavaScript Files -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="./assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta3/js/bootstrap-select.min.js"></script>
     <script src="assets/js/custom.js"></script>
 
     <script>
