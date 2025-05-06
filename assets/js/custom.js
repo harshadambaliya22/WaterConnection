@@ -1,133 +1,204 @@
 $(document).ready(function () {
-    // Contact Sidebar Start
-    $(".contact-activity-btn").click(function (e) {
-      e.stopPropagation();
-      $(".contact-sidebar").toggleClass("contact-sidebar-open");
-    });
-  
-    $(".contact-sidebar-close").click(function (e) {
-      e.stopPropagation();
-      $(".contact-sidebar").removeClass("contact-sidebar-open");
-    });
-  
-    $(".contact-sidebar").click(function (e) {
-      e.stopPropagation();
-    });
-  
-    $(document).click(function () {
-      $(".contact-sidebar").removeClass("contact-sidebar-open");
-    });
-    // Contact Sidebar End
-  
-    // Header menu Start
-    $(".header-hamburger").click(function () {
-      $("body").toggleClass("menu-list-open");
-    });
-    // Header menu End
-  
-    // Duty Sidebar Start
-    $(".header-duty").click(function (event) {
-      event.stopPropagation();
-      $(".header-middle").toggleClass("header-middle-open");
-    });
-  
-    $(document).click(function (event) {
-      if (!$(event.target).closest(".header-middle, .header-duty").length) {
-        $(".header-middle").removeClass("header-middle-open");
-      }
-    });
-  
-    // Jab header-activity-item pe click ho
-    $(".header-activity-item").click(function () {
-      $(".header-middle").removeClass("header-middle-open");
-    });
-  
-    // Duty Sidebar End
-  
-    // Currect job Start
-    $(".header-currect-job").click(function (event) {
-      event.stopPropagation(); // ye click ko upar propagate hone se rokta hai
-      $(".bottom-header-body").toggleClass("bottom-header-body-open");
-    });
-  
-    $(document).click(function (event) {
-      if (!$(event.target).closest(".bottom-header-body, .header-duty").length) {
-        $(".bottom-header-body").removeClass("bottom-header-body-open");
-      }
-    });
-    // Currect job End
-    
-    // Chat Sidebar Start
-    $(".chat-activity-btn").click(function (e) {
-      e.stopPropagation();
-      $(".chat-sidebar").toggleClass("chat-sidebar-open");
-    });
-  
-    $(".contact-sidebar-close").click(function (e) {
-      e.stopPropagation();
-      $(".chat-sidebar").removeClass("chat-sidebar-open");
-    });
-    // Chat Sidebar End
-
-    // History Sidebar Start
- 
-    // History Sidebar End
-
+  // Contact Sidebar Start
+  $(".contact-activity-btn").click(function (e) {
+    e.stopPropagation();
+    $(".contact-sidebar").toggleClass("contact-sidebar-open");
   });
 
-  // Year Selector Start
+  $(".contact-sidebar-close").click(function (e) {
+    e.stopPropagation();
+    $(".contact-sidebar").removeClass("contact-sidebar-open");
+  });
 
-  const input = document.getElementById("yearInput");
-  const minYear = 1980;
-  const maxYear = new Date().getFullYear();
-  input.max = maxYear;
-  input.value = maxYear; // default to current year
+  $(".contact-sidebar").click(function (e) {
+    e.stopPropagation();
+  });
 
-  function changeYear(direction) {
-    let year = parseInt(input.value) || maxYear;
-    year += direction;
-    if (year >= minYear && year <= maxYear) {
-      input.value = year;
+  $(document).click(function () {
+    $(".contact-sidebar").removeClass("contact-sidebar-open");
+  });
+  // Contact Sidebar End
+
+  // Header menu Start
+  $(".header-hamburger").click(function () {
+    $("body").toggleClass("menu-list-open");
+  });
+  // Header menu End
+
+  // Duty Sidebar Start
+  $(".header-duty").click(function (event) {
+    event.stopPropagation();
+    $(".header-middle").toggleClass("header-middle-open");
+  });
+
+  $(document).click(function (event) {
+    if (!$(event.target).closest(".header-middle, .header-duty").length) {
+      $(".header-middle").removeClass("header-middle-open");
+    }
+  });
+
+  // Jab header-activity-item pe click ho
+  $(".header-activity-item").click(function () {
+    $(".header-middle").removeClass("header-middle-open");
+  });
+
+  // Duty Sidebar End
+
+  // Currect job Start
+  $(".header-currect-job").click(function (event) {
+    event.stopPropagation(); // ye click ko upar propagate hone se rokta hai
+    $(".bottom-header-body").toggleClass("bottom-header-body-open");
+  });
+
+  $(document).click(function (event) {
+    if (!$(event.target).closest(".bottom-header-body, .header-duty").length) {
+      $(".bottom-header-body").removeClass("bottom-header-body-open");
+    }
+  });
+  // Currect job End
+
+  // Chat Sidebar Start
+  $(".chat-activity-btn").click(function (e) {
+    e.stopPropagation();
+    $(".chat-sidebar").toggleClass("chat-sidebar-open");
+  });
+
+  $(".contact-sidebar-close").click(function (e) {
+    e.stopPropagation();
+    $(".chat-sidebar").removeClass("chat-sidebar-open");
+  });
+  // Chat Sidebar End 
+
+  // History Sidebar Start
+
+  $(".history-activity-btn").click(function (e) {
+    e.stopPropagation();
+    $(".history-sidebar").toggleClass("history-sidebar-open");
+  });
+
+  $(".history-sidebar-close").click(function (e) {
+    e.stopPropagation();
+    $(".history-sidebar").removeClass("history-sidebar-open");
+  });
+
+  $(".history-sidebar").click(function (e) {
+    e.stopPropagation();
+  });
+
+  $(document).click(function () {
+    $(".history-sidebar").removeClass("history-sidebar-open");
+  });
+
+
+
+  $('.histort-months span.active').click(function () {
+    $('.history-month-content').addClass('history-month-content-open')
+  })
+  $('.history-month-close').click(function () {
+    $('.history-month-content').removeClass('history-month-content-open')
+  })
+  $('.history-month-date').click(function () {
+    $('.history-details').addClass('history-details-open')
+  })
+  $('.history-date-close').click(function () {
+    $('.history-details').removeClass('history-details-open')
+  })
+  // History Sidebar End
+
+});
+
+// Year Selector Start
+
+const input = document.getElementById("yearInput");
+const minYear = 1980;
+const maxYear = new Date().getFullYear();
+input.max = maxYear;
+input.value = maxYear; // default to current year
+
+function changeYear(direction) {
+  let year = parseInt(input.value) || maxYear;
+  year += direction;
+  if (year >= minYear && year <= maxYear) {
+    input.value = year;
+  }
+}
+
+function validateYear(field) {
+  let val = parseInt(field.value);
+  if (val < minYear) field.value = minYear;
+  if (val > maxYear) field.value = maxYear;
+}
+
+// Year Selector End
+
+// Calendar Start
+const calendarBody = document.getElementById("calendarBody");
+const monthYear = document.getElementById("monthYear");
+const prevMonth = document.getElementById("prevMonth");
+const nextMonth = document.getElementById("nextMonth");
+
+let currentDate = new Date();
+const today = new Date();
+today.setHours(0, 0, 0, 0); // Normalize today
+
+const events = {
+  "2022-12-06": ["green"],
+  "2022-12-17": ["blue"],
+  "2022-12-31": ["green"]
+};
+
+function renderCalendar(date) {
+  const y = date.getFullYear(), m = date.getMonth();
+  const firstDay = new Date(y, m, 1).getDay();
+  const daysInMonth = new Date(y, m + 1, 0).getDate();
+  const daysInPrevMonth = new Date(y, m, 0).getDate();
+
+  calendarBody.innerHTML = "";
+  monthYear.textContent = new Date(y, m).toLocaleDateString("en-US", { year: "numeric", month: "long" });
+
+  let row = document.createElement("tr");
+
+  // Show last few days from previous month
+  for (let i = firstDay - 1; i >= 0; i--) {
+    const td = document.createElement("td");
+    td.textContent = daysInPrevMonth - i;
+    td.classList.add("inactive"); // style for previous/next month dates
+    row.appendChild(td);
+  } 
+
+  // Empty cells before 1st
+  // for (let i = 0; i < firstDay; i++) row.appendChild(document.createElement("td"));
+
+  for (let d = 1; d <= daysInMonth; d++) {
+    const cellDate = new Date(y, m, d);
+    const dateStr = `${y}-${String(m + 1).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+    const td = document.createElement("td");
+    td.textContent = d;
+
+    if (cellDate < today) td.classList.add("past");
+    if (cellDate.getTime() === today.getTime()) td.classList.add("today");
+
+    (events[dateStr] || []).forEach(color => {
+      const dot = document.createElement("span");
+      dot.className = `event-dot ${color}`;
+      td.appendChild(dot);
+    });
+
+    row.appendChild(td);
+    if ((d + firstDay) % 7 === 0 || d === daysInMonth) {
+      calendarBody.appendChild(row);
+      row = document.createElement("tr");
     }
   }
+}
 
-  function validateYear(field) {
-    let val = parseInt(field.value);
-    if (val < minYear) field.value = minYear;
-    if (val > maxYear) field.value = maxYear;
-  }
+[prevMonth, nextMonth].forEach((btn, i) => {
+  btn.onclick = () => {
+    currentDate.setMonth(currentDate.getMonth() + (i ? 1 : -1));
+    renderCalendar(currentDate);
+  };
+});
 
+renderCalendar(currentDate);
 
-
-  
-//   document.addEventListener('DOMContentLoaded', function () {
-//     const startYear = 1998;
-//     const currentYear = new Date().getFullYear();
-//     const selector = document.getElementById('yearSelector');
-
-//     // Clear all options
-//     while (selector.firstChild) {
-//         selector.removeChild(selector.firstChild);
-//     }
-
-//     // Add default "Select Year"
-//     const defaultOption = document.createElement('option');
-//     defaultOption.value = "";
-//     defaultOption.text = "Select Year";
-//     selector.appendChild(defaultOption);
-
-//     // Add year options
-//     for (let year = startYear; year <= currentYear; year++) {
-//         const option = document.createElement('option');
-//         option.value = year;
-//         option.text = year;
-//         if (year === currentYear) {
-//           option.selected = true; 
-//         }
-//         selector.appendChild(option);
-//     }
-
-//     // 🔄 Refresh selectpicker (Bootstrap-select)
-//     $(selector).selectpicker('refresh');
-// });
-  // Year Selector End
+// Calendar End

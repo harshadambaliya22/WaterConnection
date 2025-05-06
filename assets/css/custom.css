@@ -560,7 +560,8 @@
     font-family: "Segoe Script";
 }
 
-.contact-sidebar-close {
+.contact-sidebar-close,
+.history-sidebar-close {
     right: 8px;
     top: 7px;
     cursor: pointer;
@@ -858,15 +859,20 @@ textarea.form-control {
 /* History Sidebar Start */
 .history-sidebar {
     top: 247px;
-    left: 0;
+    left: -100%;
     width: 360px;
-    /* height: calc(100vh - 281px); */
+    height: calc(100vh - 281px);
     transition: all 0.3s ease-in-out;
 }
 
 .history-sidebar-open {
     left: 0;
     transition: all 0.3s ease-in-out;
+}
+
+.history-main-body {
+    height: calc(100vh - 345px);
+    overflow-y: auto;
 }
 
 .history-header {
@@ -911,19 +917,23 @@ textarea.form-control {
 }
 
 .arrow {
-    font-size: 18px;
     cursor: pointer;
     user-select: none;
     left: 50%;
     transform: translateX(-50%);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 9px;
 }
 
 .arrow.up {
-    top: -18px;
+    top: -8px;
+    background-image: url('../image/history-sidebar/caret-up.svg');
 }
 
 .arrow.down {
-    bottom: -18px;
+    bottom: -7px;
+    background-image: url('../image/history-sidebar/caret-down.svg');
 }
 
 .year {
@@ -935,6 +945,16 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+.history-month-content,
+.history-details {
+    display: none;
+}
+
+.history-month-content-open,
+.history-details-open {
+    display: block;
 }
 
 .history-month-header {
@@ -950,17 +970,20 @@ input::-webkit-inner-spin-button {
     font-family: "Segoe Script";
 }
 
-.history-month-close {
+.history-month-close,
+.history-date-close {
     cursor: pointer;
 }
 
 .history-month-date p {
     color: #2280B7;
 }
+
 .history-month-date h6 {
     position: relative;
     bottom: -6px;
 }
+
 .history-month-date h5 {
     width: 23px;
     height: 23px;
@@ -971,9 +994,148 @@ input::-webkit-inner-spin-button {
 .history-month-date {
     border-bottom: 1px solid #707070;
     box-shadow: 0 0 10px #70707033;
+    cursor: pointer;
+}
+
+.nav-tabs .nav-item {
+    width: 33.33%;
+}
+
+.nav-tabs .nav-link {
+    color: #0B3E58;
+    width: 100%;
+    border-radius: 0;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:hover {
+    background-color: #DFE0E1;
+    color: #2B2B2B;
+    box-shadow: 0 5px 10px #c1c1c1;
+}
+
+.history-form-item .form-label {
+    white-space: nowrap;
+}
+
+.history-form-item {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+}
+
+.history-form-item .form-control {
+    border: 0.5px solid #707070;
+    height: 17px;
+    border-radius: 0;
+    box-shadow: inset 0 0px 10px #80808047;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.history-dropdown .btn {
+    border: 0.5px solid #0B3E58;
+    border-radius: 5px;
 }
 
 /* History Sidebar End */
+
+/* Calendar Sidebar Start */
+.calendar-sidebar {
+    top: 247px;
+    left: 0;
+    width: 420px;
+    transition: all 0.3s ease-in-out;
+    background-image: url('../image/calendar-sidebar/calendar-bg.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 100dvh;
+}
+
+.calendar-main-header {
+    background: linear-gradient(193deg, #0B3E58 10.5%, #DFE0E1 130%);
+    border-radius: 0 0 12px 12px;
+}
+
+.calendar-sidebar-close {
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.calendar-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 371px;
+    top: 104px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, #FFF -57.5%, #0B3E58 100%);
+    box-shadow: 0 0 10px #0B3E58;
+}
+
+.calendar-month {
+    cursor: pointer;
+}
+
+table.calendar {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #0B3E58;
+    border-top: 0;
+}
+
+.calendar th,
+.calendar td {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+.calendar td.inactive {
+    color: #ccc;
+}
+
+.event-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.green {
+    background: green;
+}
+
+.blue {
+    background: #007bff;
+}
+
+.today {
+    cursor: pointer;
+}
+
+.past {
+    color: #bbb;
+}
+.calendar-events{
+    bottom: 113px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* Calendar Sidebar End */
 
 /* Responsive css start */
 
