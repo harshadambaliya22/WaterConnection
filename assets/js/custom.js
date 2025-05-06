@@ -90,7 +90,7 @@ $(document).ready(function () {
   });
 
 
-
+  
   $('.histort-months span.active').click(function () {
     $('.history-month-content').addClass('history-month-content-open')
   })
@@ -104,6 +104,46 @@ $(document).ready(function () {
     $('.history-details').removeClass('history-details-open')
   })
   // History Sidebar End
+
+  // Calendar Sidebar Start
+  $(".calendar-activity-btn").click(function (e) {
+    e.stopPropagation();
+    $(".calendar-sidebar").toggleClass("calendar-sidebar-open");
+  });
+
+  $(".calendar-sidebar-close").click(function (e) {
+    e.stopPropagation();
+    $(".calendar-sidebar").removeClass("calendar-sidebar-open");
+  });
+
+  $(".calendar-sidebar").click(function (e) {
+    e.stopPropagation();
+  });
+
+  $(document).click(function () {
+    $(".calendar-sidebar").removeClass("calendar-sidebar-open");
+  });
+  // Calendar Sidebar End
+
+  // invites Sidebar Start
+  $(".invites-activity-btn").click(function (e) {
+    e.stopPropagation();
+    $(".invites-sidebar").toggleClass("invites-sidebar-open");
+  });
+
+  $(".contact-sidebar-close").click(function (e) {
+    e.stopPropagation();
+    $(".invites-sidebar").removeClass("invites-sidebar-open");
+  });
+
+  $(".invites-sidebar").click(function (e) {
+    e.stopPropagation();
+  });
+
+  $(document).click(function () {
+    $(".invites-sidebar").removeClass("invites-sidebar-open");
+  });
+  // invites Sidebar End
 
 });
 
@@ -142,9 +182,9 @@ const today = new Date();
 today.setHours(0, 0, 0, 0); // Normalize today
 
 const events = {
-  "2022-12-06": ["green"],
-  "2022-12-17": ["blue"],
-  "2022-12-31": ["green"]
+  "2025-05-06": ["meeting"],
+  "2025-05-17": ["service"],
+  "2025-05-31": ["repair"]
 };
 
 function renderCalendar(date) {
@@ -164,7 +204,7 @@ function renderCalendar(date) {
     td.textContent = daysInPrevMonth - i;
     td.classList.add("inactive"); // style for previous/next month dates
     row.appendChild(td);
-  } 
+  }
 
   // Empty cells before 1st
   // for (let i = 0; i < firstDay; i++) row.appendChild(document.createElement("td"));

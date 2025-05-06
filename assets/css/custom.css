@@ -997,18 +997,18 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
-.nav-tabs .nav-item {
+.history-nav-tabs .nav-item {
     width: 33.33%;
 }
 
-.nav-tabs .nav-link {
+.history-nav-tabs .nav-link {
     color: #0B3E58;
     width: 100%;
     border-radius: 0;
 }
 
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-link:hover {
+.history-nav-tabs .nav-link.active,
+.history-nav-tabs .nav-link:hover {
     background-color: #DFE0E1;
     color: #2B2B2B;
     box-shadow: 0 5px 10px #c1c1c1;
@@ -1044,13 +1044,19 @@ input::-webkit-inner-spin-button {
 /* Calendar Sidebar Start */
 .calendar-sidebar {
     top: 247px;
-    left: 0;
+    left: -100%;
     width: 420px;
     transition: all 0.3s ease-in-out;
     background-image: url('../image/calendar-sidebar/calendar-bg.svg');
     background-repeat: no-repeat;
     background-position: top;
-    height: 100dvh;
+    height: calc(100dvh - 282px);
+    overflow-y: auto;
+}
+
+.calendar-sidebar-open {
+    left: 0;
+    transition: all 0.3s ease-in-out;
 }
 
 .calendar-main-header {
@@ -1069,7 +1075,7 @@ input::-webkit-inner-spin-button {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 371px;
-    top: 104px;
+    top: -19px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -1086,56 +1092,177 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
-table.calendar {
+table.calendar-table {
     width: 100%;
     border-collapse: collapse;
     border: 2px solid #0B3E58;
     border-top: 0;
 }
 
-.calendar th,
-.calendar td {
+.calendar-table th,
+.calendar-table thead tr {
+    background-color: #EBEBEB;
+    color: #000000;
+}
+
+.calendar-table td {
+    font-size: 14px;
+    background-color: #F2F2F2;
+    color: #000;
+    z-index: 1;
+}
+
+.calendar-table th,
+.calendar-table td {
     text-align: center;
     padding: 10px;
     position: relative;
 }
 
-.calendar td.inactive {
+.calendar-table td.inactive {
     color: #ccc;
 }
 
-.event-dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
+.calendar-table .event-dot {
+    width: 100%;
+    height: 100%;
     display: inline-block;
     position: absolute;
     bottom: 6px;
     left: 50%;
     transform: translateX(-50%);
+    background-color: #DFE0E1;
+    box-shadow: 4px 9px 10px #0000001a;
+    z-index: -1;
 }
 
-.green {
-    background: green;
+.event-dot.meeting::before,
+.event-dot.service::before,
+.event-dot.repair::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    z-index: 1;
 }
 
-.blue {
-    background: #007bff;
+.event-dot.meeting::before {
+    background-color: green;
+    top: 5px;
+}
+
+.event-dot.service::before {
+    background-color: #007bff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.event-dot.repair::before {
+    background-color: #E51025;
+    top: 80%;
+    transform: translateY(-80%);
 }
 
 .today {
     cursor: pointer;
 }
 
-.past {
+.calendar-table .past {
     color: #bbb;
 }
-.calendar-events{
-    bottom: 113px;
-    left: 50%;
-    transform: translateX(-50%);
+
+.calendar-events {
+    top: 113px;
 }
+
+.calendar-events li {
+    line-height: normal;
+}
+
+.calendar-events span {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 0.5px solid #fff;
+    box-shadow: 2px 2px 3px #343a40;
+}
+
+.calendar-events .meeting {
+    background-color: #11AA54;
+}
+
+.calendar-events .service {
+    background-color: #2280B7;
+}
+
+.calendar-events .repair {
+    background-color: #E51025;
+}
+
+.meeting-open {
+    background-color: #B729FF;
+}
+
+.service-open {
+    background-color: #999999;
+}
+
+.repair-open {
+    background-color: #10D0E5;
+}
+
 /* Calendar Sidebar End */
+
+/* Invites Sidebar Start */
+.invites-sidebar {
+    top: 247px;
+    left: -100%;
+    width: 450px;
+    height: calc(100dvh - 283px);
+    overflow-y: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.invites-sidebar-open {
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.invites-pending-header {
+    background: linear-gradient(180deg, #FFF -57.5%, #CB0E20 100%);
+}
+
+.invites-details h5 {
+    color: #0E7EBE;
+}
+
+.invites-pending-item hr {
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    background-color: #707070;
+    width: 91%;
+}
+
+.invites-manage-btn {
+    border: 1px solid #0B3E58;
+}
+
+.invites-item-close {
+    top: 50%;
+    transform: translateY(-50%);
+    right: -42px;
+    cursor: pointer;
+}
+.invites-accepted-header{
+    background: linear-gradient(180deg, #FFF -57.5%, #13753E 100%);
+}
+.invites-clear{
+    color: #747070;
+}
+/* Invites Sidebar End */
 
 /* Responsive css start */
 

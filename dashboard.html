@@ -183,11 +183,11 @@
                         <img src="assets/image/clipboard-icon.svg" alt="Bulletin">
                         <span class="fs-15 fw-bold d-block mt-8">Bulletin</span>
                     </li>
-                    <li class="header-activity-item text-center pt-14 px-10 pb-10">
+                    <li class="header-activity-item invites-activity-btn text-center pt-14 px-10 pb-10">
                         <img src="assets/image/Invite icon.svg" alt="Invites">
                         <span class="fs-15 fw-bold d-block mt-8">Invites</span>
                     </li>
-                    <li class="header-activity-item text-center pt-14 px-10 pb-10">
+                    <li class="header-activity-item calendar-activity-btn text-center pt-14 px-10 pb-10">
                         <img src="assets/image/calendar-icon.svg" alt="Calendar">
                         <span class="fs-15 fw-bold d-block mt-8">Calendar</span>
                     </li>
@@ -1013,7 +1013,7 @@
                         <h5 class="fs-15 fw-semibold text-white mb-0">01-03-23</h5>
                         <span class="history-date-close"><img src="assets/image/history-sidebar/close.svg" alt="Close icon"></span>
                     </div>
-                    <ul class="nav nav-tabs justify-content-between border-0" id="myTab" role="tablist">
+                    <ul class="nav history-nav-tabs nav-tabs justify-content-between border-0" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link pt-11 pb-8 px-15 fs-13 fw-semibold border-0 active" id="home-tab"
                                 data-bs-toggle="tab" data-bs-target="#Overview" type="button" role="tab"
@@ -1160,45 +1160,158 @@
     <!-- Calendar Sidebar Start -->
     <div class="calendar-sidebar bg-white position-absolute z-1">
         <div class="calendar-main-header pt-30 px-20 pb-48">
-           <h2 class="fs-30 text-white fw-bold fst-italic mb-0 text-center"><i class="fa-solid fa-calendar-days"></i><u class="mx-30">Calendar</u><i class="fa-solid fa-calendar-days"></i></h2>
+            <h2 class="fs-30 text-white fw-bold fst-italic mb-0 text-center"><i class="fa-solid fa-calendar-days"></i><u class="mx-30">Calendar</u><i class="fa-solid fa-calendar-days"></i></h2>
             <span class="calendar-sidebar-close position-absolute"><img src="assets/image/history-sidebar/close.svg" alt="Close icon"></span>
         </div>
-        <div class="calendar-container position-absolute">
+        <div class="calendar-container position-relative">
             <div class="calendar-header pt-12 px-22 pb-15">
                 <button class="calendar-month border-0 p-0 bg-transparent premonth" id="prevMonth"><img src="assets/image/calendar-sidebar/prev.svg" alt="Prev icon"></button>
                 <h2 id="monthYear" class="text-white fs-18 mb-0"></h2>
                 <button class="calendar-month border-0 p-0 bg-transparent nextmonth" id="nextMonth"><img src="assets/image/calendar-sidebar/next.svg" alt="Next icon"></button>
             </div>
-            <table class="calendar">
+            <table class="calendar-table">
                 <thead>
                     <tr>
-                        <th>Sun</th>
-                        <th>Mon</th>
-                        <th>Tue</th>
-                        <th>Wed</th>
-                        <th>Thu</th>
-                        <th>Fri</th>
-                        <th>Sat</th>
+                        <th class="fw-normal">Sun</th>
+                        <th class="fw-normal">Mon</th>
+                        <th class="fw-normal">Tue</th>
+                        <th class="fw-normal">Wed</th>
+                        <th class="fw-normal">Thu</th>
+                        <th class="fw-normal">Fri</th>
+                        <th class="fw-normal">Sat</th>
                     </tr>
                 </thead>
                 <tbody id="calendarBody"></tbody>
             </table>
         </div>
-
-        <div class="calendar-events position-absolute d-flex ">
+        <div class="calendar-events position-relative d-flex justify-content-center pb-30">
             <ul class="list-inline me-87">
-                <li class="fs-19 fw-medium"><span class="d-inline-block me-19"></span>Meeting</li>
-                <li class="fs-19 fw-medium"><span class="d-inline-block me-19"></span>Service</li>
-                <li class="fs-19 fw-medium"><span class="d-inline-block me-19"></span>Repair</li>
+                <li class="fs-19 fw-medium d-flex align-items-center mb-29"><span class="d-inline-block me-19 meeting"></span>Meeting</li>
+                <li class="fs-19 fw-medium d-flex align-items-center mb-29"><span class="d-inline-block me-19 service"></span>Service</li>
+                <li class="fs-19 fw-medium d-flex align-items-center"><span class="d-inline-block me-19 repair"></span>Repair</li>
             </ul>
             <ul class="list-inline">
-                <li class="fs-19 fw-medium"><span class="d-inline-block me-19"></span>Open</li>
-                <li class="fs-19 fw-medium"><span class="d-inline-block me-19"></span>Open</li>
-                <li class="fs-19 fw-medium"><span class="d-inline-block me-19"></span>Open</li>
+                <li class="fs-19 fw-medium d-flex align-items-center mb-29"><span class="d-inline-block me-19 meeting-open"></span>Open</li>
+                <li class="fs-19 fw-medium d-flex align-items-center mb-29"><span class="d-inline-block me-19 service-open"></span>Open</li>
+                <li class="fs-19 fw-medium d-flex align-items-center"><span class="d-inline-block me-19 repair-open"></span>Open</li>
             </ul>
         </div>
     </div>
     <!-- Calendar Sidebar End -->
+
+    <!-- Invites Sidebar Start -->
+    <div class="invites-sidebar bg-white position-absolute">
+        <span class="contact-sidebar-close position-absolute"><img src="assets/image/contact-sidebar/Close.svg"
+                alt="Close icon"></span>
+        <h2 class="chat-main-title fs-35 fw-bold mb-0 pb-7 pt-15 px-15 text-center fst-italic text-black"><u>Invites</u>
+        </h2>
+        <div class="invites-pending-content">
+            <div class="invites-pending-header text-center py-8 px-20">
+                <h2 class="fs-35 fw-bold mb-0 text-white">Pending</h2>
+            </div>
+            <div class="invites-pending-body pt-20 pe-44 pb-38 ps-22">
+                <div
+                    class="invites-pending-item pb-8 mb-30 d-flex align-items-center justify-content-between position-relative">
+                    <span class="d-inline-block search-item-selected me-9 mt-0"></span>
+                    <div class="invites-name text-center">
+                        <h3 class="fs-25 fw-bold text-black mb-2">John Vicol</h3>
+                        <span class="fs-18 fw-semibold text-danger">(Company)</span>
+                    </div>
+                    <div class="invites-details">
+                        <h5 class="fs-20 fw-semibold mb-0 mb-8"><u>Rose 6-21 4H</u></h5>
+                        <div class="text-center d-flex align-items-baseline">
+                            <div class="me-16">
+                                <span class="fs-13 fw-medium text-black d-block">01/14/23</span>
+                                <span class="fs-10 fw-bold text-black d-block">03:32 P.M.</span>
+                            </div>
+                            <button
+                                class="btn invites-manage-btn search-item-btn text-white fs-13 fw-medium py-1 px-10">Manage</button>
+                        </div>
+                    </div>
+                    <div class="invites-item-close position-absolute"><img src="assets/image/close-icon.svg"
+                            alt="Close icon"></div>
+                    <hr class="position-absolute my-0">
+                </div>
+                <div
+                    class="invites-pending-item pb-8 mb-30 d-flex align-items-center justify-content-between position-relative">
+                    <span class="d-inline-block search-item-selected me-9 mt-0"></span>
+                    <div class="invites-name text-center">
+                        <h3 class="fs-25 fw-bold text-black mb-2">Sara Evans</h3>
+                        <span class="fs-18 fw-semibold text-danger">(LST LLC)</span>
+                    </div>
+                    <div class="invites-details">
+                        <h5 class="fs-20 fw-semibold mb-0 mb-8"><u>Rose 6-21 4H</u></h5>
+                        <div class="text-center d-flex align-items-baseline">
+                            <div class="me-16">
+                                <span class="fs-13 fw-medium text-black d-block">01/14/23</span>
+                                <span class="fs-10 fw-bold text-black d-block">03:38 P.M.</span>
+                            </div>
+                            <button
+                                class="btn invites-manage-btn search-item-btn text-white fs-13 fw-medium py-1 px-10">Manage</button>
+                        </div>
+                    </div>
+                    <div class="invites-item-close position-absolute"><img src="assets/image/close-icon.svg"
+                            alt="Close icon"></div>
+                    <hr class="position-absolute my-0">
+                </div>
+                <div
+                    class="invites-pending-item pb-8 d-flex align-items-center justify-content-between position-relative">
+                    <span class="d-inline-block search-item-selected contact-red me-9 mt-0"></span>
+                    <div class="invites-name text-center">
+                        <h3 class="fs-25 fw-bold text-black mb-2">Jeff Beck</h3>
+                        <span class="fs-18 fw-semibold text-danger">(Company)</span>
+                    </div>
+                    <div class="invites-details">
+                        <h5 class="fs-20 fw-semibold mb-0 mb-8"><u>Rose 6-21 4H</u></h5>
+                        <div class="text-center d-flex align-items-baseline">
+                            <div class="me-16">
+                                <span class="fs-13 fw-medium text-black d-block">01/14/23</span>
+                                <span class="fs-10 fw-bold text-black d-block">03:32 P.M.</span>
+                            </div>
+                            <button
+                                class="btn invites-manage-btn search-item-btn text-white fs-13 fw-medium py-1 px-10">Manage</button>
+                        </div>
+                    </div>
+                    <div class="invites-item-close position-absolute"><img src="assets/image/close-icon.svg"
+                            alt="Close icon"></div>
+                    <hr class="position-absolute my-0">
+                </div>
+            </div>
+        </div>
+        <div class="invites-accepted">
+            <div class="invites-accepted-header text-center py-8 px-20">
+                <h2 class="fs-35 fw-bold mb-0 text-white">Accepted</h2>
+            </div>
+            <div class="invites-pending-body pt-20 pe-44 pb-38 ps-22">
+                <div
+                    class="invites-pending-item pb-8 d-flex align-items-center justify-content-between position-relative">
+                    <span class="d-inline-block search-item-selected contact-red me-9 mt-0"></span>
+                    <div class="invites-name text-center">
+                        <h3 class="fs-25 fw-bold text-black mb-2">Crude Dawg</h3>
+                        <span class="fs-18 fw-semibold text-danger">(Company)</span>
+                    </div>
+                    <div class="invites-details">
+                        <h5 class="fs-20 fw-semibold mb-0 mb-8"><u>Rose 6-21 4H</u></h5>
+                        <div class="text-center d-flex align-items-baseline">
+                            <div class="me-16">
+                                <span class="fs-13 fw-medium text-black d-block">01/14/23</span>
+                                <span class="fs-10 fw-bold text-black d-block">03:32 P.M.</span>
+                            </div>
+                            <button
+                                class="btn invites-manage-btn search-item-btn text-white fs-13 fw-medium py-1 px-10">Manage</button>
+                        </div>
+                    </div>
+                    <div class="invites-item-close position-absolute"><img src="assets/image/close-icon.svg"
+                            alt="Close icon"></div>
+                    <hr class="position-absolute my-0">
+                </div>
+            </div>
+        </div>
+        <div class="text-end">
+            <button class="invites-clear fs-18 fw-semibold border-0 bg-transparent"><u>Clear all</u></button>
+        </div>
+    </div>
+    <!-- Invites Sidebar End -->
     <div class='bottom-0 footer-line position-absolute py-16 w-100 border border-2'></div>
 
     <!-- bulletin modal End  -->
