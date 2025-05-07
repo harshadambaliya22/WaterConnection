@@ -37,7 +37,6 @@ $(document).ready(function () {
     }
   });
 
-  // Jab header-activity-item pe click ho
   $(".header-activity-item").click(function () {
     $(".header-middle").removeClass("header-middle-open");
   });
@@ -46,7 +45,7 @@ $(document).ready(function () {
 
   // Currect job Start
   $(".header-currect-job").click(function (event) {
-    event.stopPropagation(); // ye click ko upar propagate hone se rokta hai
+    event.stopPropagation(); 
     $(".bottom-header-body").toggleClass("bottom-header-body-open");
   });
 
@@ -179,7 +178,7 @@ const nextMonth = document.getElementById("nextMonth");
 
 let currentDate = new Date();
 const today = new Date();
-today.setHours(0, 0, 0, 0); // Normalize today
+today.setHours(0, 0, 0, 0); 
 
 const events = {
   "2025-05-06": ["meeting"],
@@ -198,16 +197,12 @@ function renderCalendar(date) {
 
   let row = document.createElement("tr");
 
-  // Show last few days from previous month
   for (let i = firstDay - 1; i >= 0; i--) {
     const td = document.createElement("td");
     td.textContent = daysInPrevMonth - i;
-    td.classList.add("inactive"); // style for previous/next month dates
+    td.classList.add("inactive"); 
     row.appendChild(td);
   }
-
-  // Empty cells before 1st
-  // for (let i = 0; i < firstDay; i++) row.appendChild(document.createElement("td"));
 
   for (let d = 1; d <= daysInMonth; d++) {
     const cellDate = new Date(y, m, d);
@@ -242,3 +237,4 @@ function renderCalendar(date) {
 renderCalendar(currentDate);
 
 // Calendar End
+

@@ -850,11 +850,11 @@ textarea.form-control {
 /* fairbanks jobmodal start*/
 .fairbanks-jobmodal-title{
     background: linear-gradient(180deg, #FFF -57.5%, #0B3E58 100%);
-  }
-  .postjobbulletinbtn-title{
+}
+.postjobbulletinbtn-title{
     color: #0A5B8A;
-  }
-  /* fairbanks jobmodal End*/
+}
+/* fairbanks jobmodal End*/
 
 /* History Sidebar Start */
 .history-sidebar {
@@ -1553,6 +1553,63 @@ table.calendar-table {
 
     .search-input input::placeholder {
         font-size: 16px;
+    }
+
+    .home-bottom-header-logo {
+        height: 65px;
+        background: transparent;
+        border: none;
+    }
+
+    .home-bottom-header-logo a {
+        width: 80px;
+    }
+}
+
+@media (max-width:768px) {
+    .header {
+        padding: 0;
+    }
+
+    .home-bottom-header {
+        position: absolute !important;
+        top: 68px;
+        left: -100%;
+        height: 100dvh;
+        overflow-y: auto;
+        border-radius: 0 10px 10px 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-list-open .home-bottom-header {
+        left: 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .home-bottom-header-container ul li>a:before {
+        display: none;
+    }
+
+    .home-bottom-header-container li a {
+        display: inherit !important;
+    }
+
+    .home-bottom-header-logo {
+        position: relative !important;
+        height: auto;
+    }
+
+    .header-social-icon {
+        padding-left: 30px;
+        margin-top: 30px;
+    }
+
+    .header-social-icon a i {
+        color: #000 !important;
+    }
+
+    form.account-comany-form {
+        width: 100% !important;
     }
 }
 

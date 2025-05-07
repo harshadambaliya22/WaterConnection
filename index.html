@@ -19,9 +19,14 @@
      <div class="main-header-body">
        <header class='header position-relative border-0'>
            <nav class="navbar navbar-expand-lg homnavtopline">
+            <div class="header-hamburger ms-20">
+              <span class="header-hamburger-icon mb-4 d-block bg-white"></span>
+              <span class="header-hamburger-icon mb-4 d-block bg-white"></span>
+              <span class="header-hamburger-icon d-block bg-white"></span>
+            </div>
                <div class="container-fluid">
                    <div class='d-flex align-items-center justify-content-between gap-20 w-100'>
-                       <ul class="navbar-nav flex-row gap-16">
+                       <ul class="navbar-nav flex-row gap-16 header-social-icon">
                            <li class="nav-item">
                              <a class="nav-link p-0 lh-1" href="javascript:void(0);"><i class="text-white fs-20 fs-xl-18 fa-solid fa-share-nodes"></i></a>
                            </li>
@@ -35,7 +40,7 @@
                              <a class="nav-link p-0 lh-1" href="javascript:void(0);"><i class="text-white fs-20 fs-xl-18 fa-brands fa-square-twitter"></i></a>
                            </li>
                        </ul>
-                       <ul class="navbar-nav flex-row gap-24">
+                       <ul class="navbar-nav flex-row gap-24 gap-md-12">
                            <li class="nav-item">
                              <a class="nav-link p-0 lh-1 text-white fs-20 fs-xl-18 fw-bold" href="javascript:void(0);">Login</a>
                            </li>
@@ -47,22 +52,22 @@
                </div>
            </nav>
        </header>
-       <div class='home-bottom-header position-relative z-1'>
+       <div class='home-bottom-header position-relative z-1 py-md-20'>
            <div class='home-bottom-header-container'>
-               <ul class="navbar-nav justify-content-center flex-row">
+               <ul class="navbar-nav justify-content-center flex-row flex-md-column">
                    <li class="nav-item py-14">
                      <a class="nav-link position-relative px-50 px-exl-45 px-xxl-36 px-xl-30 d-inline-flex gap-4 flex-column align-items-center text-primary py-0 lh-1 fs-24 fs-exl-20 fs-xxl-18 fs-xl-16 fw-bold text-nowrap" href="javascript:void(0);">
-                       <i class="fa-solid fa-clipboard-question"></i> Disposals
+                       <i class="fa-solid fa-clipboard-question me-md-8"></i> Disposals
                      </a>
                    </li>
                    <li class="nav-item py-14">
                      <a class="nav-link position-relative px-50 px-exl-45 px-xxl-36 px-xl-30 d-inline-flex gap-4 flex-column align-items-center text-primary py-0 lh-1 fs-24 fs-exl-20 fs-xxl-18 fs-xl-16 fw-bold text-nowrap" href="javascript:void(0);">
-                       <i class="fa-solid fa-clipboard-question"></i> FAQ
+                       <i class="fa-solid fa-clipboard-question me-md-8"></i> FAQ
                      </a>
                    </li>
                    <li class="nav-item py-14">
                      <a class="nav-link position-relative px-50 px-exl-45 px-xxl-36 px-xl-30 d-inline-flex gap-4 flex-column align-items-center text-primary py-0 lh-1 fs-24 fs-exl-20 fs-xxl-18 fs-xl-16 fw-bold text-nowrap" href="javascript:void(0);">
-                       <i class="fa-solid fa-house"></i> Home
+                       <i class="fa-solid fa-house me-md-8"></i> Home
                      </a>
                    </li>
                    
@@ -76,17 +81,17 @@
                    
                    <li class="nav-item py-14">
                      <a class="nav-link position-relative px-50 px-exl-45 px-xxl-36 px-xl-30 d-inline-flex gap-4 flex-column align-items-center text-primary py-0 lh-1 fs-24 fs-exl-20 fs-xxl-18 fs-xl-16 fw-bold text-nowrap" href="javascript:void(0);">
-                       <i class="fa-solid fa-magnifying-glass"></i> Search
+                       <i class="fa-solid fa-magnifying-glass me-md-8"></i> Search
                      </a>
                    </li>
                    <li class="nav-item py-14">
                      <a class="nav-link position-relative px-50 px-exl-45 px-xxl-36 px-xl-30 d-inline-flex gap-4 flex-column align-items-center text-primary py-0 lh-1 fs-24 fs-exl-20 fs-xxl-18 fs-xl-16 fw-bold text-nowrap" href="javascript:void(0);">
-                       <i class="fa-solid fa-circle-info"></i> About Us
+                       <i class="fa-solid fa-circle-info me-md-8"></i> About Us
                      </a>
                    </li>
                    <li class="nav-item py-14">
                      <a class="nav-link position-relative px-50 px-exl-45 px-xxl-36 px-xl-30 d-inline-flex gap-4 flex-column align-items-center text-primary py-0 lh-1 fs-24 fs-exl-20 fs-xxl-18 fs-xl-16 fw-bold text-nowrap" href="javascript:void(0);">
-                       <i class="fa-solid fa-address-card"></i> Contact Us
+                       <i class="fa-solid fa-address-card me-md-8"></i> Contact Us
                      </a>
                    </li>
                </ul>
@@ -666,6 +671,7 @@
      <!-- accound modal End -->
 
     <!-- JavaScript Files -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script>
@@ -683,6 +689,49 @@
             icon.classList.add('fa-eye');
           }
         }
+        // Function to move element if screen width is 768 or more
+        function moveLogoItemsIfNeeded() {
+          if (window.innerWidth <= 768) {
+            const logoItems = document.querySelector('.home-bottom-header-logo');
+            const navBar = document.querySelector('.homnavtopline .navbar-nav');
+
+            if (logoItems && navBar && navBar.parentNode) {
+              // Avoid moving it again if already moved
+              if (!navBar.nextSibling?.classList?.contains('home-bottom-header-logo')) {
+                const movedElement = logoItems.parentNode.removeChild(logoItems);
+                navBar.parentNode.insertBefore(movedElement, navBar.nextSibling);
+              }
+            }
+          }
+        }
+
+        // Run on page load
+        window.addEventListener('DOMContentLoaded', moveLogoItemsIfNeeded);
+
+        function moveLogoItemsIfNeededtwo() {
+          if (window.innerWidth <= 768) {
+            const logoItems = document.querySelector('.header-social-icon');
+            const navBar = document.querySelector('.home-bottom-header-container');
+
+            if (logoItems && navBar && navBar.parentNode) {
+              // Avoid moving it again if already moved
+              if (!navBar.nextSibling?.classList?.contains('header-social-icon')) {
+                const movedElement = logoItems.parentNode.removeChild(logoItems);
+                navBar.parentNode.insertBefore(movedElement, navBar.nextSibling);
+              }
+            }
+          }
+        }
+
+        // Run on page load
+        window.addEventListener('DOMContentLoaded', moveLogoItemsIfNeededtwo);
+
+        $(document).ready(function(){
+          $(".header-hamburger").click(function () {
+            $("body").toggleClass("menu-list-open");
+          });
+        })
+       
     </script>
 
 </body>
