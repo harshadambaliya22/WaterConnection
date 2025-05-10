@@ -1,7 +1,10 @@
 :root {
     --gray-bg: #DFE0E1;
     --dark: #414141;
+    --blue: #0A5B8A;
 }
+
+.text-
 
 /* Header Start */
 .header {
@@ -1267,8 +1270,9 @@ table.calendar-table {
 /* Responsive css start */
 
 @media (max-width: 1650px) {
-    .main-content.main-content-home {
-        height: calc(100vh - 109px);
+    .header-m-content {
+        overflow-x: auto;
+        white-space: nowrap;
     }
 
     .header-m-logo {
@@ -1276,9 +1280,8 @@ table.calendar-table {
         height: 150px;
     }
 
-    .header-m-content {
-        overflow-x: auto;
-        white-space: nowrap;
+    .main-content.main-content-home {
+        height: calc(100vh - 109px);
     }
 }
 
@@ -1289,16 +1292,16 @@ table.calendar-table {
 }
 
 @media (max-width: 1400px) {
-    .home-bottom-header-logoitems {
-        width: 360px;
+    .main-content.main-content-home {
+        height: calc(100vh - 106.5px);
     }
 
     .home-bottom-header-logo {
         height: 180px;
     }
 
-    .main-content.main-content-home {
-        height: calc(100vh - 106.5px);
+    .home-bottom-header-logoitems {
+        width: 360px;
     }
 }
 
@@ -1307,8 +1310,10 @@ table.calendar-table {
         margin-left: 180px;
     }
 
-    .header-m-content {
-        margin-left: 190px;
+    .header-title {
+        top: 50%;
+        left: 60%;
+        transform: translate(-60%, -50%);
     }
 
     .bottom-header-content {
@@ -1318,28 +1323,26 @@ table.calendar-table {
         justify-content: start !important;
     }
 
-    .header-title {
-        top: 50%;
-        left: 60%;
-        transform: translate(-60%, -50%);
+    .header-m-content {
+        margin-left: 190px;
     }
 }
 
 @media (max-width: 1200px) {
-    .home-bottom-header-logoitems {
-        width: 280px;
-    }
-
-    .home-bottom-header-logo {
-        height: 130px;
-    }
-
     .home-bottom-header-logo a {
         width: 170px;
     }
 
     .main-content.main-content-home {
         height: calc(100vh - 102px);
+    }
+
+    .home-bottom-header-logoitems {
+        width: 280px;
+    }
+
+    .home-bottom-header-logo {
+        height: 130px;
     }
 }
 
@@ -1541,16 +1544,6 @@ table.calendar-table {
         width: 300px;
     }
 
-    .search-popup {
-        width: 350px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .search-map {
-        height: auto;
-    }
-
     .search-input input::placeholder {
         font-size: 16px;
     }
@@ -1564,21 +1557,21 @@ table.calendar-table {
     .home-bottom-header-logo a {
         width: 80px;
     }
+
+    .search-popup {
+        width: 350px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .search-map {
+        height: auto;
+    }
 }
 
 @media (max-width:768px) {
     .header {
         padding: 0;
-    }
-
-    .home-bottom-header {
-        position: absolute !important;
-        top: 68px;
-        left: -100%;
-        height: 100dvh;
-        overflow-y: auto;
-        border-radius: 0 10px 10px 0;
-        transition: all 0.3s ease-in-out;
     }
 
     .menu-list-open .home-bottom-header {
@@ -1592,6 +1585,16 @@ table.calendar-table {
 
     .home-bottom-header-container li a {
         display: inherit !important;
+    }
+
+    .home-bottom-header {
+        position: absolute !important;
+        top: 68px;
+        left: -100%;
+        height: 100dvh;
+        overflow-y: auto;
+        border-radius: 0 10px 10px 0;
+        transition: all 0.3s ease-in-out;
     }
 
     .home-bottom-header-logo {
@@ -1617,13 +1620,22 @@ table.calendar-table {
     .header-title {
         font-size: 16px !important;
     }
+
+    .modal-dialog {
+        position: relative;
+        width: auto;
+        margin: 0.5rem;
+        pointer-events: none;
+    }
+}
+
+@media (max-width:430px) {
+    .createaccount-first-check{
+        position: relative !important;
+    }
 }
 
 @media (max-width:400px) {
-    .search-popup {
-        width: 90%;
-    }
-
     .search-input {
         top: unset;
         left: unset;
@@ -1632,6 +1644,10 @@ table.calendar-table {
 
     .search-input-mobile {
         display: block;
+    }
+
+    .search-popup {
+        width: 90%;
     }
 
     .search-input {
