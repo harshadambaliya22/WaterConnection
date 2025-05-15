@@ -758,6 +758,25 @@ textarea.form-control {
     color: #3B9FD8;
 }
 
+.managedriver-circle{
+    transform: unset;
+    top: unset;
+    left: unset;
+}
+
+.managedriver-circle-danger{
+    background: radial-gradient(circle at 80% 6%, #E6F1E6, #188E4C);
+    border-color: #1A9E54;
+}
+
+.managedriver-card-body{
+    grid-template-columns: 1fr 1fr;
+}
+
+.managedriver-btn{
+    height: 50px;
+}
+
 @media (min-width: 992px) {
 
     .modal-lg,
@@ -1267,6 +1286,15 @@ table.calendar-table {
 }
 /* Invites Sidebar End */
 
+/* job creation css start  */
+.job-creation-modal {
+    width: 500px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/* job creation css End  */
+
 /* Responsive css start */
 
 @media (max-width: 1650px) {
@@ -1316,15 +1344,15 @@ table.calendar-table {
         transform: translate(-60%, -50%);
     }
 
+    .header-m-content {
+        margin-left: 190px;
+    }
+
     .bottom-header-content {
         overflow-x: auto;
         white-space: nowrap;
         padding-inline: 15px;
         justify-content: start !important;
-    }
-
-    .header-m-content {
-        margin-left: 190px;
     }
 }
 
@@ -1333,16 +1361,16 @@ table.calendar-table {
         width: 170px;
     }
 
+    .home-bottom-header-logo {
+        height: 130px;
+    }
+
     .main-content.main-content-home {
         height: calc(100vh - 102px);
     }
 
     .home-bottom-header-logoitems {
         width: 280px;
-    }
-
-    .home-bottom-header-logo {
-        height: 130px;
     }
 }
 
@@ -1363,10 +1391,6 @@ table.calendar-table {
         transition: all 0.3s ease-in-out;
     }
 
-    .header-hamburger {
-        display: block;
-    }
-
     .menu-list-open .menu-list {
         left: 0;
         transition: all 0.3s ease-in-out;
@@ -1374,6 +1398,10 @@ table.calendar-table {
 
     .header {
         padding: 5px 15px;
+    }
+
+    .header-hamburger {
+        display: block;
     }
 
     .header-title {
@@ -1391,6 +1419,18 @@ table.calendar-table {
         display: block !important;
     }
 
+    .header-middle-open {
+        right: 0;
+        display: block;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .header-m-content,
+    .header-m-personal {
+        margin-left: 0;
+        display: unset !important;
+    }
+
     .header-middle {
         position: absolute !important;
         right: -270px;
@@ -1404,18 +1444,6 @@ table.calendar-table {
         overflow-y: auto;
         display: none;
         transition: all 0.3s ease-in-out;
-    }
-
-    .header-middle-open {
-        right: 0;
-        display: block;
-        transition: all 0.3s ease-in-out;
-    }
-
-    .header-m-content,
-    .header-m-personal {
-        margin-left: 0;
-        display: unset !important;
     }
 
     .header-m-duty {
@@ -1554,6 +1582,10 @@ table.calendar-table {
         border: none;
     }
 
+    .search-map {
+        height: auto;
+    }
+
     .home-bottom-header-logo a {
         width: 80px;
     }
@@ -1562,10 +1594,6 @@ table.calendar-table {
         width: 350px;
         left: 50%;
         transform: translateX(-50%);
-    }
-
-    .search-map {
-        height: auto;
     }
 }
 
@@ -1587,6 +1615,11 @@ table.calendar-table {
         display: inherit !important;
     }
 
+    .header-social-icon {
+        padding-left: 30px;
+        margin-top: 30px;
+    }
+
     .home-bottom-header {
         position: absolute !important;
         top: 68px;
@@ -1600,11 +1633,6 @@ table.calendar-table {
     .home-bottom-header-logo {
         position: relative !important;
         height: auto;
-    }
-
-    .header-social-icon {
-        padding-left: 30px;
-        margin-top: 30px;
     }
 
     .header-social-icon a i {
@@ -1646,16 +1674,16 @@ table.calendar-table {
         display: block;
     }
 
+    .search-input-mobile {
+        display: block;
+    }
+
     .search-popup {
         width: 90%;
     }
 
     .search-input {
         display: none;
-    }
-
-    .search-input-mobile {
-        display: block;
     }
 
     .nav.nav-tabs {
