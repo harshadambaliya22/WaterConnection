@@ -1292,6 +1292,42 @@ table.calendar-table {
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 1;
+}
+.job-creation-modal .modal-header {
+    background-color: #C5E0EE;
+}
+
+.jobcreation-accordian .accordion-button{font-size: 16px;color: #0B3E58; font-weight: 600;}
+.jobcreation-accordian .accordion-button::after{display: none;}
+.jobcreation-accordian .accordion-button:focus{box-shadow: none;}
+
+.jobcreation-accordian .accordion-button .jobcreation-number-icon i.fa-caret-down,
+.jobcreation-accordian .accordion-button.collapsed .jobcreation-number-icon i.fa-caret-up{
+    display: none;
+    transition: all 0.3s;
+}
+
+.jobcreation-accordian .accordion-button.collapsed .jobcreation-number-icon i.fa-caret-down,
+.jobcreation-accordian .accordion-button .jobcreation-number-icon i.fa-caret-up{
+    display: block;
+    transition: all 0.3s;
+}
+
+.jobcreation-number {
+    font-family: "Segoe Script";
+    font-size: 14px;
+    padding: 4px;
+    border: 1px solid #0D4059;
+    background: linear-gradient(180deg, #FFF -57.5%, #0B3E58 100%);
+    color: #fff;
+    border-radius: 50%;
+    text-shadow: 0px 0px 16px #00000052;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /* job creation css End  */
 

@@ -1480,32 +1480,32 @@
 
     <!-- job creation start  -->
     <div class='job-creation-modal bg-white border border-radius-2'>
-        <div class="modal-header py-34 position-relative">
-          <h1 class="modal-title job-creation-title text-center w-100 fs-32 fw-semibold fst-italic text-black lh-1 mb-0">Job Creation</h1>
+        <div class="modal-header py-28 position-relative">
+          <h1 class="modal-title job-creation-title text-center w-100 fs-36 fw-semibold fst-italic text-black lh-1 mb-0">Job Creation</h1>
           <button type="button" class="btn-close position-absolute top-0 end-0 mt-8 me-12"></button>
           <ul class="nav nav-tabs job-creation-tab border-0 d-inline-flex flex-column position-absolute ms-16" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link d-flex align-items-center gap-8 border-0 px-0 pt-0 active" id="service-tab" data-bs-toggle="tab" data-bs-target="#service-tab-pane" type="button" role="tab" aria-controls="service-tab-pane" aria-selected="true">
+              <button class="nav-link d-flex align-items-center gap-8 border-0 px-0 pt-0 bg-transparent active" id="service-tab" data-bs-toggle="tab" data-bs-target="#service-tab-pane" type="button" role="tab" aria-controls="service-tab-pane" aria-selected="true">
                 <input class="form-check-input m-0" type="radio" name="tabCheck" id="servicecheck"checked>
-                <label class="form-check-label fs-14 fw-bold" for="servicecheck">Service</label>
+                <label class="form-check-label fs-12 fw-bold" for="servicecheck">Service</label>
               </button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link d-flex align-items-center gap-8 border-0 px-0 pt-0" id="production-tab" data-bs-toggle="tab" data-bs-target="#production-tab-pane" type="button" role="tab" aria-controls="production-tab-pane" aria-selected="false">
+              <button class="nav-link d-flex align-items-center gap-8 border-0 px-0 pt-0 bg-transparent" id="production-tab" data-bs-toggle="tab" data-bs-target="#production-tab-pane" type="button" role="tab" aria-controls="production-tab-pane" aria-selected="false">
                 <input class="form-check-input m-0" type="radio" name="tabCheck" id="productioncheck">
-                <label class="form-check-label fs-14 fw-bold" for="productioncheck">Production</label>
+                <label class="form-check-label fs-12 fw-bold" for="productioncheck">Production</label>
               </button>
             </li>
           </ul>
         </div>
-        <div class='job-creation-body p-16 position-relative'>
+        <div class='job-creation-body position-relative'>
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="service-tab-pane" role="tabpanel" aria-labelledby="service-tab" tabindex="0">
-              <div class="accordion" id="serviceaccordian">
+              <div class="accordion jobcreation-accordian" id="serviceaccordian">
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#serviceeOne" aria-expanded="true" aria-controls="serviceeOne">
-                      Accordion Item #1
+                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start" type="button" data-bs-toggle="collapse" data-bs-target="#serviceeOne" aria-expanded="true" aria-controls="serviceeOne">
+                      <span class="jobcreation-number me-16">1</span> Oil Company <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
                     </button>
                   </h2>
                   <div id="serviceeOne" class="accordion-collapse collapse show" data-bs-parent="#serviceaccordian">
@@ -1516,8 +1516,8 @@
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceTwo" aria-expanded="false" aria-controls="serviceTwo">
-                      Accordion Item #2
+                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceTwo" aria-expanded="false" aria-controls="serviceTwo">
+                      <span class="jobcreation-number me-16">2</span> Ordered By <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-circle-info me-10 fs-20"></i><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
                     </button>
                   </h2>
                   <div id="serviceTwo" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
@@ -1528,8 +1528,8 @@
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceThree" aria-expanded="false" aria-controls="serviceThree">
-                      Accordion Item #3
+                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceThree" aria-expanded="false" aria-controls="serviceThree">
+                      <span class="jobcreation-number me-16">3</span> Location <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
                     </button>
                   </h2>
                   <div id="serviceThree" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
@@ -1538,17 +1538,89 @@
                     </div>
                   </div>
                 </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceFour" aria-expanded="false" aria-controls="serviceFour">
+                      <span class="jobcreation-number me-16">4</span> Job type: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
+                    </button>
+                  </h2>
+                  <div id="serviceFour" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
+                    <div class="accordion-body">
+                      <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceFive" aria-expanded="false" aria-controls="serviceFive">
+                      <span class="jobcreation-number me-16">5</span> Disposals <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
+                    </button>
+                  </h2>
+                  <div id="serviceFive" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
+                    <div class="accordion-body">
+                      <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceSix" aria-expanded="false" aria-controls="serviceSix">
+                      <span class="jobcreation-number me-16">6</span> Secondary Location <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
+                    </button>
+                  </h2>
+                  <div id="serviceSix" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
+                    <div class="accordion-body">
+                      <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceSeven" aria-expanded="false" aria-controls="serviceSeven">
+                      <span class="jobcreation-number me-16">7</span> Rate <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
+                    </button>
+                  </h2>
+                  <div id="serviceSeven" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
+                    <div class="accordion-body">
+                      <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceEight" aria-expanded="false" aria-controls="serviceEight">
+                      <span class="jobcreation-number me-16">8</span> Note <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
+                    </button>
+                  </h2>
+                  <div id="serviceEight" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
+                    <div class="accordion-body">
+                      <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceNine" aria-expanded="false" aria-controls="serviceNine">
+                      <span class="jobcreation-number me-16">9</span> Drivers <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
+                    </button>
+                  </h2>
+                  <div id="serviceNine" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
+                    <div class="accordion-body">
+                      <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="tab-pane fade" id="production-tab-pane" role="tabpanel" aria-labelledby="production-tab" tabindex="0">
-              <div class="accordion" id="productionaccordian">
+              <div class="accordion jobcreation-accordian" id="productionaccordian">
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#productionOne" aria-expanded="true" aria-controls="productionOne">
-                      Accordion Item #1
+                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start" type="button" data-bs-toggle="collapse" data-bs-target="#serviceeOne" aria-expanded="true" aria-controls="serviceeOne">
+                      <span class="jobcreation-number me-16">1</span> Route Name: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
                     </button>
                   </h2>
-                  <div id="productionOne" class="accordion-collapse collapse show" data-bs-parent="#productionaccordian">
+                  <div id="serviceeOne" class="accordion-collapse collapse show" data-bs-parent="#productionaccordian">
                     <div class="accordion-body">
                       <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
@@ -1556,11 +1628,11 @@
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#productionTwo" aria-expanded="false" aria-controls="productionTwo">
-                      Accordion Item #2
+                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceTwo" aria-expanded="false" aria-controls="serviceTwo">
+                      <span class="jobcreation-number me-16">2</span> Oil Company: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
                     </button>
                   </h2>
-                  <div id="productionTwo" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
+                  <div id="serviceTwo" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
                     <div class="accordion-body">
                       <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
@@ -1568,11 +1640,59 @@
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#productionThree" aria-expanded="false" aria-controls="productionThree">
-                      Accordion Item #3
+                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceThree" aria-expanded="false" aria-controls="serviceThree">
+                      <span class="jobcreation-number me-16">3</span> Location: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
                     </button>
                   </h2>
-                  <div id="productionThree" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
+                  <div id="serviceThree" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
+                    <div class="accordion-body">
+                      <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceFour" aria-expanded="false" aria-controls="serviceFour">
+                      <span class="jobcreation-number me-16">4</span> Disposals: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
+                    </button>
+                  </h2>
+                  <div id="serviceFour" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
+                    <div class="accordion-body">
+                      <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceFive" aria-expanded="false" aria-controls="serviceFive">
+                      <span class="jobcreation-number me-16">5</span> Rate: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
+                    </button>
+                  </h2>
+                  <div id="serviceFive" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
+                    <div class="accordion-body">
+                      <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceSix" aria-expanded="false" aria-controls="serviceSix">
+                      <span class="jobcreation-number me-16">6</span> Note: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
+                    </button>
+                  </h2>
+                  <div id="serviceSix" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
+                    <div class="accordion-body">
+                      <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceSeven" aria-expanded="false" aria-controls="serviceSeven">
+                      <span class="jobcreation-number me-16">7</span> Drives: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
+                    </button>
+                  </h2>
+                  <div id="serviceSeven" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
                     <div class="accordion-body">
                       <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
