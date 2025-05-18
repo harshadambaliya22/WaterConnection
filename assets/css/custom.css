@@ -1290,7 +1290,9 @@ table.calendar-table {
 .job-creation-modal {
     width: 500px;
     position: absolute;
+    /* position: fixed; */
     left: -600px;
+    /* left: 0; */
     top: 0;
     z-index: 1;
     transition: all 0.3s;
@@ -1302,8 +1304,15 @@ table.calendar-table {
 }
 
 .job-creation-body {
-    height: calc(100dvh - 370px);
+    height: calc(100dvh - 372px);
     overflow: auto;
+}
+
+.job-creation-modal .accordion-item {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #29556b;
+    border-radius: 0;
 }
 
 .job-creation-modal .modal-header {
@@ -1341,7 +1350,330 @@ table.calendar-table {
     align-items: center;
     justify-content: center;
 }
+
+.location-btngroup .btn {
+    border-radius: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.2;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+    min-width: 150px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.location-btngroup .btn:hover{
+    color: #fff;
+    opacity: 0.8;
+    transition: all 0.2s ease;
+}
+
+.btn.btn-job-green {
+    background: radial-gradient(50% 50% at 67.2% 35.4%, #DCF1E5 0%, #27A45E 100%);
+    border: 2px solid #1B5E20;
+}
+
+.btn.btn-job-blue {
+    background: linear-gradient(180deg, #8DAEC1 0%, #04345E 100%);
+    border: 2px solid #263238;
+}
+
+.btn-jobtype{
+    background: linear-gradient(217deg, #2280B7 3.27%, #0B3E58 156.88%);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.70);
+    transition: all 0.3s;
+    border: 1px solid #0B3E58;
+}
+
+.jobcration-jobtype-btngroup-body > button.btn-jobtype{
+    background: linear-gradient(180deg, #EEEEEE 50%, #BBBBBB 100%);
+}
+
+.btn-jobtype:hover{
+    transition: all 0.3s;
+    opacity: 0.8;
+}
+
+.jobtype-redbtn.btn-jobtype{
+    background: radial-gradient(50% 50% at 67.2% 35.4%, #DCF1E5 0%, #CB0E20 100%);
+    border-color: #CB0E20;
+}
+
+.jobtype-drivercomany .header-action-duration-title p{max-width: 75px;}
+
+.jobtype-formcontrol{min-width: 80px !important; max-width: 120px;}
 /* job creation css End  */
+
+/* Invitation Sidebar Start */
+.invitation-sidebar {
+    top: 10%;
+    left: 10%;
+    border: 1px solid #0B3E58;
+    width: 429px;
+    z-index: 1;
+    display:none;
+}
+.form-check-input:focus {
+    box-shadow: none;
+}
+.invitation-times span,
+.invitation-company-title,
+.invitation-list-two li p,
+.invitation-reminder .form-control,
+.overview-names,
+.o-invite-jeff{
+    color: #CB0E20;
+}
+.invitation-head h6 {
+    color: #0A5B8A;
+}
+.invitation-list li span,.invitation-note span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background: linear-gradient(236deg, #FFF -17.5%, #000 100%);
+}
+.invitation-sails-btn{
+    background: linear-gradient(180deg, #EEEEEE -57.5%, #0B3E58 100%);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border: 1.5px solid #0B3E58;
+}
+.invitation-none-btn,
+.invitation-footer-btn button:first-child{
+    background: linear-gradient(180deg, #EEEEEE -57.5%, #CB0E20 100%);
+    border-radius: 15px;
+}
+.invitation-reminder .form-check-input {
+    border-radius: 0;
+    width: 22px;
+    height: 22px;
+}
+.invitation-reminder .form-control {
+    width: 25px;
+    height: 20px;
+}
+.invitation-footer-btn button{
+    border-radius: 25px !important;
+    -webkit-border-radius: 25px !important;
+    -moz-border-radius: 25px !important;
+    -ms-border-radius: 25px !important;
+    -o-border-radius: 25px !important;
+    box-shadow: 3px 4px 10px #70707099;
+}
+.invitation-footer-btn button:last-child{
+    background: linear-gradient(180deg, #46CB81 -57.5%, #178045 100%);    
+}
+.invitation-map .map-body {
+    border: 1px solid #707070;
+    box-shadow: 3px 4px 10px #70707078;
+}
+/* Invitation Sidebar End */
+
+/* Overview Modal Start */
+.overview-accordion {
+    right: 300px;
+    left: unset;
+}
+.overview-accordion .accordion-body{
+    background: #fff;
+}
+.overview-accordion small,.overview-main-title{
+    color: #0A5B8A;
+}
+.overview-accordion .invitation-list li span {
+    border: 1px solid #13753E;
+    background: linear-gradient(236deg, #EEEEEE -17.5%, #13753E 100%);
+}
+output {
+    color: #0E7EBE;
+}
+.overview-accordion .accordion-button {
+    background: linear-gradient(180deg, #FFF -57.5%, #0B3E58 100%);
+    box-shadow: 0px 5px 10px #000000A3;
+}
+.overview-names {
+    border: 2px solid gray;
+    box-shadow: inset 0 4px 10px rgb(0 0 0 / 11%);
+}
+
+.overview-names.active {
+    color: #26804D !important;
+}
+.overview-names.disable{
+    display:none;
+}
+.roseservice-modal h1 {
+    text-shadow: 0px 4px 10px #00000061;
+}
+.roseservice-modal .modal-dialog {
+    width: 400px;
+}
+.roseservice-modal .modal-content {
+ border: 1px solid #0B3E58;
+}
+.roseservice-modal .modal-dialog {
+    width: 375px;
+}
+/* Overview Modal End */
+
+/* Secondary Location Start */
+.s-location {
+    top: 242px;
+    left: 536px;
+    border: 1px solid #0B3E58;
+    width: 450px;
+    z-index: 1;
+    display: none;
+}
+.s-location h3 {
+    text-shadow: 0 2px 10px #00000052;
+}
+.s-location-open{
+    display: block;
+}
+.s-location-input .form-control {
+    border-radius: 20px;
+    box-shadow: inset 0 0 10px #bbbbbbc9;
+    color: gray;
+    border: 1px solid #919191;
+}
+.invitation-sidebar-close {
+    top: 14px;
+    right: 20px;
+    cursor: pointer;
+}
+.s-location-input .form-control::placeholder{
+    color: #b3b3b3;
+}
+.s-location-name .form-control {
+    max-width: 200px;
+}
+.s-location-address {
+    max-width: 215px;
+}
+.s-location-pin .form-control{
+    height: 90px;
+}
+.s-location-pin i {
+    top: 36px;
+    color: #a3a3a3;
+}
+.s-location-pin i:first-of-type {
+    left: 15px;
+}
+.s-location-pin i:last-of-type {
+    right: 15px;
+}
+.s-location-btn {
+    background: linear-gradient(180deg, #EEEEEE -57.5%, #0B3E58 100%);
+    border: 1.5px solid #0B3E58;
+    border-radius: 20px;
+}
+/* Secondary Location End */
+
+/* Overview invite Modal Start */
+.o-invite-modal .modal-content {
+    border-radius: 0;
+}
+.o-invite-modal .modal-body {
+    padding: 15px 30px 30px;
+}
+.o-invite-btn {
+    background-color: #70A2BC;
+    box-shadow: 0 3px 10px #0000008c;
+}
+
+/* Overview invite Modal End */
+
+/* Drivers Available Modal Start */
+.d-available-modal .modal-dialog {
+    width: 450px;
+}
+.d-available-immeditely {
+    background: linear-gradient(180deg, #EEEEEE -57.5%, #CB0E20 100%);
+    border-radius: 15px;
+}
+.d-available-inputs {
+    max-width: 200px;
+    margin-inline: auto;
+}
+.d-available-inputs {
+    max-width: 200px;
+}
+.d-available-inputs .form-check {
+    margin-right: -34px;
+}
+.d-available-inputs .form-check {
+    color: #b1b1b1;
+}
+.d-available-btn {
+    background: linear-gradient(to bottom, #56b06c, #518d69);
+    border-radius: 20px;
+}
+.d-available-logo {
+    left: 10px;
+    top: 17px;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    box-shadow: 3px 5px 10px #c3c3c3;
+}
+.d-available-logo img{
+    width:83%;
+    height:100%;
+}
+/* Drivers Available Modal End */
+
+/* Trucking Modal Start */
+.trucking-modal .modal-dialog {
+    max-width: 540px;
+}
+.trucking-modal-contact a {
+    border-radius: 5px;
+    padding: 3px 8px;
+    text-decoration: none;
+}
+.trucking-modal-driver span {
+    font-family: "Segoe Script";
+    color: #13753E;
+}
+.trucking-modal-list {
+    border: 3px solid #0b3e58;
+    border-radius: 6px;
+}
+.trucking-modal-item h6 span {
+    width: 18px;
+    height: 18px;
+}
+.trucking-modal-item {
+    padding: 17px;
+    box-shadow: inset 0 0 10px #80808091;
+    transition: all 0.3s;
+}
+.trucking-modal-item:hover {
+    background-color: #f0f0f0;
+    transition: all 0.3s;
+}
+.trucking-modal-item h6 {
+    margin-top: -7px;
+}
+/* Trucking Modal End */
+
+/* Ordered Modal Start */
+.order-onduty .switch-btn {
+    background: radial-gradient(circle at 80% 6%, #E6F1E6, #293b44);
+    border: none;
+}
+/* Ordered Modal End */
 
 /* Responsive css start */
 

@@ -124,7 +124,7 @@
                     </ul>
                 </li>
             </ul>
-            <h2 class="header-title fs-32 fs-xl-25 fw-bold mb-0 text-center position-absolute">JCV38 Corp</h2>
+            <h2 class="header-title fs-32 fs-xl-25 fw-bold mb-0 text-center position-absolute" data-bs-target="#roseservice" data-bs-toggle="modal">JCV38 Corp</h2>
             <h4
                 class="header-currect-job text-primary fs-16 fs-sm-14 fw-medium bg-white py-4 px-15 px-sm-10 mb-0 d-none me-10 me-sm-6">
                 Current job</h4>
@@ -592,228 +592,620 @@
                 </div>
             </div>
         </div>
+        <!-- Overview Modal Start -->
+            <div class="accordion search-popup position-absolute z-1 overview-accordion" id="accordionoverview">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button py-2 px-15 justify-content-end" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true"
+                            aria-controls="collapsetwo">
+                            <div class="search-heading d-flex align-items-center justify-content-between">
+                                <h6 class="search-heading-title fs-15 fw-semibold text-white mb-0">Manage/Overview</h6>
+                                <div class="search-heading-icon">
+                                    <span><img src="assets/image/search/Icon feather-move.svg" alt="Move icon"></span>
+                                    <span class="mx-14"><img src="assets/image/search/Line 46.svg" alt="Line icon"></span>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapsetwo" class="accordion-collapse collapse" data-bs-parent="#accordionoverview">
+                        <div class="accordion-body py-12 px-15">                            
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane border-0 fade show active bg-white" id="home-tab-pane" role="tabpanel"
+                                    aria-labelledby="home-tab" tabindex="0">
+                                    <div class="invitation-head d-flex align-items-center justify-content-between">
+                                        <div class="invitation-times">
+                                            <span class="fs-13 fw-bold d-block text-black">Created By:</span>
+                                            <small class="fs-13 fw-bold">JCV38 Corp</small>
+                                        </div>
+                                        <div class="text-center">
+                                            <h4 class="overview-main-title fs-28 mb-0 fw-bold">Rose 16-21 4H</h4>
+                                        </div>
+                                        <span class="invitation-sidebar-close"><img src="assets/image/contact-sidebar/Close.svg"
+                                            alt="Close icon" style="cursor: pointer;"></span>
+                                    </div>
+                                    <div class="mt-62 ps-23">
+                                        <ul class="invitation-list list-inline">
+                                            <li class="fs-15 fw-bold text-black mb-9"><span class="me-11 d-inline-block"></span>Oil Company: Kraken</li>
+                                            <li class="fs-15 fw-bold text-black mb-9"><span class="me-11 d-inline-block"></span>Company-man: Cody Mills</li>
+                                            <li class="fs-15 fw-bold text-black mb-9"><span class="me-11 d-inline-block"></span>Type: <output>Haul-out</output></li>
+                                            <li class="fs-15 fw-bold text-black mb-9"><span class="me-11 d-inline-block"></span>Rate: $145<sub>hr</sub></li>
+                                            <li class="fs-15 fw-bold text-black mb-9"><span class="me-11 d-inline-block"></span>Disposal:
+                                                <button class="fs-11 text-white invitation-sails-btn fw-bold mb-9 py-1 px-6" data-bs-target="#invitationsent" data-bs-toggle="modal">Black Sails</button>
+                                            </li>
+                                            <li class="fs-15 fw-bold text-black mb-9"><span class="me-11 d-inline-block"></span>Secondary locations:
+                                                <button class="fs-11 text-white fw-bold invitation-none-btn px-15 py-2 border-0"  data-bs-target="#o_invitemodal" data-bs-toggle="modal">None</button>
+                                            </li>
+                                        </ul>       
+                                    </div>
+                                    <div class="invitation-note mt-15 mb-13 px-26">
+                                        <h6 class="fs-17 fw-bold mb-2 text-black text-center mb-12 d-flex align-items-center justify-content-center">
+                                            <img src="assets/image/Company-man edit.svg" alt="Edit icon" class="img-fluid me-10">
+                                            <span class="me-11 d-inline-block"></span>
+                                            <u>Notes:</u></h6>
+                                        <textarea class="form-control text-start pt-5 pe-35 pb-13 ps-17 fs-10 text-black" rows="5" cols="50" id="floatingTextarea">
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                                            nonumy eirmod tempor invidunt ut labore et dolore magna 
+                                            aliquyam erat, sed diam voluptua. At vero eos et accusam et justo 
+                                            duo dolores et ea rebum. Stet clita kasd gubergren, no sea 
+                                            takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum 
+                                            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.
+                                        </textarea>
+                                        <h6 class="fs-17 fw-bold mb-2 text-black text-center mb-0 mt-10 d-flex align-items-center justify-content-center">
+                                            <img src="assets/image/Company-man edit.svg" alt="Edit icon" class="img-fluid me-10">
+                                            <span class="me-11 d-inline-block"></span>
+                                            <u>Notes:</u></h6>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between px-26 mb-10">
+                                        <h6 class="fs-16 fw-bold text-danger mb-0">immediately</h6>
+                                        <span class="fs-14 fw-bold">6 <sup>a.m.</sup></span>
+                                        <span class="fs-14 fw-bold">6 p.m.</span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between px-26">
+                                        <h5 class="fs-18 p-10 fw-bold mb-0 overview-names">John Vicol <br>Sara Evans</h5>
+                                        <h5 class="fs-18 p-10 fw-bold mb-0 overview-names active">John Vicol</h5>
+                                        <h5 class="fs-18 p-10 fw-bold mb-0 overview-names">Jeff Beck</h5>
+                                    </div>
+                                    <div class="invitation-map d-flex justify-content-center px-26 my-16">
+                                        <div class='map-body h-100 w-100'>
+                                            <iframe class='w-100 h-100'
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238133.18800900166!2d72.65747318239129!3d21.159120355102836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1745177875945!5m2!1sen!2sin"
+                                                style="border:0;" allowfullscreen="" loading="lazy"
+                                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Overview Modal End -->
         <!-- job creation start  -->
         <div class='job-creation-modal bg-white border border-radius-2' id="job-creation-sidebar">
             <div class="modal-header py-28 position-relative">
                 <h1 class="modal-title job-creation-title text-center w-100 fs-36 fw-semibold fst-italic text-black lh-1 mb-0">Job Creation</h1>
                 <button type="button" class="btn-close position-absolute top-0 end-0 mt-8 me-12" id="job-creation"></button>
                 <ul class="nav nav-tabs job-creation-tab border-0 d-inline-flex flex-column position-absolute ms-16" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link d-flex align-items-center gap-8 border-0 px-0 pt-0 bg-transparent active" id="service-tab" data-bs-toggle="tab" data-bs-target="#service-tab-pane" type="button" role="tab" aria-controls="service-tab-pane" aria-selected="true">
-                    <input class="form-check-input m-0" type="radio" name="tabCheck" id="servicecheck"checked>
-                    <label class="form-check-label fs-12 fw-bold" for="servicecheck">Service</label>
-                    </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link d-flex align-items-center gap-8 border-0 px-0 pt-0 bg-transparent" id="production-tab" data-bs-toggle="tab" data-bs-target="#production-tab-pane" type="button" role="tab" aria-controls="production-tab-pane" aria-selected="false">
-                    <input class="form-check-input m-0" type="radio" name="tabCheck" id="productioncheck">
-                    <label class="form-check-label fs-12 fw-bold" for="productioncheck">Production</label>
-                    </button>
-                </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link d-flex align-items-center gap-8 border-0 px-0 pt-0 bg-transparent active" id="service-tab" data-bs-toggle="tab" data-bs-target="#service-tab-pane" type="button" role="tab" aria-controls="service-tab-pane" aria-selected="true">
+                            <input class="form-check-input m-0" type="radio" name="tabCheck" id="servicecheck"checked>
+                            <label class="form-check-label fs-12 fw-bold" for="servicecheck">Service</label>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link d-flex align-items-center gap-8 border-0 px-0 pt-0 bg-transparent" id="production-tab" data-bs-toggle="tab" data-bs-target="#production-tab-pane" type="button" role="tab" aria-controls="production-tab-pane" aria-selected="false">
+                            <input class="form-check-input m-0" type="radio" name="tabCheck" id="productioncheck">
+                            <label class="form-check-label fs-12 fw-bold" for="productioncheck">Production</label>
+                        </button>
+                    </li>
                 </ul>
             </div>
             <div class='job-creation-body position-relative'>
                 <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="service-tab-pane" role="tabpanel" aria-labelledby="service-tab" tabindex="0">
-                    <div class="accordion jobcreation-accordian" id="serviceaccordian">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start" type="button" data-bs-toggle="collapse" data-bs-target="#serviceeOne" aria-expanded="true" aria-controls="serviceeOne">
-                            <span class="jobcreation-number me-16">1</span> Oil Company <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
-                        </button>
-                        </h2>
-                        <div id="serviceeOne" class="accordion-collapse collapse show" data-bs-parent="#serviceaccordian">
-                        <div class="accordion-body">
-                            <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
+                    <div class="tab-pane fade show active" id="service-tab-pane" role="tabpanel" aria-labelledby="service-tab" tabindex="0">
+                        <div class="accordion jobcreation-accordian" id="serviceaccordian">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceeOne" aria-expanded="false" aria-controls="serviceeOne">
+                                        <span class="jobcreation-number me-16">1</span> Oil Company <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
+                                    </button>
+                                </h2>
+                                <div id="serviceeOne" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
+                                    <div class="accordion-body text-center">
+                                        <div class="dropdown d-inline-block"  data-bs-target="#gasmodal" data-bs-toggle="modal">
+                                            <button class="btn border dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Oil Company
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item active" href="javascript:void(0);">Kraken</a></li>
+                                              <li><a class="dropdown-item" href="javascript:void(0);">Grayson Mills</a></li>
+                                              <li><a class="dropdown-item" href="javascript:void(0);">Cord</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceTwo" aria-expanded="false" aria-controls="serviceTwo">
+                                        <span class="jobcreation-number me-16">2</span> Ordered By <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-circle-info me-10 fs-20"></i><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
+                                    </button>
+                                </h2>
+                                <div id="serviceTwo" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
+                                    <div class="accordion-body">
+                                        <form class="account-comany-form notesmodalbody notesmodal-adddispatch border-0 shadow-none border-radius-2 p-16 pt-0 text-center">
+                                            <p class="m-0 fs-14 fw-medium mb-14">For people already in the system</p>
+                                            <input type="text" class="form-control mb-14 mx-auto fs-14 m-0 lh-1 py-10 px-24 fw-bold" id="search" placeholder="Search">
+                                            <p class="m-0 fs-14 fw-medium mb-14">For people who haven't setup an account, <br> manually enter: </p>
+                                            <input type="text" class="form-control mb-14 mx-auto fs-14 m-0 lh-1 py-10 px-24 fw-bold" id="firstname" placeholder="First Name">
+                                            <input type="text" class="form-control mb-14 mx-auto fs-14 m-0 lh-1 py-10 px-24 fw-bold" id="lastname" placeholder="Last Name">
+                                            <input type="text" class="form-control mb-14 mx-auto fs-14 m-0 lh-1 py-10 px-24 fw-bold" id="phonenumber" placeholder="Phone Number">
+                                            <p class="fs-14 fw-medium" data-bs-target="#orderedmodal" data-bs-toggle="modal">To Invite to Job, Click <a href="javascript:void(0);" class="text-danger">HERE</a>... </p>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceThree" aria-expanded="false" aria-controls="serviceThree">
+                                        <span class="jobcreation-number me-16">3</span> Location <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
+                                    </button>
+                                </h2>
+                                <div id="serviceThree" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
+                                    <div class="accordion-body">
+                                        <div class="location-btngroup d-flex flex-column justify-content-center align-items-center gap-16">
+                                            <button class="btn btn-job-green mb-8">ADD</button>
+                                            <button class="btn btn-job-blue">Done</button>
+                                            <div class="notesmodal-adddispatch">
+                                                <p class="fs-14 fw-medium m-0">To Invite to Job, Click <a href="javascript:void(0);" class="text-danger">HERE</a>... </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceFour" aria-expanded="false" aria-controls="serviceFour">
+                                        <span class="jobcreation-number me-16">4</span> Job type: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
+                                    </button>
+                                </h2>
+                                <div id="serviceFour" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
+                                    <div class="accordion-body">
+                                        <div class="jobcration-jobtype-btngroup-body text-center">
+                                            <div class="jobcration-jobtype-btngroup d-flex justify-content-evenly align-items-center gap-20 mb-20">
+                                                <button class="btn btn-jobtype fs-18 border-radius-4 lh-1 py-10 px-24 fw-bold text-white">Haul-in</button>
+                                                <button class="btn btn-jobtype fs-18 border-radius-4 lh-1 py-10 px-24 fw-bold text-white">Haul-Out</button>
+                                            </div>
+                                            <button class="btn btn-jobtype fs-18 border-radius-4 lh-1 py-10 px-24 fw-bold text-primary">Both</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceFive" aria-expanded="false" aria-controls="serviceFive">
+                                        <span class="jobcreation-number me-16">5</span> Disposals <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
+                                    </button>
+                                </h2>
+                                <div id="serviceFive" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
+                                    <div class="accordion-body text-center">
+                                        <div class="location-btngroup d-flex justify-content-evenly align-items-center gap-20 mb-16">
+                                            <button class="btn btn-job-green mb-8">ADD</button>
+                                            <button class="btn btn-job-blue">Done</button>
+                                        </div>
+                                        <div class="notesmodal-adddispatch">
+                                            <p class="fs-14 fw-medium m-0">To Invite to Job, Click <a href="javascript:void(0);" class="text-danger">HERE</a>... </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceSix" aria-expanded="false" aria-controls="serviceSix">
+                                        <span class="jobcreation-number me-16">6</span> Secondary Location <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
+                                    </button>
+                                </h2>
+                                <div id="serviceSix" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
+                                    <div class="accordion-body">
+                                        <div class="location-btngroup text-center">
+                                            <div class="d-flex justify-content-evenly align-items-center gap-20 mb-20">
+                                                <button class="btn btn-job-green mb-8 s-location-add">ADD</button>
+                                                <button class="btn btn-job-blue">Done</button>
+                                            </div>
+                                            <button class="btn btn-jobtype jobtype-redbtn text-white">Manual</button>
+                                            <div class="notesmodal-adddispatch mt-16">
+                                                <p class="fs-14 fw-medium m-0">If There is <span class="text-danger">No</span>location, Click <a href="javascript:void(0);" class="text-danger">Done</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceSeven" aria-expanded="false" aria-controls="serviceSeven">
+                                        <span class="jobcreation-number me-16">7</span> Rate <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
+                                    </button>
+                                </h2>
+                                <div id="serviceSeven" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
+                                    <div class="accordion-body">
+                                        <div class="location-btngroup d-flex flex-column justify-content-evenly align-items-center gap-20 mb-16">
+                                            <form class="account-comany-form notesmodalbody notesmodal-adddispatch border-0 shadow-none border-radius-2 p-0 text-center d-flex justify-content-center align-items-center gap-16 h-auto">
+                                                <div class="mb-0 w-75 mx-auto position-relative">
+                                                    <input type="text" class="form-control" id="value" placeholder="Value">
+                                                    <span class="d-inline-flex align-items-center justify-content-center position-absolute top-50 translate-middle-y start-0 ms-16"><i class="fa-solid fa-dollar-sign"></i></span>
+                                                </div>
+                                                <div class="d-inline-flex flex-column justify-content-start align-items-start gap-8">
+                                                    <div class="d-flex align-items-center gap-8">
+                                                        <input class="form-check-input m-0" type="checkbox" value="" id="disposal" checked="">
+                                                        <label class="form-check-label d-flex align-items-center gap-8" for="disposal">Hr.</label>
+                                                    </div>
+                                                    <div class="d-flex align-items-center gap-8">
+                                                        <input class="form-check-input m-0" type="checkbox" value="" id="disposal" checked="">
+                                                        <label class="form-check-label d-flex align-items-center gap-8" for="disposal">Bbl</label>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <button class="btn btn-job-blue">Done</button>
+                                        </div>
+                                        <div class="notesmodal-adddispatch text-center">
+                                            <p class="fs-14 fw-medium m-0">For Multiple rate, add in <a href="javascript:void(0);" class="text-danger">NOTE</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceEight" aria-expanded="false" aria-controls="serviceEight">
+                                        <span class="jobcreation-number me-16">8</span> Note <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
+                                    </button>
+                                </h2>
+                                <div id="serviceEight" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
+                                    <div class="accordion-body">
+                                        <div class="jobmodal-textarea position-relative">
+                                            <form action="" class="account-comany-form text-center">
+                                                <textarea type="text" id="textInput" class="form-control text-start mb-16" rows="5" placeholder="Add Notes:"></textarea>
+                                                <div class="location-btngroup">
+                                                    <button class="btn btn-job-blue">Done</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceNine" aria-expanded="false" aria-controls="serviceNine">
+                                        <span class="jobcreation-number me-16">9</span> Drivers <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
+                                    </button>
+                                </h2>
+                                <div id="serviceNine" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
+                                    <div class="accordion-body">
+                                        <div class="jobtype-drivercomany d-flex justify-content-center align-items-center gap-20 mb-16">
+                                            <div class="notemodaldouble-body w-100">
+                                              <p class="m-0 mb-4 mt-8 text-center text-primary fs-14 fw-bolder">Company</p>
+                                              <div class="notesmodalbody border border-radius-2 py-8 px-10 h-auto">
+                                                  <div class="bottom-header-top border-0 shadow-none d-flex flex-column align-items-center justify-content-center gap-12 p-0">
+                                                      <button class="btn btn-header-action managedriver-btn w-100 d-flex justify-content-center align-items-center gap-20 border border-2 py-8 px-12" type="button">
+                                                          <div class="d-flex justify-content-center align-items-center">
+                                                              <span class="managedriver-circle d-inline-block switch-btn border-radius-circle"></span>
+                                                          </div>
+                                                          <div class="d-flex flex-column justify-content-center align-items-center">
+                                                              <p class="m-0 text-black fs-14 fw-bolder">John Vicol</p>
+                                                              <p class="m-0 text-success fs-12 fw-bolder"><u>Available</u></p>
+                                                          </div>
+                                                      </button>
+                                                      <button class="btn btn-header-action managedriver-btn w-100 d-flex justify-content-center align-items-center gap-20 border border-2 py-8 px-12" type="button">
+                                                          <div class="d-flex justify-content-center align-items-center">
+                                                              <span class="managedriver-circle managedriver-circle-danger d-inline-block switch-btn border-radius-circle"></span>
+                                                          </div>
+                                                          <div class="d-flex flex-column justify-content-center align-items-center">
+                                                              <p class="m-0 text-black fs-14 fw-bolder">John Vicol</p>
+                                                              <p class="m-0 text-success fs-12 fw-bolder"><u>Available</u></p>
+                                                          </div>
+                                                      </button>
+                                                      <button class="btn btn-header-action managedriver-btn w-100 d-flex justify-content-center align-items-center gap-20 border border-2 py-8 px-12" type="button">
+                                                          <div class="d-flex justify-content-center align-items-center">
+                                                              <span class="managedriver-circle d-inline-block switch-btn border-radius-circle"></span>
+                                                          </div>
+                                                          <div class="d-flex flex-column justify-content-center align-items-center">
+                                                              <p class="m-0 text-black fs-14 fw-bolder">John Vicol</p>
+                                                              <p class="m-0 text-info fs-12 fw-bolder"><u>Ross 16-21 3H</u></p>
+                                                          </div>
+                                                      </button>
+                                                  </div>
+                                              </div>
+                                            </div>
+                                            <div class="notemodaldouble-body w-100">
+                                              <p class="m-0 mb-4 mt-8 text-center text-primary fs-14 fw-bolder">3rd Party</p>
+                                              <div class="notesmodalbody border border-radius-2 py-8 px-10 h-auto">
+                                                  <div class="bottom-header-top border-0 shadow-none d-flex flex-column align-items-center justify-content-center gap-12 p-0">
+                                                      <button class="btn btn-header-action managedriver-btn w-100 border border-2 py-8 px-12" type="button" data-bs-target="#driveravailable" data-bs-toggle="modal">
+                                                          <div class="d-flex gap-6 align-items-center justify-content-between">
+                                                              <div class="header-action-duration position-relative">
+                                                                  <div class="header-action-duration-title text-start">
+                                                                      <p class="m-0">jcv38 Corp</p>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="header-action-icon d-flex justify-content-center align-items-center">
+                                                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain" decoding="async">
+                                                              </div>
+                                                              <div class="d-flex align-items-center justify-content-between gap-2 flex-column">
+                                                                  <span class="d-inline-block text-success fs-20 fw-bolder">4</span>
+                                                              </div>
+                                                          </div>
+                                                      </button>
+                                                      <button class="btn btn-header-action managedriver-btn w-100 border border-2 py-8 px-12" type="button" data-bs-target="#truckingmodal" data-bs-toggle="modal">
+                                                          <div class="d-flex gap-6 align-items-center justify-content-between">
+                                                              <div class="header-action-duration position-relative">
+                                                                  <div class="header-action-duration-title text-start">
+                                                                      <p class="m-0">ZTS Trucking</p>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="header-action-icon d-flex justify-content-center align-items-center">
+                                                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain" decoding="async">
+                                                              </div>
+                                                              <div class="d-flex align-items-center justify-content-between gap-2 flex-column">
+                                                                  <span class="d-inline-block text-success fs-20 fw-bolder">1</span>
+                                                              </div>
+                                                          </div>
+                                                      </button>
+                                                      <button class="btn btn-header-action managedriver-btn w-100 border border-2 py-8 px-12" type="button">
+                                                          <div class="d-flex gap-6 align-items-center justify-content-between">
+                                                              <div class="header-action-duration position-relative">
+                                                                  <div class="header-action-duration-title text-start">
+                                                                      <p class="m-0">Fairbanks CTB N. Production</p>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="header-action-icon d-flex justify-content-center align-items-center">
+                                                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain" decoding="async">
+                                                              </div>
+                                                              <div class="d-flex align-items-center justify-content-between gap-2 flex-column">
+                                                                  <span class="d-inline-block text-danger fs-20 fw-bolder">0</span>
+                                                              </div>
+                                                          </div>
+                                                      </button>
+                                                  </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="location-btngroup text-center">
+                                            <button class="btn btn-job-blue">Done</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceTwo" aria-expanded="false" aria-controls="serviceTwo">
-                            <span class="jobcreation-number me-16">2</span> Ordered By <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-circle-info me-10 fs-20"></i><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
-                        </button>
-                        </h2>
-                        <div id="serviceTwo" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
-                        <div class="accordion-body">
-                            <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
+                    <div class="tab-pane fade" id="production-tab-pane" role="tabpanel" aria-labelledby="production-tab" tabindex="0">
+                        <div class="accordion jobcreation-accordian" id="productionaccordian">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceeOne" aria-expanded="false" aria-controls="serviceeOne">
+                                        <span class="jobcreation-number me-16">1</span> Route Name: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
+                                    </button>
+                                </h2>
+                                <div id="serviceeOne" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
+                                    <div class="accordion-body">
+                                        <form class="account-comany-form notesmodalbody notesmodal-adddispatch border-0 shadow-none border-radius-2 p-0 text-center h-auto">
+                                            <input type="text" class="form-control mb-14 mx-auto fs-14 m-0 lh-1 py-10 px-24 fw-bold" id="entername" placeholder="Enter Name">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceTwo" aria-expanded="false" aria-controls="serviceTwo">
+                                        <span class="jobcreation-number me-16">2</span> Oil Company: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
+                                    </button>
+                                </h2>
+                                <div id="serviceTwo" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
+                                    <div class="accordion-body text-center">
+                                        <div class="dropdown d-inline-block">
+                                            <button class="btn border dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Oil Company
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item active" href="javascript:void(0);">Kraken</a></li>
+                                              <li><a class="dropdown-item" href="javascript:void(0);">Grayson Mills</a></li>
+                                              <li><a class="dropdown-item" href="javascript:void(0);">Cord</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceThree" aria-expanded="false" aria-controls="serviceThree">
+                                        <span class="jobcreation-number me-16">3</span> Location: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
+                                    </button>
+                                </h2>
+                                <div id="serviceThree" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
+                                    <div class="accordion-body">
+                                        <div class="location-btngroup d-flex flex-column justify-content-center align-items-center gap-16">
+                                            <button class="btn btn-job-green mb-8">Completed</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceFour" aria-expanded="false" aria-controls="serviceFour">
+                                        <span class="jobcreation-number me-16">4</span> Disposals: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
+                                    </button>
+                                </h2>
+                                <div id="serviceFour" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
+                                    <div class="accordion-body">
+                                        <div class="location-btngroup d-flex flex-column justify-content-center align-items-center gap-16">
+                                            <button class="btn btn-job-green mb-8">Completed</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceFive" aria-expanded="false" aria-controls="serviceFive">
+                                        <span class="jobcreation-number me-16">5</span> Rate: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
+                                    </button>
+                                </h2>
+                                <div id="serviceFive" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
+                                    <div class="accordion-body">
+                                        <div class="location-btngroup d-flex flex-column justify-content-evenly align-items-center gap-20 mb-16">
+                                            <form class="account-comany-form notesmodalbody notesmodal-adddispatch border-0 shadow-none border-radius-2 p-0 text-center d-flex justify-content-center align-items-center gap-16 h-auto">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                <div class="mb-0 w-75 mx-auto position-relative">
+                                                    <input type="text" class="form-control jobtype-formcontrol" id="value" placeholder="Value">
+                                                    <span class="d-inline-flex align-items-center justify-content-center position-absolute top-50 translate-middle-y start-0 ms-16"><i class="fa-solid fa-dollar-sign"></i></span>
+                                                </div>
+                                                <div class="d-inline-flex flex-column justify-content-start align-items-start gap-8">
+                                                    <div class="d-flex align-items-center gap-8">
+                                                        <input class="form-check-input m-0" type="checkbox" value="" id="disposal" checked="">
+                                                        <label class="form-check-label d-flex align-items-center gap-8" for="disposal">Hr.</label>
+                                                    </div>
+                                                    <div class="d-flex align-items-center gap-8">
+                                                        <input class="form-check-input m-0" type="checkbox" value="" id="disposal" checked="">
+                                                        <label class="form-check-label d-flex align-items-center gap-8" for="disposal">Bbl</label>
+                                                    </div>
+                                                </div>
+                                                <div class='d-inline-block jobtype-rate-textarea'>
+                                                    <textarea type="text" id="textInput" class="form-control jobtype-formcontrol text-start border-radius-0" rows="1" placeholder="Discription"></textarea>
+                                                    <span class='fs-10 text-danger'>Not Required</span>
+                                                </div>
+                                                <span class="contact-add-icon d-inline-block"><img src="assets/image/contact-sidebar/add-icon.svg" alt="Add icon"></span>
+                                            </form>
+                                            <button class="btn btn-job-blue">Done</button>
+                                        </div>
+                                        <div class="notesmodal-adddispatch text-center">
+                                            <p class="fs-14 fw-medium m-0">For Multiple rate, add in the ADD button.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceSix" aria-expanded="false" aria-controls="serviceSix">
+                                        <span class="jobcreation-number me-16">6</span> Note: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
+                                    </button>
+                                </h2>
+                                <div id="serviceSix" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
+                                    <div class="accordion-body">
+                                        <div class="jobmodal-textarea position-relative">
+                                            <form action="" class="account-comany-form text-center">
+                                                <textarea type="text" id="textInput" class="form-control text-start mb-16" rows="5" placeholder="Add Notes:"></textarea>
+                                                <div class="location-btngroup">
+                                                    <button class="btn btn-job-blue">Done</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceSeven" aria-expanded="false" aria-controls="serviceSeven">
+                                        <span class="jobcreation-number me-16">7</span> Drives: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
+                                    </button>
+                                </h2>
+                                <div id="serviceSeven" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
+                                    <div class="accordion-body">
+                                        <div class="accordion-body">
+                                            <div class="jobtype-drivercomany d-flex justify-content-center align-items-center gap-20 mb-16">
+                                                <div class="notemodaldouble-body w-100">
+                                                  <p class="m-0 mb-4 mt-8 text-center text-primary fs-14 fw-bolder">Company</p>
+                                                  <div class="notesmodalbody border border-radius-2 py-8 px-10 h-auto">
+                                                      <div class="bottom-header-top border-0 shadow-none d-flex flex-column align-items-center justify-content-center gap-12 p-0">
+                                                          <button class="btn btn-header-action managedriver-btn w-100 d-flex justify-content-center align-items-center gap-20 border border-2 py-8 px-12" type="button">
+                                                              <div class="d-flex justify-content-center align-items-center">
+                                                                  <span class="managedriver-circle d-inline-block switch-btn border-radius-circle"></span>
+                                                              </div>
+                                                              <div class="d-flex flex-column justify-content-center align-items-center">
+                                                                  <p class="m-0 text-black fs-14 fw-bolder">John Vicol</p>
+                                                                  <p class="m-0 text-success fs-12 fw-bolder"><u>Available</u></p>
+                                                              </div>
+                                                          </button>
+                                                          <button class="btn btn-header-action managedriver-btn w-100 d-flex justify-content-center align-items-center gap-20 border border-2 py-8 px-12" type="button">
+                                                              <div class="d-flex justify-content-center align-items-center">
+                                                                  <span class="managedriver-circle managedriver-circle-danger d-inline-block switch-btn border-radius-circle"></span>
+                                                              </div>
+                                                              <div class="d-flex flex-column justify-content-center align-items-center">
+                                                                  <p class="m-0 text-black fs-14 fw-bolder">John Vicol</p>
+                                                                  <p class="m-0 text-success fs-12 fw-bolder"><u>Available</u></p>
+                                                              </div>
+                                                          </button>
+                                                          <button class="btn btn-header-action managedriver-btn w-100 d-flex justify-content-center align-items-center gap-20 border border-2 py-8 px-12" type="button">
+                                                              <div class="d-flex justify-content-center align-items-center">
+                                                                  <span class="managedriver-circle d-inline-block switch-btn border-radius-circle"></span>
+                                                              </div>
+                                                              <div class="d-flex flex-column justify-content-center align-items-center">
+                                                                  <p class="m-0 text-black fs-14 fw-bolder">John Vicol</p>
+                                                                  <p class="m-0 text-info fs-12 fw-bolder"><u>Ross 16-21 3H</u></p>
+                                                              </div>
+                                                          </button>
+                                                      </div>
+                                                  </div>
+                                                </div>
+                                                <div class="notemodaldouble-body w-100">
+                                                  <p class="m-0 mb-4 mt-8 text-center text-primary fs-14 fw-bolder">3rd Party</p>
+                                                  <div class="notesmodalbody border border-radius-2 py-8 px-10 h-auto">
+                                                      <div class="bottom-header-top border-0 shadow-none d-flex flex-column align-items-center justify-content-center gap-12 p-0">
+                                                          <button class="btn btn-header-action managedriver-btn w-100 border border-2 py-8 px-12" type="button">
+                                                              <div class="d-flex gap-6 align-items-center justify-content-between">
+                                                                  <div class="header-action-duration position-relative">
+                                                                      <div class="header-action-duration-title text-start">
+                                                                          <p class="m-0">jcv38 Corp</p>
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="header-action-icon d-flex justify-content-center align-items-center">
+                                                                      <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain" decoding="async">
+                                                                  </div>
+                                                                  <div class="d-flex align-items-center justify-content-between gap-2 flex-column">
+                                                                      <span class="d-inline-block text-success fs-20 fw-bolder">4</span>
+                                                                  </div>
+                                                              </div>
+                                                          </button>
+                                                          <button class="btn btn-header-action managedriver-btn w-100 border border-2 py-8 px-12" type="button">
+                                                              <div class="d-flex gap-6 align-items-center justify-content-between">
+                                                                  <div class="header-action-duration position-relative">
+                                                                      <div class="header-action-duration-title text-start">
+                                                                          <p class="m-0">ZTS Trucking</p>
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="header-action-icon d-flex justify-content-center align-items-center">
+                                                                      <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain" decoding="async">
+                                                                  </div>
+                                                                  <div class="d-flex align-items-center justify-content-between gap-2 flex-column">
+                                                                      <span class="d-inline-block text-success fs-20 fw-bolder">1</span>
+                                                                  </div>
+                                                              </div>
+                                                          </button>
+                                                          <button class="btn btn-header-action managedriver-btn w-100 border border-2 py-8 px-12" type="button">
+                                                              <div class="d-flex gap-6 align-items-center justify-content-between">
+                                                                  <div class="header-action-duration position-relative">
+                                                                      <div class="header-action-duration-title text-start">
+                                                                          <p class="m-0">Fairbanks CTB N. Production</p>
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="header-action-icon d-flex justify-content-center align-items-center">
+                                                                      <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain" decoding="async">
+                                                                  </div>
+                                                                  <div class="d-flex align-items-center justify-content-between gap-2 flex-column">
+                                                                      <span class="d-inline-block text-danger fs-20 fw-bolder">0</span>
+                                                                  </div>
+                                                              </div>
+                                                          </button>
+                                                      </div>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                            <div class="location-btngroup text-center">
+                                                <button class="btn btn-job-blue">Done</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceThree" aria-expanded="false" aria-controls="serviceThree">
-                            <span class="jobcreation-number me-16">3</span> Location <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
-                        </button>
-                        </h2>
-                        <div id="serviceThree" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
-                        <div class="accordion-body">
-                            <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceFour" aria-expanded="false" aria-controls="serviceFour">
-                            <span class="jobcreation-number me-16">4</span> Job type: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
-                        </button>
-                        </h2>
-                        <div id="serviceFour" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
-                        <div class="accordion-body">
-                            <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceFive" aria-expanded="false" aria-controls="serviceFive">
-                            <span class="jobcreation-number me-16">5</span> Disposals <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
-                        </button>
-                        </h2>
-                        <div id="serviceFive" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
-                        <div class="accordion-body">
-                            <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceSix" aria-expanded="false" aria-controls="serviceSix">
-                            <span class="jobcreation-number me-16">6</span> Secondary Location <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
-                        </button>
-                        </h2>
-                        <div id="serviceSix" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
-                        <div class="accordion-body">
-                            <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceSeven" aria-expanded="false" aria-controls="serviceSeven">
-                            <span class="jobcreation-number me-16">7</span> Rate <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
-                        </button>
-                        </h2>
-                        <div id="serviceSeven" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
-                        <div class="accordion-body">
-                            <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceEight" aria-expanded="false" aria-controls="serviceEight">
-                            <span class="jobcreation-number me-16">8</span> Note <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
-                        </button>
-                        </h2>
-                        <div id="serviceEight" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
-                        <div class="accordion-body">
-                            <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceNine" aria-expanded="false" aria-controls="serviceNine">
-                            <span class="jobcreation-number me-16">9</span> Drivers <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
-                        </button>
-                        </h2>
-                        <div id="serviceNine" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
-                        <div class="accordion-body">
-                            <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="production-tab-pane" role="tabpanel" aria-labelledby="production-tab" tabindex="0">
-                    <div class="accordion jobcreation-accordian" id="productionaccordian">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start" type="button" data-bs-toggle="collapse" data-bs-target="#serviceeOne" aria-expanded="true" aria-controls="serviceeOne">
-                            <span class="jobcreation-number me-16">1</span> Route Name: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
-                        </button>
-                        </h2>
-                        <div id="serviceeOne" class="accordion-collapse collapse show" data-bs-parent="#productionaccordian">
-                        <div class="accordion-body">
-                            <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceTwo" aria-expanded="false" aria-controls="serviceTwo">
-                            <span class="jobcreation-number me-16">2</span> Oil Company: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
-                        </button>
-                        </h2>
-                        <div id="serviceTwo" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
-                        <div class="accordion-body">
-                            <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceThree" aria-expanded="false" aria-controls="serviceThree">
-                            <span class="jobcreation-number me-16">3</span> Location: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
-                        </button>
-                        </h2>
-                        <div id="serviceThree" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
-                        <div class="accordion-body">
-                            <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceFour" aria-expanded="false" aria-controls="serviceFour">
-                            <span class="jobcreation-number me-16">4</span> Disposals: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
-                        </button>
-                        </h2>
-                        <div id="serviceFour" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
-                        <div class="accordion-body">
-                            <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceFive" aria-expanded="false" aria-controls="serviceFive">
-                            <span class="jobcreation-number me-16">5</span> Rate: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
-                        </button>
-                        </h2>
-                        <div id="serviceFive" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
-                        <div class="accordion-body">
-                            <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceSix" aria-expanded="false" aria-controls="serviceSix">
-                            <span class="jobcreation-number me-16">6</span> Note: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
-                        </button>
-                        </h2>
-                        <div id="serviceSix" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
-                        <div class="accordion-body">
-                            <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceSeven" aria-expanded="false" aria-controls="serviceSeven">
-                            <span class="jobcreation-number me-16">7</span> Drives: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-20"></i><i class="fa-solid fa-caret-up fs-20"></i></span>
-                        </button>
-                        </h2>
-                        <div id="serviceSeven" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
-                        <div class="accordion-body">
-                            <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
@@ -1704,6 +2096,367 @@
     </div>
     <!-- bulletin modal End  -->
 
+    <!-- job Invitation Modal Start -->
+     <div class="invitation-sidebar position-absolute bg-white pb-17 px-15">
+        <div class="invitation-head d-flex align-items-center justify-content-between">
+            <div class="invitation-times">
+                <span class="fs-13 fw-bold d-block">01/14/23</span>
+                <small class="text-primary fs-13 fw-bold">03:32 P.M.</small>
+            </div>
+            <div class="text-center">
+                <h4 class="text-black fs-25 mb-0 fw-bold"><u>job invitation</u></h4>
+                <h6 class="fs-17 fw-bold mb-0 mt-2">John Vicol</h6>
+            </div>
+            <span class="invitation-sidebar-close"><img src="assets/image/contact-sidebar/Close.svg"
+                alt="Close icon" style="cursor: pointer;"></span>
+        </div>
+        <h6 class="fs-13 invitation-company-title text-center mt-3 mb-19 fw-bold">(Company)</h6>
+        <div class="d-flex">
+            <ul class="invitation-list list-inline me-12 ms-13">
+                <li class="fs-15 fw-bold text-blnk mb-9"><span class="me-15 d-inline-block"></span>Location:</li>
+                <li class="fs-15 fw-bold text-blnk mb-9"><span class="me-15 d-inline-block"></span>Date/Time:</li>
+                <li class="fs-15 fw-bold text-blnk mb-9"><span class="me-15 d-inline-block"></span>Duration:</li>
+                <li class="fs-15 fw-bold text-blnk mb-9"><span class="me-15 d-inline-block"></span>Trucking Company:</li>
+                <li class="fs-15 fw-bold text-blnk mb-9"><span class="me-15 d-inline-block"></span>Ordered by:</li>
+                <li class="fs-15 fw-bold text-blnk mb-9"><span class="me-15 d-inline-block"></span>Rate:</li>
+                <li class="fs-15 fw-bold text-blnk mb-9"><span class="me-15 d-inline-block"></span>Oil Company:</li>
+                <li class="fs-15 fw-bold text-blnk mb-9"><span class="me-15 d-inline-block"></span>Type:</li>
+                <li class="fs-15 fw-bold text-blnk mb-9"><span class="me-15 d-inline-block"></span>Disposal:</li>
+                <li class="fs-15 fw-bold text-blnk"><span class="me-15 d-inline-block"></span>Secondary locations:</li>
+            </ul>
+            <ul class="list-inline invitation-list invitation-list-two">
+                <li class="fs-15 fw-bold text-blnk mb-9">Fairbanks CTB</li>
+                <li class="fs-15 fw-bold text-blnk mb-9 d-flex align-items-center">Jan 1<sub>st</sub> <p class="mb-0 ms-30">06:00 A.M.</p></li>
+                <li class="fs-15 fw-bold text-blnk mb-9">Unknown</li>
+                <li class="fs-15 fw-bold text-blnk mb-9">JCV38 Corp</li>
+                <li class="fs-15 fw-bold text-blnk mb-9">Cody Mills</li>
+                <li class="fs-15 fw-bold text-blnk mb-9">$145<sub class="ms-2">Hr</sub></li>
+                <li class="fs-15 fw-bold text-blnk mb-9">Kraken</li>
+                <li class="fs-15 fw-bold text-blnk mb-9">Haul-out</li>
+                <button class="fs-11 text-white invitation-sails-btn fw-bold text-blnk mb-9 py-1 px-6">Black Sails</button>
+                <button class="fs-11 text-white fw-bold invitation-none-btn px-15 py-2 text-blnk border-0 d-block">None</button>
+            </ul>        
+        </div>
+        <div class="invitation-note mt-15 mb-13 px-26">
+            <h6 class="fs-17 fw-bold mb-2 text-black text-center mb-12"><u>Notes:</u></h6>
+            <textarea class="form-control text-start pt-5 pe-35 pb-13 ps-17 fs-10 text-black" rows="5" cols="50" id="floatingTextarea">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                nonumy eirmod tempor invidunt ut labore et dolore magna 
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et justo 
+                duo dolores et ea rebum. Stet clita kasd gubergren, no sea 
+                takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum 
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.
+            </textarea>
+        </div>
+        <div class="invitation-reminder d-flex align-items-center justify-content-center">
+            <img src="assets/image/Reminder icon.svg" alt="Reminder icon" width="34px" height="34px">
+            <div class="form-check ms-14 d-flex align-items-center mb-0">
+                <input class="form-check-input me-8" type="checkbox" value="" id="checkDefault">
+                <label class="form-check-label fs-17 fw-bold text-primary" for="checkDefault">
+                    Send reminder  
+                </label>
+            </div>
+            <div class="d-flex align-items-center ms-6">
+                <input type="number" class="form-control border-radius-0 p-2 fs-17 fw-bold" id="exampleFormControlInput1">
+                <label for="exampleFormControlInput1" class="form-label ms-6 mb-0 fs-17 fw-bold text-primary">hr. before start.</label>
+            </div>
+        </div>
+        <div class="invitation-map d-flex justify-content-center px-26 my-16">
+            <div class='map-body h-100 w-100'>
+                <iframe class='w-100 h-100'
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238133.18800900166!2d72.65747318239129!3d21.159120355102836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1745177875945!5m2!1sen!2sin"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-between invitation-footer-btn mx-35">
+            <button type="button" class="btn border-0 fs-23 fw-bold text-white py-6 px-35">Edit</button>
+            <button type="button" class="btn border-0 fs-23 fw-bold text-white py-6 px-27">Invite</button>
+        </div>
+     </div>
+    <!-- job Invitation Modal End -->
+
+    <!-- Rose Serive Modal Start -->
+    <div class="modal fairbanks-jobmodal fade roseservice-modal" id="roseservice" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="roseserviceLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center position-relative border-0">
+              <h1 class="modal-title fs-44 fw-bold text-black lh-1 mb-0">Rose 16-21 4H</h1>
+              <button type="button" class="btn-close position-absolute top-0 end-0 m-0 mt-8 me-8" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src='./assets/image/check-sucess.svg' class='position-relative'></img>
+              <p class="m-0 mb-10 text-center postjobbulletinbtn-title fs-44 fw-bold">Service</p>
+              <h3 class="fs-30 fw-bold mb-0 text-black">has been created...</h3>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Rose Serive Modal ENd -->
+    
+    <!-- Invite Sent Modal -->
+    <div class="modal fairbanks-jobmodal fade roseservice-modal" id="invitationsent" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="invitationsentLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center position-relative border-0">
+                    <h1 class="modal-title fs-44 fw-bold fst-italic text-black lh-1 mb-0">invite Sent!!!</h1>
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-0 mt-8 me-8" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src='./assets/image/check-sucess.svg' class='position-relative'></img>
+                    <p class="m-0 text-center postjobbulletinbtn-title fs-44 fw-bold fst-italic">John Vicol</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Invite Sent End -->
+
+    <!-- Secondary Location Start -->
+     <div class="s-location position-absolute bg-white py-15 px-20">
+        <span class="invitation-sidebar-close position-absolute"><img src="assets/image/contact-sidebar/Close.svg"
+            alt="Close icon" style="cursor: pointer;"></span>
+            <h3 class="fs-22 fw-bold mb-15 text-black text-center"><u>Secondary Location</u></h3>
+        <div class="s-location-input text-center s-location-name">
+            <label for="s_name" class="text-primary fs-16 fw-bold">Enter name:</label>
+            <input type="text" class="form-control py-4 fw-medium fs-14 text-center mx-auto" id="s_name" placeholder="Company">
+        </div>
+        <div class="mt-10">
+            <div class="d-flex align-items-center">
+                <div class="s-location-input text-center s-location-address">
+                    <label for="s_address" class="text-primary fs-16 fw-bold">Address:</label>
+                    <input type="text" class="form-control py-4 fw-medium fs-14 text-center mx-auto mb-10" id="s_address" placeholder="324 Street">
+                    <input type="text" class="form-control py-4 fw-medium fs-14 text-center mx-auto mb-10" id="s_address" placeholder="City">
+                    <div class="d-flex align-items-center">
+                        <input type="text" class="form-control py-4 fw-medium fs-14 text-center mx-auto me-10" id="s_address" placeholder="State">
+                        <input type="text" class="form-control py-4 fw-medium fs-14 text-center mx-auto" id="s_address" placeholder="Zip code">
+                    </div>
+                </div>
+                <h6 class="fs-16 fw-bold mb-0 mx-12 text-primary">OR</h6>
+                <div class="s-location-input text-center s-location-pin">
+                    <label for="s_name" class="text-primary fs-16 fw-semibold">Pin:</label>
+                    <div class="position-relative">
+                        <input type="text" class="form-control py-4 fw-medium fs-14 text-center mx-auto" id="s_name" placeholder="Drop pin">
+                        <i class="fa-solid fa-location-dot position-absolute fs-20"></i>
+                        <i class="fa-solid fa-location-dot position-absolute fs-20"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <div class="text-center mt-20">
+            <button type="button" class="btn s-location-btn py-2 px-32 fs-20 fw-bold text-white">Done</button>
+        </div>
+     </div>
+    <!-- Secondary Location ENd -->
+
+    <!-- Overview Invite Modal Start -->
+    <div class="modal fairbanks-jobmodal fade roseservice-modal o-invite-modal" id="o_invitemodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="o_invitemodal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center position-relative border-0">
+                    
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-0 mt-8 me-8" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <h3 class="modal-title fs-28 fw-bold text-primary mb-28 lh-1">Would you like to INVITE
+                         <span class="fs-24 fw-bold my-7 o-invite-jeff d-block">Jeff Jones</span>
+                         to the job?
+                        </h3>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <button type="button" class="fs-15 fw-bold text-white border-0 o-invite-btn py-10 px-25">YES</button>
+                            <button type="button" class="fs-15 fw-bold text-white border-0 o-invite-btn py-10 px-25">YES</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Overview Invite Modal End -->
+
+    <!-- Drivers Available Modaal Start -->
+    <div class="modal fairbanks-jobmodal fade roseservice-modal d-available-modal" id="driveravailable" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="driveravailable" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center position-relative border-0 p-0">                    
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-0 mt-8 me-8 z-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="d-available-logo bg-white position-absolute">
+                        <img src="assets/image/main-logo.svg" alt="">
+                    </div>
+                    <h3 class="modal-title fs-28 fw-bold text-black mb-28 lh-1"><u>John Vicol</u></h3>
+                    <h5 class="modal-title fs-18 fw-bold text-info fst-italic text-info mb-28 lh-1"><u>Available</u></h5>
+                    <span class="d-available-immeditely fs-1 fw-bold d-inline-block py-2 px-10 text-white mb-15">Immeditely</span>
+                    <div class="d-available-inputs mx-auto">
+                        <div class="d-available-input d-flex align-items-center pb-12 justify-content-between">
+                            <label for="date" class="fs-18 fw-bold mb-0 text-primary me-15">Date:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="d-available-input d-flex align-items-center pb-12 justify-content-between">
+                            <label for="date" class="fs-18 fw-bold mb-0 text-primary me-15">Time:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="d-available-input d-flex align-items-center justify-content-between">
+                            <label for="date" class="fs-18 fw-bold mb-0 text-primary me-15">Duration:</label>
+                            <div>
+                                <input type="text" class="form-control">                                
+                            </div>
+                        </div>
+                        <div class="form-check mb-0 mt-10 d-flex align-items-center justify-content-end">
+                            <label class="form-check-label fw-14 fw-semibold mb-0 me-15" for="unkonown">
+                            If unknown check:
+                            </label>
+                            <input class="form-check-input m-0" type="checkbox" value="" id="unkonown" style="float: unset;">
+                        </div>
+                    </div>
+                    <div class="text-center mt-20">
+                        <button type="submit" class="d-available-btn text-white fs-20 fw-bold border-0 py-7 px-20">Verify</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Drivers Available Modaal End -->
+
+    <!-- ordered Modal Start -->
+    <div class="modal fairbanks-jobmodal fade d-available-modal" id="orderedmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="orderedmodal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center position-relative border-0 p-0">                    
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-0 mt-8 me-8 z-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center px-35">
+                    <div class="d-available-logo bg-white position-absolute">
+                        <img src="assets/image/main-logo.svg" alt="">
+                    </div>
+                    <h3 class="modal-title fs-28 fw-bold text-black mb-28 lh-1"><u>Cody Mills</u></h3>
+                    <h5 class="modal-title fs-18 fw-bold text-danger fst-italic mb-28 lh-1">Kraken</h5>
+                    <div class="d-flex align-items-center pt-32 mb-20">
+                        <h5 class="fs-16 fw-bold  mb-0" style="color: #55ad6c;">ON DUTY</h5>
+                        <h5 class="modal-title fs-18 fw-bold text-info fst-italic mb-0 lh-1 mx-auto"><u>Current Job Name</u></h5>                    
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="header-available order-onduty d-flex align-items-center justify-content-between">
+                            <div class="form-check form-switch position-relative mb-0">
+                                <input class="form-check-input" type="checkbox" role="switch" id="orderduty"
+                                    >
+                                <label
+                                    class="form-check-label switch-btn d-inline-block border-radius-circle position-absolute"
+                                    for="orderduty"></label>
+                                </div>
+                            </div>
+                            <span class="fs-15 fw-bold text-primary">Follow</span>
+                    </div>                      
+                    <div class="text-center mt-44">
+                        <button type="submit" class="d-available-btn text-white fs-20 fw-bold border-0 py-7 px-20">Verify</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ordered Modal End -->
+
+     <!-- Gas Modal Start -->
+     <div class="modal fairbanks-jobmodal fade gas-modal" id="gasmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="gasmodal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center position-relative border-0 p-0">                    
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-0 mt-8 me-8 z-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center px-35">
+                    <div class="d-available-logo bg-white position-absolute">
+                        <img src="assets/image/main-logo.svg" alt="">
+                    </div>
+                    <h3 class="modal-title fs-25 ms-15 fw-bold text-black mb-10 lh-1"><u>Kraken Oil & Gas</u></h3>
+                    <a href="#" class="modal-title fs-12 fw-bold text-info fst-italic lh-1"><u>www.krakenoil.com</u></a>                   
+                    <div class="text-center mt-44">
+                        <button type="submit" class="d-available-btn text-white fs-20 fw-bold border-0 py-7 px-20">Verify</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Gas Modal End -->
+
+    <!-- Trucking Modal Start -->
+    <div class="modal fairbanks-jobmodal fade trucking-modal" id="truckingmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="truckingmodal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center position-relative border-0 p-0">                    
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-0 mt-8 me-8 z-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center px-30">
+                    <div class="d-available-logo bg-white position-absolute">
+                        <img src="assets/image/main-logo.svg" alt="">
+                    </div>
+                    <h3 class="modal-title fs-25 ms-15 fw-bold text-black mb-20 lh-1"><u>ZTS Trucking</u></h3>
+                    <h3 class="trucking-modal-dispath fs-18 fw-bold lh-1" style="color: #55ad6c;">On-duty dispath:</h3>         
+                    <div class="d-flex align-items-center justify-content-between ms-auto" style="max-width: 312px;">
+                        <span class="fw-bold fs-15">Greg Smith</span>
+                        <div class="d-flex align-items-center trucking-modal-contact">
+                            <a href="#" class="bg-primary text-white fs-13 fw-bold d-flex align-items-center me-15"><i class="fa-solid fa-phone me-10"></i>Phone</a>
+                            <a href="#" class="bg-primary text-white fs-13 fw-bold d-flex align-items-center"><i class="fa-solid fa-message me-10"></i>Message</a>
+                        </div>
+                    </div>
+                    <div class="d-flex pt-55">
+                        <div>
+                            <h4 class="fs-25 fw-bold mb-0 text-black trucking-modal-driver">Available Drivers: <span class="ms-15 fw-bold">4</span></h4>
+                            <p class="fs-14 text-danger fw-bold mb-0 ">(Select Driver)</p>
+                            <div class="trucking-modal-list p-5">
+                                <div class="trucking-modal-item mb-3 d-flex">
+                                    <span class="d-inline-block search-item-selected me-6 mt-0"></span>
+                                    <h6 class="fs-16 fw-bold mb-0 text-black">John Vicol</h6>
+                                    <span class="fs-15 fw-bold ms-auto" style="color: #55ad6c;margin-top: 2px;">Direct invite</span>
+                                </div>
+                                <div class="trucking-modal-item mb-3 d-flex">
+                                    <span class="d-inline-block search-item-selected contact-red me-6 mt-0"></span>
+                                    <h6 class="fs-16 fw-bold mb-0 text-black">Greg Smith</h6>
+                                </div>
+                                <div class="trucking-modal-item mb-3 d-flex">
+                                    <span class="d-inline-block search-item-selected contact-red me-6 mt-0"></span>
+                                    <h6 class="fs-16 fw-bold mb-0 text-black">Srar Evens</h6>
+                                </div>
+                                <div class="trucking-modal-item d-flex">
+                                    <span class="d-inline-block search-item-selected me-6 mt-0"></span>
+                                    <h6 class="fs-16 fw-bold mb-0 text-black">Sleepless</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-25">
+                            <span class="d-available-immeditely fs-18 fw-bold d-inline-block py-2 px-15 text-white mb-15">Immeditely</span>
+                            <div class="d-available-inputs mx-auto">
+                                <div class="d-available-input d-flex align-items-center pb-12 justify-content-between">
+                                    <label for="date" class="fs-18 fw-bold mb-0 text-primary me-15">Date:</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="d-available-input d-flex align-items-center pb-12 justify-content-between">
+                                    <label for="date" class="fs-18 fw-bold mb-0 text-primary me-15">Time:</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="d-available-input d-flex align-items-center justify-content-between">
+                                    <label for="date" class="fs-18 fw-bold mb-0 text-primary me-15">Duration:</label>
+                                    <div>
+                                        <input type="text" class="form-control">                                
+                                    </div>
+                                </div>
+                                <div class="form-check mb-0 mt-10 me-0 d-flex align-items-center justify-content-end">
+                                    <label class="form-check-label fw-14 fw-semibold mb-0 me-15" for="truckingunkonown">
+                                    If unknown check:
+                                    </label>
+                                    <input class="form-check-input m-0" type="checkbox" value="" id="truckingunkonown" style="float: unset;">
+                                </div>
+                            </div>
+                            <div class="text-center mt-20">
+                                <button type="submit" class="d-available-btn text-white fs-20 fw-bold border-0 py-7 px-20">Verify</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Trucking Modal End -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta3/css/bootstrap-select.min.css">
     <!-- JavaScript Files -->
