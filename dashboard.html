@@ -1611,81 +1611,83 @@
         </div>
 
         <!-- maddie modal start  -->
-         <div class="meddie-modal position-absolute top-0 start-0 ms-24">
+         <div class="meddie-modal position-absolute top-0 start-0 ms-24 z-1">
             <div class="maddie-custom-window">
-                <div class="maddie-header">
+                <div class="maddie-header d-flex justify-content-between align-items-center gap-20">
                     <div class="d-flex align-items-center gap-2">
-                        <button class="maddie-btn-icon"><i class="bi bi-share"></i></button>
-                        <button class="maddie-btn-icon text-danger"><i class="bi bi-exclamation-triangle"></i></button>
-                        <div class="maddie-title ms-2">Maddie LE</div>
+                        <button class="maddie-btn-icon me-14"><i class="fa-solid fa-share-nodes text-primary fs-28"></i></button>
+                        <button class="maddie-btn-icon maddie-btn-iconimg text-danger"><img src="./assets/image/header/Alert.svg" class="w-100 h-100 object-fit-contain" decoding="async"></button>
                     </div>
-                    <div class="d-inline-flex align-items-center gap-16">
-                        <button class="maddie-btn-icon"><i class="bi bi-dash"></i></button>
-                        <button class="maddie-btn-icon"><i class="bi bi-x-lg"></i></button>
+                    <div class="maddie-title fs-30 fw-bolder fst-intalic fst-italic">Maddie LE</div>
+                    <div class="d-inline-flex align-items-center gap-8">
+                        <button class="maddie-btn-icon"><i class="fa-solid fa-minus"></i></button>
+                        <button type="button" class="btn-close maddie-btn-close"></button>
                     </div>
                 </div>
-                <ul class="nav nav-tabs maddie-tab-buttons justify-content-center py-2">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-bs-toggle="tab" href="#stats">Statis</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#activity">Activity</a>
-                    </li>
-                    <li class="ms-auto me-3 maddie-tab-title">
-                        Activity
-                    </li>
-                </ul>
-                <div class="tab-content maddie-tab-content-area">
-                    <div class="tab-pane fade show active" id="stats">
-                        <div class="container">
-                            <div class="maddie-activity-card">
+                <div class="nav-tabs maddie-body maddie-tab-buttons position-relative py-8">
+                    <ul class="nav nav-tabs justify-content-center border-0 gap-16 p-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-primary m-0 fs-14 fw-bolder active" data-bs-toggle="tab" href="#stats">Statis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary m-0 fs-14 fw-bolder" data-bs-toggle="tab" href="#activity">Activity</a>
+                        </li>
+                    </ul>
+                    <p class="ms-auto mb-0 me-16 text-decoration-underline fs-18 maddie-tab-title position-absolute top-50 translate-middle-y end-0" id="tabTitle">
+                       Statis
+                    </p>
+                </div>
+                <div class="tab-content  overflow-hidden maddie-tab-content-area">
+                    <div class="tab-pane h-100 fade show active" id="stats">
+                        <div class="maddie-tab-container p-18 h-100 overflow-y-auto d-flex flex-column gap-24">
+                            <div class="maddie-activity-card position-relative">
                                 <div class="maddie-card-left">
                                     <div class="maddie-user-img">
-                                        <i class="bi bi-truck"></i>
+                                        <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain" decoding="async">
                                     </div>
-                                    <div class="maddie-user-info">
-                                        <h5><u>John Vicol</u></h5>
-                                        <small>165 Bbl</small>
+                                    <div class="maddie-user-info text-center">
+                                        <h5 class="fs-18"><u>John Vicol</u></h5>
+                                        <span class='d-block fs-14'><small>165 Bbl</small></span>
                                     </div>
                                 </div>
                                 <div class="maddie-card-right">
-                                    <div class="maddie-time-ago">14 mins ago</div>
-                                    <div class="mb-1">
-                                        <span class="maddie-time-label">Start:</span>
-                                        <span class="maddie-time-data">8.9&nbsp;&nbsp;10:35 <small>a.m.</small></span>
+                                    <div class="maddie-time-ago position-absolute top-0 end-0 fs-12 me-16 mt-4">14 mins ago</div>
+                                    <div class="mb-1 d-flex align-items-center gap-16">
+                                        <span class="maddie-time-label fs-14">Start:</span>
+                                        <span class="maddie-time-data fs-14">8.9&nbsp;&nbsp;10:35 <small>a.m.</small></span>
                                     </div>
-                                    <div>
-                                        <span class="maddie-time-label">Finish:</span>
-                                        <span class="maddie-time-data">6.9&nbsp;&nbsp;11:06 <small>a.m.</small></span>
+                                    <div class="d-flex align-items-center gap-16">
+                                        <span class="maddie-time-label fs-14">Finish:</span>
+                                        <span class="maddie-time-data fs-14">6.9&nbsp;&nbsp;11:06 <small>a.m.</small></span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="maddie-activity-card">
+                            <div class="maddie-activity-card position-relative">
                                 <div class="maddie-card-left">
                                     <div class="maddie-user-img">
-                                        <i class="bi bi-truck"></i>
+                                        <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain" decoding="async">
                                     </div>
-                                    <div class="maddie-user-info">
-                                        <h5><u>Zack Sands</u></h5>
-                                        <small>165 Bbl</small>
+                                    <div class="maddie-user-info text-center">
+                                        <h5 class="fs-18"><u>Zack Sands</u></h5>
+                                        <span class='d-block fs-14'><small>165 Bbl</small></span>
                                     </div>
                                 </div>
                                 <div class="maddie-card-right">
-                                    <div class="maddie-time-ago">1 hr. 15 mins ago</div>
-                                    <div class="mb-1">
-                                        <span class="maddie-time-label">Start:</span>
-                                        <span class="maddie-time-data">11.5&nbsp;&nbsp;9:10 <small>a.m.</small></span>
+                                    <div class="maddie-time-ago position-absolute top-0 end-0 fs-12 me-16 mt-4">1 hr. 15 mins ago</div>
+                                    <div class="mb-1 d-flex align-items-center gap-16">
+                                        <span class="maddie-time-label fs-14">Start:</span>
+                                        <span class="maddie-time-data fs-14">11.5&nbsp;&nbsp;9:10 <small>a.m.</small></span>
                                     </div>
-                                    <div>
-                                        <span class="maddie-time-label">Finish:</span>
-                                        <span class="maddie-time-data">8.6&nbsp;&nbsp;9:42 <small>a.m.</small></span>
+                                    <div class="d-flex align-items-center gap-16">
+                                        <span class="maddie-time-label fs-14">Finish:</span>
+                                        <span class="maddie-time-data fs-14">8.6&nbsp;&nbsp;9:42 <small>a.m.</small></span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="activity">
-                        <div class="container">
+                    <div class="tab-pane h-100 fade" id="activity">
+                        <div class="maddie-tab-container p-18 h-100 overflow-y-auto d-flex flex-column gap-24">
                             <div class="maddie-status-container">
                                 <div class="d-flex flex-column align-items-center gap-3">
                                     <img src="https://via.placeholder.com/120x120.png?text=Tank" alt="Tank Image" class="maddie-tank-img">
@@ -3018,6 +3020,15 @@
         sidebar.classList.remove('active');
         });
         // job creation open js End
+
+        // maddie side tab text value change js start
+        document.querySelectorAll('.maddie-tab-buttons .nav-tabs .nav-link').forEach(function(tab) {
+            tab.addEventListener('shown.bs.tab', function(e) {
+            const text = e.target.textContent.trim();
+            document.getElementById('tabTitle').textContent = text;
+            });
+        }); 
+        // maddie side tab text value change js end 
     </script>
 
 </body>
