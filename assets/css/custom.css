@@ -1912,8 +1912,7 @@ height: 16px;
 
 .maddie-status-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -1926,8 +1925,6 @@ height: 16px;
 .maddie-box-info {
     border: 2px solid #0a3c53;
     border-radius: 10px;
-    padding: 1rem;
-    min-width: 240px;
     background: #fff;
     position: relative;
 }
@@ -1988,6 +1985,11 @@ height: 16px;
 .maddie-tab-container::-webkit-scrollbar{
     width: 0;
     height: 0;
+}
+
+.maddie-tank-img{
+    max-width: 150px;
+    max-height: 150px;
 }
 /* maddie modal css End  */
 
