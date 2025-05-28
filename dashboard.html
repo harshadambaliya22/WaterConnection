@@ -179,7 +179,7 @@
             </div>
             <div class="header-m-activity">
                 <ul class="header-activity-list d-flex align-items-center list-inline">
-                    <li class="header-activity-item text-center pt-14 px-10 pb-10">
+                    <li class="header-activity-item text-center pt-14 px-10 pb-10" data-bs-toggle="modal" data-bs-target="#headerbulletinbtnmodal">
                         <img src="assets/image/clipboard-icon.svg" alt="Bulletin">
                         <span class="fs-15 fw-bold d-block mt-8">Bulletin</span>
                     </li>
@@ -2582,14 +2582,39 @@
             <div class="modal-body px-30">
               <form class="account-comany-form" action="">
                 <div class="jobmodal-textarea position-relative">
-                  <textarea type="text" id="textInput" class="form-control text-start" rows="5" placeholder="Type Bulletin Here"></textarea>
-                  <p id="message" class="message m-0 mt-4 text-end position-absolute bottom-0 end-0 me-8">0/50</p>
+                  <textarea type="text" class="form-control textInput text-start" rows="5" placeholder="Type Bulletin Here"></textarea>
+                  <p class="message m-0 mt-4 text-end position-absolute bottom-0 end-0 me-8">0/50</p>
                 </div>
               </form>
             </div>
             <div class="modal-footer gap-50 border-0 justify-content-center py-18">
               <!-- <button type="button" class="btn btn-modal-footer btn-modalback m-0 lh-1 py-10 px-24 fw-bold text-primary border" data-bs-target="#createaccountmodal01" data-bs-toggle="modal">Back</button> -->
               <button type="button" class="btn btn-modal-footer btn-modalnext m-0 fs-18 border-radius-4 lh-1 py-10 px-24 fw-bold text-white" data-bs-target="#postjobbulletinbtnmodal" data-bs-toggle="modal">Post</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fairbanks-jobmodal fade" id="headerbulletinbtnmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="headerbulletinbtnmodalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center position-relative">
+              <h1 class="modal-title fs-35 fw-semibold fst-italic text-black lh-1 mb-0"><u>Bulletin</u></h1>
+              <button type="button" class="btn-close position-absolute top-0 end-0 m-0 mt-8 me-8" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="fairbanks-jobmodal-title mb-16 py-8">
+              <p class="m-0 text-white fs-24 fw-bolder text-center lh-1">Fairbanks CTB</p>
+            </div>
+            <div class="modal-body px-30">
+              <form class="account-comany-form" action="">
+                <div class="jobmodal-textarea position-relative">
+                  <textarea type="text" class="form-control textInput text-start" rows="5" placeholder="Type Bulletin Here"></textarea>
+                  <p class="message m-0 mt-4 text-end position-absolute bottom-0 end-0 me-8">0/50</p>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer gap-50 border-0 justify-content-center py-18">
+              <!-- <button type="button" class="btn btn-modal-footer btn-modalback m-0 lh-1 py-10 px-24 fw-bold text-primary border" data-bs-target="#createaccountmodal01" data-bs-toggle="modal">Back</button> -->
+              <button type="button" class="btn btn-modal-footer btn-modalnext m-0 fs-18 border-radius-4 lh-1 py-10 px-24 fw-bold text-white" data-bs-target="#postheaderbulletinbtnmodal" data-bs-toggle="modal">Post</button>
             </div>
           </div>
         </div>
@@ -2604,6 +2629,20 @@
             <div class="modal-body text-center">
               <img src='./assets/image/check-sucess.svg' class='position-relative'></img>
               <p class="m-0 text-center postjobbulletinbtn-title fs-40 fw-bolder">Fairbanks CTB</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fairbanks-jobmodal fade" id="postheaderbulletinbtnmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="postheaderbulletinbtnmodalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center position-relative border-0">
+              <h1 class="modal-title fs-35 fw-semibold fst-italic text-black lh-1 mb-0"><u>Bulletin Posted</u></h1>
+              <button type="button" class="btn-close position-absolute top-0 end-0 m-0 mt-8 me-8" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src='./assets/image/check-sucess.svg' class='position-relative'></img>
+              <p class="m-0 text-center postjobbulletinbtn-title fs-40 fw-bolder">All Drivers</p>
             </div>
           </div>
         </div>
@@ -2982,23 +3021,43 @@
 
     <script>
         // textarea words count js start 
-        const textInput = document.getElementById('textInput');
-        const message = document.getElementById('message');
+        // const textInput = document.getElementById('textInput');
+        // const message = document.getElementById('message');
         
-        textInput.addEventListener('input', () => {
-            const words = textInput.value.trim().split(/\s+/).filter(word => word.length > 0);
-            const wordCount = words.length;
+        // textInput.addEventListener('input', () => {
+        //     const words = textInput.value.trim().split(/\s+/).filter(word => word.length > 0);
+        //     const wordCount = words.length;
             
+        //     if (wordCount < 50) {
+        //         message.textContent = `${wordCount}/50`;
+        //         message.classList.add("text-danger");
+        //         message.classList.remove("text-success");
+        //     } else {
+        //         message.textContent = `${wordCount}/50.`;
+        //         message.classList.add("text-success");
+        //         message.classList.remove("text-danger");
+        //     }
+        // });
+        const textAreas = document.querySelectorAll('.textInput');
+        textAreas.forEach(textarea => {
+        const message = textarea.parentElement.querySelector('.message');
+
+        textarea.addEventListener('input', () => {
+            const words = textarea.value.trim().split(/\s+/).filter(word => word.length > 0);
+            const wordCount = words.length;
+
             if (wordCount < 50) {
-                message.textContent = `${wordCount}/50`;
-                message.classList.add("text-danger");
-                message.classList.remove("text-success");
+            message.textContent = `${wordCount}/50`;
+            message.classList.add("text-danger");
+            message.classList.remove("text-success");
             } else {
-                message.textContent = `${wordCount}/50.`;
-                message.classList.add("text-success");
-                message.classList.remove("text-danger");
+            message.textContent = `${wordCount}/50.`;
+            message.classList.add("text-success");
+            message.classList.remove("text-danger");
             }
         });
+        });
+
         // textarea words count js End 
 
         // job creation open js start
