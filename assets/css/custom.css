@@ -2146,8 +2146,176 @@ input:checked + .dread-slider {
 input:checked + .dread-slider:before {
   transform: translateX(16px);
 }
+
+.dread-active-log-dashboard {
+  display: flex;
+  border: 2px solid #003c56;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 800px;
+  height: 500px;
+}
+
+.dread-active-filter-buttons {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 8px 8px 8px 0;
+  gap: 8px;
+  justify-content: start;
+  align-items: center;
+}
+
+.dread-active-filter-btn {
+    background: linear-gradient(180deg, #EEEEEE -57.5%, #BBBBBB 100%);
+    border: none;
+    border-radius: 20px;
+    color: #0B3E58;
+    border: 2px solid #0B3E58;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    -ms-transition: background 0.3s;
+    -o-transition: background 0.3s;
+}
+
+.dread-active-filter-btn.active {
+  background: linear-gradient(180deg, #FFF -57.5%, #0B3E58 100%);
+  color: #fff;
+}
+
+.dread-active-log-container {
+  flex: 1;
+  overflow-y: auto;
+  background: #fff;
+  padding: 16px;
+  position: relative;
+}
+
+.dread-active-log-card {
+  border-bottom: 2px solid #ccc;
+  padding: 16px 0;
+}
+
+.dread-active-log-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.dread-active-icon {
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 12px;
+}
+
+.dread-active-bell {
+  background-image: url('https://img.icons8.com/ios-filled/50/bell.png');
+}
+
+.dread-active-truck {
+  background-image: url('https://img.icons8.com/ios-filled/50/semi-truck.png');
+}
+
+.dread-active-title {
+    color: #0E7EBE;
+}
+
+.dread-active-name {
+  margin: 0;
+  color: #555;
+}
+
+.dread-active-time {
+  font-size: 12px;
+}
+
+/* .dread-active-log-stats {
+  margin: 0;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+} */
+
+span.dread-active-status.text-success {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c9c2a;
+    border-radius: 50%;
+}
+
+.dread-active-shadow-box {
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.info-facility-info {
+  max-width: 320px;
+  font-family: Arial, sans-serif;
+  border-radius: 6px;
+}
+
+.info-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-list li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.info-list strong {
+  flex-shrink: 0;
+  width: 80px;
+  font-weight: 700;
+  color: #003c56;
+}
 /* dread modal css End  */
 
+/* Add Driver Modal Start */
+h2.driver-header {
+    background: linear-gradient(180deg, #FFF -57.5%, #0B3E58 100%);
+    border:1px solid #0B3E58;
+    box-shadow: 0 9px 10px #0b3e5875;
+}
+.adddriver-modal .text-info {
+    color: #2280B7 !important;
+}
+.adddriver-modalbody .w-same {
+    width: 165px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.adddriver-modalbody input::placeholder{
+color: #0B3E58;
+}
+.driver-done-btn{
+    background: linear-gradient(180deg, #FFF -57.5%, #0B3E58 100%);
+    border:1px solid #0B3E58;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+/* Add Driver Modal End */
 /* Responsive css start */
 
 @media (max-width: 1650px) {
