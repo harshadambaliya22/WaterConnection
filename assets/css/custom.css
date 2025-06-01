@@ -2288,7 +2288,7 @@ span.dread-active-status.text-success {
 
 /* Add Driver Modal Start */
 h2.driver-header {
-    background: linear-gradient(180deg, #FFF -57.5%, #0B3E58 100%);
+    background: linear-gradient(164deg, #FFF -57.5%, #0B3E58 100%);
     border:1px solid #0B3E58;
     box-shadow: 0 9px 10px #0b3e5875;
 }
@@ -2302,6 +2302,7 @@ h2.driver-header {
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+    background-color: transparent;
 }
 .adddriver-modalbody input::placeholder{
 color: #0B3E58;
@@ -2315,7 +2316,220 @@ color: #0B3E58;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
 }
+
+.dreadpirate-modal{
+    left: -100%;
+    transition: ease 0.3s all;
+}
+
+.dreadpirate-modal.active{
+    left: 0;
+    transition: ease 0.3s all;
+}
 /* Add Driver Modal End */
+
+/* calander date modal css start  */
+.scheduled-status-modal .modal-content {
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.scheduled-status-modal .modal-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.scheduled-status-modal .dot {
+  display: inline-block;
+  margin-right: 0.25rem;
+}
+
+.calander-modal-header{
+    border-bottom: 4px solid #0B3E58;
+}
+
+.calander-modal-headerbottom{
+    border-bottom: 2px solid #ddd;
+}
+
+.calander-card-container {
+    overflow-y: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background: #fff;
+    max-height: 200px;
+}
+
+.calander-task-card {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.calander-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #2e6e9e;
+    border-radius: 50%;
+}
+
+.calander-name-time {
+    text-align: left;
+    margin-right: 10px;
+}
+
+.calander-name-time strong {
+    display: block;
+    font-size: 14px;
+    color: #00334d;
+}
+
+.calander-time {
+    color: red;
+    font-size: 13px;
+}
+
+.calander-desc {
+    flex-grow: 1;
+    font-size: 13px;
+    color: #444;
+}
+
+.calander-remove-btn {
+    background: none;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    color: #777;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+}
+
+.calander-add-button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #6ca2b7, #39657d);
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.calander-add-button:hover {
+    background: linear-gradient(to bottom, #5b8ea1, #2e5568);
+}
+
+.manageinvitecancle-img{width: 50px;}
+/* calander date modal css End  */
+
+/* Fairbank Manage Modal Start */
+.fairbank-m-modal .btn-close {
+    top: 8px;
+    right: 20px;
+    background-size: 24px;
+    filter: brightness(0) contrast(20) invert(10);
+    opacity: 1;
+}
+.manage-manual-btn button:hover {
+    background: #bfbfbf;
+    color: #3c6479 !important;
+}
+/* Fairbank Manage Modal End */
+
+/* Manage Type Modal Start */
+.manage-type-both {
+    background: #36B16C;
+    border: 1px solid #fff;
+    box-shadow: 0px 3px 10px #bfbfbf;
+}
+.manage-type-btn button:hover {
+    border-color: #36b16c;
+}
+/* Manage Type Modal End */
+
+/* Manage Rate Modal Start */
+.managerate-radio .form-check-input:checked[type=radio] {
+    --bs-form-check-bg-image: none;
+    background: radial-gradient(circle at 80% 6%, #ffffff, #1c4b63);
+    border: 1px solid #1c4b63;
+}
+
+.managerate-body .form-control {
+    border-radius: 20px;
+    border: 1px solid #0B3E58;
+    height: 30px;
+}
+.managerate-body .form-control:placeholder{
+    color: #969696;
+}
+/* Manage Rate Modal End */
+
+/* Location Manual Modal Start */
+.location-manual-google i {
+    top: 50%;
+    transform: translateY(-50%);
+     color: #859EAB;
+}
+.location-manual-google .form-control{
+    height: 70px;
+    border-radius: 15px;
+}
+.location-manual-google .form-control:placeholder{
+    display: flex;
+  align-items: center;
+  height: 100%;
+}
+.location-manual-google i:first-child {
+    left: 23%;   
+}
+.location-manual-google i:last-child {
+    right: 28%;
+}
+/* Location Manual Modal ENd */
+
+/* Disposal Varify Modal Start */
+.disposal-v-btn{
+    border:1px solid #007835;
+    box-shadow: none;
+}
+/* Disposal Varify Modal End */
+
+/* Contact Company Modal Start */
+.contact-c-modal .nav-tabs {
+    background: linear-gradient(180deg, #FFF -57.5%, #0B3E58 100%);
+    border: 1px solid #0B3E58;
+}
+.contact-c-modal .nav-link {
+    border: 1px solid #0B3E58;
+    color: #0B3E58;
+    background: linear-gradient(180deg, #EEEEEE -57.5%, #BBBBBB 100%);
+    border-radius: 15px;
+    padding: 0px 15px;
+}
+.contact-c-modal .nav-link.active {
+    background: linear-gradient(180deg, #CFE4EF -7.5%, #020C12 100%);
+    color: #fff;
+    border: 1px solid #ffffff !important;
+}
+/* Contact Company Modal End */
+
 /* Responsive css start */
 
 @media (max-width: 1650px) {

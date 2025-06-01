@@ -17,7 +17,7 @@
 
 <body>
     <!-- Header Start -->
-    <header class="header position-relative">
+    <header class="header position-relative"  data-bs-target="#contactcmodal" data-bs-toggle="modal">
         <div class="header-content d-flex align-items-center">
             <div class="header-hamburger ms-20 ms-sm-0">
                 <span class="header-hamburger-icon mb-4 d-block"></span>
@@ -344,10 +344,8 @@
                 <!-- <div class="bottom-header-bottom bg-white w-100 py-8 d-flex align-items-center justify-content-center position-relative"></div> -->
             </div>
             <div class='d-inline-flex flex-column gap-10'>
-                <button class="btn btn-white fw-bold fs-20 fs-xxl-16 px-18 border border-2" type="button">Dread
-                    Pirate</button>
-                <button class="btn btn-white fw-bold fs-20 fs-xxl-16 px-18 border border-2" type="button">Davie
-                    Jones</button>
+                <button class="btn btn-white dreadpirate-btn fw-bold fs-20 fs-xxl-16 px-18 border border-2" type="button">Dread Pirate</button>
+                <button class="btn btn-white fw-bold fs-20 fs-xxl-16 px-18 border border-2" type="button">Davie Jones</button>
             </div>
         </div>
     </div>
@@ -358,7 +356,7 @@
         <div class="dashboard-btn-list bg-white border border-2 py-30 px-14 d-inline-flex flex-column gap-20 position-absolute top-0 end-0 mt-12 me-100">
             <button type="button" class="btn btn-listgroup border border-2 fw-bold fs-16 lh-1 py-10 px-18" data-bs-toggle="modal" data-bs-target="#jobbulletinbtnmodal">Bulletin</button>
             <button type="button" class="btn btn-listgroup border border-2 fw-bold fs-16 lh-1 py-10 px-18" data-bs-toggle="modal" data-bs-target="#jobdrivermodal">Drivers</button>
-            <button type="button" class="btn btn-listgroup border border-2 fw-bold fs-16 lh-1 py-10 px-18">Manage</button>
+            <button type="button" class="btn btn-listgroup border border-2 fw-bold fs-16 lh-1 py-10 px-18" data-bs-target="#fairbankmodal" data-bs-toggle="modal">Manage</button>
             <button type="button" class="btn btn-listgroup border border-2 fw-bold fs-16 lh-1 py-10 px-18">Contacts</button>
         </div>
         <div class='footer-line px-10 position-absolute h-100 start-0 border border-2'></div>
@@ -1212,7 +1210,7 @@
         <!-- job creation End  -->
 
         <!-- 02 -->
-        <div class="ctbpopup-body">
+        <div class="ctbpopup-body d-none">
             <div class="accordion" id="ctbpopupaccordion">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
@@ -1221,7 +1219,7 @@
                             <span class="d-inline-block position-absolute"></span>
                         </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#ctbpopupaccordion">
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#ctbpopupaccordion">
                         <div class="accordion-body p-8 pt-14">
                             <div class="ctbpop-accordian-body bg-white border pb-24 pt-14">
                                 <ul class="nav nav-tabs justify-content-center gap-12 border-0 py-6 px-10 mx-24" id="myTab" role="tablist">
@@ -1611,11 +1609,11 @@
         </div>
 
         <!-- maddie le modal start  -->
-         <div class="meddie-modal position-absolute top-0 start-0 ms-24 z-1">
+         <div class="meddie-modal position-absolute top-0 start-0 ms-24 z-1 d-none">
             <div class="maddie-custom-window">
                 <div class="maddie-header d-flex justify-content-between align-items-center gap-20">
                     <div class="d-flex align-items-center gap-2">
-                        <button class="maddie-btn-icon me-14"><i class="fa-solid fa-share-nodes text-primary fs-28"></i></button>
+                        <button class="maddie-btn-icon me-14" data-bs-toggle="modal" data-bs-target="#maddiesharebtn"><i class="fa-solid fa-share-nodes text-primary fs-28"></i></button>
                         <button class="maddie-btn-icon maddie-btn-iconimg text-danger"><img src="./assets/image/header/Alert.svg" class="w-100 h-100 object-fit-contain" decoding="async"></button>
                     </div>
                     <div class="maddie-title fs-30 fw-bolder fst-intalic fst-italic">Maddie LE</div>
@@ -1726,11 +1724,11 @@
         <!-- maddie modal End  -->
         
         <!-- Dread Pirate modal start  -->
-         <div class="meddie-modal position-absolute top-0 start-0 ms-24 z-1">
+         <div class="meddie-modal position-absolute top-0 ms-24 z-1 dreadpirate-modal">
             <div class="maddie-custom-window">
                 <div class="maddie-header d-flex justify-content-between align-items-center gap-18">
                     <div class="d-flex align-items-center gap-10">
-                        <button class="maddie-btn-icon me-0"><i class="fa-solid fa-share-nodes text-primary fs-28"></i></button>
+                        <button class="maddie-btn-icon me-0" data-bs-toggle="modal" data-bs-target="#maddiesharebtn"><i class="fa-solid fa-share-nodes text-primary fs-28"></i></button>
                         <button class="maddie-btn-icon maddie-btn-iconimg text-danger"><img src="./assets/image/header/notification-icon.svg" class="w-100 h-100 object-fit-contain" decoding="async"></button>
                         <button class="maddie-btn-icon maddie-btn-iconimg text-danger"><img src="./assets/image/header/Alert.svg" class="w-100 h-100 object-fit-contain" decoding="async"></button>
                     </div>
@@ -1968,7 +1966,7 @@
                         <hr class="position-absolute contact-box-line m-0">
                     </div>
                     <div
-                        class="contact-box-item d-flex align-items-center justify-content-between position-relative pb-12 mb-15">
+                        class="contact-box-item d-flex align-items-center justify-content-between position-relative pb-12 mb-15" data-bs-target="#contactcmodal" data-bs-toggle="modal">
                         <h5 class="fs-20 fs-lg-16 fw-bold text-primary mb-0">JCV38 Corp</h5>
                         <div class="d-flex align-items-center">
                             <div class="contact-truck-icon position-relative">
@@ -2516,8 +2514,7 @@
                                 <span class="fs-13 fw-medium text-black d-block">01/14/23</span>
                                 <span class="fs-10 fw-bold text-black d-block">03:32 P.M.</span>
                             </div>
-                            <button
-                                class="btn invites-manage-btn search-item-btn text-white fs-13 fw-medium py-1 px-10">Manage</button>
+                            <button class="btn invites-manage-btn search-item-btn text-white fs-13 fw-medium py-1 px-10">Manage</button>
                         </div>
                     </div>
                     <div class="invites-item-close position-absolute"><img src="assets/image/close-icon.svg"
@@ -2538,8 +2535,7 @@
                                 <span class="fs-13 fw-medium text-black d-block">01/14/23</span>
                                 <span class="fs-10 fw-bold text-black d-block">03:38 P.M.</span>
                             </div>
-                            <button
-                                class="btn invites-manage-btn search-item-btn text-white fs-13 fw-medium py-1 px-10">Manage</button>
+                            <button class="btn invites-manage-btn search-item-btn text-white fs-13 fw-medium py-1 px-10">Manage</button>
                         </div>
                     </div>
                     <div class="invites-item-close position-absolute"><img src="assets/image/close-icon.svg"
@@ -2560,8 +2556,7 @@
                                 <span class="fs-13 fw-medium text-black d-block">01/14/23</span>
                                 <span class="fs-10 fw-bold text-black d-block">03:32 P.M.</span>
                             </div>
-                            <button
-                                class="btn invites-manage-btn search-item-btn text-white fs-13 fw-medium py-1 px-10">Manage</button>
+                            <button class="btn invites-manage-btn search-item-btn text-white fs-13 fw-medium py-1 px-10">Manage</button>
                         </div>
                     </div>
                     <div class="invites-item-close position-absolute"><img src="assets/image/close-icon.svg"
@@ -2930,6 +2925,37 @@
         </div>
     </div>
     <!-- Invite Sent End -->
+    
+    <!-- calender Sent Modal -->
+    <div class="modal fade scheduled-status-modal" id="calenderdatemodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="calenderdatemodalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4">
+                <div class="modal-header justify-content-center position-relative border-0 pb-0">
+                    <h1 class="modal-title fs-2 fw-bold fst-italic text-black lh-1 mb-0">
+                        <span class="text-decoration-underline">Dec</span> <sup>6<sup>th</sup></sup> 2023
+                    </h1>
+                    <button type="button" class="btn-close position-absolute top-0 end-0 mt-2 me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="text-center mt-2 d-flex justify-content-center align-items-center gap-3 flex-wrap">
+                    <button class="btn btn-outline-danger btn-sm rounded-pill px-3 py-1 d-flex align-items-center gap-1">
+                        <span class="dot bg-danger rounded-circle d-inline-block" style="width: 10px; height: 10px;"></span> Repair
+                    </button>
+                    <span class="text-dark fw-semibold fs-5">09:30 <small class="text-muted">a.m.</small></span>
+                </div>
+                <div class="modal-body text-center py-3">
+                    <p class="text-muted mb-3">Load of rock coming in...</p>
+                    <img src="./assets/image/check-sucess.svg" alt="Success" class="mb-3" style="width: 100px;">
+                    <p class="text-black fs-3 fw-bold fst-italic m-0">Scheduled</p>
+                </div>
+                <div class="modal-footer justify-content-start ps-4 pe-4 pt-0 border-0 text-start">
+                    <div class="small text-muted">
+                        <strong>By: Greg Smith</strong><br> 12-10-23 <span class="text-danger">01:13 a.m.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- calender Sent End -->
 
     <!-- Secondary Location Start -->
      <div class="s-location position-absolute bg-white py-15 px-20">
@@ -3193,9 +3219,8 @@
 
                     <p class="text-primary fw-bold fs-25 mb-0">or</p>
                     <p class="text-info mb-19 fs-13 fw-medium">
-                    For Drivers who have yet to setup an account,<br> manually enter:
+                        For Drivers who have yet to setup an account,<br> manually enter:
                     </p>
-
                     <input type="text" class="form-control fs-13 py-2 fw-semibold text-center text-primary mb-12 mx-auto w-same" placeholder="First Name">
                     <input type="text" class="form-control fs-13 py-2 fw-semibold text-center text-primary mb-12 mx-auto w-same" placeholder="Last Name">
                     <input type="text" class="form-control fs-13 py-2 fw-semibold text-center text-primary w-same mx-auto" placeholder="Phone Number">
@@ -3206,6 +3231,361 @@
         </div>
     </div>
     <!-- Add Driver Modal End -->
+
+    <!-- Fairbank Modal Start -->
+        <div class="modal faibank-modal" id="fairbankmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="fairbankmodal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center position-relative border-0 p-0">                   
+                    </div>
+                    <div class="modal-body adddriver-modalbody text-center p-0 overview-accordion" style="right: unset;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button py-2 px-15 justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="true" aria-controls="collapsetwo">
+                                        <h6 class="search-heading-title fs-15 fw-semibold text-white mb-0 w-100 text-center">Manage</h6>
+                                </button>
+                            </h2>
+                        <div class="py-10 px-35">
+                            <div class="invitation-head d-flex align-items-center justify-content-between">
+                                <div class="invitation-times">
+                                    <span class="fs-13 fw-bold d-block text-black">Created By:</span>
+                                    <small class="fs-13 fw-bold">JCV38 Corp</small>
+                                </div>
+                                <div class="text-center mx-auto">
+                                    <h4 class="overview-main-title fs-28 mb-0 fw-bold">Fairbanks CTB</h4>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <p class="fs-20 fw-bold mb-0 text-danger mt-15"><u><em>Select item to edit</em></u></p>
+                            <div class="mt-21">
+                                <ul class="invitation-list list-inline">
+                                    <li class="fs-15 fw-bold text-black text-start mb-9 ps-26"><span class="me-11 d-inline-block"></span>Oil Company: Kraken</li>
+                                    <li class="fs-15 fw-bold text-black text-start mb-9"><img src="assets/image/Company-man edit.svg" class="me-8" alt="Edit icon"><span class="me-11 d-inline-block"></span>Type: <output data-bs-target="#managetype" data-bs-toggle="modal">Haul-out</output></li>
+                                    <li class="fs-15 fw-bold text-black text-start mb-9"><img src="assets/image/Button (ADD) (1).svg" class="me-8" alt="Edit icon" data-bs-target="#managemodal" data-bs-toggle="modal"><span class="me-11 d-inline-block"></span>Company-man:
+                                        <button class="fs-11 text-white invitation-sails-btn fw-bold py-1 px-6" data-bs-target="#fairbankmanage" data-bs-toggle="modal">Cody Mills<img src="assets/image/circle-close.svg" alt="Circle Close" class="ms-6"></button>
+                                    </li>
+                                    <li class="fs-15 fw-bold text-black text-start mb-9"><img src="assets/image/Button (ADD) (1).svg" class="me-8" alt="Edit icon"><span class="me-11 d-inline-block"></span>Rate: 
+                                    <button class="fs-11 text-white invitation-sails-btn fw-bold py-1 px-6" data-bs-target="#manageratemodal" data-bs-toggle="modal">$145<sub>hr</sub><img src="assets/image/circle-close.svg" alt="Circle Close" class="ms-6"></button>
+                                    </li>
+                                    <li class="fs-15 fw-bold text-black text-start mb-9"><img src="assets/image/Button (ADD) (1).svg" class="me-13" alt="Edit icon"><span class="me-11 d-inline-block"></span>Disposal:
+                                        <button class="fs-11 text-white invitation-sails-btn fw-bold py-1 px-6" data-bs-target="#managenote" data-bs-toggle="modal">Black Sails<img src="assets/image/circle-close.svg" alt="Circle Close" class="ms-6"></button>
+                                        <button class="fs-11 text-white invitation-sails-btn fw-bold py-1 px-6" data-bs-target="#invitationsent" data-bs-toggle="modal">Davy Jones<img src="assets/image/circle-close.svg" alt="Circle Close" class="ms-6"></button>
+                                    </li>
+                                    <li class="fs-15 fw-bold text-start text-black"><img src="assets/image/Button (ADD) (1).svg" class="me-13" alt="Edit icon"><span class="me-11 d-inline-block"></span>Secondary locations:
+                                        <button class="fs-11 text-white invitation-sails-btn fw-bold py-1 px-15" data-bs-target="#managemanual" data-bs-toggle="modal">None</button>
+                                    </li>
+                                    <li class="fs-12 fw-medium ms-43 text-start">To manually enter a location, click <a href="#" class="text-danger" data-bs-target="#disposalvarify" data-bs-toggle="modal">HERE.</a></li>
+                                </ul>       
+                            </div>
+                            <div class="invitation-note mt-6 mb-33 px-26">
+                                <h6 class="fs-17 fw-bold mb-2 text-black text-center mb-12 d-flex align-items-center">
+                                    <img src="assets/image/Company-man edit.svg" alt="Edit icon" class="img-fluid ps-6">
+                                    <div class="mx-auto">
+                                        <span class="me-11 d-inline-block"></span>
+                                        <u>Notes:</u>
+                                    </div>
+                                </h6>
+                                <textarea class="form-control text-start pt-5 pe-35 pb-13 ps-17 fs-10 text-black" rows="5" cols="50" id="floatingTextarea">
+                                </textarea>
+                            </div>
+                            <div class="invitation-map d-flex justify-content-center px-26 my-16">
+                                <div class="map-body h-100 w-100">
+                                    <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238133.18800900166!2d72.65747318239129!3d21.159120355102836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1745177875945!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            <div class="mt-13 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <span class="d-block fs-11 fw-bold text-black">01/14/23</span>
+                                    <span class="d-block fs-8 text-danger fw-bold">03:32 pm</span>
+                                </div>
+                                <button class="fs-11 text-white fw-bold invitation-none-btn px-15 py-5 border-0" data-bs-target="#endjobmodal" data-bs-toggle="modal">End Job</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Fairbank Modal End -->
+
+    <!-- Fairbank Manage Modal Start -->
+      <div class="modal adddriver-modal fairbank-m-modal" id="fairbankmanage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="fairbankmanage" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 400px;">
+            <div class="modal-content" style="border-radius: 40px;">
+                <div class="modal-header justify-content-center position-relative border-0 p-0">  
+                    <button type="button" class="btn-close position-absolute m-0 mt-8 me-8 z-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <h2 class="fw-bold text-white mb-0 text-center py-8 driver-header border-0" style="border-radius: 40px 40px 12px 12px; font-size: 45px;"><u><em>Manage</em></u></h2>
+                <div class="modal-body adddriver-modalbody text-center px-30 pb-20">
+                   <h2 class="fs-30 fw-bold mb-17 text-primary d-flex align-items-center"><span class="mx-auto">Disposal</span> <i class="fa-solid fa-circle-info me-10 fs-20"></i></h2>
+                    <p class="text-danger mb-12 fs-25 fw-medium">
+                       What would you like <br>to do?
+                    </p>
+                    <button class="btn btn-primary px-30 fs-23 fw-bold py-0 driver-done-btn">ADD</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fairbank Manage Modal End -->
+
+    <!-- Manage Modal Start -->
+     <div class="modal adddriver-modal fairbank-m-modal" id="managemodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="managemodal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="border-radius: 40px;">
+                <div class="modal-header justify-content-center position-relative border-0 p-0">  
+                    <button type="button" class="btn-close position-absolute m-0 mt-8 me-8 z-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <h2 class="fw-bold text-white mb-0 text-center py-8 driver-header border-0" style="font-size: 45px; border-radius: 40px 40px 12px 12px;"><em><u>Manage</u></em></h2>
+                <div class="modal-body adddriver-modalbody text-center px-30 pb-20">
+                   <p class="text-info mb-13 fs-13 fw-medium">For Drivers already in the system:</p>
+                     <input type="text" class="form-control fs-13 py-2 fw-semibold text-center text-primary mb-12 mx-auto w-same" placeholder="Search">
+
+                    <p class="text-primary fw-bold fs-25 mb-0">or</p>
+                    <p class="text-info mb-19 fs-13 fw-medium">
+                        For Drivers who have yet to setup an account,<br> manually enter:
+                    </p>
+                    <input type="text" class="form-control fs-13 py-2 fw-semibold text-center text-primary mb-12 mx-auto w-same" placeholder="First Name">
+                    <input type="text" class="form-control fs-13 py-2 fw-semibold text-center text-primary mb-12 mx-auto w-same" placeholder="Last Name">
+                    <input type="text" class="form-control fs-13 py-2 fw-semibold text-center text-primary w-same mx-auto" placeholder="Phone Number">
+
+                    <button class="btn btn-primary px-30 fs-23 fw-bold mt-17 py-0 driver-done-btn">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Manage Modal End -->
+
+    <!-- Manage manual Modal Start -->
+     <div class="modal adddriver-modal fairbank-m-modal" id="managemanual" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="managemanual" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 400px;">
+            <div class="modal-content" style="border-radius: 40px;">
+                <div class="modal-header justify-content-center position-relative border-0 p-0">  
+                    <button type="button" class="btn-close position-absolute m-0 mt-8 me-8 z-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <h2 class="fw-bold text-white mb-0 text-center py-8 driver-header border-0" style="border-radius: 40px 40px 12px 12px; font-size: 45px;"><u><em>Manage</em></u></h2>
+                <div class="modal-body adddriver-modalbody text-center px-30 pb-10">
+                   <h2 class="fs-30 fw-bold mb-17 text-primary d-flex align-items-center"><span class="mx-auto">Secondary Location </span> <i class="fa-solid fa-circle-info me-10 fs-20"></i></h2>
+                    <p class="text-danger mb-12 fs-25 fw-medium">
+                       What would you like <br>to do?
+                    </p>
+                    <div class="d-flex align-items-center justify-content-between mb-15 manage-manual-btn">
+                        <button class="btn btn-primary px-30 fs-23 fw-bold py-0 driver-done-btn">ADD</button>
+                        <button class="btn btn-primary px-30 fs-23 fw-bold py-0 driver-done-btn" data-bs-target="#locationmanual" data-bs-toggle="modal">Manual</button>
+                    </div>
+                    <p class="fs-12 fw-medium mb-0">If not a <span class="text-danger">WeELL</span>, Select <span class="text-danger"><u>Manual</u></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Manage manual Modal End -->
+
+    <!-- Manage Note Modal Start -->
+     <div class="modal adddriver-modal fairbank-m-modal" id="managenote" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="managenote" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 400px;">
+            <div class="modal-content" style="border-radius: 40px;">
+                <div class="modal-header justify-content-center position-relative border-0 p-0">  
+                    <button type="button" class="btn-close position-absolute m-0 mt-8 me-8 z-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <h2 class="fw-bold text-white mb-0 text-center py-8 driver-header border-0" style="border-radius: 40px 40px 12px 12px; font-size: 45px;"><u><em>Manage</em></u></h2>
+                <div class="modal-body adddriver-modalbody text-center px-30 pb-20">
+                    <h2 class="fs-30 fw-bold mb-17 text-primary d-flex align-items-center"><span class="mx-auto">Notes</h2>
+                    <textarea class="form-control text-start pt-10 pe-35 fs-15 pb-13 ps-17 fs-10 text-black" rows="8" cols="50" id="floatingTextarea" style="box-shadow: inset 6px 4px 10px #969696;">
+                    </textarea>
+                        <button class="btn btn-primary px-20 fs-23 mt-20 fw-bold py-0 driver-done-btn">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Manage Note Modal End -->
+
+    <!-- Manage Type Modal Start -->
+     <div class="modal adddriver-modal fairbank-m-modal" id="managetype" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="managetype" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 360px;">
+            <div class="modal-content" style="border-radius: 40px;">
+                <div class="modal-header justify-content-center position-relative border-0 p-0">  
+                    <button type="button" class="btn-close position-absolute m-0 mt-8 me-8 z-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <h2 class="fw-bold text-white mb-0 text-center py-8 driver-header border-0" style="border-radius: 40px 40px 12px 12px; font-size: 45px;"><u><em>Manage</em></u></h2>
+                <div class="modal-body adddriver-modalbody text-center px-30 pb-20">
+                   <h2 class="fs-30 fw-bold mb-17 text-primary d-flex align-items-center"><span class="mx-auto">Job Type</h2>
+                   
+                    <div class="d-flex align-items-center justify-content-between mb-15 manage-manual-btn manage-type-btn">
+                        <button class="btn btn-primary px-20 fs-20 fw-bold py-0 driver-done-btn">Haul-in</button>
+                        <button class="btn btn-primary px-20 fs-20 fw-bold py-0 driver-done-btn">Haul-out</button>
+                    </div>
+                    <button class="btn btn-primary px-20 fs-20 mb-15 fw-bold py-0 driver-done-btn manage-type-both mt-20">Both</button>
+                    <span class="text-danger fs-12 fw-medium d-block">Click Your Selection...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Manage Type Modal End -->
+
+    <!-- End Job Modal Start -->
+     <div class="modal adddriver-modal fairbank-m-modal" id="endjobmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="endjobmodal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 400px;">
+            <div class="modal-content" style="border-radius: 40px;">
+                <div class="modal-header justify-content-center position-relative border-0 p-0">  
+                    <button type="button" class="btn-close position-absolute m-0 mt-8 me-8 z-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <h2 class="fw-bold text-white mb-0 text-center py-8 driver-header border-0" style="border-radius: 40px 40px 12px 12px; font-size: 45px;"><u><em>End Job</em></u></h2>
+                <div class="modal-body adddriver-modalbody text-center p-30">
+                    <p class="fs-15 fw-bold mb-0" style="color: #A6A6A6;">If the job has been completed, tap the button below to sum-up its information. <br>The job will be placed in</p>
+                   <div class="d-flex justify-content-between">
+                        <img src="assets/image/Alert.svg" alt="Alert Icon">
+                        <h2 class="fs-18 fw-bold mb-0 text-primary"><span class="mx-auto"><em>Job History</em></h2>
+                        <img src="assets/image/Alert.svg" alt="Alert Icon">
+                   </div>
+                    <button class="btn btn-primary px-20 fs-20 mb-15 fw-medium py-5 mt-20 invitation-none-btn" data-bs-dismiss="modal" style="border-color: #ba0112;border-radius: 20px;">End Job</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Job Modal End -->
+
+    <!-- Manage Rate Modal Start -->
+     <div class="modal adddriver-modal fairbank-m-modal" id="manageratemodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="manageratemodal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 400px;">
+            <div class="modal-content" style="border-radius: 40px;">
+                <div class="modal-header justify-content-center position-relative border-0 p-0">  
+                    <button type="button" class="btn-close position-absolute m-0 mt-8 me-8 z-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <h2 class="fw-bold text-white mb-0 text-center py-8 driver-header border-0" style="border-radius: 40px 40px 12px 12px; font-size: 45px;"><u><em>Manage</em></u></h2>
+                <div class="modal-body managerate-body text-center px-30 py-20">
+                    <h2 class="fs-40 fw-bold mb-10 text-primary d-flex align-items-center"><span class="mx-auto">Rate</span> <i class="fa-solid fa-circle-info me-10 fs-20"></i></h2>
+                   <div class="d-flex justify-content-between mx-auto align-items-center" style="max-width: 200px;">
+                        <input type="text" class="form-control" placeholder="$ Value" style="max-width: 140px;">
+                        <div class="ms-15 managerate-radio">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="managerate" id="managerate1" checked>
+                                <label class="form-check-label fs-10 fw-bold text-primary" for="managerate1">
+                                    Hr.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="managerate" id="managerate2">
+                                <label class="form-check-label fs-10 fw-bold text-primary" for="managerate2">
+                                Bbl
+                                </label>
+                            </div>
+                        </div>
+                   </div>
+                    <button class="btn btn-primary px-20 fs-23 my-25 fw-bold py-0 driver-done-btn" data-bs-dismiss="modal">Done</button>
+                    <p class="fs-12 fw-medium mb-0">For multiple rates, add in <span class="text-danger"><u>NOTES.</u></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Manage Rate Modal End -->
+
+    <!-- Location Manual Modal Start  -->
+     <div class="modal adddriver-modal fairbank-m-modal" id="locationmanual" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="locationmanual" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="border-radius: 40px;">
+                <div class="modal-header justify-content-center position-relative border-0 p-0">  
+                    <button type="button" class="btn-close position-absolute m-0 mt-8 me-8 z-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <h2 class="fw-bold text-white mb-0 text-center py-8 driver-header border-0" style="font-size: 45px; border-radius: 40px 40px 12px 12px;"><em><u>Manage</u></em></h2>
+                <div class="modal-body adddriver-modalbody text-center px-30 pb-20">
+                   <p class="text-info mb-13 fs-16 fw-medium d-flex align-items-center"><span class="mx-auto">Locations already in the system</span><i class="fa-solid fa-circle-info me-10 fs-20"></i></p>
+                    <input type="text" class="form-control fs-13 py-2 fw-semibold text-center text-primary mb-12 mx-auto" placeholder="Search" style="max-width: 200px;">
+
+                    <p class="text-primary fw-bold fs-25 mb-0">or</p>
+                    <p class="text-info mb-19 fs-16 fw-medium">
+                        For destinations which are NOT in the system <br> manually enter the name, then copy/paste <br> Google pin in box below..
+                    </p>
+                    <input type="text" class="form-control fs-13 py-2 fw-semibold text-center text-primary mb-12 mx-auto" placeholder="Location name" style="max-width: 200px;">
+                    <div class="location-manual-google position-relative">
+                        <i class="fas fa-map-marker-alt position-absolute"></i>
+                        <textarea class="form-control text-center pt-24 pe-35 pb-13 ps-17 fs-16 text-black" rows="5" cols="50" id="floatingTextarea" placeholder="Paste Google pin here..."></textarea>
+                        <i class="fas fa-map-marker-alt position-absolute"></i>
+                    </div>
+                    <button class="btn btn-primary px-30 fs-23 fw-bold mt-17 py-0 driver-done-btn" data-bs-dismiss="modal">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Location Manual Modal End  -->
+    <!-- maddie share Modal Start  -->
+     <div class="modal adddriver-modal fairbank-m-modal" id="maddiesharebtn" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="maddiesharebtn" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="border-radius: 40px;">
+                <div class="modal-header justify-content-center position-relative border-0 p-0">  
+                    <button type="button" class="btn-close position-absolute m-0 mt-8 me-8 z-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <h2 class="fw-bold text-white mb-0 text-center py-8 driver-header border-0" style="font-size: 45px; border-radius: 40px 40px 12px 12px;"><em><u>Share</u></em></h2>
+                <div class="modal-body adddriver-modalbody text-center px-30 pb-20">
+                    <form class="account-comany-form notesmodalbody notesmodal-adddispatch border-0 h-auto p-0 text-center shadow-none">
+                        <p class="m-0 fs-14 fw-medium mb-14">For people already in the system</p>
+                        <input type="text" class="form-control mb-14 mx-auto fs-14 m-0 lh-1 py-10 px-24 fw-bold" id="search" placeholder="Search">
+                        <p class="m-0 fs-14 fw-medium mb-14">For people who haven't setup an account, <br> manually enter: </p>
+                        <input type="text" class="form-control mb-14 mx-auto fs-14 m-0 lh-1 py-10 px-24 fw-bold" id="phonenumber" placeholder="Phone Number">
+                    </form>
+                    <button class="btn btn-primary px-30 fs-23 fw-bold mt-17 py-0 driver-done-btn" data-bs-dismiss="modal">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- maddie share Modal End  -->
+
+    <!-- Disposal Varify Modal Start -->
+      <div class="modal adddriver-modal fairbank-m-modal" id="disposalvarify" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="disposalvarify" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 400px;">
+            <div class="modal-content" style="border-radius: 40px;">
+                <div class="modal-header justify-content-center position-relative border-0 p-0">  
+                    <button type="button" class="btn-close position-absolute m-0 mt-8 me-8 z-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <h2 class="fw-bold text-white mb-0 text-center py-8 driver-header border-0" style="border-radius: 40px 40px 12px 12px; font-size: 45px;"><u><em>Manage</em></u></h2>
+                <div class="modal-body adddriver-modalbody text-center px-30 pb-20">
+                   <h2 class="fs-30 fw-bold mb-17 text-primary d-flex align-items-center"><span class="mx-auto">Disposal</span></h2>
+                    <p class="text-danger mb-12 fs-25 fw-medium">
+                      Your Deleting <br>"Disposal Name"
+                    </p>
+                    <button class="btn btn-primary px-22 fs-25 fw-bold py-3 driver-done-btn manage-type-both disposal-v-btn" data-bs-dismiss="modal">Verify</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Disposal Varify Modal End -->
+
+    <!-- Contact Company Modal Start -->
+     <div class="modal contact-c-modal fairbank-m-modal" id="contactcmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="contactcmodal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center position-relative border-0 p-0"> 
+                    <img src="assets/image/contact-bg.png" alt="Contact" class="img-fluid w-100">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-0 mt-8 me-8 z-1" data-bs-dismiss="modal" aria-label="Close" ></button>
+                    <div class="contact-c-ovarly position-absolute">
+                        <img src="assets/image/heading.png" alt="Heading" class="img-fluid">
+                        <h6 class="fs-15 fw-bold mb-0 text-black mt-6 text-center"><em><u>Trucking services</u></em></h6>
+                    </div>
+                </div>
+                <div class="modal-body p-0">
+                  <ul class="nav nav-tabs border-0 py-8 pe-8 ps-20 align-items-center justify-content-between" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fs-13 fw-bold active border-0" id="General-tab" data-bs-toggle="tab" data-bs-target="#General-tab-pane" type="button" role="tab" aria-controls="General-tab-pane" aria-selected="true">General</button>
+                    </li>
+                    <span class="fs-18 fw-bold text-white">(661) 345-2345</span>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fs-13 fw-bold border-0" id="Info-tab" data-bs-toggle="tab" data-bs-target="#Info-tab-pane" type="button" role="tab" aria-controls="Info-tab-pane" aria-selected="false">Info</button>
+                    </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="General-tab-pane" role="tabpanel" aria-labelledby="General-tab" tabindex="0">
+                        <div class="contact-c pt-12 px-20 pb-20">
+                            <div class="contact-cdriver">
+                                <h6 class="fs-18 fw-bold mb-10">Available Drivers: <span class="fs-25">5</span></h6>
+                                <div class="contact-c-list p-6">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="Info-tab-pane" role="tabpanel" aria-labelledby="Info-tab" tabindex="0">info</div>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Company Modal ENd -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta3/css/bootstrap-select.min.css">
     <!-- JavaScript Files -->
@@ -3306,6 +3686,17 @@
             // You can replace this with actual data filtering logic
             });
         }); 
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const button = document.querySelector(".dreadpirate-btn");
+            const ul = document.querySelector(".dreadpirate-modal");
+
+            if (button && ul) {
+            button.addEventListener("click", function () {
+                ul.classList.toggle("active");
+            });
+            }
+        });
         // dread tab activity js End 
     </script>
 
