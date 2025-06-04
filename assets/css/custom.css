@@ -373,7 +373,7 @@
 
 /* main content css start */
 .main-content {
-    height: calc(100vh - 300px);
+    height: calc(100vh - 280px);
 }
 
 .map-body {
@@ -608,6 +608,10 @@
     border-color: #0B3E58 !important;
     border-radius: 60px;
     right: 20% !important;
+}
+
+.main-content-disposal .dashboard-btn-list {
+    right: 0 !important;
 }
 
 .btn-listgroup {
@@ -1482,8 +1486,10 @@ table.calendar-table {
     right: 300px;
     left: unset;
 }
-.overview-accordion .accordion-body{
+.overview-accordion .accordion-body {
     background: #fff;
+    height: 85vh;
+    overflow-y: auto;
 }
 .overview-accordion small,.overview-main-title{
     color: #0A5B8A;
@@ -1700,6 +1706,11 @@ box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.32);
     border-color: #0B3E58 !important;
 }
 
+.ctbpop-accordian-body .tab-content {
+    height: calc(100vh - 434px);
+    overflow-y: auto;
+}
+
 .ctbpopup-body .nav-item .nav-link{
 border-color: #0B3E58 !important;
 color: #0B3E58;
@@ -1811,7 +1822,7 @@ height: 16px;
 }
 
 .maddie-tab-content-area {
-    height: 300px;
+    height: calc(100vh - 442px);
     background: #fff;
     overflow-y: auto;
     padding: 1rem;
