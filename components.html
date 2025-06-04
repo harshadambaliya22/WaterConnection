@@ -129,6 +129,30 @@
           color: #0A5B8A;
         }
         /* fairbanks jobmodal End*/
+        /* driver john vicol css start */
+        .driver-available-modal{
+          width: 430px;
+          border: 2px solid #0B3E58;
+          border-radius: 0 0 20px 0;
+          padding: 16px;
+        }
+        .driver-available-title {
+          text-shadow: 0 0 14px #00000047;
+        }
+        .driver-available-body-title{
+          color: #2385BF;
+        }
+        .driver-immediately-btn{
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.32);
+          background: linear-gradient(180deg, #F9C9C9 -57.5%, #CB0E20 100%);
+        }
+        /* driver john vicol css End */
+
+        /* job creation css start  */
+        .job-creation-modal {
+          width: 500px;
+        }
+        /* job creation css End  */
     </style>
 
 </head>
@@ -207,7 +231,6 @@
     </div>
 
     <!-- 02 -->
-
     <div class="ctbpopup-body">
         <div class="accordion" id="ctbpopupaccordion">
             <div class="accordion-item">
@@ -606,6 +629,343 @@
         </div>
     </div>
 
+    <!-- driver john vicol start -->
+    <div class='driver-available-modal bg-white position-relative'>
+      <div class="modal-header">
+        <h1 class="modal-title driver-available-title fs-22 fw-semibold fst-italic text-black lh-1 mb-0 text-decoration-underline">John Vicol</h1>
+        <button type="button" class="btn-close position-absolute top-0 end-0 mt-8 me-12"></button>
+      </div>
+      <div class='driver-available-body text-center'>
+        <p class='driver-available-body-title m-0 mb-8 fs-18 fw-bolder text-decoration-underline'>Available</p>
+        <button type="button" class="btn driver-immediately-btn text-white fs-14 fw-bolder border-0 border-radius-4">Immediatel</button>
+        <form class="account-comany-form mx-auto mt-20" action="">
+          <div class="mb-16 row align-items-center">
+            <div class='col-md-12 col-4 text-end'>
+              <label for="date" class="form-label m-0 text-primary fw-bolder fs-18">Date:</label>
+            </div>
+            <div class='col-md-12 col-6'>
+              <input type="date" class="form-control text-start fs-12 py-4 px-8" id="date">
+            </div>
+          </div>
+          <div class="mb-16 row align-items-center">
+            <div class='col-md-12 col-4 text-end'>
+              <label for="time" class="form-label m-0 text-primary fw-bolder fs-18">Time:</label>
+            </div>
+            <div class='col-md-12 col-6'>
+              <input type="time" class="form-control text-start fs-12 py-4 px-8" id="time">
+            </div>
+          </div>
+          <div class="mb-16 row align-items-center">
+            <div class='col-md-12 col-4 text-end'>
+              <label for="duration" class="form-label m-0 text-primary fw-bolder fs-18">Duration:</label>
+            </div>
+            <div class='col-md-12 col-6'>
+              <input type="text" class="form-control text-start fs-12 py-4 px-8" id="duration">
+            </div>
+          </div>
+          <div class="row align-items-center gap-8">
+            <div class='col-md-12 col-4 text-end'></div>
+            <div class='col-md-12 col-6 d-flex align-items-center gap-8'>
+              <label class="form-check-label d-flex align-items-center gap-8" for="trucking">If unknown check:</label>
+              <input class="form-check-input m-0" type="checkbox" value="" id="trucking">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer gap-50 border-0 justify-content-center pt-16 pb-0">
+        <button type="button" class="btn btn-modal-footer border-radius-4 fs-20 m-0 lh-1 px-24 fw-bold text-white bg-success">Verify</button>
+      </div>
+    </div>
+    <!-- driver john vicol End -->
+
+    <!-- job creation start  -->
+    <div class='job-creation-modal bg-white position-relative border border-radius-2'>
+      <div class="modal-header py-34 position-relative">
+        <h1 class="modal-title job-creation-title text-center w-100 fs-32 fw-semibold fst-italic text-black lh-1 mb-0">Job Creation</h1>
+        <button type="button" class="btn-close position-absolute top-0 end-0 mt-8 me-12"></button>
+        <ul class="nav nav-tabs job-creation-tab border-0 d-inline-flex flex-column position-absolute ms-16" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link d-flex align-items-center gap-8 border-0 px-0 pt-0 active" id="service-tab" data-bs-toggle="tab" data-bs-target="#service-tab-pane" type="button" role="tab" aria-controls="service-tab-pane" aria-selected="true">
+              <input class="form-check-input m-0" type="radio" name="tabCheck" id="servicecheck"checked>
+              <label class="form-check-label fs-14 fw-bold" for="servicecheck">Service</label>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link d-flex align-items-center gap-8 border-0 px-0 pt-0" id="production-tab" data-bs-toggle="tab" data-bs-target="#production-tab-pane" type="button" role="tab" aria-controls="production-tab-pane" aria-selected="false">
+              <input class="form-check-input m-0" type="radio" name="tabCheck" id="productioncheck">
+              <label class="form-check-label fs-14 fw-bold" for="productioncheck">Production</label>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class='job-creation-body p-16'>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="service-tab-pane" role="tabpanel" aria-labelledby="service-tab" tabindex="0">
+            <div class="accordion" id="serviceaccordian">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#serviceeOne" aria-expanded="true" aria-controls="serviceeOne">
+                    Accordion Item #1
+                  </button>
+                </h2>
+                <div id="serviceeOne" class="accordion-collapse collapse show" data-bs-parent="#serviceaccordian">
+                  <div class="accordion-body">
+                    <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceTwo" aria-expanded="false" aria-controls="serviceTwo">
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div id="serviceTwo" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
+                  <div class="accordion-body">
+                    <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceThree" aria-expanded="false" aria-controls="serviceThree">
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div id="serviceThree" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
+                  <div class="accordion-body">
+                    <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="production-tab-pane" role="tabpanel" aria-labelledby="production-tab" tabindex="0">
+            <div class="accordion" id="productionaccordian">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#productionOne" aria-expanded="true" aria-controls="productionOne">
+                    Accordion Item #1
+                  </button>
+                </h2>
+                <div id="productionOne" class="accordion-collapse collapse show" data-bs-parent="#productionaccordian">
+                  <div class="accordion-body">
+                    <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#productionTwo" aria-expanded="false" aria-controls="productionTwo">
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div id="productionTwo" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
+                  <div class="accordion-body">
+                    <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#productionThree" aria-expanded="false" aria-controls="productionThree">
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div id="productionThree" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
+                  <div class="accordion-body">
+                    <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- job creation End  -->
+
+   
+    <button type="button" class="btn btn-jobtitle border border-2 text-white fs-16 fw-bold py-8 px-30 lh-1" data-bs-toggle="modal" data-bs-target="#calenderdatemodal">Calander Date</button> 
+    <!-- calender Sent Modal -->
+    <div class="modal fade scheduled-status-modal" id="calenderdatemodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="calenderdatemodalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4">
+                <div class="modal-header justify-content-center position-relative calander-modal-header">
+                    <h1 class="modal-title fs-2 fw-bold fst-italic text-black lh-1 mb-0">
+                        <span class="text-decoration-underline">Dec</span> <sup>6<sup>th</sup></sup> 2023
+                    </h1>
+                    <button type="button" class="btn-close position-absolute top-0 end-0 mt-2 me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="calander-modal-headerbottom text-center mt-2 d-flex justify-content-center align-items-center gap-16 flex-wrap p-16">
+                    <button class="btn px-16 py-4 d-flex align-items-center gap-1 border-1 border-radius-3 border-secondary">
+                        <span class="dot bg-danger border-radius-circle d-inline-block" style="width: 10px; height: 10px;"></span> Repair
+                    </button>
+                    <span class="text-dark fw-semibold fs-5">09:30 <small class="text-muted">a.m.</small></span>
+                </div>
+                <div class="modal-body text-center py-3">
+                    <p class="text-muted mb-3">Load of rock coming in...</p>
+                    <img src="./assets/image/check-sucess.svg" alt="Success" class="mb-3" style="width: 100px;">
+                  </div>
+                  <div class="modal-footer justify-content-center position-relative ps-4 pe-4 pt-0 border-0 text-start">
+                    <div class="small fs-12 text-muted position-absolute start-0 top-50 translate-middle-y ms-10">
+                      <strong>By: Greg Smith</strong><br> 12-10-23 <span class="text-danger">01:13 a.m.</span>
+                    </div>
+                    <p class="text-primary fs-40 fw-bold fst-italic m-0">Scheduled</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- calender Sent End -->
+    
+    
+    <button type="button" class="btn btn-jobtitle border border-2 text-white fs-16 fw-bold py-8 px-30 lh-1" data-bs-toggle="modal" data-bs-target="#calendereventmodal">Calander Event</button> 
+    <!-- calender Sent Modal -->
+    <div class="modal fade scheduled-status-modal" id="calendereventmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="calendereventmodalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4">
+                <div class="modal-header justify-content-center position-relative calander-modal-header">
+                    <h1 class="modal-title fs-2 fw-bold fst-italic text-black lh-1 mb-0">
+                        Dec 14<sup>th</sup> 2023
+                    </h1>
+                    <button type="button" class="btn-close position-absolute top-0 end-0 mt-2 me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center py-3">
+                  <div class='calander-card-body p-16 text-center'>
+                    <div class="calander-card-container h-100 overflow-y-auto">
+                      <div class="d-flex justify-content-center align-items-center w-100 h-100">
+                        <span class="fs-30 text-dark fw-bolder opacity-75">No Event</span>
+                      </div>
+                    </div>
+                    <button class="calander-add-button d-inline-flex justify-content-center align-items-center">ADD</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- calender Sent End -->
+    
+    
+    <button type="button" class="btn btn-jobtitle border border-2 text-white fs-16 fw-bold py-8 px-30 lh-1 mt-16" data-bs-toggle="modal" data-bs-target="#calenderdatemodal02">Calander Date 02</button> 
+    <!-- calender Sent Modal -->
+    <div class="modal fade scheduled-status-modal" id="calenderdatemodal02" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="calenderdatemodal02Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4">
+                <div class="modal-header justify-content-center position-relative calander-modal-header">
+                    <h1 class="modal-title fs-2 fw-bold fst-italic text-black lh-1 mb-0">
+                        <span class="text-decoration-underline">Dec</span> <sup>6<sup>th</sup></sup> 2023
+                    </h1>
+                    <button type="button" class="btn-close position-absolute top-0 end-0 mt-2 me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class='calander-card-body p-16 text-center'>
+                  <div class="calander-card-container h-100 overflow-y-auto">
+                    <div class="calander-task-card">
+                      <div class="d-flex align-items-center gap-8 flex-shrink-0 py-10">
+                        <div class="calander-dot"></div>
+                        <div class="calander-name-time">
+                          <strong>Matt G.</strong>
+                          <div class="calander-time">03:15 a.m.</div>
+                        </div>
+                      </div>
+                      <div class="calander-desc text-start py-10">Meeting with Chris Goose Meeting with Chris Goose Meeting with Chris Goose Meeting with Chris Goose Meeting with Chris Goose</div>
+                      <button class="calander-remove-btn flex-shrink-0"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div class="calander-task-card">
+                      <div class="d-flex align-items-center gap-8 flex-shrink-0 py-10">
+                        <div class="calander-dot"></div>
+                        <div class="calander-name-time">
+                          <strong>Matt G.</strong>
+                          <div class="calander-time">03:15 a.m.</div>
+                        </div>
+                      </div>
+                      <div class="calander-desc text-start py-10">Goose Meeting with Chris Goos Goose</div>
+                      <button class="calander-remove-btn flex-shrink-0"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div class="calander-task-card">
+                      <div class="d-flex align-items-center gap-8 flex-shrink-0 py-10">
+                        <div class="calander-dot"></div>
+                        <div class="calander-name-time">
+                          <strong>Matt G.</strong>
+                          <div class="calander-time">03:15 a.m.</div>
+                        </div>
+                      </div>
+                      <div class="calander-desc text-start py-10">Meeting with Chris Goose Meeting with Chris Goose Meeting with Chris Goose Meeting with Chris Goose Meeting with Chris Goose</div>
+                      <button class="calander-remove-btn flex-shrink-0"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                  </div>
+                  <button class="calander-add-button d-inline-flex justify-content-center align-items-center">ADD</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- calender Sent End -->
+
+    <button type="button" class="btn btn-jobtitle border border-2 text-white fs-16 fw-bold py-8 px-30 lh-1 mt-16" data-bs-toggle="modal" data-bs-target="#manageinvite01">Manage Invite</button>
+    <div class="modal fairbanks-jobmodal fade" id="manageinvite01" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="manageinvite01Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center position-relative border-0">
+              <h1 class="modal-title fs-35 fw-semibold fst-italic text-black lh-1 mb-0"><u>Manage Drivers</u></h1>
+              <button type="button" class="btn-close position-absolute top-0 end-0 m-0 mt-8 me-8" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body py-0 px-30 text-center">
+              <p class='text-primary fs-14 mb-6'>What would you like <br> to do?</p>
+              <h3 class='mb-4 text-black fs-26 fw-bold'>Sara Evans<h3>
+              <p class='text-primary fs-18 fw-bold'>(701) 573 2342</p>
+            </div>
+            <div class="modal-footer gap-50 border-0 justify-content-center pt-0">
+              <button type="button" class="btn btn-modal-footer btn-modalnext m-0 fs-18 border-radius-4 lh-1 py-10 px-24 fw-bold text-white" data-bs-target="#manageinvitecheck" data-bs-toggle="modal">Re-send</button>
+              <button type="button" class="btn btn-modal-footer btn-modalnext m-0 fs-18 border-radius-4 lh-1 py-10 px-24 fw-bold text-white" data-bs-target="#manageinvitecancle" data-bs-toggle="modal">Cancle</button>
+            </div>
+            <span class='d-block text-center text-danger fs-14 fw-bold mb-16'>To add driver go to job management menu...</span>
+          </div>
+        </div>
+    </div>
+    <div class="modal fairbanks-jobmodal fade" id="manageinvitecheck" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="manageinvitecheckLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center position-relative border-0">
+              <h1 class="modal-title fs-35 fw-semibold fst-italic text-black lh-1 mb-0"><u>Invite Re-Sent</u></h1>
+              <button type="button" class="btn-close position-absolute top-0 end-0 m-0 mt-8 me-8" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src='./assets/image/check-sucess.svg' class='position-relative'></img>
+              <p class="m-0 text-center postjobbulletinbtn-title fs-40 fw-bolder">Sara Evans</p>
+              <p class='text-primary fs-16 fw-bold m-0'>(701) 573 2342</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fairbanks-jobmodal fade" id="manageinvitecancle" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="manageinvitecancleLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center position-relative border-0">
+              <h1 class="modal-title fs-35 fw-semibold fst-italic text-black lh-1 mb-0"><u>Cancle Invite</u></h1>
+              <button type="button" class="btn-close position-absolute top-0 end-0 m-0 mt-8 me-8" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center py-0">
+              <img src='./assets/image/header/Alert.svg' class='position-relative manageinvitecancle-img'></img>
+              <p class="m-0 text-center postjobbulletinbtn-title fs-40 fw-bolder">Sara Evans</p>
+            </div>
+            <div class="modal-footer gap-50 border-0 justify-content-center pt-0">
+              <button type="button" class="btn btn-modal-footer btn-modalnext m-0 fs-18 border-radius-4 lh-1 py-10 px-24 fw-bold text-white" data-bs-target="#manageinvitebyebye" data-bs-toggle="modal">Confirm</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fairbanks-jobmodal fade" id="manageinvitebyebye" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="manageinvitebyebyeLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center position-relative border-0 pb-4">
+              <h1 class="modal-title fs-35 fw-semibold fst-italic text-black lh-1 mb-0"><u>Bye-Bye</u></h1>
+              <button type="button" class="btn-close position-absolute top-0 end-0 m-0 mt-8 me-8" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center py-0">
+              <p class="m-0 text-center postjobbulletinbtn-title fs-40 fw-bolder">Sara Evans</p>
+            </div>
+          </div>
+        </div>
+    </div>
 
     <script src="./assets/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="./assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -625,6 +985,24 @@
           icon.classList.add('fa-eye');
         }
       }
+
+      document.addEventListener("DOMContentLoaded", function () {
+      const radios = document.querySelectorAll('input[name="tabCheck"]');
+
+      radios.forEach(function (radio) {
+        radio.addEventListener('change', function () {
+          if (this.checked) {
+            const target = this.getAttribute('data-bs-target');
+            const tabTrigger = document.querySelector(`button[data-bs-target="${target}"]`);
+
+            if (tabTrigger) {
+              const tab = new bootstrap.Tab(tabTrigger);
+              tab.show();
+            }
+          }
+        });
+      });
+    });
     </script>
     
 

@@ -607,6 +607,7 @@
 .dashboard-btn-list {
     border-color: #0B3E58 !important;
     border-radius: 60px;
+    right: 20% !important;
 }
 
 .btn-listgroup {
@@ -2527,6 +2528,102 @@ color: #0B3E58;
     background: linear-gradient(180deg, #CFE4EF -7.5%, #020C12 100%);
     color: #fff;
     border: 1px solid #ffffff !important;
+}
+
+.corp-driver-dispatch-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  gap: 40px;
+}
+
+.section {
+  flex: 1;
+}
+
+h3 .corp-title {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+h3 .corp-count {
+  color: green;
+  font-size: 1.5em;
+  margin-left: 5px;
+  font-family: cursive;
+}
+
+.corp-driver-list {
+  border: 2px solid #006;
+  border-radius: 5px;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 2px 2px 6px #ccc;
+}
+
+.corp-driver-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.corp-driver-item:last-child {
+  border-bottom: none;
+}
+
+.corp-status-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.red {
+  background: red;
+}
+
+.green {
+  background: green;
+}
+
+.corp-invite {
+  color: green;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.corp-dispatcher-name {
+  font-weight: bold;
+  color: #0d3d5e;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.corp-dispatch-types {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.corp-dispatch-types li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 0.95em;
+}
+
+.corp-bullet {
+  width: 10px;
+  height: 10px;
+  background: #444;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 /* Contact Company Modal End */
 
