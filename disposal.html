@@ -582,526 +582,181 @@
         </div>
 
         <!-- job creation start  -->
-        <div class='job-creation-modal bg-white border border-radius-2' id="job-creation-sidebar">
-            <div class="modal-header py-28 position-relative">
-                <h1 class="modal-title job-creation-title text-center w-100 fs-36 fw-semibold fst-italic text-black lh-1 mb-0">Job Creation</h1>
+        <div class='job-creation-modal disposal-leftsidebar-modal bg-white border border-radius-2' id="job-creation-sidebar">
+            <div class="modal-header py-28 position-relative text-center">
+                <div class="disposal-modal-header d-flex justify-content-center align-items-center gap-20 w-100">
+                    <i class="fa-solid fa-faucet fs-20"></i>
+                    <h1 class="modal-title job-creation-title text-center fs-36 fw-semibold fst-italic text-black lh-1 mb-0"><u>Disposal Statis</u></h1>
+                    <i class="fa-solid fa-faucet fs-20"></i>
+                </div>
                 <button type="button" class="btn-close position-absolute top-0 end-0 mt-8 me-12" id="job-creation"></button>
-                <ul class="nav nav-tabs job-creation-tab border-0 d-inline-flex flex-column position-absolute ms-16" id="myTab" role="tablist">
+            </div>
+            <div class="nav-tabs maddie-body maddie-tab-buttons position-relative py-8">
+                <ul class="nav nav-tabs justify-content-center border-0 gap-20 p-0" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link d-flex align-items-center gap-8 border-0 px-0 pt-0 bg-transparent active" id="service-tab" data-bs-toggle="tab" data-bs-target="#service-tab-pane" type="button" role="tab" aria-controls="service-tab-pane" aria-selected="true">
-                            <input class="form-check-input m-0" type="radio" name="tabCheck" id="servicecheck"checked>
-                            <label class="form-check-label fs-12 fw-bold" for="servicecheck">Service</label>
-                        </button>
+                        <a class="nav-link text-primary m-0 fs-14 fw-bolder active" data-bs-toggle="tab" href="#dreadstats" aria-selected="true" role="tab">Statis</a>
                     </li>
+                    <li class="nav-item text-white fs-26 fw-bold" role="presentation">Level</li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link d-flex align-items-center gap-8 border-0 px-0 pt-0 bg-transparent" id="production-tab" data-bs-toggle="tab" data-bs-target="#production-tab-pane" type="button" role="tab" aria-controls="production-tab-pane" aria-selected="false">
-                            <input class="form-check-input m-0" type="radio" name="tabCheck" id="productioncheck">
-                            <label class="form-check-label fs-12 fw-bold" for="productioncheck">Production</label>
-                        </button>
+                        <a class="nav-link text-primary m-0 fs-14 fw-bolder" data-bs-toggle="tab" href="#dreadactivity" aria-selected="false" tabindex="-1" role="tab">Activity</a>
                     </li>
                 </ul>
             </div>
-            <div class='job-creation-body position-relative'>
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="service-tab-pane" role="tabpanel" aria-labelledby="service-tab" tabindex="0">
-                        <div class="accordion jobcreation-accordian" id="serviceaccordian">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceeOne" aria-expanded="false" aria-controls="serviceeOne">
-                                        <span class="jobcreation-number me-16">1</span> Oil Company <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
-                                    </button>
-                                </h2>
-                                <div id="serviceeOne" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
-                                    <div class="accordion-body text-center">
-                                        <div class="dropdown d-inline-block"  data-bs-target="#gasmodal" data-bs-toggle="modal">
-                                            <button class="btn border dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Oil Company
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                              <li><a class="dropdown-item active" href="javascript:void(0);">Kraken</a></li>
-                                              <li><a class="dropdown-item" href="javascript:void(0);">Grayson Mills</a></li>
-                                              <li><a class="dropdown-item" href="javascript:void(0);">Cord</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
+            <div class='job-creation-body disposal-job-creation-body position-relative'>
+                <div class="tab-content maddie-tab-content-area p-0">
+                    <div class="tab-pane h-100 fade show active" id="dreadstats" role="tabpanel">
+                        <div class="disposal-tank-container d-flex align-items-center justify-content-center p-20 gap-26">
+                            <div class="disposal-tank-icon"><img src="./assets/image/maddie/tanks.png" alt="Tank Image" class="maddie-tank-img object-contant"></div>
+                            <div class="disposal-tank-value">13.6</div>
+                            <button class="disposal-update-btn">Update</button>
+                        </div>
+                        <div class="p-0 m-0">
+                            <div class="maddie-body maddie-tab-buttons position-relative p-8"><p class='m-0 text-white m-0 fs-26 fw-bolder text-center'>Lanes</p></div>
+                            <div class="p-16 d-flex align-items-center justify-content-around gap-16">
+                                <div class="disposal-status-box">
+                                    <span class="disposal-status-label">#1</span>
+                                    <input type="checkbox" id="toggle1" checked>
+                                    <label for="toggle1">
+                                        <div class="disposal-status-text disposal-status-open">Open</div>
+                                        <div class="disposal-status-text disposal-status-closed">Closed</div>
+                                        <div class="disposal-switch"></div>
+                                    </label>
                                 </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceTwo" aria-expanded="false" aria-controls="serviceTwo">
-                                        <span class="jobcreation-number me-16">2</span> Ordered By <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-circle-info me-10 fs-20"></i><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
-                                    </button>
-                                </h2>
-                                <div id="serviceTwo" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
-                                    <div class="accordion-body">
-                                        <form class="account-comany-form notesmodalbody notesmodal-adddispatch border-0 shadow-none border-radius-2 p-16 pt-0 text-center">
-                                            <p class="m-0 fs-14 fw-medium mb-14">For people already in the system</p>
-                                            <input type="text" class="form-control mb-14 mx-auto fs-14 m-0 lh-1 py-10 px-24 fw-bold" id="search" placeholder="Search">
-                                            <p class="m-0 fs-14 fw-medium mb-14">For people who haven't setup an account, <br> manually enter: </p>
-                                            <input type="text" class="form-control mb-14 mx-auto fs-14 m-0 lh-1 py-10 px-24 fw-bold" id="firstname" placeholder="First Name">
-                                            <input type="text" class="form-control mb-14 mx-auto fs-14 m-0 lh-1 py-10 px-24 fw-bold" id="lastname" placeholder="Last Name">
-                                            <input type="text" class="form-control mb-14 mx-auto fs-14 m-0 lh-1 py-10 px-24 fw-bold" id="phonenumber" placeholder="Phone Number">
-                                            <p class="fs-14 fw-medium" data-bs-target="#orderedmodal" data-bs-toggle="modal">To Invite to Job, Click <a href="javascript:void(0);" class="text-danger">HERE</a>... </p>
-                                        </form>
-                                    </div>
+                                <div class="disposal-status-box">
+                                    <span class="disposal-status-label">#2</span>
+                                    <input type="checkbox" id="toggle2" checked>
+                                    <label for="toggle2">
+                                        <div class="disposal-status-text disposal-status-open">Open</div>
+                                        <div class="disposal-status-text disposal-status-closed">Closed</div>
+                                        <div class="disposal-switch"></div>
+                                    </label>
                                 </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceThree" aria-expanded="false" aria-controls="serviceThree">
-                                        <span class="jobcreation-number me-16">3</span> Location <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
-                                    </button>
-                                </h2>
-                                <div id="serviceThree" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
-                                    <div class="accordion-body">
-                                        <div class="location-btngroup d-flex flex-column justify-content-center align-items-center gap-16">
-                                            <button class="btn btn-job-green mb-8">ADD</button>
-                                            <button class="btn btn-job-blue">Done</button>
-                                            <div class="notesmodal-adddispatch">
-                                                <p class="fs-14 fw-medium m-0">To Invite to Job, Click <a href="javascript:void(0);" class="text-danger">HERE</a>... </p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="disposal-status-box">
+                                    <span class="disposal-status-label">#3</span>
+                                    <input type="checkbox" id="toggle3" checked>
+                                    <label for="toggle3">
+                                        <div class="disposal-status-text disposal-status-open">Open</div>
+                                        <div class="disposal-status-text disposal-status-closed">Closed</div>
+                                        <div class="disposal-switch"></div>
+                                    </label>
                                 </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceFour" aria-expanded="false" aria-controls="serviceFour">
-                                        <span class="jobcreation-number me-16">4</span> Job type: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
-                                    </button>
-                                </h2>
-                                <div id="serviceFour" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
-                                    <div class="accordion-body">
-                                        <div class="jobcration-jobtype-btngroup-body text-center">
-                                            <div class="jobcration-jobtype-btngroup d-flex justify-content-evenly align-items-center gap-20 mb-20">
-                                                <button class="btn btn-jobtype fs-18 border-radius-4 lh-1 py-10 px-24 fw-bold text-white">Haul-in</button>
-                                                <button class="btn btn-jobtype fs-18 border-radius-4 lh-1 py-10 px-24 fw-bold text-white">Haul-Out</button>
-                                            </div>
-                                            <button class="btn btn-jobtype fs-18 border-radius-4 lh-1 py-10 px-24 fw-bold text-primary">Both</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceFive" aria-expanded="false" aria-controls="serviceFive">
-                                        <span class="jobcreation-number me-16">5</span> Disposals <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
-                                    </button>
-                                </h2>
-                                <div id="serviceFive" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
-                                    <div class="accordion-body text-center">
-                                        <div class="location-btngroup d-flex justify-content-evenly align-items-center gap-20 mb-16">
-                                            <button class="btn btn-job-green mb-8">ADD</button>
-                                            <button class="btn btn-job-blue">Done</button>
-                                        </div>
-                                        <div class="notesmodal-adddispatch">
-                                            <p class="fs-14 fw-medium m-0">To Invite to Job, Click <a href="javascript:void(0);" class="text-danger">HERE</a>... </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceSix" aria-expanded="false" aria-controls="serviceSix">
-                                        <span class="jobcreation-number me-16">6</span> Secondary Location <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
-                                    </button>
-                                </h2>
-                                <div id="serviceSix" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
-                                    <div class="accordion-body">
-                                        <div class="location-btngroup text-center">
-                                            <div class="d-flex justify-content-evenly align-items-center gap-20 mb-20">
-                                                <button class="btn btn-job-green mb-8 s-location-add">ADD</button>
-                                                <button class="btn btn-job-blue">Done</button>
-                                            </div>
-                                            <button class="btn btn-jobtype jobtype-redbtn text-white">Manual</button>
-                                            <div class="notesmodal-adddispatch mt-16">
-                                                <p class="fs-14 fw-medium m-0">If There is <span class="text-danger">No</span>location, Click <a href="javascript:void(0);" class="text-danger">Done</a></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceSeven" aria-expanded="false" aria-controls="serviceSeven">
-                                        <span class="jobcreation-number me-16">7</span> Rate <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
-                                    </button>
-                                </h2>
-                                <div id="serviceSeven" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
-                                    <div class="accordion-body">
-                                        <div class="location-btngroup d-flex flex-column justify-content-evenly align-items-center gap-20 mb-16">
-                                            <form class="account-comany-form notesmodalbody notesmodal-adddispatch border-0 shadow-none border-radius-2 p-0 text-center d-flex justify-content-center align-items-center gap-16 h-auto">
-                                                <div class="mb-0 w-75 mx-auto position-relative">
-                                                    <input type="text" class="form-control" id="value" placeholder="Value">
-                                                    <span class="d-inline-flex align-items-center justify-content-center position-absolute top-50 translate-middle-y start-0 ms-16"><i class="fa-solid fa-dollar-sign"></i></span>
-                                                </div>
-                                                <div class="d-inline-flex flex-column justify-content-start align-items-start gap-8">
-                                                    <div class="d-flex align-items-center gap-8">
-                                                        <input class="form-check-input m-0" type="checkbox" value="" id="disposal" checked="">
-                                                        <label class="form-check-label d-flex align-items-center gap-8" for="disposal">Hr.</label>
-                                                    </div>
-                                                    <div class="d-flex align-items-center gap-8">
-                                                        <input class="form-check-input m-0" type="checkbox" value="" id="disposal" checked="">
-                                                        <label class="form-check-label d-flex align-items-center gap-8" for="disposal">Bbl</label>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                            <button class="btn btn-job-blue">Done</button>
-                                        </div>
-                                        <div class="notesmodal-adddispatch text-center">
-                                            <p class="fs-14 fw-medium m-0">For Multiple rate, add in <a href="javascript:void(0);" class="text-danger">NOTE</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceEight" aria-expanded="false" aria-controls="serviceEight">
-                                        <span class="jobcreation-number me-16">8</span> Note <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
-                                    </button>
-                                </h2>
-                                <div id="serviceEight" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
-                                    <div class="accordion-body">
-                                        <div class="jobmodal-textarea position-relative">
-                                            <form action="" class="account-comany-form text-center">
-                                                <textarea type="text" id="textInput" class="form-control text-start mb-16" rows="5" placeholder="Add Notes:"></textarea>
-                                                <div class="location-btngroup">
-                                                    <button class="btn btn-job-blue">Done</button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceNine" aria-expanded="false" aria-controls="serviceNine">
-                                        <span class="jobcreation-number me-16">9</span> Drivers <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
-                                    </button>
-                                </h2>
-                                <div id="serviceNine" class="accordion-collapse collapse" data-bs-parent="#serviceaccordian">
-                                    <div class="accordion-body">
-                                        <div class="jobtype-drivercomany d-flex justify-content-center align-items-center gap-20 mb-16">
-                                            <div class="notemodaldouble-body w-100">
-                                              <p class="m-0 mb-4 mt-8 text-center text-primary fs-14 fw-bolder">Company</p>
-                                              <div class="notesmodalbody border border-radius-2 py-8 px-10 h-auto">
-                                                  <div class="bottom-header-top border-0 shadow-none d-flex flex-column align-items-center justify-content-center gap-12 p-0">
-                                                      <button class="btn btn-header-action managedriver-btn w-100 d-flex justify-content-center align-items-center gap-20 border border-2 py-8 px-12" type="button">
-                                                          <div class="d-flex justify-content-center align-items-center">
-                                                              <span class="managedriver-circle d-inline-block switch-btn border-radius-circle"></span>
-                                                          </div>
-                                                          <div class="d-flex flex-column justify-content-center align-items-center">
-                                                              <p class="m-0 text-black fs-14 fw-bolder">John Vicol</p>
-                                                              <p class="m-0 text-success fs-12 fw-bolder"><u>Available</u></p>
-                                                          </div>
-                                                      </button>
-                                                      <button class="btn btn-header-action managedriver-btn w-100 d-flex justify-content-center align-items-center gap-20 border border-2 py-8 px-12" type="button">
-                                                          <div class="d-flex justify-content-center align-items-center">
-                                                              <span class="managedriver-circle managedriver-circle-danger d-inline-block switch-btn border-radius-circle"></span>
-                                                          </div>
-                                                          <div class="d-flex flex-column justify-content-center align-items-center">
-                                                              <p class="m-0 text-black fs-14 fw-bolder">John Vicol</p>
-                                                              <p class="m-0 text-success fs-12 fw-bolder"><u>Available</u></p>
-                                                          </div>
-                                                      </button>
-                                                      <button class="btn btn-header-action managedriver-btn w-100 d-flex justify-content-center align-items-center gap-20 border border-2 py-8 px-12" type="button">
-                                                          <div class="d-flex justify-content-center align-items-center">
-                                                              <span class="managedriver-circle d-inline-block switch-btn border-radius-circle"></span>
-                                                          </div>
-                                                          <div class="d-flex flex-column justify-content-center align-items-center">
-                                                              <p class="m-0 text-black fs-14 fw-bolder">John Vicol</p>
-                                                              <p class="m-0 text-info fs-12 fw-bolder"><u>Ross 16-21 3H</u></p>
-                                                          </div>
-                                                      </button>
-                                                  </div>
-                                              </div>
-                                            </div>
-                                            <div class="notemodaldouble-body w-100">
-                                              <p class="m-0 mb-4 mt-8 text-center text-primary fs-14 fw-bolder">3rd Party</p>
-                                              <div class="notesmodalbody border border-radius-2 py-8 px-10 h-auto">
-                                                  <div class="bottom-header-top border-0 shadow-none d-flex flex-column align-items-center justify-content-center gap-12 p-0">
-                                                      <button class="btn btn-header-action managedriver-btn w-100 border border-2 py-8 px-12" type="button" data-bs-target="#driveravailable" data-bs-toggle="modal">
-                                                          <div class="d-flex gap-6 align-items-center justify-content-between">
-                                                              <div class="header-action-duration position-relative">
-                                                                  <div class="header-action-duration-title text-start">
-                                                                      <p class="m-0">jcv38 Corp</p>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="header-action-icon d-flex justify-content-center align-items-center">
-                                                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain" decoding="async">
-                                                              </div>
-                                                              <div class="d-flex align-items-center justify-content-between gap-2 flex-column">
-                                                                  <span class="d-inline-block text-success fs-20 fw-bolder">4</span>
-                                                              </div>
-                                                          </div>
-                                                      </button>
-                                                      <button class="btn btn-header-action managedriver-btn w-100 border border-2 py-8 px-12" type="button" data-bs-target="#truckingmodal" data-bs-toggle="modal">
-                                                          <div class="d-flex gap-6 align-items-center justify-content-between">
-                                                              <div class="header-action-duration position-relative">
-                                                                  <div class="header-action-duration-title text-start">
-                                                                      <p class="m-0">ZTS Trucking</p>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="header-action-icon d-flex justify-content-center align-items-center">
-                                                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain" decoding="async">
-                                                              </div>
-                                                              <div class="d-flex align-items-center justify-content-between gap-2 flex-column">
-                                                                  <span class="d-inline-block text-success fs-20 fw-bolder">1</span>
-                                                              </div>
-                                                          </div>
-                                                      </button>
-                                                      <button class="btn btn-header-action managedriver-btn w-100 border border-2 py-8 px-12" type="button">
-                                                          <div class="d-flex gap-6 align-items-center justify-content-between">
-                                                              <div class="header-action-duration position-relative">
-                                                                  <div class="header-action-duration-title text-start">
-                                                                      <p class="m-0">Fairbanks CTB N. Production</p>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="header-action-icon d-flex justify-content-center align-items-center">
-                                                                  <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain" decoding="async">
-                                                              </div>
-                                                              <div class="d-flex align-items-center justify-content-between gap-2 flex-column">
-                                                                  <span class="d-inline-block text-danger fs-20 fw-bolder">0</span>
-                                                              </div>
-                                                          </div>
-                                                      </button>
-                                                  </div>
-                                              </div>
-                                            </div>
-                                        </div>
-                                        <div class="location-btngroup text-center">
-                                            <button class="btn btn-job-blue">Done</button>
-                                        </div>
-                                    </div>
+                                <div class="disposal-status-box">
+                                    <span class="disposal-status-label">#4</span>
+                                    <input type="checkbox" id="toggle4" checked>
+                                    <label for="toggle4">
+                                        <div class="disposal-status-text disposal-status-open">Open</div>
+                                        <div class="disposal-status-text disposal-status-closed">Closed</div>
+                                        <div class="disposal-switch"></div>
+                                    </label>
                                 </div>
                             </div>
                         </div>
+                        <div class="p-0 m-0">
+                            <div class="maddie-body maddie-tab-buttons position-relative p-8"><p class='m-0 text-white m-0 fs-26 fw-bolder text-center'>Trucks</p></div>
+                            <div class="disposal-tank-container d-flex align-items-center justify-content-center p-20 gap-26">
+                                <div class="disposal-tank-icon"></div>
+                                <div class="disposal-tank-value">3</div>
+                                <button class="disposal-update-btn">Update</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="production-tab-pane" role="tabpanel" aria-labelledby="production-tab" tabindex="0">
-                        <div class="accordion jobcreation-accordian" id="productionaccordian">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceeOne" aria-expanded="false" aria-controls="serviceeOne">
-                                        <span class="jobcreation-number me-16">1</span> Route Name: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
-                                    </button>
-                                </h2>
-                                <div id="serviceeOne" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
-                                    <div class="accordion-body">
-                                        <form class="account-comany-form notesmodalbody notesmodal-adddispatch border-0 shadow-none border-radius-2 p-0 text-center h-auto">
-                                            <input type="text" class="form-control mb-14 mx-auto fs-14 m-0 lh-1 py-10 px-24 fw-bold" id="entername" placeholder="Enter Name">
-                                        </form>
-                                    </div>
-                                </div>
+                    <div class="tab-pane fade" id="dreadactivity" role="tabpanel">
+                        <div class="p-16">
+                            <div class="dread-active-filter-buttons d-flex justify-content-center flex-row">
+                                <button class="dread-active-filter-btn fs-14 active">6<span class="fs-10 align-baseline">hr</span></button>
+                                <button class="dread-active-filter-btn fs-14">12<span class="fs-10 align-baseline">hr</span></button>
+                                <button class="dread-active-filter-btn fs-14">24<span class="fs-10 align-baseline">hr</span></button>
                             </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceTwo" aria-expanded="false" aria-controls="serviceTwo">
-                                        <span class="jobcreation-number me-16">2</span> Oil Company: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
-                                    </button>
-                                </h2>
-                                <div id="serviceTwo" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
-                                    <div class="accordion-body text-center">
-                                        <div class="dropdown d-inline-block">
-                                            <button class="btn border dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Oil Company
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                              <li><a class="dropdown-item active" href="javascript:void(0);">Kraken</a></li>
-                                              <li><a class="dropdown-item" href="javascript:void(0);">Grayson Mills</a></li>
-                                              <li><a class="dropdown-item" href="javascript:void(0);">Cord</a></li>
-                                            </ul>
+                            <div class="disposal-active-tab-body mt-16 p-12 overflow-y-auto">
+                                <div class="disposal-info-card d-flex align-content-center justify-content-center bg-white border-radius-3 p-8 mb-20">
+                                    <div class="disposal-close-icon d-inline-flex justify-content-center align-items-center h-100 fs-24 border-radius-circle p-8"><i class="fa-solid fa-xmark lh-1"></i></div>                                    
+                                    <div class="disposal-info-main d-flex flex-column ms-10">
+                                        <div class="disposal-info-header fs-13 fw-bold">
+                                            <span class="disposal-name">Greg smith</span> <span class="disposal-company fw-normal">(ZTS Trucking)</span>
                                         </div>
+                                        <div class="address fw-bold fs-13 mt-4">Washburne 21-13 5AH</div>
                                     </div>
+                                    <div class="disposal-info-times ps-8 ms-8">
+                                        <p class="my-4 mx-0 fs-13"><strong>Arrived:</strong> <span class="disposal-time-blue">13:45</span></p>
+                                        <p class="my-4 mx-0 fs-13"><strong>Departed:</strong> <span class="disposal-time-red">14:15</span></p>
+                                    </div>
+                                    <div class="disposal-info-lane ps-8 ms-8">
+                                        <p class="my-4 mx-0 fs-13"><strong>Lane:</strong> <span class="disposal-time-blue">2</span></p>
+                                        <p class="my-4 mx-0 fs-13"><strong>Duration:</strong> <span class="disposal-time-blue">30 mins</span></p>
+                                    </div>
+                                    <div class="info-top-right text-end fs-10 text-danger fw-bold">14 mins ago</div>
                                 </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceThree" aria-expanded="false" aria-controls="serviceThree">
-                                        <span class="jobcreation-number me-16">3</span> Location: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
-                                    </button>
-                                </h2>
-                                <div id="serviceThree" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
-                                    <div class="accordion-body">
-                                        <div class="location-btngroup d-flex flex-column justify-content-center align-items-center gap-16">
-                                            <button class="btn btn-job-green mb-8">Completed</button>
+                                <div class="disposal-info-card d-flex align-content-center justify-content-center bg-white border-radius-3 p-8 mb-20">
+                                    <div class="disposal-close-icon d-inline-flex justify-content-center align-items-center h-100 fs-24 border-radius-circle p-8"><i class="fa-solid fa-xmark lh-1"></i></div>                                    
+                                    <div class="disposal-info-main d-flex flex-column ms-10">
+                                        <div class="disposal-info-header fs-13 fw-bold">
+                                            <span class="disposal-name">Greg smith</span> <span class="disposal-company fw-normal">(ZTS Trucking)</span>
                                         </div>
+                                        <div class="address fw-bold fs-13 mt-4">Washburne 21-13 5AH</div>
                                     </div>
+                                    <div class="disposal-info-times ps-8 ms-8">
+                                        <p class="my-4 mx-0 fs-13"><strong>Arrived:</strong> <span class="disposal-time-blue">13:45</span></p>
+                                        <p class="my-4 mx-0 fs-13"><strong>Departed:</strong> <span class="disposal-time-red">14:15</span></p>
+                                    </div>
+                                    <div class="disposal-info-lane ps-8 ms-8">
+                                        <p class="my-4 mx-0 fs-13"><strong>Lane:</strong> <span class="disposal-time-blue">2</span></p>
+                                        <p class="my-4 mx-0 fs-13"><strong>Duration:</strong> <span class="disposal-time-blue">30 mins</span></p>
+                                    </div>
+                                    <div class="info-top-right text-end fs-10 text-danger fw-bold">14 mins ago</div>
                                 </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceFour" aria-expanded="false" aria-controls="serviceFour">
-                                        <span class="jobcreation-number me-16">4</span> Disposals: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
-                                    </button>
-                                </h2>
-                                <div id="serviceFour" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
-                                    <div class="accordion-body">
-                                        <div class="location-btngroup d-flex flex-column justify-content-center align-items-center gap-16">
-                                            <button class="btn btn-job-green mb-8">Completed</button>
+                                <div class="disposal-info-card d-flex align-content-center justify-content-center bg-white border-radius-3 p-8 mb-20">
+                                    <div class="disposal-close-icon d-inline-flex justify-content-center align-items-center h-100 fs-24 border-radius-circle p-8"><i class="fa-solid fa-xmark lh-1"></i></div>                                    
+                                    <div class="disposal-info-main d-flex flex-column ms-10">
+                                        <div class="disposal-info-header fs-13 fw-bold">
+                                            <span class="disposal-name">Greg smith</span> <span class="disposal-company fw-normal">(ZTS Trucking)</span>
                                         </div>
+                                        <div class="address fw-bold fs-13 mt-4">Washburne 21-13 5AH</div>
                                     </div>
+                                    <div class="disposal-info-times ps-8 ms-8">
+                                        <p class="my-4 mx-0 fs-13"><strong>Arrived:</strong> <span class="disposal-time-blue">13:45</span></p>
+                                        <p class="my-4 mx-0 fs-13"><strong>Departed:</strong> <span class="disposal-time-red">14:15</span></p>
+                                    </div>
+                                    <div class="disposal-info-lane ps-8 ms-8">
+                                        <p class="my-4 mx-0 fs-13"><strong>Lane:</strong> <span class="disposal-time-blue">2</span></p>
+                                        <p class="my-4 mx-0 fs-13"><strong>Duration:</strong> <span class="disposal-time-blue">30 mins</span></p>
+                                    </div>
+                                    <div class="info-top-right text-end fs-10 text-danger fw-bold">14 mins ago</div>
                                 </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceFive" aria-expanded="false" aria-controls="serviceFive">
-                                        <span class="jobcreation-number me-16">5</span> Rate: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
-                                    </button>
-                                </h2>
-                                <div id="serviceFive" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
-                                    <div class="accordion-body">
-                                        <div class="location-btngroup d-flex flex-column justify-content-evenly align-items-center gap-20 mb-16">
-                                            <form class="account-comany-form notesmodalbody notesmodal-adddispatch border-0 shadow-none border-radius-2 p-0 text-center d-flex justify-content-center align-items-center gap-16 h-auto">
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                <div class="mb-0 w-75 mx-auto position-relative">
-                                                    <input type="text" class="form-control jobtype-formcontrol" id="value" placeholder="Value">
-                                                    <span class="d-inline-flex align-items-center justify-content-center position-absolute top-50 translate-middle-y start-0 ms-16"><i class="fa-solid fa-dollar-sign"></i></span>
-                                                </div>
-                                                <div class="d-inline-flex flex-column justify-content-start align-items-start gap-8">
-                                                    <div class="d-flex align-items-center gap-8">
-                                                        <input class="form-check-input m-0" type="checkbox" value="" id="disposal" checked="">
-                                                        <label class="form-check-label d-flex align-items-center gap-8" for="disposal">Hr.</label>
-                                                    </div>
-                                                    <div class="d-flex align-items-center gap-8">
-                                                        <input class="form-check-input m-0" type="checkbox" value="" id="disposal" checked="">
-                                                        <label class="form-check-label d-flex align-items-center gap-8" for="disposal">Bbl</label>
-                                                    </div>
-                                                </div>
-                                                <div class='d-inline-block jobtype-rate-textarea'>
-                                                    <textarea type="text" id="textInput" class="form-control jobtype-formcontrol text-start border-radius-0" rows="1" placeholder="Discription"></textarea>
-                                                    <span class='fs-10 text-danger'>Not Required</span>
-                                                </div>
-                                                <span class="contact-add-icon d-inline-block"><img src="assets/image/contact-sidebar/add-icon.svg" alt="Add icon"></span>
-                                            </form>
-                                            <button class="btn btn-job-blue">Done</button>
+                                <div class="disposal-info-card d-flex align-content-center justify-content-center bg-white border-radius-3 p-8 mb-20">
+                                    <div class="disposal-close-icon d-inline-flex justify-content-center align-items-center h-100 fs-24 border-radius-circle p-8"><i class="fa-solid fa-xmark lh-1"></i></div>                                    
+                                    <div class="disposal-info-main d-flex flex-column ms-10">
+                                        <div class="disposal-info-header fs-13 fw-bold">
+                                            <span class="disposal-name">Greg smith</span> <span class="disposal-company fw-normal">(ZTS Trucking)</span>
                                         </div>
-                                        <div class="notesmodal-adddispatch text-center">
-                                            <p class="fs-14 fw-medium m-0">For Multiple rate, add in the ADD button.</p>
-                                        </div>
+                                        <div class="address fw-bold fs-13 mt-4">Washburne 21-13 5AH</div>
                                     </div>
+                                    <div class="disposal-info-times ps-8 ms-8">
+                                        <p class="my-4 mx-0 fs-13"><strong>Arrived:</strong> <span class="disposal-time-blue">13:45</span></p>
+                                        <p class="my-4 mx-0 fs-13"><strong>Departed:</strong> <span class="disposal-time-red">14:15</span></p>
+                                    </div>
+                                    <div class="disposal-info-lane ps-8 ms-8">
+                                        <p class="my-4 mx-0 fs-13"><strong>Lane:</strong> <span class="disposal-time-blue">2</span></p>
+                                        <p class="my-4 mx-0 fs-13"><strong>Duration:</strong> <span class="disposal-time-blue">30 mins</span></p>
+                                    </div>
+                                    <div class="info-top-right text-end fs-10 text-danger fw-bold">14 mins ago</div>
                                 </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceSix" aria-expanded="false" aria-controls="serviceSix">
-                                        <span class="jobcreation-number me-16">6</span> Note: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
-                                    </button>
-                                </h2>
-                                <div id="serviceSix" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
-                                    <div class="accordion-body">
-                                        <div class="jobmodal-textarea position-relative">
-                                            <form action="" class="account-comany-form text-center">
-                                                <textarea type="text" id="textInput" class="form-control text-start mb-16" rows="5" placeholder="Add Notes:"></textarea>
-                                                <div class="location-btngroup">
-                                                    <button class="btn btn-job-blue">Done</button>
-                                                </div>
-                                            </form>
+                                <div class="disposal-info-card d-flex align-content-center justify-content-center bg-white border-radius-3 p-8 mb-20">
+                                    <div class="disposal-close-icon d-inline-flex justify-content-center align-items-center h-100 fs-24 border-radius-circle p-8"><i class="fa-solid fa-xmark lh-1"></i></div>                                    
+                                    <div class="disposal-info-main d-flex flex-column ms-10">
+                                        <div class="disposal-info-header fs-13 fw-bold">
+                                            <span class="disposal-name">Greg smith</span> <span class="disposal-company fw-normal">(ZTS Trucking)</span>
                                         </div>
+                                        <div class="address fw-bold fs-13 mt-4">Washburne 21-13 5AH</div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button bg-transparent d-flex align-items-center justify-content-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#serviceSeven" aria-expanded="false" aria-controls="serviceSeven">
-                                        <span class="jobcreation-number me-16">7</span> Drives: <span class="jobcreation-number-icon d-inline-flex align-items-center ms-auto"><i class="fa-solid fa-caret-down fs-30"></i><i class="fa-solid fa-caret-up fs-30"></i></span>
-                                    </button>
-                                </h2>
-                                <div id="serviceSeven" class="accordion-collapse collapse" data-bs-parent="#productionaccordian">
-                                    <div class="accordion-body">
-                                        <div class="accordion-body">
-                                            <div class="jobtype-drivercomany d-flex justify-content-center align-items-center gap-20 mb-16">
-                                                <div class="notemodaldouble-body w-100">
-                                                  <p class="m-0 mb-4 mt-8 text-center text-primary fs-14 fw-bolder">Company</p>
-                                                  <div class="notesmodalbody border border-radius-2 py-8 px-10 h-auto">
-                                                      <div class="bottom-header-top border-0 shadow-none d-flex flex-column align-items-center justify-content-center gap-12 p-0">
-                                                          <button class="btn btn-header-action managedriver-btn w-100 d-flex justify-content-center align-items-center gap-20 border border-2 py-8 px-12" type="button">
-                                                              <div class="d-flex justify-content-center align-items-center">
-                                                                  <span class="managedriver-circle d-inline-block switch-btn border-radius-circle"></span>
-                                                              </div>
-                                                              <div class="d-flex flex-column justify-content-center align-items-center">
-                                                                  <p class="m-0 text-black fs-14 fw-bolder">John Vicol</p>
-                                                                  <p class="m-0 text-success fs-12 fw-bolder"><u>Available</u></p>
-                                                              </div>
-                                                          </button>
-                                                          <button class="btn btn-header-action managedriver-btn w-100 d-flex justify-content-center align-items-center gap-20 border border-2 py-8 px-12" type="button">
-                                                              <div class="d-flex justify-content-center align-items-center">
-                                                                  <span class="managedriver-circle managedriver-circle-danger d-inline-block switch-btn border-radius-circle"></span>
-                                                              </div>
-                                                              <div class="d-flex flex-column justify-content-center align-items-center">
-                                                                  <p class="m-0 text-black fs-14 fw-bolder">John Vicol</p>
-                                                                  <p class="m-0 text-success fs-12 fw-bolder"><u>Available</u></p>
-                                                              </div>
-                                                          </button>
-                                                          <button class="btn btn-header-action managedriver-btn w-100 d-flex justify-content-center align-items-center gap-20 border border-2 py-8 px-12" type="button">
-                                                              <div class="d-flex justify-content-center align-items-center">
-                                                                  <span class="managedriver-circle d-inline-block switch-btn border-radius-circle"></span>
-                                                              </div>
-                                                              <div class="d-flex flex-column justify-content-center align-items-center">
-                                                                  <p class="m-0 text-black fs-14 fw-bolder">John Vicol</p>
-                                                                  <p class="m-0 text-info fs-12 fw-bolder"><u>Ross 16-21 3H</u></p>
-                                                              </div>
-                                                          </button>
-                                                      </div>
-                                                  </div>
-                                                </div>
-                                                <div class="notemodaldouble-body w-100">
-                                                  <p class="m-0 mb-4 mt-8 text-center text-primary fs-14 fw-bolder">3rd Party</p>
-                                                  <div class="notesmodalbody border border-radius-2 py-8 px-10 h-auto">
-                                                      <div class="bottom-header-top border-0 shadow-none d-flex flex-column align-items-center justify-content-center gap-12 p-0">
-                                                          <button class="btn btn-header-action managedriver-btn w-100 border border-2 py-8 px-12" type="button">
-                                                              <div class="d-flex gap-6 align-items-center justify-content-between">
-                                                                  <div class="header-action-duration position-relative">
-                                                                      <div class="header-action-duration-title text-start">
-                                                                          <p class="m-0">jcv38 Corp</p>
-                                                                      </div>
-                                                                  </div>
-                                                                  <div class="header-action-icon d-flex justify-content-center align-items-center">
-                                                                      <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain" decoding="async">
-                                                                  </div>
-                                                                  <div class="d-flex align-items-center justify-content-between gap-2 flex-column">
-                                                                      <span class="d-inline-block text-success fs-20 fw-bolder">4</span>
-                                                                  </div>
-                                                              </div>
-                                                          </button>
-                                                          <button class="btn btn-header-action managedriver-btn w-100 border border-2 py-8 px-12" type="button">
-                                                              <div class="d-flex gap-6 align-items-center justify-content-between">
-                                                                  <div class="header-action-duration position-relative">
-                                                                      <div class="header-action-duration-title text-start">
-                                                                          <p class="m-0">ZTS Trucking</p>
-                                                                      </div>
-                                                                  </div>
-                                                                  <div class="header-action-icon d-flex justify-content-center align-items-center">
-                                                                      <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain" decoding="async">
-                                                                  </div>
-                                                                  <div class="d-flex align-items-center justify-content-between gap-2 flex-column">
-                                                                      <span class="d-inline-block text-success fs-20 fw-bolder">1</span>
-                                                                  </div>
-                                                              </div>
-                                                          </button>
-                                                          <button class="btn btn-header-action managedriver-btn w-100 border border-2 py-8 px-12" type="button">
-                                                              <div class="d-flex gap-6 align-items-center justify-content-between">
-                                                                  <div class="header-action-duration position-relative">
-                                                                      <div class="header-action-duration-title text-start">
-                                                                          <p class="m-0">Fairbanks CTB N. Production</p>
-                                                                      </div>
-                                                                  </div>
-                                                                  <div class="header-action-icon d-flex justify-content-center align-items-center">
-                                                                      <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain" decoding="async">
-                                                                  </div>
-                                                                  <div class="d-flex align-items-center justify-content-between gap-2 flex-column">
-                                                                      <span class="d-inline-block text-danger fs-20 fw-bolder">0</span>
-                                                                  </div>
-                                                              </div>
-                                                          </button>
-                                                      </div>
-                                                  </div>
-                                                </div>
-                                            </div>
-                                            <div class="location-btngroup text-center">
-                                                <button class="btn btn-job-blue">Done</button>
-                                            </div>
-                                        </div>
+                                    <div class="disposal-info-times ps-8 ms-8">
+                                        <p class="my-4 mx-0 fs-13"><strong>Arrived:</strong> <span class="disposal-time-blue">13:45</span></p>
+                                        <p class="my-4 mx-0 fs-13"><strong>Departed:</strong> <span class="disposal-time-red">14:15</span></p>
                                     </div>
+                                    <div class="disposal-info-lane ps-8 ms-8">
+                                        <p class="my-4 mx-0 fs-13"><strong>Lane:</strong> <span class="disposal-time-blue">2</span></p>
+                                        <p class="my-4 mx-0 fs-13"><strong>Duration:</strong> <span class="disposal-time-blue">30 mins</span></p>
+                                    </div>
+                                    <div class="info-top-right text-end fs-10 text-danger fw-bold">14 mins ago</div>
                                 </div>
                             </div>
                         </div>

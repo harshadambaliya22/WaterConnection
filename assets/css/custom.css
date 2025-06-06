@@ -1744,8 +1744,8 @@ border-color: #707070 !important;
 }
 
 .popnotedata::-webkit-scrollbar{
-width: 0;
-height: 0;
+    width: 0;
+    height: 0;
 }
 
 .ctbpopup-statislist{
@@ -1998,11 +1998,6 @@ height: 16px;
 .maddie-tab-container::-webkit-scrollbar{
     width: 0;
     height: 0;
-}
-
-.maddie-tank-img{
-    max-width: 150px;
-    max-height: 150px;
 }
 /* maddie modal css End  */
 
@@ -2633,6 +2628,174 @@ h3 .corp-count {
   margin-right: 10px;
 }
 /* Contact Company Modal End */
+
+/* disposal css start  */
+.job-creation-modal.disposal-leftsidebar-modal{
+    width: 600px;
+}
+
+.disposal-job-creation-body.job-creation-body {
+    height: calc(100dvh - 434px);
+}
+
+.disposal-modal-header img{
+    width: 30px;
+    height: 30px;
+}
+
+.disposal-tank-container {
+    display: flex;
+    padding: 20px;
+}
+
+.disposal-tank-value {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0f3d58;
+}
+
+.disposal-update-btn {
+    background: linear-gradient(to bottom, #3e6f83, #2b4c5a);
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.disposal-update-btn:hover {
+    background: linear-gradient(to bottom, #4b7c91, #365b6b);
+}
+
+.disposal-tank-container .maddie-tank-img{
+    width: 100px;
+    height: 100px;
+}
+
+.disposal-status-box {
+    text-align: center;
+}
+
+.disposal-status-label {
+    font-weight: bold;
+    color: #08375c;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.disposal-status-text {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 6px;
+    transition: color 0.3s ease;
+}
+
+.disposal-status-box input[type="checkbox"] {
+    display: none;
+}
+
+.disposal-status-box .disposal-status-open,
+.disposal-status-box input[type="checkbox"]:checked + label .disposal-status-closed{
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.disposal-status-box .disposal-status-closed,
+.disposal-status-box input[type="checkbox"]:checked + label .disposal-status-open{
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.disposal-switch {
+    width: 34px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50px;
+    position: relative;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.disposal-switch::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: radial-gradient(circle at 80% 6%, rgb(230, 241, 230), rgb(24, 142, 76));
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.disposal-status-box input[type="checkbox"]:checked + label .disposal-status-text {
+    color: green;
+}
+
+.disposal-status-box input[type="checkbox"]:checked + label .disposal-switch::after {
+    left: 20px;
+}
+
+.disposal-status-box input[type="checkbox"]:not(:checked) + label .disposal-status-text {
+    color: red;
+}
+
+.disposal-status-box input[type="checkbox"]:not(:checked) + label .disposal-switch::after {
+    background: radial-gradient(circle at 80% 6%, rgb(230, 241, 230), rgb(203, 14, 32));
+}
+
+.disposal-active-tab-body {
+    border: 1px solid var(--bs-primary);
+    border-radius: 8px;
+    height: calc(100dvh - 542px);
+}
+
+.disposal-active-tab-body::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+.disposal-info-card {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.disposal-close-icon {
+    color: #555;
+    border: 2px solid #999;
+    cursor: pointer;
+}
+
+.disposal-info-main {
+    flex: 1;
+}
+
+.disposal-info-header .disposal-name {
+    color: #007bff;
+}
+
+.disposal-info-header .disposal-company {
+    color: #333;
+}
+
+.disposal-info-times, .disposal-info-lane {
+    border-left: 1px solid #ccc;
+}
+
+.disposal-info-times strong, .disposal-info-lane strong {
+    color: #0a3e71;
+}
+
+.disposal-time-blue {
+    color: #007bff;
+}
+
+.disposal-time-red {
+    color: red;
+}
+/* disposal css End  */
 
 /* Responsive css start */
 
