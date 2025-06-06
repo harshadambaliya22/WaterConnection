@@ -17,7 +17,7 @@
 
 <body>
     <!-- Header Start -->
-    <header class="header position-relative">
+    <header class="header position-relative"  data-bs-target="#contactcmodal" data-bs-toggle="modal">
         <div class="header-content d-flex align-items-center">
             <div class="header-hamburger ms-20 ms-sm-0">
                 <span class="header-hamburger-icon mb-4 d-block"></span>
@@ -152,7 +152,7 @@
                     </div>
                 </div>
                 <div class="header-m-available px-22 pt-18 pb-10">
-                    <div class="header-available d-flex align-items-center justify-content-between mb-8">
+                    <!-- <div class="header-available d-flex align-items-center justify-content-between mb-8">
                         <h5 class="fs-16 fw-bold mb-0 me-25">Trucks Available</h5>
                         <div class="form-check form-switch position-relative mb-0">
                             <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
@@ -170,41 +170,37 @@
                                 class="form-check-label switch-btn d-inline-block border-radius-circle position-absolute"
                                 for="switchCheckChecked"></label>
                         </div>
+                    </div> -->
+                    <div class="header-m-contact d-flex align-items-center px-0 pt-14 pb-10 border-0">
+                        <h5 class="fs-16 fw-bold mb-0 me-23 text-center lh-sm">Followers:</h5>
+                        <span class="fs-36 fw-bold d-flex align-items-center justify-content-center bg-white ">6</span>
                     </div>
                 </div>
-                <div class="header-m-contact d-flex align-items-center ps-11 pe-14 pt-14 pb-10">
-                    <h5 class="fs-16 fw-bold mb-0 me-23 text-center lh-sm">Trucks <br> Trough Contacts</h5>
-                    <span class="fs-36 fw-bold d-flex align-items-center justify-content-center bg-white ">6</span>
+                <div class="header-m-contact d-flex align-items-center px-16 pt-14 pb-10">
+                    <h5 class="fs-16 fw-bold mb-0 me-23 text-center lh-sm">Active Jobs:</h5>
+                    <span class="fs-36 fw-bold d-flex align-items-center justify-content-center bg-white ">2</span>
                 </div>
             </div>
             <div class="header-m-activity">
                 <ul class="header-activity-list d-flex align-items-center list-inline">
+                    <li class="header-activity-item contact-activity-btn text-center pt-14 px-10 pb-10">
+                        <img src="assets/image/people-icon.svg" alt="Contacts">
+                        <span class="fs-15 fw-bold d-block mt-8">Contacts</span>
+                    </li>
                     <li class="header-activity-item text-center pt-14 px-10 pb-10" data-bs-toggle="modal" data-bs-target="#headerbulletinbtnmodal">
                         <img src="assets/image/clipboard-icon.svg" alt="Bulletin">
                         <span class="fs-15 fw-bold d-block mt-8">Bulletin</span>
-                    </li>
-                    <li class="header-activity-item invites-activity-btn text-center pt-14 px-10 pb-10">
-                        <img src="assets/image/Invite icon.svg" alt="Invites">
-                        <span class="fs-15 fw-bold d-block mt-8">Invites</span>
                     </li>
                     <li class="header-activity-item calendar-activity-btn text-center pt-14 px-10 pb-10">
                         <img src="assets/image/calendar-icon.svg" alt="Calendar">
                         <span class="fs-15 fw-bold d-block mt-8">Calendar</span>
                     </li>
-                    <li class="header-activity-item history-activity-btn  text-center pt-14 px-10 pb-10">
-                        <img src="assets/image/stopwatch-icon.svg" alt="History">
-                        <span class="fs-15 fw-bold d-block mt-8">History</span>
-                    </li>
-                    <li class="header-activity-item chat-activity-btn text-center pt-14 px-10 pb-10">
-                        <img src="assets/image/message-icon.svg" alt="Chats">
-                        <span class="fs-15 fw-bold d-block mt-8">Chats</span>
-                    </li>
-                    <li class="header-activity-item contact-activity-btn text-center pt-14 px-10 pb-10">
-                        <img src="assets/image/people-icon.svg" alt="Contacts">
-                        <span class="fs-15 fw-bold d-block mt-8">Contacts</span>
+                    <li class="header-activity-item maintance-activity-btn text-center pt-14 px-10 pb-10">
+                        <img src="assets/image/maintance-icon.svg" alt="Maintance">
+                        <span class="fs-15 fw-bold d-block mt-8">Maintance</span>
                     </li>
                     <li class="header-activity-btn">
-                        <button class="btn fs-20 fw-bold" id="jobcreationsidebar">Create job</button>
+                        <button class="btn fs-20 fw-bold" id="jobcreationsidebar">Disposal</button>
                     </li>
                 </ul>
             </div>
@@ -343,20 +339,14 @@
                 </div>
                 <!-- <div class="bottom-header-bottom bg-white w-100 py-8 d-flex align-items-center justify-content-center position-relative"></div> -->
             </div>
-            <div class='d-inline-flex flex-column gap-10'>
-                <button class="btn btn-white dreadpirate-btn fw-bold fs-20 fs-xxl-16 px-18 border border-2" type="button">Dread Pirate</button>
-                <button class="btn btn-white fw-bold fs-20 fs-xxl-16 px-18 border border-2" type="button">Davie Jones</button>
-            </div>
         </div>
     </div>
     <!-- Header Bottom End -->
 
     <!-- main Start -->
-    <div class="main-content position-relative">
+    <div class="main-content position-relative main-content-disposal">
         <div class="dashboard-btn-list bg-white border border-2 py-30 px-14 d-inline-flex flex-column gap-20 position-absolute top-0 end-0 mt-12 me-100">
             <button type="button" class="btn btn-listgroup border border-2 fw-bold fs-16 lh-1 py-10 px-18" data-bs-toggle="modal" data-bs-target="#jobbulletinbtnmodal">Bulletin</button>
-            <button type="button" class="btn btn-listgroup border border-2 fw-bold fs-16 lh-1 py-10 px-18" data-bs-toggle="modal" data-bs-target="#jobdrivermodal">Drivers</button>
-            <button type="button" class="btn btn-listgroup border border-2 fw-bold fs-16 lh-1 py-10 px-18" data-bs-target="#fairbankmodal" data-bs-toggle="modal">Manage</button>
             <button type="button" class="btn btn-listgroup border border-2 fw-bold fs-16 lh-1 py-10 px-18">Contacts</button>
         </div>
         <div class='footer-line px-10 position-absolute h-100 start-0 border border-2'></div>
@@ -590,95 +580,7 @@
                 </div>
             </div>
         </div>
-        <!-- Overview Modal Start -->
-            <div class="accordion search-popup position-absolute z-8 overview-accordion" id="accordionoverview">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button py-2 px-15 justify-content-end" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true"
-                            aria-controls="collapsetwo">
-                            <div class="search-heading d-flex align-items-center justify-content-between">
-                                <h6 class="search-heading-title fs-15 fw-semibold text-white mb-0">Manage/Overview</h6>
-                                <div class="search-heading-icon">
-                                    <span><img src="assets/image/search/Icon feather-move.svg" alt="Move icon"></span>
-                                    <span class="mx-14"><img src="assets/image/search/Line 46.svg" alt="Line icon"></span>
-                                </div>
-                            </div>
-                        </button>
-                    </h2>
-                    <div id="collapsetwo" class="accordion-collapse collapse" data-bs-parent="#accordionoverview">
-                        <div class="accordion-body py-12 px-15">                            
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane border-0 fade show active bg-white" id="home-tab-pane" role="tabpanel"
-                                    aria-labelledby="home-tab" tabindex="0">
-                                    <div class="invitation-head d-flex align-items-center justify-content-between">
-                                        <div class="invitation-times">
-                                            <span class="fs-13 fw-bold d-block text-black">Created By:</span>
-                                            <small class="fs-13 fw-bold">JCV38 Corp</small>
-                                        </div>
-                                        <div class="text-center">
-                                            <h4 class="overview-main-title fs-28 mb-0 fw-bold">Rose 16-21 4H</h4>
-                                        </div>
-                                        <span class="invitation-sidebar-close"><img src="assets/image/contact-sidebar/Close.svg"
-                                            alt="Close icon" style="cursor: pointer;"></span>
-                                    </div>
-                                    <div class="mt-62 ps-23">
-                                        <ul class="invitation-list list-inline">
-                                            <li class="fs-15 fw-bold text-black mb-9"><span class="me-11 d-inline-block"></span>Oil Company: Kraken</li>
-                                            <li class="fs-15 fw-bold text-black mb-9"><span class="me-11 d-inline-block"></span>Company-man: Cody Mills</li>
-                                            <li class="fs-15 fw-bold text-black mb-9"><span class="me-11 d-inline-block"></span>Type: <output>Haul-out</output></li>
-                                            <li class="fs-15 fw-bold text-black mb-9"><span class="me-11 d-inline-block"></span>Rate: $145<sub>hr</sub></li>
-                                            <li class="fs-15 fw-bold text-black mb-9"><span class="me-11 d-inline-block"></span>Disposal:
-                                                <button class="fs-11 text-white invitation-sails-btn fw-bold mb-9 py-1 px-6" data-bs-target="#invitationsent" data-bs-toggle="modal">Black Sails</button>
-                                            </li>
-                                            <li class="fs-15 fw-bold text-black mb-9"><span class="me-11 d-inline-block"></span>Secondary locations:
-                                                <button class="fs-11 text-white fw-bold invitation-none-btn px-15 py-2 border-0"  data-bs-target="#o_invitemodal" data-bs-toggle="modal">None</button>
-                                            </li>
-                                        </ul>       
-                                    </div>
-                                    <div class="invitation-note mt-15 mb-13 px-26">
-                                        <h6 class="fs-17 fw-bold mb-2 text-black text-center mb-12 d-flex align-items-center justify-content-center">
-                                            <img src="assets/image/Company-man edit.svg" alt="Edit icon" class="img-fluid me-10">
-                                            <span class="me-11 d-inline-block"></span>
-                                            <u>Notes:</u></h6>
-                                        <textarea class="form-control text-start pt-5 pe-35 pb-13 ps-17 fs-10 text-black" rows="5" cols="50" id="floatingTextarea">
-                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
-                                            nonumy eirmod tempor invidunt ut labore et dolore magna 
-                                            aliquyam erat, sed diam voluptua. At vero eos et accusam et justo 
-                                            duo dolores et ea rebum. Stet clita kasd gubergren, no sea 
-                                            takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum 
-                                            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.
-                                        </textarea>
-                                        <h6 class="fs-17 fw-bold mb-2 text-black text-center mb-0 mt-10 d-flex align-items-center justify-content-center">
-                                            <img src="assets/image/Company-man edit.svg" alt="Edit icon" class="img-fluid me-10">
-                                            <span class="me-11 d-inline-block"></span>
-                                            <u>Notes:</u></h6>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between px-26 mb-10">
-                                        <h6 class="fs-16 fw-bold text-danger mb-0">immediately</h6>
-                                        <span class="fs-14 fw-bold">6 <sup>a.m.</sup></span>
-                                        <span class="fs-14 fw-bold">6 p.m.</span>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between px-26">
-                                        <h5 class="fs-18 p-10 fw-bold mb-0 overview-names">John Vicol <br>Sara Evans</h5>
-                                        <h5 class="fs-18 p-10 fw-bold mb-0 overview-names active">John Vicol</h5>
-                                        <h5 class="fs-18 p-10 fw-bold mb-0 overview-names">Jeff Beck</h5>
-                                    </div>
-                                    <div class="invitation-map d-flex justify-content-center px-26 my-16">
-                                        <div class='map-body h-100 w-100'>
-                                            <iframe class='w-100 h-100'
-                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238133.18800900166!2d72.65747318239129!3d21.159120355102836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1745177875945!5m2!1sen!2sin"
-                                                style="border:0;" allowfullscreen="" loading="lazy"
-                                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <!-- Overview Modal End -->
+
         <!-- job creation start  -->
         <div class='job-creation-modal bg-white border border-radius-2' id="job-creation-sidebar">
             <div class="modal-header py-28 position-relative">
@@ -1208,405 +1110,6 @@
             </div>
         </div>
         <!-- job creation End  -->
-
-        <!-- 02 -->
-        <div class="ctbpopup-body">
-            <div class="accordion" id="ctbpopupaccordion">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button align-items-center justify-content-center text-primary fs-18 lh-1 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne01" aria-expanded="true" aria-controls="collapseOne01">
-                            FAIRBANKS CTB
-                            <span class="d-inline-block position-absolute"></span>
-                        </button>
-                    </h2>
-                    <div id="collapseOne01" class="accordion-collapse collapse" data-bs-parent="#ctbpopupaccordion">
-                        <div class="accordion-body p-8 pt-14">
-                            <div class="ctbpop-accordian-body bg-white border pb-24 pt-14">
-                                <ul class="nav nav-tabs justify-content-center gap-12 border-0 py-6 px-10 mx-24" id="myTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                    <button class="nav-link border py-5 px-10 fs-10 fw-bold active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview-tab-pane" type="button" role="tab" aria-controls="overview-tab-pane" aria-selected="true">Overview</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                    <button class="nav-link border py-5 px-10 fs-10 fw-bold" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages-tab-pane" type="button" role="tab" aria-controls="messages-tab-pane" aria-selected="false">Messages</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                    <button class="nav-link border py-5 px-10 fs-10 fw-bold" id="activity-tab" data-bs-toggle="tab" data-bs-target="#activity-tab-pane" type="button" role="tab" aria-controls="activity-tab-pane" aria-selected="false">Activity</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                    <button class="nav-link border py-5 px-10 fs-10 fw-bold" id="statis-tab" data-bs-toggle="tab" data-bs-target="#statis-tab-pane" type="button" role="tab" aria-controls="statis-tab-pane" aria-selected="false">Statis</button>
-                                    </li>
-                                </ul>
-                                <div class="tab-content mt-8" id="myTabContent">
-
-                                <div class="tab-pane px-24 fade show active" id="overview-tab-pane" role="tabpanel" aria-labelledby="overview-tab" tabindex="0">
-                                    <p class="fs-16 fw-bold text-black text-center">Overview</p>
-                                    <form class="account-comany-form" action="">
-                                    <div class="row">
-                                        <div class="mb-10 col-md-12 col-6">
-                                        <label for="location" class="form-label m-0 text-primary fw-bold fs-12">Location:</label>
-                                        <!-- <input type="text" class="form-control text-start fs-12 py-4 px-8" id="location"> -->
-                                        <span class="d-block text-danger fs-12 fw-bold">(Pin Drop)</span>
-                                        </div>
-                                        <div class="mb-10 col-md-12 col-6">
-                                        <label for="duration" class="form-label m-0 text-primary fw-bold fs-12">Duration:</label>
-                                        <input type="text" class="form-control text-start fs-12 py-4 px-8" id="duration">
-                                        </div>
-                                        <div class="mb-10 col-md-12 col-6">
-                                        <label for="jobtype" class="form-label m-0 text-primary fw-bold fs-12">Job type:</label>
-                                        <input type="text" class="form-control text-start fs-12 py-4 px-8" id="jobtype">
-                                        </div>
-                                        <div class="mb-10 col-md-12 col-6">
-                                        <label for="bblrate" class="form-label m-0 text-primary fw-bold fs-12">Bbl rate:</label>
-                                        <input type="text" class="form-control text-start fs-12 py-4 px-8" id="bblrate">
-                                        </div>
-                                        <div class="mb-10 col-md-12 col-6">
-                                        <label for="start" class="form-label m-0 text-primary fw-bold fs-12">Start:</label>
-                                        <input type="text" class="form-control text-start fs-12 py-4 px-8" id="start">
-                                        </div>
-                                        <div class="mb-10 col-md-12 col-6">
-                                        <label for="hrrate" class="form-label m-0 text-primary fw-bold fs-12">Hr rate:</label>
-                                        <input type="text" class="form-control text-start fs-12 py-4 px-8" id="hrrate">
-                                        </div>
-                                        <div class="mb-10 col-md-12 col-6">
-                                        <label for="oilcompany" class="form-label m-0 text-primary fw-bold fs-12">Oil Company:</label>
-                                        <input type="text" class="form-control text-start fs-12 py-4 px-8" id="oilcompany">
-                                        </div>
-                                        <div class="mb-10 col-md-12 col-6">
-                                        <label for="truckingcompany" class="form-label m-0 text-primary fw-bold fs-12">Trucking Company:</label>
-                                        <input type="text" class="form-control text-start fs-12 py-4 px-8" id="truckingcompany">
-                                        </div>
-                                        <div class="mb-10 col-md-12 col-6">
-                                        <label for="jobsupervisor" class="form-label m-0 text-primary fw-bold fs-12">Job Supervisor:</label>
-                                        <input type="text" class="form-control text-start fs-12 py-4 px-8" id="jobsupervisor">
-                                        </div>
-                                    </div>
-                                    </form>
-                                    <div class="ctbpopupnot-body">
-                                    <p class="fs-16 fw-bold text-black text-center mb-6">Note</p>
-                                    <div class="popnotedata border fs-10 fw-normal overflow-y-auto p-8 border-radius-1">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, enim doloribus? Ut sint nobis qui harum ipsum nesciunt nostrum eius illum deleniti laboriosam labore cum placeat tenetur ex omnis nulla dolores dolorum, consectetur suscipit? Optio nisi distinctio, facere enim, cum inventore veritatis illum eius porro eos, iste quibusdam commodi! Quos fugiat dignissimos rerum. Consequatur magnam eos animi labore voluptatum deleniti, eius soluta alias mollitia consectetur ipsum ullam, voluptatibus laboriosam fugit, facilis distinctio beatae ut temporibus rem nihil. Exercitationem corporis neque earum fuga incidunt dolores? Cupiditate ex maiores aliquam corporis est commodi voluptatum perferendis velit at, distinctio quidem fugit laboriosam molestiae?
-                                    </div>
-                                    </div>
-                                </div>
-
-                                <div class="tab-pane px-24 fade" id="messages-tab-pane" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">
-                                    <p class="fs-16 fw-bold text-black text-center">Messages</p>
-                                </div>
-
-                                <div class="tab-pane fade" id="activity-tab-pane" role="tabpanel" aria-labelledby="activity-tab" tabindex="0">
-                                    <p class="fs-16 fw-bold text-black text-center">Recent Activity</p>
-                                    <ul class="list-inline overflow-y-auto ctblist-ul">
-                                    <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                        <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                        <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
-                                        </span>
-                                        <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
-                                        <div class="d-inline-flex flex-column">
-                                            <p class="m-0 fs-10 fw-bold text-info">Greg smith</p>
-                                            <p class="m-0 fs-10 fw-bold text-black">Washburne 21-13 5AH</p>
-                                        </div>
-                                        <div class="d-inline-flex flex-column">
-                                            <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Loaded</span> </p>
-                                            <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">Departing</span> </p>
-                                        </div>
-                                        <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
-                                        </div>
-                                    </li>
-                                    <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                        <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                        <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
-                                        </span>
-                                        <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
-                                        <div class="d-inline-flex flex-column">
-                                            <p class="m-0 fs-10 fw-bold text-info">Zack Sands</p>
-                                            <p class="m-0 fs-10 fw-bold text-black">Dread Pirate SWD</p>
-                                        </div>
-                                        <div class="d-inline-flex flex-column">
-                                            <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Empty</span> </p>
-                                            <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">Departing</span> </p>
-                                        </div>
-                                        <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
-                                        </div>
-                                    </li>
-                                    <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                        <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                        <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
-                                        </span>
-                                        <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
-                                        <div class="d-inline-flex flex-column">
-                                            <p class="m-0 fs-10 fw-bold text-info">John Vicol</p>
-                                            <p class="m-0 fs-10 fw-bold text-black">Yard</p>
-                                        </div>
-                                        <div class="d-inline-flex flex-column">
-                                            <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Empty</span> </p>
-                                            <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">On-Duty</span> </p>
-                                        </div>
-                                        <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
-                                        </div>
-                                    </li>
-                                    <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                        <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                        <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
-                                        </span>
-                                        <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
-                                        <div class="d-inline-flex flex-column">
-                                            <p class="m-0 fs-10 fw-bold text-info">Greg smith</p>
-                                            <p class="m-0 fs-10 fw-bold text-black">Washburne 21-13 5AH</p>
-                                        </div>
-                                        <div class="d-inline-flex flex-column">
-                                            <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Loaded</span> </p>
-                                            <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">Departing</span> </p>
-                                        </div>
-                                        <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
-                                        </div>
-                                    </li>
-                                    <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                        <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                        <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
-                                        </span>
-                                        <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
-                                        <div class="d-inline-flex flex-column">
-                                            <p class="m-0 fs-10 fw-bold text-info">Zack Sands</p>
-                                            <p class="m-0 fs-10 fw-bold text-black">Dread Pirate SWD</p>
-                                        </div>
-                                        <div class="d-inline-flex flex-column">
-                                            <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Empty</span> </p>
-                                            <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">Departing</span> </p>
-                                        </div>
-                                        <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
-                                        </div>
-                                    </li>
-                                    <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                        <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                        <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
-                                        </span>
-                                        <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
-                                        <div class="d-inline-flex flex-column">
-                                            <p class="m-0 fs-10 fw-bold text-info">John Vicol</p>
-                                            <p class="m-0 fs-10 fw-bold text-black">Yard</p>
-                                        </div>
-                                        <div class="d-inline-flex flex-column">
-                                            <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Empty</span> </p>
-                                            <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">On-Duty</span> </p>
-                                        </div>
-                                        <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
-                                        </div>
-                                    </li>
-                                    <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                        <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                        <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
-                                        </span>
-                                        <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
-                                        <div class="d-inline-flex flex-column">
-                                            <p class="m-0 fs-10 fw-bold text-info">Greg smith</p>
-                                            <p class="m-0 fs-10 fw-bold text-black">Washburne 21-13 5AH</p>
-                                        </div>
-                                        <div class="d-inline-flex flex-column">
-                                            <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Loaded</span> </p>
-                                            <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">Departing</span> </p>
-                                        </div>
-                                        <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
-                                        </div>
-                                    </li>
-                                    <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                        <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                        <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
-                                        </span>
-                                        <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
-                                        <div class="d-inline-flex flex-column">
-                                            <p class="m-0 fs-10 fw-bold text-info">Zack Sands</p>
-                                            <p class="m-0 fs-10 fw-bold text-black">Dread Pirate SWD</p>
-                                        </div>
-                                        <div class="d-inline-flex flex-column">
-                                            <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Empty</span> </p>
-                                            <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">Departing</span> </p>
-                                        </div>
-                                        <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
-                                        </div>
-                                    </li>
-                                    <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                        <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                        <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
-                                        </span>
-                                        <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
-                                        <div class="d-inline-flex flex-column">
-                                            <p class="m-0 fs-10 fw-bold text-info">John Vicol</p>
-                                            <p class="m-0 fs-10 fw-bold text-black">Yard</p>
-                                        </div>
-                                        <div class="d-inline-flex flex-column">
-                                            <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Empty</span> </p>
-                                            <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">On-Duty</span> </p>
-                                        </div>
-                                        <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
-                                        </div>
-                                    </li>
-                                    <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                        <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                        <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
-                                        </span>
-                                        <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
-                                        <div class="d-inline-flex flex-column">
-                                            <p class="m-0 fs-10 fw-bold text-info">Greg smith</p>
-                                            <p class="m-0 fs-10 fw-bold text-black">Washburne 21-13 5AH</p>
-                                        </div>
-                                        <div class="d-inline-flex flex-column">
-                                            <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Loaded</span> </p>
-                                            <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">Departing</span> </p>
-                                        </div>
-                                        <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
-                                        </div>
-                                    </li>
-                                    <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                        <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                        <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
-                                        </span>
-                                        <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
-                                        <div class="d-inline-flex flex-column">
-                                            <p class="m-0 fs-10 fw-bold text-info">Zack Sands</p>
-                                            <p class="m-0 fs-10 fw-bold text-black">Dread Pirate SWD</p>
-                                        </div>
-                                        <div class="d-inline-flex flex-column">
-                                            <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Empty</span> </p>
-                                            <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">Departing</span> </p>
-                                        </div>
-                                        <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
-                                        </div>
-                                    </li>
-                                    <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                        <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                        <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
-                                        </span>
-                                        <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
-                                        <div class="d-inline-flex flex-column">
-                                            <p class="m-0 fs-10 fw-bold text-info">John Vicol</p>
-                                            <p class="m-0 fs-10 fw-bold text-black">Yard</p>
-                                        </div>
-                                        <div class="d-inline-flex flex-column">
-                                            <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Empty</span> </p>
-                                            <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">On-Duty</span> </p>
-                                        </div>
-                                        <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
-                                        </div>
-                                    </li>
-                                    </ul>
-                                </div>
-
-                                <div class="tab-pane fade" id="statis-tab-pane" role="tabpanel" aria-labelledby="statis-tab" tabindex="0">
-                                    <p class="fs-16 fw-bold text-black text-center">Statis</p>
-                                    <ul class="list-inline overflow-y-auto ctblist-ul">
-                                    <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                        <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                        <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
-                                        </span>
-                                        <div class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
-                                        <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">Rose 16-21 4H</p>
-                                        <div class="d-flex align-items-center gap-12">
-                                            <p class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">Levels:</p>
-                                            <p class="ctbpopup-levels m-0 fs-12 fw-bold text-success">12.6</p>
-                                        </div>
-                                        <!-- <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain"> -->
-                                        </div>
-                                    </li>
-                                    <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                        <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                            <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
-                                        </span>
-                                        <div class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
-                                        <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">Maddie LE</p>
-                                        <div class="d-flex align-items-center gap-12">
-                                            <p class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">Levels:</p>
-                                            <p class="ctbpopup-levels m-0 fs-12 fw-bold text-danger">12.6</p>
-                                        </div>
-                                        <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain">
-                                        </div>
-                                    </li>
-                                    <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                        <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                        <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
-                                        </span>
-                                        <div class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
-                                        <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">Rose 16-21 4H</p>
-                                        <div class="d-flex align-items-center gap-12">
-                                            <p class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">Levels:</p>
-                                            <p class="ctbpopup-levels m-0 fs-12 fw-bold text-success">12.6</p>
-                                        </div>
-                                        <!-- <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain"> -->
-                                        </div>
-                                    </li>
-                                    <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                        <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                        <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
-                                        </span>
-                                        <div class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
-                                        <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">Maddie LE</p>
-                                        <div class="d-flex align-items-center gap-12">
-                                            <p class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">Levels:</p>
-                                            <p class="ctbpopup-levels m-0 fs-12 fw-bold text-danger">12.6</p>
-                                        </div>
-                                        <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain">
-                                        </div>
-                                    </li>
-                                    <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                        <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                        <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
-                                        </span>
-                                        <div class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
-                                        <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">Rose 16-21 4H</p>
-                                        <div class="d-flex align-items-center gap-12">
-                                            <p class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">Levels:</p>
-                                            <p class="ctbpopup-levels m-0 fs-12 fw-bold text-success">12.6</p>
-                                        </div>
-                                        <!-- <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain"> -->
-                                        </div>
-                                    </li>
-                                    <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                        <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                        <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
-                                        </span>
-                                        <div class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
-                                        <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">Maddie LE</p>
-                                        <div class="d-flex align-items-center gap-12">
-                                            <p class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">Levels:</p>
-                                            <p class="ctbpopup-levels m-0 fs-12 fw-bold text-danger">12.6</p>
-                                        </div>
-                                        <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain">
-                                        </div>
-                                    </li>
-                                    <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                        <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                        <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
-                                        </span>
-                                        <div class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
-                                        <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">Rose 16-21 4H</p>
-                                        <div class="d-flex align-items-center gap-12">
-                                            <p class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">Levels:</p>
-                                            <p class="ctbpopup-levels m-0 fs-12 fw-bold text-success">12.6</p>
-                                        </div>
-                                        <!-- <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain"> -->
-                                        </div>
-                                    </li>
-                                    <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                        <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                        <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
-                                        </span>
-                                        <div class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
-                                        <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">Rose 16-21 4H</p>
-                                        <div class="d-flex align-items-center gap-12">
-                                            <p class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">Levels:</p>
-                                            <p class="ctbpopup-levels m-0 fs-12 fw-bold text-success">12.6</p>
-                                        </div>
-                                        <!-- <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain"> -->
-                                        </div>
-                                    </li>
-                                    </ul>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- maddie le modal start  -->
          <div class="meddie-modal position-absolute top-0 start-0 ms-24 z-1 d-none">
@@ -2601,128 +2104,6 @@
     <!-- Invites Sidebar End -->
     <div class='bottom-0 footer-line position-absolute py-16 w-100 border border-2'></div>
 
-    <!-- Driver Btn modal Start  -->
-    <div class="modal fairbanks-jobmodal fade" id="jobdrivermodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="jobdrivermodalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header justify-content-center position-relative border-0">
-              <h1 class="modal-title fs-35 fw-semibold fst-italic text-black lh-1 mb-0"><u>Manage Drivers</u></h1>
-              <button type="button" class="btn-close position-absolute top-0 end-0 m-0 mt-8 me-8" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body px-30">
-              <span class='d-block text-center text-danger fs-24 fw-bold'>What would you like <br> to do?</span>
-            </div>
-            <div class="modal-footer gap-50 border-0 justify-content-center pb-18 pt-0">
-              <button type="button" class="btn btn-modal-footer btn-modalnext m-0 fs-18 border-radius-4 lh-1 py-10 px-24 fw-bold text-white" data-bs-target="#invitejobdrivermodal" data-bs-toggle="modal">Invite</button>
-              <button type="button" class="btn btn-modal-footer btn-modalnext m-0 fs-18 border-radius-4 lh-1 py-10 px-24 fw-bold text-white">Cut</button>
-            </div>
-          </div>
-        </div>
-    </div>
-    <div class="modal modal-lg fairbanks-jobmodal fade" id="invitejobdrivermodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="jobdrivermodalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header justify-content-center position-relative border-0">
-              <h1 class="modal-title fs-35 fw-semibold fst-italic text-black lh-1 mb-0"><u>Invite Driver</u></h1>
-              <button type="button" class="btn-close position-absolute top-0 end-0 m-0 mt-8 me-8" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body px-20">
-                <div class="d-flex justify-content-center align-items-center gap-40">
-                  <div class="notemodaldouble-body w-100">
-                    <p class="m-0 mb-4 mt-8 text-center text-primary fs-14 fw-bolder">Company</p>
-                    <div class="notesmodalbody border border-radius-2 py-16 px-30 h-auto">
-                        <div class="bottom-header-top border-0 shadow-none d-flex flex-column align-items-center justify-content-center gap-16 py-6">
-                            <button class="btn btn-header-action managedriver-btn w-100 d-flex justify-content-center align-items-center gap-20 border border-2 py-8 px-12" type="button" data-bs-target="#driveravailable" data-bs-toggle="modal">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <span class="managedriver-circle d-inline-block switch-btn border-radius-circle"></span>
-                                </div>
-                                <div class="d-flex flex-column justify-content-center align-items-center">
-                                    <p class="m-0 text-black fs-14 fw-bolder">John Vicol</p>
-                                    <p class="m-0 text-success fs-12 fw-bolder"><u>Available</u></p>
-                                </div>
-                            </button>
-                            <button class="btn btn-header-action managedriver-btn w-100 d-flex justify-content-center align-items-center gap-20 border border-2 py-8 px-12" type="button" data-bs-target="#driveravailable" data-bs-toggle="modal">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <span class="managedriver-circle managedriver-circle-danger d-inline-block switch-btn border-radius-circle"></span>
-                                </div>
-                                <div class="d-flex flex-column justify-content-center align-items-center">
-                                    <p class="m-0 text-black fs-14 fw-bolder">John Vicol</p>
-                                    <p class="m-0 text-success fs-12 fw-bolder"><u>Available</u></p>
-                                </div>
-                            </button>
-                            <button class="btn btn-header-action managedriver-btn w-100 d-flex justify-content-center align-items-center gap-20 border border-2 py-8 px-12" type="button" data-bs-target="#driveravailable" data-bs-toggle="modal">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <span class="managedriver-circle d-inline-block switch-btn border-radius-circle"></span>
-                                </div>
-                                <div class="d-flex flex-column justify-content-center align-items-center">
-                                    <p class="m-0 text-black fs-14 fw-bolder">John Vicol</p>
-                                    <p class="m-0 text-info fs-12 fw-bolder"><u>Ross 16-21 3H</u></p>
-                                </div>
-                            </button>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="notemodaldouble-body w-100">
-                    <p class="m-0 mb-4 mt-8 text-center text-primary fs-14 fw-bolder">3rd Party</p>
-                    <div class="notesmodalbody border border-radius-2 p-16 h-auto">
-                        <div class="bottom-header-top border-0 shadow-none d-flex flex-column align-items-center justify-content-center gap-16 py-6">
-                            <button class="btn btn-header-action managedriver-btn w-100 border border-2 py-8 px-12" type="button">
-                                <div class="d-flex gap-6 align-items-center justify-content-between">
-                                    <div class="header-action-duration position-relative">
-                                        <div class="header-action-duration-title text-start">
-                                            <p class="m-0">Fairbanks CTB N. Production</p>
-                                        </div>
-                                    </div>
-                                    <div class="header-action-icon d-flex justify-content-center align-items-center">
-                                        <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain" decoding="async">
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between gap-2 flex-column">
-                                        <span class="d-inline-block text-success fs-20 fw-bolder">4</span>
-                                    </div>
-                                </div>
-                            </button>
-                            <button class="btn btn-header-action managedriver-btn w-100 border border-2 py-8 px-12" type="button">
-                                <div class="d-flex gap-6 align-items-center justify-content-between">
-                                    <div class="header-action-duration position-relative">
-                                        <div class="header-action-duration-title text-start">
-                                            <p class="m-0">Fairbanks CTB N. Production</p>
-                                        </div>
-                                    </div>
-                                    <div class="header-action-icon d-flex justify-content-center align-items-center">
-                                        <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain" decoding="async">
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between gap-2 flex-column">
-                                        <span class="d-inline-block text-success fs-20 fw-bolder">1</span>
-                                    </div>
-                                </div>
-                            </button>
-                            <button class="btn btn-header-action managedriver-btn w-100 border border-2 py-8 px-12" type="button">
-                                <div class="d-flex gap-6 align-items-center justify-content-between">
-                                    <div class="header-action-duration position-relative">
-                                        <div class="header-action-duration-title text-start">
-                                            <p class="m-0">Fairbanks CTB N. Production</p>
-                                        </div>
-                                    </div>
-                                    <div class="header-action-icon d-flex justify-content-center align-items-center">
-                                        <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain" decoding="async">
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between gap-2 flex-column">
-                                        <span class="d-inline-block text-danger fs-20 fw-bolder">0</span>
-                                    </div>
-                                </div>
-                            </button>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="modal-footer gap-50 border-0 justify-content-center py-18">
-            </div>
-          </div>
-        </div>
-    </div>
-    <!-- Driver Btn modal End  -->
-
     <!-- bulletin modal End  -->
     <div class="modal fairbanks-jobmodal fade" id="jobbulletinbtnmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="jobbulletinbtnmodalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -3020,51 +2401,6 @@
     </div>
     <!-- Overview Invite Modal End -->
 
-    <!-- Drivers Available Modaal Start -->
-    <div class="modal fairbanks-jobmodal fade roseservice-modal d-available-modal" id="driveravailable" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="driveravailable" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header justify-content-center position-relative border-0 p-0">                    
-                    <button type="button" class="btn-close position-absolute top-0 end-0 m-0 mt-8 me-8 z-1" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-center">
-                    <div class="d-available-logo bg-white position-absolute">
-                        <img src="assets/image/main-logo.svg" alt="">
-                    </div>
-                    <h3 class="modal-title fs-28 fw-bold text-black mb-28 lh-1"><u>John Vicol</u></h3>
-                    <h5 class="modal-title fs-18 fw-bold text-info fst-italic text-info mb-28 lh-1"><u>Available</u></h5>
-                    <span class="d-available-immeditely fs-1 fw-bold d-inline-block py-2 px-10 text-white mb-15">Immeditely</span>
-                    <div class="d-available-inputs mx-auto">
-                        <div class="d-available-input d-flex align-items-center pb-12 justify-content-between">
-                            <label for="date" class="fs-18 fw-bold mb-0 text-primary me-15">Date:</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="d-available-input d-flex align-items-center pb-12 justify-content-between">
-                            <label for="date" class="fs-18 fw-bold mb-0 text-primary me-15">Time:</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="d-available-input d-flex align-items-center justify-content-between">
-                            <label for="date" class="fs-18 fw-bold mb-0 text-primary me-15">Duration:</label>
-                            <div>
-                                <input type="text" class="form-control">                                
-                            </div>
-                        </div>
-                        <div class="form-check mb-0 mt-10 d-flex align-items-center justify-content-end">
-                            <label class="form-check-label fw-14 fw-semibold mb-0 me-15" for="unkonown">
-                            If unknown check:
-                            </label>
-                            <input class="form-check-input m-0" type="checkbox" value="" id="unkonown" style="float: unset;">
-                        </div>
-                    </div>
-                    <div class="text-center mt-20">
-                        <button type="submit" class="d-available-btn text-white fs-20 fw-bold border-0 py-7 px-20">Verify</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Drivers Available Modaal End -->
-
     <!-- ordered Modal Start -->
     <div class="modal fairbanks-jobmodal fade d-available-modal" id="orderedmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="orderedmodal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -3231,80 +2567,6 @@
         </div>
     </div>
     <!-- Add Driver Modal End -->
-
-    <!-- Fairbank Modal Start -->
-        <div class="modal faibank-modal" id="fairbankmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="fairbankmodal" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header justify-content-center position-relative border-0 p-0">                   
-                    </div>
-                    <div class="modal-body adddriver-modalbody text-center p-0 overview-accordion" style="right: unset;">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button py-2 px-15 justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="true" aria-controls="collapsetwo">
-                                        <h6 class="search-heading-title fs-15 fw-semibold text-white mb-0 w-100 text-center">Manage</h6>
-                                </button>
-                            </h2>
-                        <div class="py-10 px-35">
-                            <div class="invitation-head d-flex align-items-center justify-content-between">
-                                <div class="invitation-times">
-                                    <span class="fs-13 fw-bold d-block text-black">Created By:</span>
-                                    <small class="fs-13 fw-bold">JCV38 Corp</small>
-                                </div>
-                                <div class="text-center mx-auto">
-                                    <h4 class="overview-main-title fs-28 mb-0 fw-bold">Fairbanks CTB</h4>
-                                </div>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <p class="fs-20 fw-bold mb-0 text-danger mt-15"><u><em>Select item to edit</em></u></p>
-                            <div class="mt-21">
-                                <ul class="invitation-list list-inline">
-                                    <li class="fs-15 fw-bold text-black text-start mb-9 ps-26"><span class="me-11 d-inline-block"></span>Oil Company: Kraken</li>
-                                    <li class="fs-15 fw-bold text-black text-start mb-9"><img src="assets/image/Company-man edit.svg" class="me-8" alt="Edit icon"><span class="me-11 d-inline-block"></span>Type: <output data-bs-target="#managetype" data-bs-toggle="modal">Haul-out</output></li>
-                                    <li class="fs-15 fw-bold text-black text-start mb-9"><img src="assets/image/Button (ADD) (1).svg" class="me-8" alt="Edit icon" data-bs-target="#managemodal" data-bs-toggle="modal"><span class="me-11 d-inline-block"></span>Company-man:
-                                        <button class="fs-11 text-white invitation-sails-btn fw-bold py-1 px-6" data-bs-target="#fairbankmanage" data-bs-toggle="modal">Cody Mills<img src="assets/image/circle-close.svg" alt="Circle Close" class="ms-6"></button>
-                                    </li>
-                                    <li class="fs-15 fw-bold text-black text-start mb-9"><img src="assets/image/Button (ADD) (1).svg" class="me-8" alt="Edit icon"><span class="me-11 d-inline-block"></span>Rate: 
-                                    <button class="fs-11 text-white invitation-sails-btn fw-bold py-1 px-6" data-bs-target="#manageratemodal" data-bs-toggle="modal">$145<sub>hr</sub><img src="assets/image/circle-close.svg" alt="Circle Close" class="ms-6"></button>
-                                    </li>
-                                    <li class="fs-15 fw-bold text-black text-start mb-9"><img src="assets/image/Button (ADD) (1).svg" class="me-13" alt="Edit icon"><span class="me-11 d-inline-block"></span>Disposal:
-                                        <button class="fs-11 text-white invitation-sails-btn fw-bold py-1 px-6" data-bs-target="#managenote" data-bs-toggle="modal">Black Sails<img src="assets/image/circle-close.svg" alt="Circle Close" class="ms-6"></button>
-                                        <button class="fs-11 text-white invitation-sails-btn fw-bold py-1 px-6" data-bs-target="#invitationsent" data-bs-toggle="modal">Davy Jones<img src="assets/image/circle-close.svg" alt="Circle Close" class="ms-6"></button>
-                                    </li>
-                                    <li class="fs-15 fw-bold text-start text-black"><img src="assets/image/Button (ADD) (1).svg" class="me-13" alt="Edit icon"><span class="me-11 d-inline-block"></span>Secondary locations:
-                                        <button class="fs-11 text-white invitation-sails-btn fw-bold py-1 px-15" data-bs-target="#managemanual" data-bs-toggle="modal">None</button>
-                                    </li>
-                                    <li class="fs-12 fw-medium ms-43 text-start">To manually enter a location, click <a href="#" class="text-danger" data-bs-target="#disposalvarify" data-bs-toggle="modal">HERE.</a></li>
-                                </ul>       
-                            </div>
-                            <div class="invitation-note mt-6 mb-33 px-26">
-                                <h6 class="fs-17 fw-bold mb-2 text-black text-center mb-12 d-flex align-items-center">
-                                    <img src="assets/image/Company-man edit.svg" alt="Edit icon" class="img-fluid ps-6">
-                                    <div class="mx-auto">
-                                        <span class="me-11 d-inline-block"></span>
-                                        <u>Notes:</u>
-                                    </div>
-                                </h6>
-                                <textarea class="form-control text-start pt-5 pe-35 pb-13 ps-17 fs-10 text-black" rows="5" cols="50" id="floatingTextarea">
-                                </textarea>
-                            </div>
-                            <div class="invitation-map d-flex justify-content-center px-26 my-16">
-                                <div class="map-body h-100 w-100">
-                                    <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238133.18800900166!2d72.65747318239129!3d21.159120355102836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1745177875945!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                </div>
-                            </div>
-                            <div class="mt-13 d-flex align-items-center justify-content-between">
-                                <div>
-                                    <span class="d-block fs-11 fw-bold text-black">01/14/23</span>
-                                    <span class="d-block fs-8 text-danger fw-bold">03:32 pm</span>
-                                </div>
-                                <button class="fs-11 text-white fw-bold invitation-none-btn px-15 py-5 border-0" data-bs-target="#endjobmodal" data-bs-toggle="modal">End Job</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <!-- Fairbank Modal End -->
 
     <!-- Fairbank Manage Modal Start -->
       <div class="modal adddriver-modal fairbank-m-modal" id="fairbankmanage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="fairbankmanage" aria-hidden="true">
@@ -3560,70 +2822,53 @@
                 </div>
                 <div class="modal-body p-0">
                   <ul class="nav nav-tabs border-0 py-8 pe-8 ps-20 align-items-center justify-content-between" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link fs-13 fw-bold active border-0" id="General-tab" data-bs-toggle="tab" data-bs-target="#General-tab-pane" type="button" role="tab" aria-controls="General-tab-pane" aria-selected="true">General</button>
-                        </li>
-                        <span class="fs-18 fw-bold text-white">(661) 345-2345</span>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link fs-13 fw-bold border-0" id="Info-tab" data-bs-toggle="tab" data-bs-target="#Info-tab-pane" type="button" role="tab" aria-controls="Info-tab-pane" aria-selected="false">Info</button>
-                        </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fs-13 fw-bold active border-0" id="General-tab" data-bs-toggle="tab" data-bs-target="#General-tab-pane" type="button" role="tab" aria-controls="General-tab-pane" aria-selected="true">General</button>
+                    </li>
+                    <span class="fs-18 fw-bold text-white">(661) 345-2345</span>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fs-13 fw-bold border-0" id="Info-tab" data-bs-toggle="tab" data-bs-target="#Info-tab-pane" type="button" role="tab" aria-controls="Info-tab-pane" aria-selected="false">Info</button>
+                    </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="General-tab-pane" role="tabpanel" aria-labelledby="General-tab" tabindex="0">
-                            <div class="contact-c pt-12 px-20 pb-20">
-                                <div class="corp-driver-dispatch-container">
-                                    <div class="corp-section available-drivers">
-                                        <h3><span class="corp-title fs-18">Available Drivers:</span> <span class="corp-count fs-18">5</span></h3>
-                                        <div class="corp-driver-list">
-                                        <div class="corp-driver-item gap-10">
-                                            <span class="corp-status-dot red"></span>
-                                            <strong class='fs-16'>John Vicol</strong>
-                                            <span class="corp-invite fs-12">Direct Invite</span>
-                                        </div>
-                                        <div class="corp-driver-item gap-10">
-                                            <span class="corp-status-dot green"></span>
-                                            <strong class='fs-16'>Willy Do-Do</strong>
-                                            <span class="corp-invite fs-12">Direct Invite</span>
-                                        </div>
-                                        <div class="corp-driver-item gap-10">
-                                            <span class="corp-status-dot green"></span>
-                                            <strong class='fs-16'>Zack Sands</strong>
-                                            <span class="corp-invite fs-12">Direct Invite</span>
-                                        </div>
-                                        </div>
+                    <div class="tab-pane fade show active" id="General-tab-pane" role="tabpanel" aria-labelledby="General-tab" tabindex="0">
+                        <div class="contact-c pt-12 px-20 pb-20">
+                            <div class="corp-driver-dispatch-container">
+                                <div class="corp-section available-drivers">
+                                    <h3><span class="corp-title fs-18">Available Drivers:</span> <span class="corp-count">5</span></h3>
+                                    <div class="corp-driver-list">
+                                    <div class="corp-driver-item">
+                                        <span class="corp-status-dot red"></span>
+                                        <strong>John Vicol</strong>
+                                        <span class="corp-invite">Direct Invite</span>
                                     </div>
+                                    <div class="corp-driver-item">
+                                        <span class="corp-status-dot green"></span>
+                                        <strong>Willy Do-Do</strong>
+                                        <span class="corp-invite">Direct Invite</span>
+                                    </div>
+                                    <div class="corp-driver-item">
+                                        <span class="corp-status-dot green"></span>
+                                        <strong>Zack Sands</strong>
+                                        <span class="corp-invite">Direct Invite</span>
+                                    </div>
+                                    </div>
+                                </div>
 
-                                    <div class="section corp-on-duty-dispatch">
-                                        <h3><span class="corp-title fs-18">On-duty dispatch:</span> <span class="corp-count fs-18">1</span></h3>
-                                        <p class="corp-dispatcher-name text-center fs-14 fw-bolder">Greg Smith</p>
-                                        <ul class="corp-dispatch-types">
-                                            <li class="fs-14 fw-bold"><span class="corp-bullet"></span> Production water</li>
-                                            <li class="fs-14 fw-bold"><span class="corp-bullet"></span> Hotshot</li>
-                                            <li class="fs-14 fw-bold"><span class="corp-bullet"></span> Flatbed</li>
-                                            <li class="fs-14 fw-bold"><span class="corp-bullet"></span> Pet grooming</li>
-                                        </ul>
-                                    </div>
+                                <div class="section corp-on-duty-dispatch">
+                                    <h3><span class="corp-title fs-18">On-duty dispatch:</span> <span class="corp-count">1</span></h3>
+                                    <p class="corp-dispatcher-name">Greg Smith</p>
+                                    <ul class="corp-dispatch-types">
+                                        <li><span class="corp-bullet"></span> <em>Production water</em></li>
+                                        <li><span class="corp-bullet"></span> Hotshot</li>
+                                        <li><span class="corp-bullet"></span> Flatbed</li>
+                                        <li><span class="corp-bullet"></span> Pet grooming</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="Info-tab-pane" role="tabpanel" aria-labelledby="Info-tab" tabindex="0">
-                            <div class="contact-c pt-12 px-20 pb-20">
-                                <form class="account-comany-form" action="">
-                                    <div class="jobmodal-textarea position-relative">
-                                        <textarea type="text" class="form-control textInput text-start" rows="5" placeholder=""></textarea>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>                    
                     </div>
-                    <div class="maddie-bottom-bar">
-                        <span class="d-inline-flex justify-content-center align-items-center flex-column gap-0 fs-12">
-                            <p class="m-0 text-danger">Dispatched <br> out of: </p>
-                        </span>
-                        <span class="d-inline-flex justify-content-center align-items-center flex-column gap-0 fs-12">
-                            Williston, N.D.
-                        </span>
-                        <span class="d-inline-flex justify-content-center align-items-center flex-column gap-0 fs-12"></span>
+                    <div class="tab-pane fade" id="Info-tab-pane" role="tabpanel" aria-labelledby="Info-tab" tabindex="0">info</div>                    
                     </div>
                 </div>
             </div>
@@ -3699,120 +2944,6 @@
     </div>
     <!-- manage invite modal End -->
 
-    <!-- <button type="button" class="btn btn-jobtitle border border-2 text-white fs-16 fw-bold py-8 px-30 lh-1" data-bs-toggle="modal" data-bs-target="#calenderdatemodal">Calander Date</button>  -->
-    <!-- calender Sent Modal -->
-    <div class="modal fade scheduled-status-modal" id="calenderdatemodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="calenderdatemodalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content rounded-4">
-                <div class="modal-header justify-content-center position-relative calander-modal-header">
-                    <h1 class="modal-title fs-2 fw-bold fst-italic text-black lh-1 mb-0">
-                        <span class="text-decoration-underline">Dec</span> <sup>6<sup>th</sup></sup> 2023
-                    </h1>
-                    <button type="button" class="btn-close position-absolute top-0 end-0 mt-2 me-2" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="calander-modal-headerbottom text-center mt-2 d-flex justify-content-center align-items-center gap-16 flex-wrap p-16">
-                    <button class="btn px-16 py-4 d-flex align-items-center gap-1 border-1 border-radius-3 border-secondary">
-                        <span class="dot bg-danger border-radius-circle d-inline-block" style="width: 10px; height: 10px;"></span> Repair
-                    </button>
-                    <span class="text-dark fw-semibold fs-5">09:30 <small class="text-muted">a.m.</small></span>
-                </div>
-                <div class="modal-body text-center py-3">
-                    <p class="text-muted mb-3">Load of rock coming in...</p>
-                    <img src="./assets/image/check-sucess.svg" alt="Success" class="mb-3" style="width: 100px;">
-                  </div>
-                  <div class="modal-footer justify-content-center position-relative ps-4 pe-4 pt-0 border-0 text-start">
-                    <div class="small fs-12 text-muted position-absolute start-0 top-50 translate-middle-y ms-10">
-                      <strong>By: Greg Smith</strong><br> 12-10-23 <span class="text-danger">01:13 a.m.</span>
-                    </div>
-                    <p class="text-primary fs-40 fw-bold fst-italic m-0">Scheduled</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- calender Sent End -->
-    
-    
-    <!-- <button type="button" class="btn btn-jobtitle border border-2 text-white fs-16 fw-bold py-8 px-30 lh-1" data-bs-toggle="modal" data-bs-target="#calendereventmodal">Calander Event</button>  -->
-    <!-- calender Sent Modal -->
-    <div class="modal fade scheduled-status-modal" id="calendereventmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="calendereventmodalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content rounded-4">
-                <div class="modal-header justify-content-center position-relative calander-modal-header">
-                    <h1 class="modal-title fs-2 fw-bold fst-italic text-black lh-1 mb-0">
-                        Dec 14<sup>th</sup> 2023
-                    </h1>
-                    <button type="button" class="btn-close position-absolute top-0 end-0 mt-2 me-2" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-center py-3">
-                  <div class='calander-card-body p-16 text-center'>
-                    <div class="calander-card-container h-100 overflow-y-auto">
-                      <div class="d-flex justify-content-center align-items-center w-100 h-100">
-                        <span class="fs-30 text-dark fw-bolder opacity-75">No Event</span>
-                      </div>
-                    </div>
-                    <button class="calander-add-button d-inline-flex justify-content-center align-items-center">ADD</button>
-                  </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- calender Sent End -->
-    
-    
-    <!-- <button type="button" class="btn btn-jobtitle border border-2 text-white fs-16 fw-bold py-8 px-30 lh-1 mt-16" data-bs-toggle="modal" data-bs-target="#calenderdatemodal02">Calander Date 02</button>  -->
-    <!-- calender Sent Modal -->
-    <div class="modal fade scheduled-status-modal" id="calenderdatemodal02" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="calenderdatemodal02Label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content rounded-4">
-                <div class="modal-header justify-content-center position-relative calander-modal-header">
-                    <h1 class="modal-title fs-2 fw-bold fst-italic text-black lh-1 mb-0">
-                        <span class="text-decoration-underline">Dec</span> <sup>6<sup>th</sup></sup> 2023
-                    </h1>
-                    <button type="button" class="btn-close position-absolute top-0 end-0 mt-2 me-2" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class='calander-card-body p-16 text-center'>
-                  <div class="calander-card-container h-100 overflow-y-auto">
-                    <div class="calander-task-card">
-                      <div class="d-flex align-items-center gap-8 flex-shrink-0 py-10">
-                        <div class="calander-dot"></div>
-                        <div class="calander-name-time">
-                          <strong>Matt G.</strong>
-                          <div class="calander-time">03:15 a.m.</div>
-                        </div>
-                      </div>
-                      <div class="calander-desc text-start py-10">Meeting with Chris Goose Meeting with Chris Goose Meeting with Chris Goose Meeting with Chris Goose Meeting with Chris Goose</div>
-                      <button class="calander-remove-btn flex-shrink-0"><i class="fa-solid fa-xmark"></i></button>
-                    </div>
-                    <div class="calander-task-card">
-                      <div class="d-flex align-items-center gap-8 flex-shrink-0 py-10">
-                        <div class="calander-dot"></div>
-                        <div class="calander-name-time">
-                          <strong>Matt G.</strong>
-                          <div class="calander-time">03:15 a.m.</div>
-                        </div>
-                      </div>
-                      <div class="calander-desc text-start py-10">Goose Meeting with Chris Goos Goose</div>
-                      <button class="calander-remove-btn flex-shrink-0"><i class="fa-solid fa-xmark"></i></button>
-                    </div>
-                    <div class="calander-task-card">
-                      <div class="d-flex align-items-center gap-8 flex-shrink-0 py-10">
-                        <div class="calander-dot"></div>
-                        <div class="calander-name-time">
-                          <strong>Matt G.</strong>
-                          <div class="calander-time">03:15 a.m.</div>
-                        </div>
-                      </div>
-                      <div class="calander-desc text-start py-10">Meeting with Chris Goose Meeting with Chris Goose Meeting with Chris Goose Meeting with Chris Goose Meeting with Chris Goose</div>
-                      <button class="calander-remove-btn flex-shrink-0"><i class="fa-solid fa-xmark"></i></button>
-                    </div>
-                  </div>
-                  <button class="calander-add-button d-inline-flex justify-content-center align-items-center">ADD</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- calender Sent End -->
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta3/css/bootstrap-select.min.css">
     <!-- JavaScript Files -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -3822,24 +2953,6 @@
     <script src="assets/js/custom.js"></script>
 
     <script>
-        // textarea words count js start 
-        // const textInput = document.getElementById('textInput');
-        // const message = document.getElementById('message');
-        
-        // textInput.addEventListener('input', () => {
-        //     const words = textInput.value.trim().split(/\s+/).filter(word => word.length > 0);
-        //     const wordCount = words.length;
-            
-        //     if (wordCount < 50) {
-        //         message.textContent = `${wordCount}/50`;
-        //         message.classList.add("text-danger");
-        //         message.classList.remove("text-success");
-        //     } else {
-        //         message.textContent = `${wordCount}/50.`;
-        //         message.classList.add("text-success");
-        //         message.classList.remove("text-danger");
-        //     }
-        // });
         const textAreas = document.querySelectorAll('.textInput');
         textAreas.forEach(textarea => {
         const message = textarea.parentElement.querySelector('.message');
@@ -3923,20 +3036,7 @@
             });
             }
         });
-        // dread tab activity js End 
-
-        // calander event modal js start
-        // document.addEventListener("DOMContentLoaded", function () {
-        //     const meetingDots = document.querySelectorAll(".event-dot.meeting");
-        //     meetingDots.forEach(dot => {
-        //     const parentTd = dot.closest("td");
-        //     if (parentTd) {
-        //         parentTd.setAttribute("data-bs-toggle", "modal");
-        //         parentTd.setAttribute("data-bs-target", "#calenderdatemodal02");
-        //     }
-        //     });
-        // }); 
-        // calander event modal js End
+        // dread tab activity js End
     </script>
 
 </body>
