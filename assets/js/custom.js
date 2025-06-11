@@ -144,6 +144,15 @@ $(document).ready(function () {
   });
   // invites Sidebar End
 
+  // Secondary Location Start
+  $('.s-location-add').click(function(){
+    $('.s-location').addClass('s-location-open')
+  })
+  $('.s-location .invitation-sidebar-close').click(function(){
+    $('.s-location').removeClass('s-location-open')
+  })
+  // Secondary Location End
+
 });
 
 // Year Selector Start
@@ -237,4 +246,3 @@ function renderCalendar(date) {
 renderCalendar(currentDate);
 
 // Calendar End
-

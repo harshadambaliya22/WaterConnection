@@ -2795,6 +2795,61 @@ h3 .corp-count {
 .disposal-time-red {
     color: red;
 }
+
+/* maintance sidabar css start */
+.maintance-custom-accordion .accordion-button {
+    background: linear-gradient(180deg, #FFF -57.5%, #0B3E58 100%);
+    color: white;
+    font-weight: bold;
+    border-radius: 0;
+}
+
+.maintance-custom-accordion .accordion-button::after {
+    filter: brightness(0) invert(1);
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    margin: 0 !important;
+    right: 20px;
+    transition: all 0.3s ease;
+}
+
+.maintance-custom-accordion .accordion-button.collapsed::after {
+    transform: translateY(-50%) rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+.maintance-custom-accordion .accordion-button::after {
+    filter: brightness(0) invert(1);
+    transform: translateY(-50%) rotate(180deg);
+    transition: all 0.3s ease;
+}
+
+.maintance-custom-accordion .accordion-item {
+    border: none;
+}
+
+.maintance-custom-accordion .accordion-body {
+    background-color: #f1f9ff;
+}
+.maintance-container {
+    height: calc(100vh - 375px);
+}
+
+.maintance-lane input {
+    width: 18px;
+    height: 18px;
+}
+
+.maintance-history-list{
+    border: 1px solid var(--bs-primary);
+    max-height: calc(100dvh - 450px);
+}
+
+.maintance-history-card{
+    border: 1px solid var(--bs-primary);
+}
+/* maintance sidabar css End */
 /* disposal css End  */
 
 /* Responsive css start */

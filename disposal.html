@@ -187,7 +187,7 @@
                         <img src="assets/image/people-icon.svg" alt="Contacts">
                         <span class="fs-15 fw-bold d-block mt-8">Contacts</span>
                     </li>
-                    <li class="header-activity-item text-center pt-14 px-10 pb-10" data-bs-toggle="modal" data-bs-target="#headerbulletinbtnmodal">
+                    <li class="header-activity-item text-center pt-14 px-10 pb-10" id='bulltinsbtnsidebar'>
                         <img src="assets/image/clipboard-icon.svg" alt="Bulletin">
                         <span class="fs-15 fw-bold d-block mt-8">Bulletin</span>
                     </li>
@@ -195,7 +195,7 @@
                         <img src="assets/image/calendar-icon.svg" alt="Calendar">
                         <span class="fs-15 fw-bold d-block mt-8">Calendar</span>
                     </li>
-                    <li class="header-activity-item maintance-activity-btn text-center pt-14 px-10 pb-10">
+                    <li class="header-activity-item maintance-activity-btn text-center pt-14 px-10 pb-10" id="maintancessidebar">
                         <img src="assets/image/maintance-icon.svg" alt="Maintance">
                         <span class="fs-15 fw-bold d-block mt-8">Maintance</span>
                     </li>
@@ -765,6 +765,321 @@
             </div>
         </div>
         <!-- job creation End  -->
+        
+        <!-- maintance sidebar creation start  -->
+        <div class='job-creation-modal disposal-leftsidebar-modal bg-white border border-radius-2' id="maintancebodysidebar">
+            <div class="modal-header py-28 position-relative text-center">
+                <div class="disposal-modal-header d-flex justify-content-center align-items-center gap-20 w-100">
+                    <i class="fa-solid fa-screwdriver-wrench fs-20"></i>
+                    <h1 class="modal-title job-creation-title text-center fs-36 fw-semibold fst-italic text-black lh-1 mb-0"><u>Maintance</u></h1>
+                    <i class="fa-solid fa-screwdriver-wrench fs-20"></i>
+                </div>
+                <button type="button" class="btn-close position-absolute top-0 end-0 mt-8 me-12" id="maintancebodysidebar-close"></button>
+            </div>
+            <div class="maintance-container overflow-y-auto">
+                <div class="accordion maintance-custom-accordion" id="maintanceaccordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button text-center fs-28 fw-bolder justify-content-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#maintancecollapseOne">
+                                Filter change:
+                            </button>
+                        </h2>
+                        <div id="maintancecollapseOne" class="accordion-collapse collapse" data-bs-parent="#maintanceaccordionExample">
+                            <div class="accordion-body">
+                                <h3 class="text-center text-primary">Which lanes are you changing?</h3>
+                                <div class="maintance-lane-container d-flex justify-content-between align-items-center gap-8 mb-16">
+                                    <div class="maintance-lane">
+                                        <div class="text-primary fs-24">#1</div>
+                                        <input type="checkbox" />
+                                    </div>
+                                    <div class="maintance-lane">
+                                        <div class="text-primary fs-24">#2</div>
+                                        <input type="checkbox" />
+                                    </div>
+                                    <div class="maintance-lane">
+                                        <div class="text-primary fs-24">#3</div>
+                                        <input type="checkbox" />
+                                    </div>
+                                    <div class="maintance-lane">
+                                        <div class="text-primary fs-24">#4</div>
+                                        <input type="checkbox" />
+                                    </div>
+                                </div>
+                                <div class="modal-footer gap-50 border-0 justify-content-center p-0">
+                                    <button type="button" class="btn btn-modal-footer btn-modalnext maintance-btn m-0 fs-18 border-radius-4 lh-1 py-10 px-24 fw-bold text-white" data-bs-toggle="modal" data-bs-target="#maintancebtnmodal">Change</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button text-center fs-28 fw-bolder justify-content-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#maintancecollapseTwo">
+                                Log event:
+                            </button>
+                        </h2>
+                        <div id="maintancecollapseTwo" class="accordion-collapse collapse" data-bs-parent="#maintanceaccordionExample">
+                            <div class="accordion-body text-center px-24">
+                                <form class="account-comany-form mb-18" action="">
+                                    <div class="jobmodal-textarea position-relative">
+                                        <textarea type="text" class="form-control textInput text-start" rows="5" placeholder="Add Description"></textarea>
+                                        <p class="message m-0 mt-4 text-end position-absolute bottom-0 end-0 me-8">0/50</p>
+                                    </div>
+                                </form>
+                                <button type="button" class="btn btn-modal-footer btn-modalnext maintance-btn m-0 fs-18 border-radius-4 lh-1 py-10 px-24 fw-bold text-white" data-bs-toggle="modal" data-bs-target="#maintancebtnmodalone">Log</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button text-center fs-28 fw-bolder justify-content-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#maintancecollapseThree">
+                                History:
+                            </button>
+                        </h2>
+                        <div id="maintancecollapseThree" class="accordion-collapse collapse" data-bs-parent="#maintanceaccordionExample">
+                            <div class="accordion-body">
+                                <div class='maintance-history-body d-flex gap-16'>
+                                    <div class="maintance-history-check text-center flex-shrink-0">
+                                        <lable class="fs-10 m-0 text-primary d-inline-flex flex-column align-items-center justify-content-center">
+                                            Include Filter <br> Changes
+                                            <input type="checkbox">
+                                        </lable>
+                                    </div>
+                                    <div class="maintance-history-list h-100 border-radius-3 p-16 w-100 overflow-y-auto">
+                                        <div class="maintance-history-card d-flex border-radius-2 mb-12">
+                                            <div class="flex-shrink-0 d-flex flex-column align-items-center justify-content-center px-14 py-8">
+                                                <p class="m-0 text-primary fs-14 lh-base">01-05-25</p>
+                                                <p class="m-0 text-primary fs-12 opacity-75">By: Dave Smith</p>
+                                            </div>
+                                            <div class="position-relative px-14 py-8 w-100 d-flex align-items-center">
+                                                <p class="m-0 fs-16 text-dark ">Pump rest lane one...</p>
+                                                <span class="position-absolute top-0 end-0 mt-4 me-4 fs-10 text-danger">12:13pm</span>
+                                            </div>
+                                        </div>
+                                        <div class="maintance-history-card d-flex border-radius-2 mb-12">
+                                            <div class="flex-shrink-0 d-flex flex-column align-items-center justify-content-center px-14 py-8">
+                                                <p class="m-0 text-primary fs-14 lh-base">01-05-25</p>
+                                                <p class="m-0 text-primary fs-12 opacity-75">By: Dave Smith</p>
+                                            </div>
+                                            <div class="position-relative px-14 py-8 w-100 d-flex align-items-center">
+                                                <p class="m-0 fs-16 text-dark ">Pump rest lane one...</p>
+                                                <span class="position-absolute top-0 end-0 mt-4 me-4 fs-10 text-danger">12:13pm</span>
+                                            </div>
+                                        </div>
+                                        <div class="maintance-history-card d-flex border-radius-2 mb-12">
+                                            <div class="flex-shrink-0 d-flex flex-column align-items-center justify-content-center px-14 py-8">
+                                                <p class="m-0 text-primary fs-14 lh-base">01-05-25</p>
+                                                <p class="m-0 text-primary fs-12 opacity-75">By: Dave Smith</p>
+                                            </div>
+                                            <div class="position-relative px-14 py-8 w-100 d-flex align-items-center">
+                                                <p class="m-0 fs-16 text-dark ">Pump rest lane one...</p>
+                                                <span class="position-absolute top-0 end-0 mt-4 me-4 fs-10 text-danger">12:13pm</span>
+                                            </div>
+                                        </div>
+                                        <div class="maintance-history-card d-flex border-radius-2 mb-12">
+                                            <div class="flex-shrink-0 d-flex flex-column align-items-center justify-content-center px-14 py-8">
+                                                <p class="m-0 text-primary fs-14 lh-base">01-05-25</p>
+                                                <p class="m-0 text-primary fs-12 opacity-75">By: Dave Smith</p>
+                                            </div>
+                                            <div class="position-relative px-14 py-8 w-100 d-flex align-items-center">
+                                                <p class="m-0 fs-16 text-dark ">Pump rest lane one...</p>
+                                                <span class="position-absolute top-0 end-0 mt-4 me-4 fs-10 text-danger">12:13pm</span>
+                                            </div>
+                                        </div>
+                                        <div class="maintance-history-card d-flex border-radius-2 mb-12">
+                                            <div class="flex-shrink-0 d-flex flex-column align-items-center justify-content-center px-14 py-8">
+                                                <p class="m-0 text-primary fs-14 lh-base">01-05-25</p>
+                                                <p class="m-0 text-primary fs-12 opacity-75">By: Dave Smith</p>
+                                            </div>
+                                            <div class="position-relative px-14 py-8 w-100 d-flex align-items-center">
+                                                <p class="m-0 fs-16 text-dark ">Pump rest lane one...</p>
+                                                <span class="position-absolute top-0 end-0 mt-4 me-4 fs-10 text-danger">12:13pm</span>
+                                            </div>
+                                        </div>
+                                        <div class="maintance-history-card d-flex border-radius-2 mb-12">
+                                            <div class="flex-shrink-0 d-flex flex-column align-items-center justify-content-center px-14 py-8">
+                                                <p class="m-0 text-primary fs-14 lh-base">01-05-25</p>
+                                                <p class="m-0 text-primary fs-12 opacity-75">By: Dave Smith</p>
+                                            </div>
+                                            <div class="position-relative px-14 py-8 w-100 d-flex align-items-center">
+                                                <p class="m-0 fs-16 text-dark ">Pump rest lane one...</p>
+                                                <span class="position-absolute top-0 end-0 mt-4 me-4 fs-10 text-danger">12:13pm</span>
+                                            </div>
+                                        </div>
+                                        <div class="maintance-history-card d-flex border-radius-2 mb-12">
+                                            <div class="flex-shrink-0 d-flex flex-column align-items-center justify-content-center px-14 py-8">
+                                                <p class="m-0 text-primary fs-14 lh-base">01-05-25</p>
+                                                <p class="m-0 text-primary fs-12 opacity-75">By: Dave Smith</p>
+                                            </div>
+                                            <div class="position-relative px-14 py-8 w-100 d-flex align-items-center">
+                                                <p class="m-0 fs-16 text-dark ">Pump rest lane one...</p>
+                                                <span class="position-absolute top-0 end-0 mt-4 me-4 fs-10 text-danger">12:13pm</span>
+                                            </div>
+                                        </div>
+                                        <div class="maintance-history-card d-flex border-radius-2 mb-12">
+                                            <div class="flex-shrink-0 d-flex flex-column align-items-center justify-content-center px-14 py-8">
+                                                <p class="m-0 text-primary fs-14 lh-base">01-05-25</p>
+                                                <p class="m-0 text-primary fs-12 opacity-75">By: Dave Smith</p>
+                                            </div>
+                                            <div class="position-relative px-14 py-8 w-100 d-flex align-items-center">
+                                                <p class="m-0 fs-16 text-dark ">Pump rest lane one...</p>
+                                                <span class="position-absolute top-0 end-0 mt-4 me-4 fs-10 text-danger">12:13pm</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <!-- maintance sidebar creation End  -->
+
+        <!-- Bulletin disposal sidebar creation start  -->
+        <div class='job-creation-modal disposal-leftsidebar-modal bg-white border border-radius-2' id="bulltinsbodysidebar">
+            <div class="modal-header py-28 position-relative text-center">
+                <div class="disposal-modal-header d-flex justify-content-center align-items-center gap-20 w-100">
+                    <i class="fa-solid fa-clipboard fs-20"></i>
+                    <h1 class="modal-title job-creation-title text-center fs-36 fw-semibold fst-italic text-black lh-1 mb-0"><u>Bulletin</u></h1>
+                    <i class="fa-solid fa-clipboard fs-20"></i>
+                </div>
+                <button type="button" class="btn-close position-absolute top-0 end-0 mt-8 me-12" id="bulltinsbodysidebar-close"></button>
+            </div>
+            <div class="maintance-container overflow-y-auto">
+                <div class="accordion maintance-custom-accordion" id="maintanceaccordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button text-center fs-28 fw-bolder justify-content-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#maintancecollapseTwo">
+                                Log event:
+                            </button>
+                        </h2>
+                        <div id="maintancecollapseTwo" class="accordion-collapse collapse" data-bs-parent="#maintanceaccordionExample">
+                            <div class="accordion-body text-center px-24">
+                                <div class='text-center position-relative'>
+                                    <h3 class="text-center text-primary fw-bold mb-16">Which lanes are you changing?</h3>
+                                    <span class="position-absolute top-0 end-0 mt-4 me-4 fs-24"><i class="fa-solid fa-circle-info"></i></span>
+                                </div>
+                                <div class="my-16 text-center">
+                                    <select class="form-select w-50 mx-auto" aria-label="Default select example">
+                                        <option selected>Select Group</option>
+                                        <option value="1">Radius</option>
+                                        <option value="2">Followers</option>
+                                        <option value="3">POst to Channel</option>
+                                    </select>
+                                </div>
+                                <form class="account-comany-form mb-18" action="">
+                                    <div class="jobmodal-textarea position-relative">
+                                        <textarea type="text" class="form-control textInput text-start" rows="5" placeholder="Add Description"></textarea>
+                                        <p class="message m-0 mt-4 text-end position-absolute bottom-0 end-0 me-8">0/50</p>
+                                    </div>
+                                </form>
+                                <button type="button" class="btn btn-modal-footer btn-modalnext maintance-btn m-0 fs-18 border-radius-4 lh-1 py-10 px-24 fw-bold text-white" data-bs-toggle="modal" data-bs-target="#postjobbulletinbtnmodal">Done</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button text-center fs-28 fw-bolder justify-content-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#maintancecollapseThree">
+                                History:
+                            </button>
+                        </h2>
+                        <div id="maintancecollapseThree" class="accordion-collapse collapse" data-bs-parent="#maintanceaccordionExample">
+                            <div class="accordion-body">
+                                <div class="dread-active-filter-buttons d-flex justify-content-center flex-row">
+                                    <button class="dread-active-filter-btn fs-14 active">6<span class="fs-10 align-baseline">hr</span></button>
+                                    <button class="dread-active-filter-btn fs-14">12<span class="fs-10 align-baseline">hr</span></button>
+                                    <button class="dread-active-filter-btn fs-14">24<span class="fs-10 align-baseline">hr</span></button>
+                                </div>
+                                <div class="maintance-history-list h-100 border-radius-3 p-16 w-100 overflow-y-auto">
+                                    <div class="maintance-history-card d-flex border-radius-2 mb-12">
+                                        <div class="flex-shrink-0 d-flex flex-column align-items-center justify-content-center px-14 py-8">
+                                            <p class="m-0 text-primary fs-14 lh-base">01-05-25</p>
+                                            <p class="m-0 text-primary fs-12 opacity-75">By: Dave Smith</p>
+                                        </div>
+                                        <div class="position-relative px-14 py-8 w-100 d-flex align-items-center">
+                                            <p class="m-0 fs-16 text-dark ">Pump rest lane one...</p>
+                                            <span class="position-absolute top-0 end-0 mt-4 me-4 fs-10 text-danger">12:13pm</span>
+                                        </div>
+                                    </div>
+                                    <div class="maintance-history-card d-flex border-radius-2 mb-12">
+                                        <div class="flex-shrink-0 d-flex flex-column align-items-center justify-content-center px-14 py-8">
+                                            <p class="m-0 text-primary fs-14 lh-base">01-05-25</p>
+                                            <p class="m-0 text-primary fs-12 opacity-75">By: Dave Smith</p>
+                                        </div>
+                                        <div class="position-relative px-14 py-8 w-100 d-flex align-items-center">
+                                            <p class="m-0 fs-16 text-dark ">Pump rest lane one...</p>
+                                            <span class="position-absolute top-0 end-0 mt-4 me-4 fs-10 text-danger">12:13pm</span>
+                                        </div>
+                                    </div>
+                                    <div class="maintance-history-card d-flex border-radius-2 mb-12">
+                                        <div class="flex-shrink-0 d-flex flex-column align-items-center justify-content-center px-14 py-8">
+                                            <p class="m-0 text-primary fs-14 lh-base">01-05-25</p>
+                                            <p class="m-0 text-primary fs-12 opacity-75">By: Dave Smith</p>
+                                        </div>
+                                        <div class="position-relative px-14 py-8 w-100 d-flex align-items-center">
+                                            <p class="m-0 fs-16 text-dark ">Pump rest lane one...</p>
+                                            <span class="position-absolute top-0 end-0 mt-4 me-4 fs-10 text-danger">12:13pm</span>
+                                        </div>
+                                    </div>
+                                    <div class="maintance-history-card d-flex border-radius-2 mb-12">
+                                        <div class="flex-shrink-0 d-flex flex-column align-items-center justify-content-center px-14 py-8">
+                                            <p class="m-0 text-primary fs-14 lh-base">01-05-25</p>
+                                            <p class="m-0 text-primary fs-12 opacity-75">By: Dave Smith</p>
+                                        </div>
+                                        <div class="position-relative px-14 py-8 w-100 d-flex align-items-center">
+                                            <p class="m-0 fs-16 text-dark ">Pump rest lane one...</p>
+                                            <span class="position-absolute top-0 end-0 mt-4 me-4 fs-10 text-danger">12:13pm</span>
+                                        </div>
+                                    </div>
+                                    <div class="maintance-history-card d-flex border-radius-2 mb-12">
+                                        <div class="flex-shrink-0 d-flex flex-column align-items-center justify-content-center px-14 py-8">
+                                            <p class="m-0 text-primary fs-14 lh-base">01-05-25</p>
+                                            <p class="m-0 text-primary fs-12 opacity-75">By: Dave Smith</p>
+                                        </div>
+                                        <div class="position-relative px-14 py-8 w-100 d-flex align-items-center">
+                                            <p class="m-0 fs-16 text-dark ">Pump rest lane one...</p>
+                                            <span class="position-absolute top-0 end-0 mt-4 me-4 fs-10 text-danger">12:13pm</span>
+                                        </div>
+                                    </div>
+                                    <div class="maintance-history-card d-flex border-radius-2 mb-12">
+                                        <div class="flex-shrink-0 d-flex flex-column align-items-center justify-content-center px-14 py-8">
+                                            <p class="m-0 text-primary fs-14 lh-base">01-05-25</p>
+                                            <p class="m-0 text-primary fs-12 opacity-75">By: Dave Smith</p>
+                                        </div>
+                                        <div class="position-relative px-14 py-8 w-100 d-flex align-items-center">
+                                            <p class="m-0 fs-16 text-dark ">Pump rest lane one...</p>
+                                            <span class="position-absolute top-0 end-0 mt-4 me-4 fs-10 text-danger">12:13pm</span>
+                                        </div>
+                                    </div>
+                                    <div class="maintance-history-card d-flex border-radius-2 mb-12">
+                                        <div class="flex-shrink-0 d-flex flex-column align-items-center justify-content-center px-14 py-8">
+                                            <p class="m-0 text-primary fs-14 lh-base">01-05-25</p>
+                                            <p class="m-0 text-primary fs-12 opacity-75">By: Dave Smith</p>
+                                        </div>
+                                        <div class="position-relative px-14 py-8 w-100 d-flex align-items-center">
+                                            <p class="m-0 fs-16 text-dark ">Pump rest lane one...</p>
+                                            <span class="position-absolute top-0 end-0 mt-4 me-4 fs-10 text-danger">12:13pm</span>
+                                        </div>
+                                    </div>
+                                    <div class="maintance-history-card d-flex border-radius-2 mb-12">
+                                        <div class="flex-shrink-0 d-flex flex-column align-items-center justify-content-center px-14 py-8">
+                                            <p class="m-0 text-primary fs-14 lh-base">01-05-25</p>
+                                            <p class="m-0 text-primary fs-12 opacity-75">By: Dave Smith</p>
+                                        </div>
+                                        <div class="position-relative px-14 py-8 w-100 d-flex align-items-center">
+                                            <p class="m-0 fs-16 text-dark ">Pump rest lane one...</p>
+                                            <span class="position-absolute top-0 end-0 mt-4 me-4 fs-10 text-danger">12:13pm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <!-- Bulletin disposal sidebar creation End  -->
 
         <!-- maddie le modal start  -->
          <div class="meddie-modal position-absolute top-0 start-0 ms-24 z-1 d-none">
@@ -1831,6 +2146,34 @@
           </div>
         </div>
     </div>
+    <div class="modal fairbanks-jobmodal fade" id="maintancebtnmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="maintancebtnmodalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center position-relative border-0">
+              <h1 class="modal-title fs-35 fw-semibold fst-italic text-black lh-1 mb-0">Maintance</h1>
+              <button type="button" class="btn-close position-absolute top-0 end-0 m-0 mt-8 me-8" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src='./assets/image/check-sucess.svg' class='position-relative'></img>
+              <p class="m-0 text-center postjobbulletinbtn-title fs-40 fw-bolder text-black">Logged!!</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fairbanks-jobmodal fade" id="maintancebtnmodalone" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="maintancebtnmodaloneLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center position-relative border-0">
+              <h1 class="modal-title fs-35 fw-semibold fst-italic text-black lh-1 mb-0">Event</h1>
+              <button type="button" class="btn-close position-absolute top-0 end-0 m-0 mt-8 me-8" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src='./assets/image/check-sucess.svg' class='position-relative'></img>
+              <p class="m-0 text-center postjobbulletinbtn-title fs-40 fw-bolder text-black">Logged!!</p>
+            </div>
+          </div>
+        </div>
+    </div>
     <div class="modal fairbanks-jobmodal fade" id="postheaderbulletinbtnmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="postheaderbulletinbtnmodalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
@@ -2651,6 +2994,50 @@
         sidebar.classList.remove('active');
         });
         // job creation open js End
+        
+        // maintance open js start
+        const mtoggleBtn = document.getElementById('maintancessidebar');
+        const msidebar = document.getElementById('maintancebodysidebar');
+        const mcloseBtn = document.getElementById('maintancebodysidebar-close');
+
+        mtoggleBtn.addEventListener('click', function (e) {
+        e.stopPropagation(); // Prevent click from bubbling up
+        msidebar.classList.toggle('active');
+        });
+
+        // Close sidebar on outside click
+        document.addEventListener('click', function (e) {
+        if (!msidebar.contains(e.target) && !mtoggleBtn.contains(e.target)) {
+            msidebar.classList.remove('active');
+        }
+        });
+
+        mcloseBtn.addEventListener('click', function () {
+        msidebar.classList.remove('active');
+        });
+        // maintance open js End
+        
+        // sidebar diposal open js start
+        const bstoggleBtn = document.getElementById('bulltinsbtnsidebar');
+        const bssidebar = document.getElementById('bulltinsbodysidebar');
+        const bscloseBtn = document.getElementById('bulltinsbodysidebar-close');
+
+        bstoggleBtn.addEventListener('click', function (e) {
+        e.stopPropagation(); // Prevent click from bubbling up
+        bssidebar.classList.toggle('active');
+        });
+
+        // Close sidebar on outside click
+        document.addEventListener('click', function (e) {
+        if (!bssidebar.contains(e.target) && !bstoggleBtn.contains(e.target)) {
+            bssidebar.classList.remove('active');
+        }
+        });
+
+        bscloseBtn.addEventListener('click', function () {
+        bssidebar.classList.remove('active');
+        });
+        // sidebar diposal open js End
 
         // maddie side tab text value change js start
         document.querySelectorAll('.maddie-tab-buttons').forEach(function(container) {
