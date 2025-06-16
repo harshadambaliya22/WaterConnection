@@ -847,7 +847,7 @@ textarea.form-control {
 
 .chat-contect-body {
     overflow-y: auto;
-    height: calc(100dvh - 432px);
+    height: calc(100dvh - 364px);
     background: linear-gradient(to bottom, #F5F5F5, #999999);
 }
 
@@ -1315,7 +1315,7 @@ table.calendar-table {
 }
 
 .job-creation-body {
-    height: calc(100dvh - 372px);
+    height: calc(100dvh - 338px);
     overflow: auto;
 }
 
@@ -1366,7 +1366,7 @@ table.calendar-table {
     border-radius: 40px;
     color: white;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1.2;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.3);
     transition: all 0.2s ease;
