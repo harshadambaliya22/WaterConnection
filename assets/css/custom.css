@@ -1704,6 +1704,7 @@ output {
 
 .ctbpopup-body ul.nav{
 box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.32);
+background-color: #b8c8d0;
 }
 
 .ctbpopup-body .accordion-item{
@@ -2860,6 +2861,97 @@ h3 .corp-count {
 /* maintance sidabar css End */
 /* disposal css End  */
 
+/* Fairbank message Start */
+.fairbank-message-wrapper {
+  font-family: Arial, sans-serif;
+  padding: 0 20px;
+}
+
+.fairbank-message {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.timestamp {
+  font-size: 8px;
+  color: red;
+}
+
+.fairbank-message .bubble {
+  background-color: #dfffe2;
+  padding: 12px 16px;
+  max-width: 300px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  position: relative;
+}
+
+.fairbank-message.sent {
+  justify-content: flex-end;
+}
+
+.fairbank-message.sent .bubble {
+  background-color: #bafad5;
+  width:100%;
+}
+
+.fairbank-message.sent .bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -21px;
+    right: -3px;
+    width: 0;
+    height: 0;
+    border-left: 28px solid #bafad5;
+    border-top: 12px solid transparent;
+    border-bottom: 25px solid transparent;
+    transform: rotate(65deg);
+}
+
+.fairbank-message.received {
+  gap: 10px;
+}
+
+.fairbank-message.received .bubble {
+  background-color: #d6f0ff;
+  width: 100%;
+}
+
+.fairbank-message.received .bubble::before {
+    content: "";
+    position: absolute;
+    bottom: -17px;
+    left: -8px;
+    width: 0;
+    height: 0;
+    border-left: 29px solid #d6f0ff;
+    border-top: 16px solid transparent;
+    border-bottom: 24px solid transparent;
+    transform: rotate(130deg);
+}
+.fairbank-name {
+    color: #BBBBBB;
+    font-size: 12px;
+    text-align: right;
+    font-weight: 700;
+}
+
+.avatar, .avatar-right {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.avatar-right {
+  margin-left: 10px;
+}
+
+/* Fairbank message End */
+.form-control.textInput{
+    font-style:italic;
+}
 /* Responsive css start */
 
 @media (max-width: 1650px) {

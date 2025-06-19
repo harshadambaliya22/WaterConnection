@@ -153,6 +153,12 @@ $(document).ready(function () {
   })
   // Secondary Location End
 
+  $('.dreadpirate-btn').click(function(){
+   $('.dreadpirate-modal').toggleClass('active')
+ })
+  $('.maddie-btn-close').click(function(){
+   $('.dreadpirate-modal').removeClass('active')
+ })
 });
 
 // Year Selector Start

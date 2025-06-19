@@ -333,8 +333,8 @@
     <!-- Header Bottom End -->
 
     <!-- main Start -->
-    <div class="main-content overflow-hidden position-relative">
-        <div class="dashboard-btn-list bg-white border border-2 py-30 px-14 d-inline-flex flex-column gap-20 position-absolute top-0 end-0 mt-12 me-100">
+    <div class="main-content position-relative">
+        <div class="dashboard-btn-list bg-white border border-2 z-1 py-30 px-14 d-inline-flex flex-column gap-20 position-absolute top-0 end-0 mt-12 me-100 d-none">
             <button type="button" class="btn btn-listgroup border border-2 fw-bold fs-14 lh-1 py-8 px-18" data-bs-toggle="modal" data-bs-target="#jobbulletinbtnmodal">Bulletin</button>
             <button type="button" class="btn btn-listgroup border border-2 fw-bold fs-14 lh-1 py-8 px-18" data-bs-toggle="modal" data-bs-target="#jobdrivermodal">Drivers</button>
             <button type="button" class="btn btn-listgroup border border-2 fw-bold fs-14 lh-1 py-8 px-18" data-bs-target="#fairbankmodal" data-bs-toggle="modal">Manage</button>
@@ -663,7 +663,7 @@
         <!-- job creation start  -->
         <div class='job-creation-modal bg-white border border-radius-2' id="job-creation-sidebar">
             <div class="modal-header py-28 position-relative">
-                <h1 class="modal-title job-creation-title text-center w-100 fs-36 fw-semibold fst-italic text-black lh-1 mb-0">Job Creation</h1>
+                <h1 class="modal-title job-creation-title text-center w-100 fs-30 fw-semibold fst-italic text-black lh-1 mb-0">Job Creation</h1>
                 <button type="button" class="btn-close position-absolute top-0 end-0 mt-8 me-12" id="job-creation"></button>
                 <ul class="nav nav-tabs job-creation-tab border-0 d-inline-flex flex-column position-absolute ms-16" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -1272,8 +1272,56 @@
 
                                 <div class="tab-pane px-24 fade" id="messages-tab-pane" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">
                                     <p class="fs-16 fw-bold text-black text-center">Messages</p>
-                                </div>
+                                    <div class="fairbank-message-wrapper">
+                                        <!-- Sender Message -->
+                                         <div class="mb-23">
+                                             <div class="timestamp text-danger">1 mins ago</div>
+                                            <div class="fairbank-message sent">
+                                                <div class="bubble fs-10 w-100">Lorem ipsum dolor sit amet.</div>
+                                            </div>
+                                        </div>
 
+                                        <!-- Receiver Messages -->
+                                        <div class="d-flex align-items-center mb-23">
+                                            <img src="assets/image/Message icon SWD (1).png" alt="Avatar" class="avatar me-7">
+                                            <div class=" w-100">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="timestamp">1 mins ago</div>
+                                                    <div class="fairbank-name">Name</div>   
+                                                </div> 
+                                                <div class="fairbank-message received">
+                                                    <div class="bubble fs-10">Lorem ipsum dolor sit amet.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex align-items-center mb-23">
+                                            <img src="assets/image/Message icon SWD.png" alt="Avatar" class="avatar me-7">
+                                            <div class="w-100">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="timestamp">2 mins ago</div>
+                                                    <div class="fairbank-name">Name</div>   
+                                                </div> 
+                                                <div class="fairbank-message received">
+                                                    <div class="bubble fs-10 w-100">Lorem ipsum dolor sit amet.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex align-items-center">
+                                            <div class="w-100">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                        <div class="timestamp">5 mins ago</div>
+                                                        <div class="fairbank-name">Name</div>   
+                                                    </div> 
+                                                <div class="fairbank-message received last">
+                                                    <div class="bubble fs-10 w-100">Lorem ipsum dolor sit amet.</div>
+                                                </div>
+                                            </div>
+                                            <img src="assets/image/Message icon company-man.png" alt="Avatar" class="avatar-right ms-7">
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="tab-pane fade" id="activity-tab-pane" role="tabpanel" aria-labelledby="activity-tab" tabindex="0">
                                     <p class="fs-16 fw-bold text-black text-center">Recent Activity</p>
                                     <ul class="list-inline overflow-y-auto ctblist-ul">
@@ -2098,7 +2146,7 @@
         <span class="contact-sidebar-close position-absolute"><img src="assets/image/contact-sidebar/Close.svg"
                 alt="Close icon"></span>
         <div class="chat-content">
-            <h2 class="chat-main-title fs-35 fw-bold mb-0 pb-7 pt-15 px-15 text-center fst-italic text-black"><u>Message Log</u></h2>
+            <h2 class="chat-main-title fs-30 fw-bold mb-0 pb-7 pt-15 px-15 text-center fst-italic text-black"><u>Message Log</u></h2>
             <div class="contact-search chat-searchbar position-relative py-10">
                 <div class="char-searchbar-input position-relative mx-auto">
                     <input type="text" class="form-control py-5 ps-25 pe-50 fs-15 fw-bold border-0" placeholder="Search">
@@ -3894,16 +3942,7 @@
             });
         }); 
 
-        document.addEventListener("DOMContentLoaded", function () {
-            const button = document.querySelector(".dreadpirate-btn");
-            const ul = document.querySelector(".dreadpirate-modal");
-
-            if (button && ul) {
-            button.addEventListener("click", function () {
-                ul.classList.toggle("active");
-            });
-            }
-        });
+        
         // dread tab activity js End 
 
         // calander event modal js start
