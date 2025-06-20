@@ -1315,7 +1315,7 @@ table.calendar-table {
 }
 
 .job-creation-body {
-    height: calc(100dvh - 338px);
+    height: calc(100dvh - 333px);
     overflow: auto;
 }
 
@@ -2597,12 +2597,12 @@ h3 .corp-count {
   vertical-align: middle;
 }
 
-.red {
-  background: red;
+.corp-status-dot.red {
+  background: radial-gradient(circle at 80% 6%, #E6F1E6, #CB0E20);
 }
 
-.green {
-  background: green;
+.corp-status-dot.green {
+  background: radial-gradient(circle at 80% 6%, #E6F1E6, #188E4C);
 }
 
 .corp-invite {
@@ -2640,7 +2640,7 @@ h3 .corp-count {
 
 /* disposal css start  */
 .job-creation-modal.disposal-leftsidebar-modal{
-    width: 600px;
+    width: 520px;
 }
 
 .disposal-job-creation-body.job-creation-body {
@@ -2842,7 +2842,7 @@ h3 .corp-count {
     background-color: #f1f9ff;
 }
 .maintance-container {
-    height: calc(100vh - 375px);
+    height: calc(100vh - 326px);
 }
 
 .maintance-lane input {
