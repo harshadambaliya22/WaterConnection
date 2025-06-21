@@ -1713,8 +1713,18 @@ background-color: #b8c8d0;
 
 .ctbpop-accordian-body{
     border-color: #0B3E58 !important;
+    background: linear-gradient(178deg,  #0B3E58 0%,  #FFFFFF 31%,  #0B3E58 66%,  #0B3E58 100%);
 }
-
+.line-style {
+    position: relative;
+    bottom: -7px;
+    left: -23px;
+    width: 25px;
+    height: 1px;
+    display: inline-block;
+    background-color: #DFE0E1;
+    transform: rotate(45deg);
+}
 .ctbpop-accordian-body .tab-content {
     height: calc(100vh - 434px);
     overflow-y: auto;
@@ -2947,7 +2957,22 @@ h3 .corp-count {
 .avatar-right {
   margin-left: 10px;
 }
-
+.fairbank-mess-input {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.fairbank-mess-input input {
+    border-radius: 15px;
+    color: #9A9999;
+}
+.fairbank-mess-input input::placeholder{
+    color: #9A9999;
+}
+.message-input {
+    margin-bottom: 30px;
+}
 /* Fairbank message End */
 .form-control.textInput{
     font-style:italic;
@@ -3034,12 +3059,12 @@ h3 .corp-count {
 @media (max-width:1024px) {
     .menu-list {
         position: absolute;
-        top: 42px;
+        top: 36px;
         left: -100%;
         background-color: #fff;
         border-radius: 0 10px 10px 0;
         height: 100vh;
-        z-index: 2;
+        z-index: 10;
         margin-left: 0;
         overflow-y: auto;
         width: 200px;
@@ -3047,7 +3072,12 @@ h3 .corp-count {
         padding: 10px;
         transition: all 0.3s ease-in-out;
     }
-
+    .header-responsive{
+        padding: 0;
+    }
+    .header-m-logo{
+        display: none;
+    }
     .menu-list-open .menu-list {
         left: 0;
         transition: all 0.3s ease-in-out;
@@ -3074,7 +3104,7 @@ h3 .corp-count {
         border-radius: 8px;
         cursor: pointer;
         display: block !important;
-    }
+    }   
 
     .header-middle-open {
         right: 0;
@@ -3093,7 +3123,7 @@ h3 .corp-count {
         right: -270px;
         top: 42px;
         background-color: #fff;
-        z-index: 2;
+        z-index: 9;
         padding: 15px;
         border-radius: 10px 0 0 10px;
         width: 270px;
@@ -3102,7 +3132,11 @@ h3 .corp-count {
         display: none;
         transition: all 0.3s ease-in-out;
     }
-
+    .header-middle-open {
+        right: 0;
+        display: block;
+        transition: all 0.3s ease-in-out;
+    }
     .header-m-duty {
         display: unset !important;
         margin-right: 0 !important;
@@ -3164,7 +3198,7 @@ h3 .corp-count {
         border-radius: 10px 0 0 10px;
         padding: 15px;
         overflow-y: auto;
-        z-index: 2;
+        z-index: 9;
         display: none !important;
         transition: all 0.3s ease-in-out;
         -webkit-transition: all 0.3s ease-in-out;
@@ -3208,7 +3242,9 @@ h3 .corp-count {
         top: 41px;
         height: calc(100% - 73px);
     }
-
+    .ctbpop-accordian-body .tab-content {
+        height: calc(100vh - 319px);
+    }
     .main-content {
         height: calc(100dvh - 73px);
     }
@@ -3216,7 +3252,42 @@ h3 .corp-count {
         .bottom-header-title br {
         display: none;
     }
-
+    .chat-sidebar {
+        top: 41px;
+        width: 300px;
+        height: calc(100vh - 41px);
+    }
+    .chat-contect-body {
+        height: calc(100dvh - 155px);
+    }
+    .history-sidebar {
+        top: 41px;
+        width: 300px;
+        height: calc(100vh - 104px);
+    }
+    .calendar-sidebar {
+        top: 41px;
+        width: 300px;
+        height: calc(100dvh - 101px);
+    }
+    .invites-sidebar {
+        top: 41px;
+        width: 300px;
+        height: calc(100dvh - 102px);
+    }
+    .chat-profile img {
+        width: 35px;
+        height: 35px;
+    }
+    .char-searchbar-input {
+      max-width: 90%;
+    }
+    .histort-months {
+        gap: 15px;
+    }
+    .maddie-custom-window {
+     width: 300px;
+    }
     .bottom-header-top {
         padding: 10px !important;
         border-radius: 0;
@@ -3255,16 +3326,12 @@ h3 .corp-count {
 }
 
 @media (max-width:768px) {
-    .header {
-        padding: 0;
-    }
-
     .menu-list-open .home-bottom-header {
         left: 0;
         transition: all 0.3s ease-in-out;
     }
-
-        .home-bottom-header-logo {
+    
+    .home-bottom-header-logo {
         position: relative !important;
         height: auto;
     }
