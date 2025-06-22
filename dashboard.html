@@ -1555,124 +1555,76 @@
                     </h2>
                     <div id="collapseOne01" class="accordion-collapse collapse" data-bs-parent="#ctbpopupaccordion">
                         <div class="accordion-body p-8 pt-14">
-                            <div class="ctbpop-accordian-body bg-white border pb-24 pt-14">
-                                <ul class="nav nav-tabs justify-content-center gap-12 border-0 py-6 px-10 mx-24"
-                                    id="myTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link border py-5 px-10 fs-10 fw-bold active"
-                                            id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview-tab-pane"
-                                            type="button" role="tab" aria-controls="overview-tab-pane"
-                                            aria-selected="true">Overview</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link border py-5 px-10 fs-10 fw-bold" id="messages-tab"
-                                            data-bs-toggle="tab" data-bs-target="#messages-tab-pane" type="button"
-                                            role="tab" aria-controls="messages-tab-pane"
-                                            aria-selected="false">Messages</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link border py-5 px-10 fs-10 fw-bold" id="activity-tab"
-                                            data-bs-toggle="tab" data-bs-target="#activity-tab-pane" type="button"
-                                            role="tab" aria-controls="activity-tab-pane"
-                                            aria-selected="false">Activity</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link border py-5 px-10 fs-10 fw-bold" id="statis-tab"
-                                            data-bs-toggle="tab" data-bs-target="#statis-tab-pane" type="button"
-                                            role="tab" aria-controls="statis-tab-pane"
-                                            aria-selected="false">Statis</button>
-                                    </li>
-                                </ul>
-                                <div class="tab-content mt-8" id="myTabContent">
+                            <div class="ctbpop-accordian-body bg-white border px-10 pt-14">
+                                <div class="fairbank-main-box bg-white py-15">
+                                    <ul class="nav nav-tabs justify-content-center gap-12 gap-md-7 border-0 py-6 px-10 mx-24" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                        <button class="nav-link border py-5 px-10 fs-10 fw-bold active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview-tab-pane" type="button" role="tab" aria-controls="overview-tab-pane" aria-selected="true">Overview</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                        <button class="nav-link border py-5 px-10 fs-10 fw-bold faibank-mess-tab" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages-tab-pane" type="button" role="tab" aria-controls="messages-tab-pane" aria-selected="false">Messages</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                        <button class="nav-link border py-5 px-10 fs-10 fw-bold" id="activity-tab" data-bs-toggle="tab" data-bs-target="#activity-tab-pane" type="button" role="tab" aria-controls="activity-tab-pane" aria-selected="false">Activity</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                        <button class="nav-link border py-5 px-10 fs-10 fw-bold" id="statis-tab" data-bs-toggle="tab" data-bs-target="#statis-tab-pane" type="button" role="tab" aria-controls="statis-tab-pane" aria-selected="false">Statis</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content mt-8" id="myTabContent">
 
-                                    <div class="tab-pane px-24 fade show active" id="overview-tab-pane" role="tabpanel"
-                                        aria-labelledby="overview-tab" tabindex="0">
+                                    <div class="tab-pane px-24 fade show active" id="overview-tab-pane" role="tabpanel" aria-labelledby="overview-tab" tabindex="0">
                                         <p class="fs-16 fw-bold text-black text-center">Overview</p>
                                         <form class="account-comany-form" action="">
-                                            <div class="row">
-                                                <div class="mb-10 col-md-12 col-6 d-flex gap-10 align-items-center">
-                                                    <label for="location"
-                                                        class="form-label m-0 text-primary text-nowrap fw-bold fs-12">Location:</label>
-                                                    <!-- <input type="text" class="form-control text-start fs-12 py-4 px-8" id="location"> -->
-                                                    <span class="d-block text-danger fs-12 fw-bold">(Pin Drop)</span>
-                                                </div>
-                                                <div class="mb-10 col-md-12 col-6 d-flex gap-10 align-items-center">
-                                                    <label for="duration"
-                                                        class="form-label m-0 text-primary text-nowrap fw-bold fs-12">Duration:</label>
-                                                    <input type="text" class="form-control text-start fs-12 py-4 px-8"
-                                                        id="duration">
-                                                </div>
-                                                <div class="mb-10 col-md-12 col-6 d-flex gap-10 align-items-center">
-                                                    <label for="jobtype"
-                                                        class="form-label m-0 text-primary text-nowrap fw-bold fs-12">Job
-                                                        type:</label>
-                                                    <input type="text" class="form-control text-start fs-12 py-4 px-8"
-                                                        id="jobtype">
-                                                </div>
-                                                <div class="mb-10 col-md-12 col-6 d-flex gap-10 align-items-center">
-                                                    <label for="bblrate"
-                                                        class="form-label m-0 text-primary text-nowrap fw-bold fs-12">Bbl
-                                                        rate:</label>
-                                                    <input type="text" class="form-control text-start fs-12 py-4 px-8"
-                                                        id="bblrate">
-                                                </div>
-                                                <div class="mb-10 col-md-12 col-6 d-flex gap-10 align-items-center">
-                                                    <label for="start"
-                                                        class="form-label m-0 text-primary text-nowrap fw-bold fs-12">Start:</label>
-                                                    <input type="text" class="form-control text-start fs-12 py-4 px-8"
-                                                        id="start">
-                                                </div>
-                                                <div class="mb-10 col-md-12 col-6 d-flex gap-10 align-items-center">
-                                                    <label for="hrrate"
-                                                        class="form-label m-0 text-primary text-nowrap fw-bold fs-12">Hr
-                                                        rate:</label>
-                                                    <input type="text" class="form-control text-start fs-12 py-4 px-8"
-                                                        id="hrrate">
-                                                </div>
-                                                <div class="mb-10 col-12 d-flex gap-10 align-items-center">
-                                                    <label for="oilcompany"
-                                                        class="form-label m-0 text-primary text-nowrap fw-bold fs-12">Oil
-                                                        Company:</label>
-                                                    <input type="text" class="form-control text-start fs-12 py-4 px-8"
-                                                        id="oilcompany">
-                                                </div>
-                                                <div class="mb-10 col-12 d-flex gap-10 align-items-center">
-                                                    <label for="truckingcompany"
-                                                        class="form-label m-0 text-primary text-nowrap fw-bold fs-12">Trucking
-                                                        Company:</label>
-                                                    <input type="text" class="form-control text-start fs-12 py-4 px-8"
-                                                        id="truckingcompany">
-                                                </div>
-                                                <div class="mb-10 col-12 d-flex gap-10 align-items-center">
-                                                    <label for="jobsupervisor"
-                                                        class="form-label m-0 text-primary text-nowrap fw-bold fs-12">Job
-                                                        Supervisor:</label>
-                                                    <input type="text" class="form-control text-start fs-12 py-4 px-8"
-                                                        id="jobsupervisor">
-                                                </div>
+                                        <div class="row">
+                                            <div class="mb-10 col-md-12 col-6">
+                                            <label for="location" class="form-label m-0 text-primary fw-bold fs-12">Location:</label>
+                                            <!-- <input type="text" class="form-control text-start fs-12 py-4 px-8" id="location"> -->
+                                            <span class="d-block text-danger fs-12 fw-bold">(Pin Drop)</span>
                                             </div>
-                                        </form>
-                                        <div class="ctbpopupnot-body">
-                                            <p class="fs-16 fw-bold text-black text-center mb-6">Note</p>
-                                            <div
-                                                class="popnotedata border fs-10 fw-normal overflow-y-auto p-8 border-radius-1">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, enim
-                                                doloribus? Ut sint nobis qui harum ipsum nesciunt nostrum eius illum
-                                                deleniti laboriosam labore cum placeat tenetur ex omnis nulla dolores
-                                                dolorum, consectetur suscipit? Optio nisi distinctio, facere enim, cum
-                                                inventore veritatis illum eius porro eos, iste quibusdam commodi! Quos
-                                                fugiat dignissimos rerum. Consequatur magnam eos animi labore voluptatum
-                                                deleniti, eius soluta alias mollitia consectetur ipsum ullam,
-                                                voluptatibus laboriosam fugit, facilis distinctio beatae ut temporibus
-                                                rem nihil. Exercitationem corporis neque earum fuga incidunt dolores?
-                                                Cupiditate ex maiores aliquam corporis est commodi voluptatum
-                                                perferendis velit at, distinctio quidem fugit laboriosam molestiae?
+                                            <div class="mb-10 col-md-12 col-6">
+                                            <label for="duration" class="form-label m-0 text-primary fw-bold fs-12">Duration:</label>
+                                            <input type="text" class="form-control text-start fs-12 py-4 px-8" id="duration">
+                                            </div>
+                                            <div class="mb-10 col-md-12 col-6">
+                                            <label for="jobtype" class="form-label m-0 text-primary fw-bold fs-12">Job type:</label>
+                                            <input type="text" class="form-control text-start fs-12 py-4 px-8" id="jobtype">
+                                            </div>
+                                            <div class="mb-10 col-md-12 col-6">
+                                            <label for="bblrate" class="form-label m-0 text-primary fw-bold fs-12">Bbl rate:</label>
+                                            <input type="text" class="form-control text-start fs-12 py-4 px-8" id="bblrate">
+                                            </div>
+                                            <div class="mb-10 col-md-12 col-6">
+                                            <label for="start" class="form-label m-0 text-primary fw-bold fs-12">Start:</label>
+                                            <input type="text" class="form-control text-start fs-12 py-4 px-8" id="start">
+                                            </div>
+                                            <div class="mb-10 col-md-12 col-6">
+                                            <label for="hrrate" class="form-label m-0 text-primary fw-bold fs-12">Hr rate:</label>
+                                            <input type="text" class="form-control text-start fs-12 py-4 px-8" id="hrrate">
+                                            </div>
+                                            <div class="mb-10 col-md-12 col-6">
+                                            <label for="oilcompany" class="form-label m-0 text-primary fw-bold fs-12">Oil Company:</label>
+                                            <input type="text" class="form-control text-start fs-12 py-4 px-8" id="oilcompany">
+                                            </div>
+                                            <div class="mb-10 col-md-12 col-6">
+                                            <label for="truckingcompany" class="form-label m-0 text-primary fw-bold fs-12">Trucking Company:</label>
+                                            <input type="text" class="form-control text-start fs-12 py-4 px-8" id="truckingcompany">
+                                            </div>
+                                            <div class="mb-10 col-md-12 col-6">
+                                            <label for="jobsupervisor" class="form-label m-0 text-primary fw-bold fs-12">Job Supervisor:</label>
+                                            <input type="text" class="form-control text-start fs-12 py-4 px-8" id="jobsupervisor">
                                             </div>
                                         </div>
+                                        </form>
+                                        <div class="ctbpopupnot-body">
+                                        <p class="fs-16 fw-bold text-black text-center mb-6">Note</p>
+                                        <div class="popnotedata border fs-10 fw-normal overflow-y-auto p-8 border-radius-1">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, enim doloribus? Ut sint nobis qui harum ipsum nesciunt nostrum eius illum deleniti laboriosam labore cum placeat tenetur ex omnis nulla dolores dolorum, consectetur suscipit? Optio nisi distinctio, facere enim, cum inventore veritatis illum eius porro eos, iste quibusdam commodi! Quos fugiat dignissimos rerum. Consequatur magnam eos animi labore voluptatum deleniti, eius soluta alias mollitia consectetur ipsum ullam, voluptatibus laboriosam fugit, facilis distinctio beatae ut temporibus rem nihil. Exercitationem corporis neque earum fuga incidunt dolores? Cupiditate ex maiores aliquam corporis est commodi voluptatum perferendis velit at, distinctio quidem fugit laboriosam molestiae?
+                                        </div>
+                                        </div>                                        
                                     </div>
 
-                                    <div class="tab-pane px-24 fade" id="messages-tab-pane" role="tabpanel"
-                                        aria-labelledby="messages-tab" tabindex="0">
+                                    <div class="tab-pane px-24 fade" id="messages-tab-pane" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">
                                         <p class="fs-16 fw-bold text-black text-center">Messages</p>
                                         <div class="fairbank-message-wrapper">
                                             <!-- Sender Message -->
@@ -1685,13 +1637,12 @@
 
                                             <!-- Receiver Messages -->
                                             <div class="d-flex align-items-center mb-23">
-                                                <img src="assets/image/Message icon SWD (1).png" alt="Avatar"
-                                                    class="avatar me-7">
+                                                <img src="assets/image/Message icon SWD (1).png" alt="Avatar" class="avatar me-7">
                                                 <div class=" w-100">
                                                     <div class="d-flex align-items-center justify-content-between">
                                                         <div class="timestamp">1 mins ago</div>
-                                                        <div class="fairbank-name">Name</div>
-                                                    </div>
+                                                        <div class="fairbank-name">Name</div>   
+                                                    </div> 
                                                     <div class="fairbank-message received">
                                                         <div class="bubble fs-10">Lorem ipsum dolor sit amet.</div>
                                                     </div>
@@ -1699,16 +1650,14 @@
                                             </div>
 
                                             <div class="d-flex align-items-center mb-23">
-                                                <img src="assets/image/Message icon SWD.png" alt="Avatar"
-                                                    class="avatar me-7">
+                                                <img src="assets/image/Message icon SWD.png" alt="Avatar" class="avatar me-7">
                                                 <div class="w-100">
                                                     <div class="d-flex align-items-center justify-content-between">
                                                         <div class="timestamp">2 mins ago</div>
-                                                        <div class="fairbank-name">Name</div>
-                                                    </div>
+                                                        <div class="fairbank-name">Name</div>   
+                                                    </div> 
                                                     <div class="fairbank-message received">
-                                                        <div class="bubble fs-10 w-100">Lorem ipsum dolor sit amet.
-                                                        </div>
+                                                        <div class="bubble fs-10 w-100">Lorem ipsum dolor sit amet.</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1716,520 +1665,330 @@
                                             <div class="d-flex align-items-center">
                                                 <div class="w-100">
                                                     <div class="d-flex align-items-center justify-content-between">
-                                                        <div class="timestamp">5 mins ago</div>
-                                                        <div class="fairbank-name">Name</div>
-                                                    </div>
+                                                            <div class="timestamp">5 mins ago</div>
+                                                            <div class="fairbank-name">Name</div>   
+                                                        </div> 
                                                     <div class="fairbank-message received last">
-                                                        <div class="bubble fs-10 w-100">Lorem ipsum dolor sit amet.
-                                                        </div>
+                                                        <div class="bubble fs-10 w-100">Lorem ipsum dolor sit amet.</div>
                                                     </div>
                                                 </div>
-                                                <img src="assets/image/Message icon company-man.png" alt="Avatar"
-                                                    class="avatar-right ms-7">
+                                                <img src="assets/image/Message icon company-man.png" alt="Avatar" class="avatar-right ms-7">
                                             </div>
                                         </div>
+                                        <div class="fairbank-mess-input">
+                                            <input type="text" class="form-control fs-17 fw-bold bg-white border-0 pt-6 pb-7 px-15 text-center" placeholder="Type Message">
+                                        </div>
                                     </div>
-                                    <div class="tab-pane fade" id="activity-tab-pane" role="tabpanel"
-                                        aria-labelledby="activity-tab" tabindex="0">
+                                    <div class="tab-pane fade" id="activity-tab-pane" role="tabpanel" aria-labelledby="activity-tab" tabindex="0">
                                         <p class="fs-16 fw-bold text-black text-center">Recent Activity</p>
                                         <ul class="list-inline overflow-y-auto ctblist-ul">
-                                            <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                                <span
-                                                    class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                                    <img src="./assets/image/header/truck.svg"
-                                                        class="w-100 h-100 object-fit-contain">
-                                                </span>
-                                                <div
-                                                    class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
-                                                    <div class="d-inline-flex flex-column">
-                                                        <p class="m-0 fs-10 fw-bold text-info">Greg smith</p>
-                                                        <p class="m-0 fs-10 fw-bold text-black">Washburne 21-13 5AH</p>
-                                                    </div>
-                                                    <div class="d-inline-flex flex-column">
-                                                        <p
-                                                            class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">
-                                                            Statis: <span
-                                                                class="d-inline-block text-info fs-10 fw-bold">Loaded</span>
-                                                        </p>
-                                                        <p
-                                                            class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">
-                                                            Activity: <span
-                                                                class="d-inline-block text-info fs-10 fw-bold">Departing</span>
-                                                        </p>
-                                                    </div>
-                                                    <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
-                                                </div>
-                                            </li>
-                                            <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                                <span
-                                                    class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                                    <img src="./assets/image/header/truck.svg"
-                                                        class="w-100 h-100 object-fit-contain">
-                                                </span>
-                                                <div
-                                                    class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
-                                                    <div class="d-inline-flex flex-column">
-                                                        <p class="m-0 fs-10 fw-bold text-info">Zack Sands</p>
-                                                        <p class="m-0 fs-10 fw-bold text-black">Dread Pirate SWD</p>
-                                                    </div>
-                                                    <div class="d-inline-flex flex-column">
-                                                        <p
-                                                            class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">
-                                                            Statis: <span
-                                                                class="d-inline-block text-info fs-10 fw-bold">Empty</span>
-                                                        </p>
-                                                        <p
-                                                            class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">
-                                                            Activity: <span
-                                                                class="d-inline-block text-info fs-10 fw-bold">Departing</span>
-                                                        </p>
-                                                    </div>
-                                                    <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
-                                                </div>
-                                            </li>
-                                            <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                                <span
-                                                    class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                                    <img src="./assets/image/header/truck.svg"
-                                                        class="w-100 h-100 object-fit-contain">
-                                                </span>
-                                                <div
-                                                    class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
-                                                    <div class="d-inline-flex flex-column">
-                                                        <p class="m-0 fs-10 fw-bold text-info">John Vicol</p>
-                                                        <p class="m-0 fs-10 fw-bold text-black">Yard</p>
-                                                    </div>
-                                                    <div class="d-inline-flex flex-column">
-                                                        <p
-                                                            class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">
-                                                            Statis: <span
-                                                                class="d-inline-block text-info fs-10 fw-bold">Empty</span>
-                                                        </p>
-                                                        <p
-                                                            class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">
-                                                            Activity: <span
-                                                                class="d-inline-block text-info fs-10 fw-bold">On-Duty</span>
-                                                        </p>
-                                                    </div>
-                                                    <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
-                                                </div>
-                                            </li>
-                                            <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                                <span
-                                                    class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                                    <img src="./assets/image/header/truck.svg"
-                                                        class="w-100 h-100 object-fit-contain">
-                                                </span>
-                                                <div
-                                                    class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
-                                                    <div class="d-inline-flex flex-column">
-                                                        <p class="m-0 fs-10 fw-bold text-info">Greg smith</p>
-                                                        <p class="m-0 fs-10 fw-bold text-black">Washburne 21-13 5AH</p>
-                                                    </div>
-                                                    <div class="d-inline-flex flex-column">
-                                                        <p
-                                                            class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">
-                                                            Statis: <span
-                                                                class="d-inline-block text-info fs-10 fw-bold">Loaded</span>
-                                                        </p>
-                                                        <p
-                                                            class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">
-                                                            Activity: <span
-                                                                class="d-inline-block text-info fs-10 fw-bold">Departing</span>
-                                                        </p>
-                                                    </div>
-                                                    <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
-                                                </div>
-                                            </li>
-                                            <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                                <span
-                                                    class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                                    <img src="./assets/image/header/truck.svg"
-                                                        class="w-100 h-100 object-fit-contain">
-                                                </span>
-                                                <div
-                                                    class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
-                                                    <div class="d-inline-flex flex-column">
-                                                        <p class="m-0 fs-10 fw-bold text-info">Zack Sands</p>
-                                                        <p class="m-0 fs-10 fw-bold text-black">Dread Pirate SWD</p>
-                                                    </div>
-                                                    <div class="d-inline-flex flex-column">
-                                                        <p
-                                                            class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">
-                                                            Statis: <span
-                                                                class="d-inline-block text-info fs-10 fw-bold">Empty</span>
-                                                        </p>
-                                                        <p
-                                                            class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">
-                                                            Activity: <span
-                                                                class="d-inline-block text-info fs-10 fw-bold">Departing</span>
-                                                        </p>
-                                                    </div>
-                                                    <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
-                                                </div>
-                                            </li>
-                                            <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                                <span
-                                                    class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                                    <img src="./assets/image/header/truck.svg"
-                                                        class="w-100 h-100 object-fit-contain">
-                                                </span>
-                                                <div
-                                                    class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
-                                                    <div class="d-inline-flex flex-column">
-                                                        <p class="m-0 fs-10 fw-bold text-info">John Vicol</p>
-                                                        <p class="m-0 fs-10 fw-bold text-black">Yard</p>
-                                                    </div>
-                                                    <div class="d-inline-flex flex-column">
-                                                        <p
-                                                            class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">
-                                                            Statis: <span
-                                                                class="d-inline-block text-info fs-10 fw-bold">Empty</span>
-                                                        </p>
-                                                        <p
-                                                            class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">
-                                                            Activity: <span
-                                                                class="d-inline-block text-info fs-10 fw-bold">On-Duty</span>
-                                                        </p>
-                                                    </div>
-                                                    <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
-                                                </div>
-                                            </li>
-                                            <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                                <span
-                                                    class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                                    <img src="./assets/image/header/truck.svg"
-                                                        class="w-100 h-100 object-fit-contain">
-                                                </span>
-                                                <div
-                                                    class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
-                                                    <div class="d-inline-flex flex-column">
-                                                        <p class="m-0 fs-10 fw-bold text-info">Greg smith</p>
-                                                        <p class="m-0 fs-10 fw-bold text-black">Washburne 21-13 5AH</p>
-                                                    </div>
-                                                    <div class="d-inline-flex flex-column">
-                                                        <p
-                                                            class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">
-                                                            Statis: <span
-                                                                class="d-inline-block text-info fs-10 fw-bold">Loaded</span>
-                                                        </p>
-                                                        <p
-                                                            class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">
-                                                            Activity: <span
-                                                                class="d-inline-block text-info fs-10 fw-bold">Departing</span>
-                                                        </p>
-                                                    </div>
-                                                    <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
-                                                </div>
-                                            </li>
-                                            <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                                <span
-                                                    class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                                    <img src="./assets/image/header/truck.svg"
-                                                        class="w-100 h-100 object-fit-contain">
-                                                </span>
-                                                <div
-                                                    class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
-                                                    <div class="d-inline-flex flex-column">
-                                                        <p class="m-0 fs-10 fw-bold text-info">Zack Sands</p>
-                                                        <p class="m-0 fs-10 fw-bold text-black">Dread Pirate SWD</p>
-                                                    </div>
-                                                    <div class="d-inline-flex flex-column">
-                                                        <p
-                                                            class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">
-                                                            Statis: <span
-                                                                class="d-inline-block text-info fs-10 fw-bold">Empty</span>
-                                                        </p>
-                                                        <p
-                                                            class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">
-                                                            Activity: <span
-                                                                class="d-inline-block text-info fs-10 fw-bold">Departing</span>
-                                                        </p>
-                                                    </div>
-                                                    <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
-                                                </div>
-                                            </li>
-                                            <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                                <span
-                                                    class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                                    <img src="./assets/image/header/truck.svg"
-                                                        class="w-100 h-100 object-fit-contain">
-                                                </span>
-                                                <div
-                                                    class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
-                                                    <div class="d-inline-flex flex-column">
-                                                        <p class="m-0 fs-10 fw-bold text-info">John Vicol</p>
-                                                        <p class="m-0 fs-10 fw-bold text-black">Yard</p>
-                                                    </div>
-                                                    <div class="d-inline-flex flex-column">
-                                                        <p
-                                                            class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">
-                                                            Statis: <span
-                                                                class="d-inline-block text-info fs-10 fw-bold">Empty</span>
-                                                        </p>
-                                                        <p
-                                                            class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">
-                                                            Activity: <span
-                                                                class="d-inline-block text-info fs-10 fw-bold">On-Duty</span>
-                                                        </p>
-                                                    </div>
-                                                    <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
-                                                </div>
-                                            </li>
-                                            <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                                <span
-                                                    class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                                    <img src="./assets/image/header/truck.svg"
-                                                        class="w-100 h-100 object-fit-contain">
-                                                </span>
-                                                <div
-                                                    class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
-                                                    <div class="d-inline-flex flex-column">
-                                                        <p class="m-0 fs-10 fw-bold text-info">Greg smith</p>
-                                                        <p class="m-0 fs-10 fw-bold text-black">Washburne 21-13 5AH</p>
-                                                    </div>
-                                                    <div class="d-inline-flex flex-column">
-                                                        <p
-                                                            class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">
-                                                            Statis: <span
-                                                                class="d-inline-block text-info fs-10 fw-bold">Loaded</span>
-                                                        </p>
-                                                        <p
-                                                            class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">
-                                                            Activity: <span
-                                                                class="d-inline-block text-info fs-10 fw-bold">Departing</span>
-                                                        </p>
-                                                    </div>
-                                                    <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
-                                                </div>
-                                            </li>
-                                            <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                                <span
-                                                    class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                                    <img src="./assets/image/header/truck.svg"
-                                                        class="w-100 h-100 object-fit-contain">
-                                                </span>
-                                                <div
-                                                    class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
-                                                    <div class="d-inline-flex flex-column">
-                                                        <p class="m-0 fs-10 fw-bold text-info">Zack Sands</p>
-                                                        <p class="m-0 fs-10 fw-bold text-black">Dread Pirate SWD</p>
-                                                    </div>
-                                                    <div class="d-inline-flex flex-column">
-                                                        <p
-                                                            class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">
-                                                            Statis: <span
-                                                                class="d-inline-block text-info fs-10 fw-bold">Empty</span>
-                                                        </p>
-                                                        <p
-                                                            class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">
-                                                            Activity: <span
-                                                                class="d-inline-block text-info fs-10 fw-bold">Departing</span>
-                                                        </p>
-                                                    </div>
-                                                    <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
-                                                </div>
-                                            </li>
-                                            <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                                <span
-                                                    class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                                    <img src="./assets/image/header/truck.svg"
-                                                        class="w-100 h-100 object-fit-contain">
-                                                </span>
-                                                <div
-                                                    class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
-                                                    <div class="d-inline-flex flex-column">
-                                                        <p class="m-0 fs-10 fw-bold text-info">John Vicol</p>
-                                                        <p class="m-0 fs-10 fw-bold text-black">Yard</p>
-                                                    </div>
-                                                    <div class="d-inline-flex flex-column">
-                                                        <p
-                                                            class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">
-                                                            Statis: <span
-                                                                class="d-inline-block text-info fs-10 fw-bold">Empty</span>
-                                                        </p>
-                                                        <p
-                                                            class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">
-                                                            Activity: <span
-                                                                class="d-inline-block text-info fs-10 fw-bold">On-Duty</span>
-                                                        </p>
-                                                    </div>
-                                                    <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
-                                                </div>
-                                            </li>
+                                        <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                            <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                            <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                            </span>
+                                            <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
+                                            <div class="d-inline-flex flex-column">
+                                                <p class="m-0 fs-10 fw-bold text-info">Greg smith</p>
+                                                <p class="m-0 fs-10 fw-bold text-black">Washburne 21-13 5AH</p>
+                                            </div>
+                                            <div class="d-inline-flex flex-column">
+                                                <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Loaded</span> </p>
+                                                <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">Departing</span> </p>
+                                            </div>
+                                            <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
+                                            </div>
+                                        </li>
+                                        <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                            <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                            <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                            </span>
+                                            <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
+                                            <div class="d-inline-flex flex-column">
+                                                <p class="m-0 fs-10 fw-bold text-info">Zack Sands</p>
+                                                <p class="m-0 fs-10 fw-bold text-black">Dread Pirate SWD</p>
+                                            </div>
+                                            <div class="d-inline-flex flex-column">
+                                                <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Empty</span> </p>
+                                                <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">Departing</span> </p>
+                                            </div>
+                                            <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
+                                            </div>
+                                        </li>
+                                        <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                            <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                            <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                            </span>
+                                            <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
+                                            <div class="d-inline-flex flex-column">
+                                                <p class="m-0 fs-10 fw-bold text-info">John Vicol</p>
+                                                <p class="m-0 fs-10 fw-bold text-black">Yard</p>
+                                            </div>
+                                            <div class="d-inline-flex flex-column">
+                                                <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Empty</span> </p>
+                                                <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">On-Duty</span> </p>
+                                            </div>
+                                            <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
+                                            </div>
+                                        </li>
+                                        <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                            <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                            <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                            </span>
+                                            <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
+                                            <div class="d-inline-flex flex-column">
+                                                <p class="m-0 fs-10 fw-bold text-info">Greg smith</p>
+                                                <p class="m-0 fs-10 fw-bold text-black">Washburne 21-13 5AH</p>
+                                            </div>
+                                            <div class="d-inline-flex flex-column">
+                                                <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Loaded</span> </p>
+                                                <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">Departing</span> </p>
+                                            </div>
+                                            <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
+                                            </div>
+                                        </li>
+                                        <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                            <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                            <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                            </span>
+                                            <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
+                                            <div class="d-inline-flex flex-column">
+                                                <p class="m-0 fs-10 fw-bold text-info">Zack Sands</p>
+                                                <p class="m-0 fs-10 fw-bold text-black">Dread Pirate SWD</p>
+                                            </div>
+                                            <div class="d-inline-flex flex-column">
+                                                <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Empty</span> </p>
+                                                <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">Departing</span> </p>
+                                            </div>
+                                            <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
+                                            </div>
+                                        </li>
+                                        <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                            <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                            <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                            </span>
+                                            <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
+                                            <div class="d-inline-flex flex-column">
+                                                <p class="m-0 fs-10 fw-bold text-info">John Vicol</p>
+                                                <p class="m-0 fs-10 fw-bold text-black">Yard</p>
+                                            </div>
+                                            <div class="d-inline-flex flex-column">
+                                                <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Empty</span> </p>
+                                                <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">On-Duty</span> </p>
+                                            </div>
+                                            <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
+                                            </div>
+                                        </li>
+                                        <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                            <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                            <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                            </span>
+                                            <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
+                                            <div class="d-inline-flex flex-column">
+                                                <p class="m-0 fs-10 fw-bold text-info">Greg smith</p>
+                                                <p class="m-0 fs-10 fw-bold text-black">Washburne 21-13 5AH</p>
+                                            </div>
+                                            <div class="d-inline-flex flex-column">
+                                                <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Loaded</span> </p>
+                                                <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">Departing</span> </p>
+                                            </div>
+                                            <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
+                                            </div>
+                                        </li>
+                                        <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                            <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                            <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                            </span>
+                                            <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
+                                            <div class="d-inline-flex flex-column">
+                                                <p class="m-0 fs-10 fw-bold text-info">Zack Sands</p>
+                                                <p class="m-0 fs-10 fw-bold text-black">Dread Pirate SWD</p>
+                                            </div>
+                                            <div class="d-inline-flex flex-column">
+                                                <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Empty</span> </p>
+                                                <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">Departing</span> </p>
+                                            </div>
+                                            <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
+                                            </div>
+                                        </li>
+                                        <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                            <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                            <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                            </span>
+                                            <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
+                                            <div class="d-inline-flex flex-column">
+                                                <p class="m-0 fs-10 fw-bold text-info">John Vicol</p>
+                                                <p class="m-0 fs-10 fw-bold text-black">Yard</p>
+                                            </div>
+                                            <div class="d-inline-flex flex-column">
+                                                <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Empty</span> </p>
+                                                <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">On-Duty</span> </p>
+                                            </div>
+                                            <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
+                                            </div>
+                                        </li>
+                                        <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                            <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                            <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                            </span>
+                                            <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
+                                            <div class="d-inline-flex flex-column">
+                                                <p class="m-0 fs-10 fw-bold text-info">Greg smith</p>
+                                                <p class="m-0 fs-10 fw-bold text-black">Washburne 21-13 5AH</p>
+                                            </div>
+                                            <div class="d-inline-flex flex-column">
+                                                <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Loaded</span> </p>
+                                                <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">Departing</span> </p>
+                                            </div>
+                                            <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
+                                            </div>
+                                        </li>
+                                        <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                            <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                            <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                            </span>
+                                            <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
+                                            <div class="d-inline-flex flex-column">
+                                                <p class="m-0 fs-10 fw-bold text-info">Zack Sands</p>
+                                                <p class="m-0 fs-10 fw-bold text-black">Dread Pirate SWD</p>
+                                            </div>
+                                            <div class="d-inline-flex flex-column">
+                                                <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Empty</span> </p>
+                                                <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">Departing</span> </p>
+                                            </div>
+                                            <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
+                                            </div>
+                                        </li>
+                                        <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                            <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                            <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                            </span>
+                                            <div class="ctbpopup-statislist d-flex align-items-start justify-content-between gap-10 border-bottom py-8 px-6">
+                                            <div class="d-inline-flex flex-column">
+                                                <p class="m-0 fs-10 fw-bold text-info">John Vicol</p>
+                                                <p class="m-0 fs-10 fw-bold text-black">Yard</p>
+                                            </div>
+                                            <div class="d-inline-flex flex-column">
+                                                <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Statis: <span class="d-inline-block text-info fs-10 fw-bold">Empty</span> </p>
+                                                <p class="m-0 d-inline-flex align-items-center gap-6 text-primary fs-10 fw-bold">Activity: <span class="d-inline-block text-info fs-10 fw-bold">On-Duty</span> </p>
+                                            </div>
+                                            <p class="m-0 text-danger fs-10 fw-bold text-nowrap">14 mins ago</p>
+                                            </div>
+                                        </li>
                                         </ul>
                                     </div>
 
-                                    <div class="tab-pane fade" id="statis-tab-pane" role="tabpanel"
-                                        aria-labelledby="statis-tab" tabindex="0">
+                                    <div class="tab-pane fade" id="statis-tab-pane" role="tabpanel" aria-labelledby="statis-tab" tabindex="0">
                                         <p class="fs-16 fw-bold text-black text-center">Statis</p>
                                         <ul class="list-inline overflow-y-auto ctblist-ul">
-                                            <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                                <span
-                                                    class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                                    <img src="./assets/image/header/truck.svg"
-                                                        class="w-100 h-100 object-fit-contain">
-                                                </span>
-                                                <div
-                                                    class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
-                                                    <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">
-                                                        Rose 16-21 4H</p>
-                                                    <div class="d-flex align-items-center gap-12">
-                                                        <p
-                                                            class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">
-                                                            Levels:</p>
-                                                        <p class="ctbpopup-levels m-0 fs-12 fw-bold text-success">12.6
-                                                        </p>
-                                                    </div>
-                                                    <!-- <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain"> -->
-                                                </div>
-                                            </li>
-                                            <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                                <span
-                                                    class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                                    <img src="./assets/image/header/truck.svg"
-                                                        class="w-100 h-100 object-fit-contain">
-                                                </span>
-                                                <div
-                                                    class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
-                                                    <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">
-                                                        Maddie LE</p>
-                                                    <div class="d-flex align-items-center gap-12">
-                                                        <p
-                                                            class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">
-                                                            Levels:</p>
-                                                        <p class="ctbpopup-levels m-0 fs-12 fw-bold text-danger">12.6
-                                                        </p>
-                                                    </div>
-                                                    <img src="./assets/image/header/Alert.svg"
-                                                        class="ctbpopup-statis-img02 ms-auto object-fit-contain">
-                                                </div>
-                                            </li>
-                                            <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                                <span
-                                                    class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                                    <img src="./assets/image/header/truck.svg"
-                                                        class="w-100 h-100 object-fit-contain">
-                                                </span>
-                                                <div
-                                                    class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
-                                                    <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">
-                                                        Rose 16-21 4H</p>
-                                                    <div class="d-flex align-items-center gap-12">
-                                                        <p
-                                                            class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">
-                                                            Levels:</p>
-                                                        <p class="ctbpopup-levels m-0 fs-12 fw-bold text-success">12.6
-                                                        </p>
-                                                    </div>
-                                                    <!-- <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain"> -->
-                                                </div>
-                                            </li>
-                                            <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                                <span
-                                                    class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                                    <img src="./assets/image/header/truck.svg"
-                                                        class="w-100 h-100 object-fit-contain">
-                                                </span>
-                                                <div
-                                                    class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
-                                                    <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">
-                                                        Maddie LE</p>
-                                                    <div class="d-flex align-items-center gap-12">
-                                                        <p
-                                                            class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">
-                                                            Levels:</p>
-                                                        <p class="ctbpopup-levels m-0 fs-12 fw-bold text-danger">12.6
-                                                        </p>
-                                                    </div>
-                                                    <img src="./assets/image/header/Alert.svg"
-                                                        class="ctbpopup-statis-img02 ms-auto object-fit-contain">
-                                                </div>
-                                            </li>
-                                            <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                                <span
-                                                    class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                                    <img src="./assets/image/header/truck.svg"
-                                                        class="w-100 h-100 object-fit-contain">
-                                                </span>
-                                                <div
-                                                    class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
-                                                    <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">
-                                                        Rose 16-21 4H</p>
-                                                    <div class="d-flex align-items-center gap-12">
-                                                        <p
-                                                            class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">
-                                                            Levels:</p>
-                                                        <p class="ctbpopup-levels m-0 fs-12 fw-bold text-success">12.6
-                                                        </p>
-                                                    </div>
-                                                    <!-- <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain"> -->
-                                                </div>
-                                            </li>
-                                            <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                                <span
-                                                    class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                                    <img src="./assets/image/header/truck.svg"
-                                                        class="w-100 h-100 object-fit-contain">
-                                                </span>
-                                                <div
-                                                    class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
-                                                    <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">
-                                                        Maddie LE</p>
-                                                    <div class="d-flex align-items-center gap-12">
-                                                        <p
-                                                            class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">
-                                                            Levels:</p>
-                                                        <p class="ctbpopup-levels m-0 fs-12 fw-bold text-danger">12.6
-                                                        </p>
-                                                    </div>
-                                                    <img src="./assets/image/header/Alert.svg"
-                                                        class="ctbpopup-statis-img02 ms-auto object-fit-contain">
-                                                </div>
-                                            </li>
-                                            <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                                <span
-                                                    class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                                    <img src="./assets/image/header/truck.svg"
-                                                        class="w-100 h-100 object-fit-contain">
-                                                </span>
-                                                <div
-                                                    class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
-                                                    <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">
-                                                        Rose 16-21 4H</p>
-                                                    <div class="d-flex align-items-center gap-12">
-                                                        <p
-                                                            class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">
-                                                            Levels:</p>
-                                                        <p class="ctbpopup-levels m-0 fs-12 fw-bold text-success">12.6
-                                                        </p>
-                                                    </div>
-                                                    <!-- <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain"> -->
-                                                </div>
-                                            </li>
-                                            <li class="px-24 d-flex align-items-center gap-6 mb-8">
-                                                <span
-                                                    class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
-                                                    <img src="./assets/image/header/truck.svg"
-                                                        class="w-100 h-100 object-fit-contain">
-                                                </span>
-                                                <div
-                                                    class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
-                                                    <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">
-                                                        Rose 16-21 4H</p>
-                                                    <div class="d-flex align-items-center gap-12">
-                                                        <p
-                                                            class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">
-                                                            Levels:</p>
-                                                        <p class="ctbpopup-levels m-0 fs-12 fw-bold text-success">12.6
-                                                        </p>
-                                                    </div>
-                                                    <!-- <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain"> -->
-                                                </div>
-                                            </li>
+                                        <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                            <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                            <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                            </span>
+                                            <div class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
+                                            <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">Rose 16-21 4H</p>
+                                            <div class="d-flex align-items-center gap-12">
+                                                <p class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">Levels:</p>
+                                                <p class="ctbpopup-levels m-0 fs-12 fw-bold text-success">12.6</p>
+                                            </div>
+                                            <!-- <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain"> -->
+                                            </div>
+                                        </li>
+                                        <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                            <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                                <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                            </span>
+                                            <div class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
+                                            <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">Maddie LE</p>
+                                            <div class="d-flex align-items-center gap-12">
+                                                <p class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">Levels:</p>
+                                                <p class="ctbpopup-levels m-0 fs-12 fw-bold text-danger">12.6</p>
+                                            </div>
+                                            <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain">
+                                            </div>
+                                        </li>
+                                        <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                            <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                            <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                            </span>
+                                            <div class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
+                                            <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">Rose 16-21 4H</p>
+                                            <div class="d-flex align-items-center gap-12">
+                                                <p class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">Levels:</p>
+                                                <p class="ctbpopup-levels m-0 fs-12 fw-bold text-success">12.6</p>
+                                            </div>
+                                            <!-- <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain"> -->
+                                            </div>
+                                        </li>
+                                        <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                            <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                            <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                            </span>
+                                            <div class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
+                                            <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">Maddie LE</p>
+                                            <div class="d-flex align-items-center gap-12">
+                                                <p class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">Levels:</p>
+                                                <p class="ctbpopup-levels m-0 fs-12 fw-bold text-danger">12.6</p>
+                                            </div>
+                                            <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain">
+                                            </div>
+                                        </li>
+                                        <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                            <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                            <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                            </span>
+                                            <div class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
+                                            <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">Rose 16-21 4H</p>
+                                            <div class="d-flex align-items-center gap-12">
+                                                <p class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">Levels:</p>
+                                                <p class="ctbpopup-levels m-0 fs-12 fw-bold text-success">12.6</p>
+                                            </div>
+                                            <!-- <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain"> -->
+                                            </div>
+                                        </li>
+                                        <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                            <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                            <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                            </span>
+                                            <div class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
+                                            <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">Maddie LE</p>
+                                            <div class="d-flex align-items-center gap-12">
+                                                <p class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">Levels:</p>
+                                                <p class="ctbpopup-levels m-0 fs-12 fw-bold text-danger">12.6</p>
+                                            </div>
+                                            <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain">
+                                            </div>
+                                        </li>
+                                        <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                            <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                            <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                            </span>
+                                            <div class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
+                                            <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">Rose 16-21 4H</p>
+                                            <div class="d-flex align-items-center gap-12">
+                                                <p class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">Levels:</p>
+                                                <p class="ctbpopup-levels m-0 fs-12 fw-bold text-success">12.6</p>
+                                            </div>
+                                            <!-- <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain"> -->
+                                            </div>
+                                        </li>
+                                        <li class="px-24 d-flex align-items-center gap-6 mb-8">
+                                            <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 p-6 border-radius-circle ctbpopup-statis-img01">
+                                            <img src="./assets/image/header/truck.svg" class="w-100 h-100 object-fit-contain">
+                                            </span>
+                                            <div class="ctbpopup-statislist d-flex align-items-center justify-content-start gap-20 border-bottom py-12 px-6">
+                                            <p class="ctbpopup-statislist-title m-0 text-primary fs-12 fw-bold">Rose 16-21 4H</p>
+                                            <div class="d-flex align-items-center gap-12">
+                                                <p class="ctbpopup-statisllevels m-0 text-primary fs-12 fw-bold">Levels:</p>
+                                                <p class="ctbpopup-levels m-0 fs-12 fw-bold text-success">12.6</p>
+                                            </div>
+                                            <!-- <img src="./assets/image/header/Alert.svg" class="ctbpopup-statis-img02 ms-auto object-fit-contain"> -->
+                                            </div>
+                                        </li>
                                         </ul>
                                     </div>
+                                    </div>
                                 </div>
+                                <span class="line-style"></span>
                             </div>
                         </div>
                     </div>
