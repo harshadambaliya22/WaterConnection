@@ -377,7 +377,7 @@
 
 /* main content css start */
 .main-content {
-    height: calc(100dvh - 246px);
+    height: calc(100dvh - 260px);
 }
 
 .main-content.main-content-disposal {
