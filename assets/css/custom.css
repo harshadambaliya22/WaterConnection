@@ -513,8 +513,8 @@
 
 /* Contact Sidebar Start */
 .contact-sidebar {
-    width: 450px;
-    top: 210px;
+    width: 400px;
+    top: 208px;
     left: -100%;
     height: calc(100% - 245px);
     overflow-y: auto;
@@ -818,7 +818,7 @@ textarea.form-control {
 
 /* Chat Sidebar Start */
 .chat-sidebar {
-    top: 210px;
+    top: 208px;
     left: -100%;
     width: 445px;
     height: calc(100vh - 245px);
@@ -891,7 +891,7 @@ textarea.form-control {
 
 /* History Sidebar Start */
 .history-sidebar {
-    top: 210px;
+    top: 208px;
     left: -100%;
     width: 360px;
     height: calc(100vh - 245px);
@@ -1076,7 +1076,7 @@ input::-webkit-inner-spin-button {
 
 /* Calendar Sidebar Start */
 .calendar-sidebar {
-    top: 210px;
+    top: 208px;
     left: -100%;
     width: 420px;
     transition: all 0.3s ease-in-out;
@@ -1250,7 +1250,7 @@ table.calendar-table {
 
 /* Invites Sidebar Start */
 .invites-sidebar {
-    top: 210px;
+    top: 208px;
     left: -100%;
     width: 450px;
     height: calc(100dvh - 245px);
@@ -1577,7 +1577,7 @@ output {
     height: 90px;
 }
 .s-location-pin i {
-    top: 36px;
+    top: 37px;
     color: #a3a3a3;
 }
 .s-location-pin i:first-of-type {
@@ -2352,6 +2352,10 @@ color: #0B3E58;
     left: 0;
     transition: ease 0.3s all;
 }
+.dread-switch-btn .switch-btn {
+    background: linear-gradient(192deg, #FFF -6.5%, #0B3E58 100%);
+    border-color: #0b3e58;
+}
 /* Add Driver Modal End */
 
 /* calander date modal css start  */
@@ -2476,6 +2480,10 @@ color: #0B3E58;
 .manage-manual-btn button:hover {
     background: #bfbfbf;
     color: #3c6479 !important;
+}
+
+.btn-modalnext.cute-red {
+    background: linear-gradient(180deg, #EEEEEE -57.5%, #CB0E20 100%);
 }
 /* Fairbank Manage Modal End */
 
@@ -2995,6 +3003,12 @@ h3 .corp-count {
     }
 }
 
+@media(max-width:1500px){
+    .overview-accordion {
+    bottom: 30px;
+    }
+}
+
 @media (max-width: 1500px) {
     .header-activity-item img {
         width: 23px;
@@ -3121,7 +3135,7 @@ h3 .corp-count {
     .header-middle {
         position: absolute !important;
         right: -270px;
-        top: 42px;
+        top: 37px;
         background-color: #fff;
         z-index: 9;
         padding: 15px;
@@ -3192,7 +3206,7 @@ h3 .corp-count {
     .bottom-header-body {
         position: absolute;
         right: -270px;
-        top: 42px;
+        top: 37px;
         height: 100vh;
         width: 270px;
         border-radius: 10px 0 0 10px;
@@ -3239,39 +3253,67 @@ h3 .corp-count {
     }
 
     .contact-sidebar {
-        top: 41px;
+        top: 37px;
         height: calc(100% - 73px);
     }
+
     .ctbpop-accordian-body .tab-content {
         height: calc(100vh - 319px);
     }
+
     .main-content {
         height: calc(100dvh - 73px);
     }
 
-        .bottom-header-title br {
+    .main-content.main-content-disposal {
+        height: calc(100dvh - 73px);
+    }
+
+
+    .bottom-header-title br {
         display: none;
     }
+
     .chat-sidebar {
-        top: 41px;
+        top: 37px;
         width: 300px;
         height: calc(100vh - 41px);
     }
+
     .chat-contect-body {
         height: calc(100dvh - 155px);
     }
+
     .history-sidebar {
-        top: 41px;
+        top: 37px;
         width: 300px;
         height: calc(100vh - 104px);
     }
+
     .calendar-sidebar {
-        top: 41px;
+        top: 37px;
         width: 300px;
-        height: calc(100dvh - 101px);
+        height: calc(100dvh - 75px);
+    }
+
+    .calendar-container {
+        width: 90%;
+    }
+
+    .maddie-custom-window {
+        width: 300px;
+    }
+
+    .calendar-table th, .calendar-table td {
+        font-size: 13px;
+        padding: 8px;
+    }
+    
+    .calendar-events {
+        top: 50px;
     }
     .invites-sidebar {
-        top: 41px;
+        top: 37px;
         width: 300px;
         height: calc(100dvh - 102px);
     }
@@ -3293,13 +3335,38 @@ h3 .corp-count {
         border-radius: 0;
         margin-bottom: 15px;
     }
+    .job-creation-modal.disposal-leftsidebar-modal {
+        width: 350px;
+    }
+    .disposal-leftsidebar-modal .accordion-button {
+        padding: 10px;
+    }
+    .maintance-custom-accordion .accordion-body {
+        padding-inline: 15px;
+    }
+    .maintance-container {
+        height: calc(100vh - 156px);
+    }
+    .disposal-tank-container .maddie-tank-img {
+        width: 70px;
+        height: auto;
+    }
+    .invites-item-close img {
+        width: 20px;
+    }
+    .invites-item-close {
+        right: -30px;
+    }
+
 }
 
 @media (max-width:992px) {
     .contact-sidebar {
         width: 300px;
     }
-
+    h2.driver-header {
+        font-size: 28px !important;
+    }
         .search-map {
         height: auto;
     }
