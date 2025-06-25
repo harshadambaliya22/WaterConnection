@@ -3077,7 +3077,7 @@ h3 .corp-count {
         left: -100%;
         background-color: #fff;
         border-radius: 0 10px 10px 0;
-        height: 100vh;
+        height: calc(100dvh - 38px);
         z-index: 10;
         margin-left: 0;
         overflow-y: auto;
@@ -3118,7 +3118,7 @@ h3 .corp-count {
         border-radius: 8px;
         cursor: pointer;
         display: block !important;
-    }   
+    }
 
     .header-middle-open {
         right: 0;
