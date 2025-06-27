@@ -127,20 +127,20 @@ $(document).ready(function () {
   // invites Sidebar Start
   $(".invites-activity-btn").click(function (e) {
     e.stopPropagation();
-    $(".invites-sidebar").toggleClass("invites-sidebar-open");
+    $(".invites-sidebar-body").toggleClass("invites-sidebar-open");
   });
 
   $(".contact-sidebar-close").click(function (e) {
     e.stopPropagation();
-    $(".invites-sidebar").removeClass("invites-sidebar-open");
+    $(".invites-sidebar-body").removeClass("invites-sidebar-open");
   });
 
-  $(".invites-sidebar").click(function (e) {
+  $(".invites-sidebar-body").click(function (e) {
     e.stopPropagation();
   });
 
   $(document).click(function () {
-    $(".invites-sidebar").removeClass("invites-sidebar-open");
+    $(".invites-sidebar-body").removeClass("invites-sidebar-open");
   });
   // invites Sidebar End
 
