@@ -443,7 +443,7 @@
                                         <p class="search-item-public text-black fs-8 fw-bold text-center mb-0">Kraken
                                         </p>
                                         <button
-                                            class="btn search-item-btn text-white fs-14 fw-semibold py-2 px-13 border-0">Select</button>
+                                            class="btn search-item-btn text-white fs-14 fw-semibold py-2 px-13 border-0" id='dread-pirate-btn'>Select</button>
                                     </div>
                                     <div
                                         class="search-item d-flex align-items-center justify-content-between ps-13 pe-20 py-9">
@@ -2179,8 +2179,8 @@
         </div>
         <!-- maddie modal End  -->
 
-        <!-- Dread Pirate modal start  -->
-         <div class="meddie-modal position-absolute top-0 z-1 dreadpirate-modal">
+        <!-- Dread Pirate modal start -->
+         <div class="meddie-modal position-absolute top-0 z-1 dreadpirate-modal" id='dreadpirate-modal'>
             <div class="maddie-custom-window">
                 <div class="maddie-header d-flex justify-content-between align-items-center gap-18">
                     <div class="d-flex align-items-center gap-10">
@@ -2196,7 +2196,7 @@
                     <div class="maddie-title fs-26 fw-bolder fst-intalic fst-italic">Dread Pirate</div>
                     <div class="d-inline-flex align-items-center gap-8">
                         <button class="maddie-btn-icon"><i class="fa-solid fa-minus"></i></button>
-                        <button type="button" class="btn-close maddie-btn-close p-0"></button>
+                        <button type="button" class="btn-close maddie-btn-close p-0" id='dreadpirate-modal-close'></button>
                     </div>
                 </div>
                 <div class="nav-tabs maddie-body maddie-tab-buttons position-relative py-8">
@@ -4696,23 +4696,37 @@
         const cdtoggleBtn = document.getElementById('current-drivers-btn');
         const cdsidebar = document.getElementById('current-drivers-body');
         const cdcloseBtn = document.getElementById('current-drivers-close');
-
         cdtoggleBtn.addEventListener('click', function (e) {
-            e.stopPropagation(); // Prevent click from bubbling up
+            e.stopPropagation();
             cdsidebar.classList.toggle('invites-sidebar-open');
         });
-
-        // Close cdsidebar on outside click
         document.addEventListener('click', function (e) {
             if (!cdsidebar.contains(e.target) && !cdtoggleBtn.contains(e.target)) {
                 cdsidebar.classList.remove('invites-sidebar-open');
             }
         });
-
         cdcloseBtn.addEventListener('click', function () {
             cdsidebar.classList.remove('invites-sidebar-open');
         });
         // current drivers open js End
+        
+        // Dread Pirate open js start
+        const dptoggleBtn = document.getElementById('dread-pirate-btn');
+        const dpsidebar = document.getElementById('dreadpirate-modal');
+        const dpcloseBtn = document.getElementById('dreadpirate-modal-close');
+        dptoggleBtn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            dpsidebar.classList.toggle('active');
+        });
+        document.addEventListener('click', function (e) {
+            if (!dpsidebar.contains(e.target) && !dptoggleBtn.contains(e.target)) {
+                dpsidebar.classList.remove('active');
+            }
+        });
+        dpcloseBtn.addEventListener('click', function () {
+            dpsidebar.classList.remove('active');
+        });
+        // Dread Pirate open js End
 
         // maddie side tab text value change js start
         document.querySelectorAll('.maddie-tab-buttons').forEach(function (container) {
