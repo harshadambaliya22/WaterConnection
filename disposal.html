@@ -98,6 +98,10 @@
                         </li>
                         <li class="megamenu-item">
                             <a href="#"
+                                class="megamenu-link fw-semibold fs-13 text-black text-decoration-none px-6 py-4 d-inline-block"  data-bs-toggle="modal" data-bs-target="#Configuremodal">Configure</a>
+                        </li>
+                        <li class="megamenu-item">
+                            <a href="#"
                                 class="megamenu-link fw-semibold fs-13 text-black text-decoration-none px-6 py-4 d-inline-block">Other</a>
                         </li>
                     </ul>
@@ -3066,6 +3070,182 @@
         </div>
     </div>
     <!-- calender Sent End -->
+
+    <!-- Configure Modal Start -->
+     <div class="modal configure-modal fade" id="Configuremodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ConfiguremodalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content"> 
+            <div class="modal-header position-sticky top-0 end-0 bg-white z-1 border-0 border-bottom py-20">
+                <h1 class="modal-title fw-bold fs-22 text-black lh-base mb-0">Configure: Permian Basin SWD-7</h1>
+              <button type="button" class="btn-close position-absolute fs-14" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-20 pb-20">
+                <div class="configure-a configure-settings">
+                    <h5 class="fs-18 lh-base text-primary fw-medium mb-20">Sectioin A: Capacity & Access Settings</h5>
+                    <div class="mb-15 configure-input">
+                        <label for="amounttank" class="form-label text-black fs-16">Amount of tanks</label>
+                        <input type="text" class="form-control" id="amounttank" placeholder="Enter number of tanks">
+                    </div>
+                    <div class="mb-15 configure-input">
+                        <label for="heighttank" class="form-label text-black fs-16">Height of tank</label>
+                        <input type="text" class="form-control" id="heighttank" placeholder="Enter tank heights">
+                    </div>
+                    <div class="mb-15 configure-input">
+                        <label for="levalvalue" class="form-label text-black fs-16">Heigh-Level value</label>
+                        <input type="text" class="form-control" id="levalvalue" placeholder="Enter heigh-level value">
+                    </div>
+                    <div class="configure-input">
+                        <label for="lanesopen" class="form-label text-black fs-16">Max lanes open</label>
+                        <input type="text" class="form-control" id="lanesopen" placeholder="Enter max lanes">
+                    </div>
+                </div>
+                 <div class="configure-b configure-settings">
+                    <h5 class="fs-18 lh-base fw-medium mb-20">Sectioin B: Driver Interaction Settings</h5>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header mb-15">
+                            <button class="accordion-button bg-transparent border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#Driversubmitted" aria-expanded="true" aria-controls="Driversubmitted">
+                                 <div class="form-check mb-0">
+                                    <input class="form-check-input" type="checkbox" value="" id="checksubmitted">
+                                    <label class="form-check-label text-black ps-8" for="checksubmitted">
+                                        Allow Driver-Submitted Updates? 
+                                    </label>
+                                </div>
+                            </button>
+                            </h2>
+                            <div id="Driversubmitted" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body bg-white border-1 mb-15">
+                                    <div class="form-check mb-10 configur-checkbox">
+                                        <input class="form-check-input" type="checkbox" value="" id="checktank" disabled>
+                                        <label class="form-check-label text-black ps-8 fs-15" for="checktank">
+                                            Tank Levels <span class="text-danger fw-normal">(disable - Api active)</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-10 configur-checkbox">
+                                        <input class="form-check-input" type="checkbox" value="" id="checklane">
+                                        <label class="form-check-label text-black ps-8 fs-15" for="checklane">
+                                           Lane Status
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-10 configur-checkbox">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkwaittime">
+                                        <label class="form-check-label text-black ps-8 fs-15" for="checkwaittime">
+                                            Wait Time Estimates
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="form-check mb-0 configur-checkbox">
+                        <input class="form-check-input" type="checkbox" value="" id="checkapitank">
+                        <label class="form-check-label text-black ps-8" for="checkapitank">
+                            Api Available for Tank Levels?
+                        </label>
+                    </div>                  
+                </div>
+                <div class="configure-c configure-settings">
+                     <h5 class="fs-18 lh-base fw-medium mb-20">Sectioin C: Unloading Procedue</h5>
+                      <div class="configure-input mb-20">
+                        <label for="youtubelink" class="form-label text-black fs-16">YouTube Link - Understanding the Procedure</label>
+                        <input type="text" class="form-control" id="youtubelink" placeholder="https://youtube.com/watch?v=...">
+                      </div>
+                      <div class="configure-file-upload">
+                        <label for="youtubelink" class="form-label text-black fs-16">Traffic Flow Image</label>
+                        <div class="configure-fileinput position-relative">
+                            <input type="file" class="form-control position-absolute w-100 h-100 opacity-0" id="youtubelink" placeholder="Upload traffic flow diagram">
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                            <span>Upload traffic flow diagram</span>
+                            <button type="submit" class="btn border-0 text-white">Choose File</button>
+                        </div>
+                      </div>
+                      <div class="configure-uload-step mt-20">
+                        <label for="youtubelink" class="form-label text-black fs-16">Step-by-Step Procedure</label>
+                        <div class="configure-settings bg-white p-20 mb-20">
+                          <div class="configure-file-upload">
+                            <label for="youtubelink" class="form-label text-black fs-16">Step 1</label>
+                            <div class="configure-fileinput position-relative mb-15">
+                                <input type="file" class="form-control position-absolute w-100 h-100 opacity-0" id="youtubelink" placeholder="Upload traffic flow diagram">
+                                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                <span>Upload traffic flow diagram</span>
+                                <button type="submit" class="btn border-0 text-white">Choose File</button>
+                            </div>
+                            <textarea name="configuredes" id="configuredes" class="form-control w-100 text-start" placeholder="Description this step" rows="6"></textarea>
+                          </div>
+                        </div>
+                         <div class="configure-settings bg-white p-20 mb-20 position-relative">
+                            <div class="configute-step-delete position-absolute"><i class="fa-solid fa-trash-can text-danger"></i></div>
+                          <div class="configure-file-upload">
+                            <label for="youtubelinktwo" class="form-label text-black fs-16">Step 2</label>
+                            <div class="configure-fileinput position-relative mb-15">
+                                <input type="file" class="form-control position-absolute w-100 h-100 opacity-0" id="youtubelinktwo" placeholder="Upload traffic flow diagram">
+                                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                <span>Upload traffic flow diagram</span>
+                                <button type="submit" class="btn border-0 text-white">Choose File</button>
+                            </div>
+                            <textarea name="configuredestwo" id="configuredestwo" class="form-control w-100 text-start" placeholder="Description this step" rows="6"></textarea>
+                          </div>
+                        </div>
+                        <button type="submit" class="btn border-0 text-white bg-primary p-8 px-15 more-step-add d-flex align-items-center"><i class="fa-solid fa-plus me-8"></i> Add Step</button>
+                      </div>
+                </div>
+                <div class="configure-d configure-settings">
+                    <h5 class="fs-18 lh-base fw-medium mb-20">Sectioin D: Spill Reporting & Troubleshooting</h5>
+                    <p class="configure-reporting"><strong>Spill Reporting:</strong> Always enabled for all sites</p>
+                    <div class="configure-file-upload">
+                        <label for="troubleshooting" class="form-label text-black fs-16">Troubleshooting Guide (Optional)</label>
+                        <textarea name="troubleshooting" id="troubleshooting" class="form-control w-100 text-start mb-15" placeholder="Enter troubleshooting guide or upload PDF..." rows="6"></textarea>
+                        <div class="configure-fileinput position-relative">
+                            <input type="file" class="form-control position-absolute w-100 h-100 opacity-0" id="troubleshootingdigram" placeholder="Upload traffic flow diagram">
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                            <span>Upload troubleshooting PDF</span>
+                            <button type="submit" class="btn border-0 text-white">Choose File</button>
+                        </div>
+                    </div>
+                    <label for="commonproblem" class="form-label text-black fs-16 fw-medium mt-20">Common Problems & Solutions</label>
+                    <div class="configure-settings bg-white p-20 mb-20">
+                        <div class="configure-file-upload">
+                            <div class="configure-input mb-15">
+                                <label for="problemdec" class="form-label text-black fs-16">Problem 1</label>
+                                <input type="text" class="form-control" id="problemdec" placeholder="Description the problem">
+                            </div>
+                            <textarea name="problemsolution" id="problemsolution" class="form-control w-100 text-start mb-15" placeholder="Provide the solution..." rows="6"></textarea>
+                            <div class="configure-fileinput position-relative">
+                                <input type="file" class="form-control position-absolute w-100 h-100 opacity-0" id="uploadproblem" placeholder="Upload problem image">
+                                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                <span>Upload problem image</span>
+                                <button type="submit" class="btn border-0 text-white">Choose File</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="configure-settings bg-white p-20 mb-20 position-relative">
+                        <div class="configute-step-delete position-absolute"><i class="fa-solid fa-trash-can text-danger"></i></div>
+                        <div class="configure-file-upload">
+                            <div class="configure-input mb-15">
+                                <label for="problemdectwo" class="form-label text-black fs-16">Problem 2</label>
+                                <input type="text" class="form-control" id="problemdectwo" placeholder="Description the problem">
+                            </div>
+                            <textarea name="problemsolutiontwo" id="problemsolutiontwo" class="form-control w-100 text-start mb-15" placeholder="Provide the solution..." rows="6"></textarea>
+                            <div class="configure-fileinput position-relative">
+                                <input type="file" class="form-control position-absolute w-100 h-100 opacity-0" id="uploadproblemtwo" placeholder="Upload problem image">
+                                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                <span>Upload problem image</span>
+                                <button type="submit" class="btn border-0 text-white">Choose File</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn border-0 text-white bg-primary p-8 px-15 more-step-add d-flex align-items-center"><i class="fa-solid fa-plus me-8"></i> Add Problem</button>
+                </div>
+                <hr class="my-30">
+                <div class="configure-footer d-flex align-items-center justify-content-between">
+                    <button type="button" class="btn">Return to master list</button>
+                    <button type="button" class="btn">Save & continue</button>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Configure Modal End -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta3/css/bootstrap-select.min.css">
     <!-- JavaScript Files -->

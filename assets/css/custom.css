@@ -2991,6 +2991,117 @@ h3 .corp-count {
 .form-control.textInput{
     font-style:italic;
 }
+/* Configure Modal Start */
+.configure-modal .btn-close {
+    top: 23px;
+    right: 25px;
+}
+.configure-settings {
+    background-color: #8ba0aa45;
+    border-radius: 10px;
+    padding: 28px 23px;
+    margin-bottom: 30px;
+}
+.configure-input .form-control,
+.configure-settings textarea{
+    border: 1px solid #aaaaaa;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+.configure-input .form-control::placeholder,
+.configure-settings textarea::placeholder{
+    color: #b2b2b2;
+}
+.configure-settings .accordion-button:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: none;
+}
+.configure-settings .accordion-button::after{
+    display: none;
+}
+.configure-settings .accordion-body {
+    margin-left: 30px;
+    border: 1px solid #aaaaaa;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.configure-b h5 {
+    color: #3a694a;
+}
+.configure-b .accordion-button input {
+    position: relative;
+    top: -3px;
+}
+.configure-b .configur-checkbox input {
+    width: 18px;
+    height: 18px;
+    border-color: #aaaaaa;
+}
+.configure-fileinput {
+    border: 1px dashed #aaaaaa;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.configure-fileinput i {
+    font-size: 26px;
+    color: #a2a2a2;
+}
+.configure-fileinput span {
+    font-size: 15px;
+    color: #737373;
+    margin-block: 10px;
+}
+.configure-fileinput .btn {
+    background: linear-gradient(180deg, #FFF -57.5%, #0B3E58 100%);
+    padding: 8px 15px;
+}
+.configure-uload-step .configure-settings{
+    border: 1px solid #aaaaaa;
+}
+.more-step-add{
+    transition: all 0.3s ease-in-out;
+}
+.more-step-add:hover{
+    opacity: 0.9;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.configure-reporting {
+    border: 1px solid #aaaaaa;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #b9d1df;
+    margin-bottom: 25px;
+}
+.configute-step-delete {
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+.configure-footer .btn:first-child{
+  background: linear-gradient(180deg, #FFF -57.5%, #0B3E58 100%);
+}
+.configure-footer .btn:last-child{
+    background: linear-gradient(to bottom, #b2f1c1, #34b267);
+}
+.configure-footer .btn {
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+}
+/* Configure Modal End */
+
 /* Responsive css start */
 
 @media (max-width: 1650px) {
@@ -3439,6 +3550,20 @@ h3 .corp-count {
         border-radius: 0 10px 10px 0;
         transition: all 0.3s ease-in-out;
     }
+    .configure-modal .modal-body {
+        padding-inline: 15px !important;
+    }
+    .configure-modal .modal-title {
+        font-size: 20px !important;
+    }
+    .configure-settings {
+        margin-bottom: 20px !important;
+        padding: 28px 15px !important;
+    }
+    .configure-modal .modal-header {
+        padding-right: 48px;
+        padding-bottom: 15px !important;
+    }
 }
 
 @media (max-width:576px) {
@@ -3453,7 +3578,12 @@ h3 .corp-count {
         pointer-events: none;
     }
 }
-
+@media (max-width:480px){
+     .configure-footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
 @media (max-width:430px) {
     .createaccount-first-check{
         position: relative !important;
@@ -3485,7 +3615,7 @@ h3 .corp-count {
 
     .search-input-mobile {
         display: block;
-    }
+    }   
 }
 
 /* Media Query End */
