@@ -3102,6 +3102,45 @@ h3 .corp-count {
 }
 /* Configure Modal End */
 
+/* Requirement Modal Start */
+.requirement-details {
+    border: 2px solid #245269;
+    max-width: 400px;
+    margin-inline: auto;
+    overflow-y: auto;
+    margin-top: 16px;
+    box-shadow: inset 0px 0 10px #24526963;
+}
+.requirement-content {
+    padding: 15px 30px;
+}
+.requirement-details ul li .search-item-selected{
+   background: linear-gradient(214deg, #FFF 6.5%, #000 64%);
+}
+.requirement-descriptioin{
+    max-width: 350px;
+}
+.requirement-footer {
+    border-top-color: #abafb1;
+    padding-bottom: 4px;
+}
+.requirement-footer p{
+    margin-left: auto;
+    margin-right: 20px;
+}
+.requirement-footer .btn{
+    background: linear-gradient(to bottom, #b2f1c1, #34b267);
+    border-radius: 15px;
+    border: 2px solid #0c9443;
+    padding: 2px 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.requirement-footer .btn:active {
+   border-color: #0c9443;
+}
+/* Requirement Modal End */
+
 /* Responsive css start */
 
 @media (max-width: 1650px) {
@@ -3564,6 +3603,9 @@ h3 .corp-count {
         padding-right: 48px;
         padding-bottom: 15px !important;
     }
+    .requirement-footer {
+        border-top-color: #abafb1;
+    }
 }
 
 @media (max-width:576px) {
@@ -3582,6 +3624,15 @@ h3 .corp-count {
      .configure-footer {
         flex-direction: column;
         gap: 15px;
+    }
+    .requirement-details .d-flex.justify-content-between {
+        flex-direction: column;
+    }
+    .requirement-details ul h5 {
+        text-align: start !important;
+    }
+    .requirement-details ul:last-child {
+        margin-top: 20px;
     }
 }
 @media (max-width:430px) {

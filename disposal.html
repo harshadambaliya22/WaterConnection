@@ -44,7 +44,7 @@
                     <ul class="megamenu-list position-absolute list-inline bg-white pt-8 z-1 start-0">
                         <li class="megamenu-item">
                             <a href="#"
-                                class="megamenu-link fw-semibold fs-13 text-black text-decoration-none px-6 py-4 d-inline-block">Requirements</a>
+                                class="megamenu-link fw-semibold fs-13 text-black text-decoration-none px-6 py-4 d-inline-block"  data-bs-target="#requrementmodal" data-bs-toggle="modal">Requirements</a>
                         </li>
                         <li class="megamenu-item">
                             <a href="#"
@@ -2811,66 +2811,99 @@
     <!-- Disposal Varify Modal End -->
 
     <!-- Contact Company Modal Start -->
-     <div class="modal contact-c-modal fairbank-m-modal" id="contactcmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="contactcmodal" aria-hidden="true">
+     <div class="modal contact-c-modal fairbank-m-modal" id="contactcmodal" data-bs-backdrop="static"
+        data-bs-keyboard="false" tabindex="-1" aria-labelledby="contactcmodal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header justify-content-center position-relative border-0 p-0"> 
+                <div class="modal-header justify-content-center position-relative border-0 p-0">
                     <img src="assets/image/contact-bg.png" alt="Contact" class="img-fluid w-100">
-                    <button type="button" class="btn-close position-absolute top-0 end-0 m-0 mt-8 me-8 z-1" data-bs-dismiss="modal" aria-label="Close" ></button>
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-0 mt-8 me-8 z-1"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="contact-c-ovarly position-absolute">
                         <img src="assets/image/heading.png" alt="Heading" class="img-fluid">
-                        <h6 class="fs-15 fw-bold mb-0 text-black mt-6 text-center"><em><u>Trucking services</u></em></h6>
+                        <h6 class="fs-15 fw-bold mb-0 text-black mt-6 text-center"><em><u>Trucking services</u></em>
+                        </h6>
                     </div>
                 </div>
                 <div class="modal-body p-0">
-                  <ul class="nav nav-tabs border-0 py-8 pe-8 ps-20 align-items-center justify-content-between" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link fs-13 fw-bold active border-0" id="General-tab" data-bs-toggle="tab" data-bs-target="#General-tab-pane" type="button" role="tab" aria-controls="General-tab-pane" aria-selected="true">General</button>
-                    </li>
-                    <span class="fs-18 fw-bold text-white">(661) 345-2345</span>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link fs-13 fw-bold border-0" id="Info-tab" data-bs-toggle="tab" data-bs-target="#Info-tab-pane" type="button" role="tab" aria-controls="Info-tab-pane" aria-selected="false">Info</button>
-                    </li>
+                    <ul class="nav nav-tabs border-0 py-8 pe-8 ps-20 align-items-center justify-content-between"
+                        id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link fs-13 fw-bold active border-0" id="General-tab" data-bs-toggle="tab"
+                                data-bs-target="#General-tab-pane" type="button" role="tab"
+                                aria-controls="General-tab-pane" aria-selected="true">General</button>
+                        </li>
+                        <span class="fs-18 fw-bold text-white">(661) 345-2345</span>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link fs-13 fw-bold border-0" id="Info-tab" data-bs-toggle="tab"
+                                data-bs-target="#Info-tab-pane" type="button" role="tab" aria-controls="Info-tab-pane"
+                                aria-selected="false">Info</button>
+                        </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="General-tab-pane" role="tabpanel" aria-labelledby="General-tab" tabindex="0">
-                        <div class="contact-c pt-12 px-20 pb-20">
-                            <div class="corp-driver-dispatch-container">
-                                <div class="corp-section available-drivers">
-                                    <h3><span class="corp-title fs-18">Available Drivers:</span> <span class="corp-count">5</span></h3>
-                                    <div class="corp-driver-list">
-                                    <div class="corp-driver-item">
-                                        <span class="corp-status-dot red"></span>
-                                        <strong>John Vicol</strong>
-                                        <span class="corp-invite">Direct Invite</span>
+                        <div class="tab-pane fade show active" id="General-tab-pane" role="tabpanel"
+                            aria-labelledby="General-tab" tabindex="0">
+                            <div class="contact-c pt-12 px-20 pb-20">
+                                <div class="corp-driver-dispatch-container">
+                                    <div class="corp-section available-drivers">
+                                        <h3><span class="corp-title fs-18">Available Drivers:</span> <span
+                                                class="corp-count fs-18">5</span></h3>
+                                        <div class="corp-driver-list">
+                                            <div class="corp-driver-item gap-10">
+                                                <span class="corp-status-dot red"></span>
+                                                <strong class='fs-16'>John Vicol</strong>
+                                                <span class="corp-invite fs-12">Direct Invite</span>
+                                            </div>
+                                            <div class="corp-driver-item gap-10">
+                                                <span class="corp-status-dot green"></span>
+                                                <strong class='fs-16'>Willy Do-Do</strong>
+                                                <span class="corp-invite fs-12">Direct Invite</span>
+                                            </div>
+                                            <div class="corp-driver-item gap-10">
+                                                <span class="corp-status-dot green"></span>
+                                                <strong class='fs-16'>Zack Sands</strong>
+                                                <span class="corp-invite fs-12">Direct Invite</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="corp-driver-item">
-                                        <span class="corp-status-dot green"></span>
-                                        <strong>Willy Do-Do</strong>
-                                        <span class="corp-invite">Direct Invite</span>
-                                    </div>
-                                    <div class="corp-driver-item">
-                                        <span class="corp-status-dot green"></span>
-                                        <strong>Zack Sands</strong>
-                                        <span class="corp-invite">Direct Invite</span>
-                                    </div>
-                                    </div>
-                                </div>
 
-                                <div class="section corp-on-duty-dispatch">
-                                    <h3><span class="corp-title fs-18">On-duty dispatch:</span> <span class="corp-count">1</span></h3>
-                                    <p class="corp-dispatcher-name">Greg Smith</p>
-                                    <ul class="corp-dispatch-types">
-                                        <li><span class="corp-bullet"></span> <em>Production water</em></li>
-                                        <li><span class="corp-bullet"></span> Hotshot</li>
-                                        <li><span class="corp-bullet"></span> Flatbed</li>
-                                        <li><span class="corp-bullet"></span> Pet grooming</li>
-                                    </ul>
+                                    <div class="section corp-on-duty-dispatch">
+                                        <h3><span class="corp-title fs-18">On-duty dispatch:</span> <span
+                                                class="corp-count fs-18">1</span></h3>
+                                        <p class="corp-dispatcher-name text-center fs-14 fw-bolder">Greg Smith</p>
+                                        <ul class="corp-dispatch-types">
+                                            <li class="fs-14 fw-bold"><span class="corp-bullet"></span> Production water
+                                            </li>
+                                            <li class="fs-14 fw-bold"><span class="corp-bullet"></span> Hotshot</li>
+                                            <li class="fs-14 fw-bold"><span class="corp-bullet"></span> Flatbed</li>
+                                            <li class="fs-14 fw-bold"><span class="corp-bullet"></span> Pet grooming
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="tab-pane fade" id="Info-tab-pane" role="tabpanel" aria-labelledby="Info-tab"
+                            tabindex="0">
+                            <div class="contact-c pt-12 px-20 pb-20">
+                                <form class="account-comany-form" action="">
+                                    <div class="jobmodal-textarea position-relative">
+                                        <textarea type="text" class="form-control textInput text-start" rows="5"
+                                            placeholder=""></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="Info-tab-pane" role="tabpanel" aria-labelledby="Info-tab" tabindex="0">info</div>                    
+                    <div class="maddie-bottom-bar">
+                        <span class="d-inline-flex justify-content-center align-items-center flex-column gap-0 fs-12">
+                            <p class="m-0 text-danger">Dispatched <br> out of: </p>
+                        </span>
+                        <span class="d-inline-flex justify-content-center align-items-center flex-column gap-0 fs-12">
+                            Williston, N.D.
+                        </span>
+                        <span
+                            class="d-inline-flex justify-content-center align-items-center flex-column gap-0 fs-12"></span>
                     </div>
                 </div>
             </div>
@@ -3114,7 +3147,7 @@
                             </button>
                             </h2>
                             <div id="Driversubmitted" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body bg-white border-1 mb-15">
+                                <div class="accordion-body bg-white border-1 mb-15 px-md-15">
                                     <div class="form-check mb-10 configur-checkbox">
                                         <input class="form-check-input" type="checkbox" value="" id="checktank" disabled>
                                         <label class="form-check-label text-black ps-8 fs-15" for="checktank">
@@ -3246,6 +3279,76 @@
         </div>
     </div>
     <!-- Configure Modal End -->
+
+    <!-- Requirement Modal Start -->
+     <div class="modal contact-c-modal fairbank-m-modal" id="requrementmodal" data-bs-backdrop="static"
+        data-bs-keyboard="false" tabindex="-1" aria-labelledby="requrementmodal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center position-relative border-0 p-0">
+                    <img src="assets/image/contact-bg.png" alt="Contact" class="img-fluid w-100">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-0 mt-8 me-8 z-1"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="contact-c-ovarly position-absolute">
+                        <img src="assets/image/heading.png" alt="Heading" class="img-fluid">
+                        <h6 class="fs-15 fw-bold mb-0 text-black mt-6 text-center"><em><u>Trucking services</u></em>
+                        </h6>
+                    </div>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="requrement-header nav nav-tabs border-0 py-5 px-15 justify-content-center">
+                        <span class="fs-25 fw-bold text-white">Requirements</span>
+                    </div>
+                    <div class="requirement-content">
+                        <div class="requirement-content-header d-flex justify-content-between">
+                            <div class="requirement-dispatch">
+                                <h3 class="corp-title fs-18 fw-bold text-black"><u>On-duty dispatch:</u></h3>
+                                <div class="requirement-greg mt-10"><img src="assets/image/Messagere.png" alt="Plus Icon" width="30" class="me-15 img-fluid"><span class="text-primary fw-medium">Greg Smith</span></div>
+                            </div>
+                            <div>
+                                <h3 class="corp-title fs-18 fw-bold text-black"><u>Current MSA:</u></h3>
+                                <div><span class="d-inline-block search-item-selected me-16 mt-0 border-0" style="width: 12px;height: 12px;"></span><span class="text-primary fw-medium">Kraken</span></div>
+                                <div><span class="d-inline-block search-item-selected me-16 mt-0 border-0" style="width: 12px;height: 12px;"></span><span class="text-primary fw-medium">Cord</span></div>
+                            </div>
+                        </div>  
+                        <div class="requirement-details p-15">
+                            <div class="d-flex justify-content-between">
+                                <ul class="list-inline">
+                                    <h5 class="fs-18 fw-bold text-center mb-15"><u>Needed:</u></h5>
+                                    <li class="fw-medium text-black d-flex align-items-center"><span class="d-inline-block search-item-selected me-12 bg-black mt-0 border-0" style="width: 12px; height: 12px;"></span>Inspected Truck.</li>
+                                    <li class="fw-medium text-black d-flex align-items-center"><span class="d-inline-block search-item-selected me-12 bg-black mt-0 border-0" style="width: 12px; height: 12px;"></span>Vac Trailer.</li>
+                                    <li class="fw-medium text-black d-flex align-items-center"><span class="d-inline-block search-item-selected me-12 bg-black mt-0 border-0" style="width: 12px; height: 12px;"></span>General liability.</li>
+                                    <li class="fw-medium text-black d-flex align-items-center"><span class="d-inline-block search-item-selected me-12 bg-black mt-0 border-0" style="width: 12px; height: 12px;"></span>5,000,000 umbrella.</li>
+                                    <li class="fw-medium text-black d-flex align-items-center"><span class="d-inline-block search-item-selected me-12 bg-black mt-0 border-0" style="width: 12px; height: 12px;"></span>Dependable drivers</li>
+                                </ul>
+                                <ul class="list-inline">
+                                    <h5 class="fs-18 fw-bold text-center mb-15"><u>Provided:</u></h5>
+                                    <li class="fw-medium text-black d-flex align-items-center"><span class="d-inline-block search-item-selected me-12 bg-black mt-0 border-0" style="width: 12px; height: 12px;"></span>Leased trailers.</li>
+                                    <li class="fw-medium text-black d-flex align-items-center"><span class="d-inline-block search-item-selected me-12 bg-black mt-0 border-0" style="width: 12px; height: 12px;"></span>Service work.</li>
+                                    <li class="fw-medium text-black d-flex align-items-center"><span class="d-inline-block search-item-selected me-12 bg-black mt-0 border-0" style="width: 12px; height: 12px;"></span>Production routes.</li>
+                                    <li class="fw-medium text-black d-flex align-items-center"><span class="d-inline-block search-item-selected me-12 bg-black mt-0 border-0" style="width: 12px; height: 12px;"></span>24<sup>hr</sup> Dispatch.</li>
+                                    <li class="fw-medium text-black d-flex align-items-center"><span class="d-inline-block search-item-selected me-12 bg-black mt-0 border-0" style="width: 12px; height: 12px;"></span>Factoring <span class="text-danger fw-normal">(5%)</span>.</li>
+                                </ul>
+                            </div>
+                            <div class="mt-20">
+                                <h4 class="text-black fs-20 fw-bold text-center"><u>Notes:</u></h4>
+                                <p class="text-black fs-12 requirement-descriptioin mx-auto mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Facere repellendus doloribus provident iusto, autem natus quos.
+                                    Expedita dolor debitis ullam iure nostrum consequuntur.</p>
+                            </div>
+                        </div>  
+                    </div>                
+                    <div class="maddie-bottom-bar requirement-footer border-top-0">
+                        <p class="mb-0 text-black fs-18 text-center fst-italic">
+                            <u>Dispatched out of williston</u>
+                            <span class="text-danger fw-normal d-block fs-14 mt-5">(661) 345-2345</span>
+                        </p>                        
+                        <button type="button" class="btn text-white">Request</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta3/css/bootstrap-select.min.css">
     <!-- JavaScript Files -->
